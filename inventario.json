@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19 18:36:19 UTC",
+  "updatedAt": "2026-06-19 18:46:43 UTC",
   "ranking": [
     {
       "username": "ipowerlz",
@@ -15,6 +15,11 @@
       "username": "manodrico",
       "pontos": 50,
       "inventario": {"1_1":2,"2_1":1,"4_1":1,"6_1":2,"7_1":1}
+    },
+    {
+      "username": "gui_z0",
+      "pontos": 45,
+      "inventario": {"1_1":1,"3_1":1,"3_2":1}
     },
     {
       "username": "1509_martim",
@@ -45,11 +50,6 @@
       "username": "z3rgtvvod",
       "pontos": 20,
       "inventario": {"2_1":1,"5_1":1}
-    },
-    {
-      "username": "gui_z0",
-      "pontos": 20,
-      "inventario": {"1_1":1,"3_1":1}
     },
     {
       "username": "astroz1nvlr",
