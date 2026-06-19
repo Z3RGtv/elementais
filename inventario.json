@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19 21:04:17 UTC",
+  "updatedAt": "2026-06-19 21:13:00 UTC",
   "ranking": [
     {
       "username": "ipowerlz",
@@ -47,6 +47,11 @@
       "inventario": {"2_1":1,"4_1":2}
     },
     {
+      "username": "eimezdumipima_",
+      "pontos": 20,
+      "inventario": {"1_1":1,"2_1":1}
+    },
+    {
       "username": "z3rgtvvod",
       "pontos": 20,
       "inventario": {"2_1":1,"5_1":1}
@@ -55,11 +60,6 @@
       "username": "astroz1nvlr",
       "pontos": 10,
       "inventario": {"1_1":1}
-    },
-    {
-      "username": "eimezdumipima_",
-      "pontos": 10,
-      "inventario": {"2_1":1}
     },
     {
       "username": "hst_playz_pt",
