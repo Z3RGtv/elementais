@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19 20:38:48 UTC",
+  "updatedAt": "2026-06-19 20:51:29 UTC",
   "ranking": [
     {
       "username": "ipowerlz",
@@ -12,14 +12,14 @@
       "inventario": {"10_1":1,"1_1":2,"2_1":2,"3_1":2,"4_1":1,"5_1":2,"5_2":1,"6_1":2,"6_2":1,"7_1":1,"7_2":1,"8_1":2,"9_1":2}
     },
     {
+      "username": "sheisdani",
+      "pontos": 80,
+      "inventario": {"1_1":1,"5_1":1,"8_1":1,"9_1":1}
+    },
+    {
       "username": "manodrico",
       "pontos": 50,
       "inventario": {"1_1":2,"2_1":1,"4_1":1,"6_1":2,"7_1":1}
-    },
-    {
-      "username": "sheisdani",
-      "pontos": 50,
-      "inventario": {"1_1":1,"5_1":1,"8_1":1}
     },
     {
       "username": "gui_z0",
