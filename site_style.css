@@ -80,6 +80,11 @@ h2 {
     color: var(--accent);
 }
 
+.ranking-list {
+    display: flex;
+    flex-direction: column;
+}
+
 .ranking-item {
     display: flex;
     justify-content: space-between;
@@ -134,12 +139,10 @@ h2 {
     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
 }
 
-/* Se o utilizador não tiver o bicho, ele aparece como uma silhueta escura e transparente */
 .grid-item.not-owned img {
     filter: grayscale(1) opacity(0.12);
 }
 
-/* Sistema visual de cartas empilhadas à esquerda */
 .grid-item.stacked img.card-back {
     position: absolute;
     transform: translate(-6px, -6px) rotate(-6deg) scale(0.95);
@@ -167,4 +170,82 @@ footer {
     color: var(--text-muted);
     background: rgba(10,10,15,0.9);
     border-top: 1px solid rgba(255,255,255,0.03);
+}
+
+/* =========================================================================
+   📱 CIRCUITO DE RESPONSIVIDADE (OTIMIZAÇÃO PARA TELEMÓVEL)
+   ========================================================================= */
+@media (max-width: 850px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-container input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .main-container {
+        grid-template-columns: 1fr; /* Colunas passam a linhas verticais */
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .ranking-section {
+        padding: 15px;
+    }
+
+    /* Transforma o menu vertical num carrossel deslizante horizontal */
+    .ranking-list {
+        flex-direction: row;
+        gap: 10px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .ranking-item {
+        flex: 0 0 190px; /* Largura fixa de cada bloco no carrossel */
+        margin-bottom: 0;
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+    
+    .ranking-item:hover, .ranking-item.active {
+        transform: translateY(-2px); /* Efeito suave para cima em vez de para o lado */
+    }
+
+    .collection-section {
+        padding: 15px;
+    }
+
+    /* Encolhe as cartas para caberem 4 ou mais na horizontal do telemóvel */
+    .site-grid {
+        grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+        gap: 8px;
+    }
+
+    .grid-item {
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    .grid-item .qty-badge {
+        font-size: 9px;
+        bottom: 4px;
+        left: 4px;
+        padding: 1px 4px;
+    }
+
+    .grid-item.stacked img.card-back {
+        transform: translate(-4px, -4px) rotate(-5deg) scale(0.95);
+    }
 }
