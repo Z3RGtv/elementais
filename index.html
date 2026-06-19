@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Elementais - Z3RGtv</title>
+    <link rel="stylesheet" href="site_style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🏆 PORTAL DE ELEMENTAIS</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Pesquisar utilizador no chat...">
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Coluna Esquerda: Ranking -->
+        <section class="ranking-section">
+            <h2>Classificação Geral</h2>
+            <div id="ranking-list" class="ranking-list">
+                <!-- Injetado dinamicamente pelo JS -->
+            </div>
+        </section>
+
+        <!-- Coluna Direita: Álbum de Cartas -->
+        <section class="collection-section">
+            <h2 id="view-title">Seleciona um utilizador para ver a coleção</h2>
+            <p id="user-points-panel" class="hidden">Pontuação Total: <span id="user-points-val">0</span> pts</p>
+            <div id="site-grid" class="site-grid">
+                <!-- Injetado dinamicamente pelo JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer id="update-timer">
+        A carregar dados da stream...
+    </footer>
+
+    <script src="site.js"></script>
+</body>
+</html>
