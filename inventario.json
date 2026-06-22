@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22 17:48:44 UTC",
+  "updatedAt": "2026-06-22 17:57:40 UTC",
   "ranking": [
     {
       "username": "ipowerlz",
@@ -57,17 +57,17 @@
       "inventario": {"2_1":1,"5_1":1}
     },
     {
+      "username": "themarysimmer",
+      "pontos": 20,
+      "inventario": {"1_1":1,"3_1":1}
+    },
+    {
       "username": "astroz1nvlr",
       "pontos": 10,
       "inventario": {"1_1":1}
     },
     {
       "username": "hst_playz_pt",
-      "pontos": 10,
-      "inventario": {"1_1":1}
-    },
-    {
-      "username": "themarysimmer",
       "pontos": 10,
       "inventario": {"1_1":1}
     }
