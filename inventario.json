@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22 21:22:36 UTC",
+  "updatedAt": "2026-06-22 21:36:57 UTC",
   "ranking": [
     {
       "username": "milhafretuga",
@@ -22,6 +22,11 @@
       "inventario": {"1_1":1,"2_1":2,"2_2":1,"3_1":1,"5_1":1,"8_1":1,"9_1":1}
     },
     {
+      "username": "marquesrcarol",
+      "pontos": 60,
+      "inventario": {"2_1":2,"3_1":2,"5_1":1,"8_1":1}
+    },
+    {
       "username": "manodrico",
       "pontos": 50,
       "inventario": {"1_1":2,"2_1":1,"4_1":1,"6_1":2,"7_1":1}
@@ -35,11 +40,6 @@
       "username": "z3rgtv",
       "pontos": 30,
       "inventario": {"1_1":1,"5_1":1,"7_1":1}
-    },
-    {
-      "username": "marquesrcarol",
-      "pontos": 30,
-      "inventario": {"2_1":2,"3_1":2,"5_1":1}
     },
     {
       "username": "manu12321_",
