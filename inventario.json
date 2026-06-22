@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19 21:28:18 UTC",
+  "updatedAt": "2026-06-22 17:48:44 UTC",
   "ranking": [
     {
       "username": "ipowerlz",
@@ -63,6 +63,11 @@
     },
     {
       "username": "hst_playz_pt",
+      "pontos": 10,
+      "inventario": {"1_1":1}
+    },
+    {
+      "username": "themarysimmer",
       "pontos": 10,
       "inventario": {"1_1":1}
     }
