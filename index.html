@@ -34,6 +34,35 @@
         </section>
     </main>
 
+    <!-- Guia de Como Jogar & Habilidades -->
+    <section class="instructions-section">
+        <h2>ℹ️ Guia do Jogo (Como Jogar & Comandos)</h2>
+        <div class="instructions-grid">
+            <div class="instruction-card">
+                <h3>🎮 Regras de Captura (Lobby de 30s)</h3>
+                <p>Para tornar o jogo mais justo e evitar que quem tem menos latência capture sempre, implementámos o seguinte sistema:</p>
+                <ul>
+                    <li>Quando um Elemental aparece na stream, os resgates de Pokébola ficam abertos.</li>
+                    <li>Tens <strong>30 segundos</strong> para resgatar a tua bola (Normal, Super, Ultra ou Master).</li>
+                    <li>O bot junta as primeiras <strong>5 tentativas</strong> do chat e <strong>baralha-as aleatoriamente</strong>.</li>
+                    <li>Os arremessos ocorrem um a um. Se alguém capturar, os resgates pendentes são <strong>reembolsados automaticamente (recebes os pontos de volta)</strong>!</li>
+                    <li>Se o lobby falhar ou passarem os 30s sem encher, as tentativas restantes do elemental (limite de 5 globais) passam a funcionar por ordem de resgate imediata.</li>
+                    <li><em>Nota:</em> Cada jogador pode usar no máximo 2 bolas por spawn.</li>
+                </ul>
+            </div>
+            <div class="instruction-card">
+                <h3>✨ Usar Habilidades de Elementais</h3>
+                <p>Podes resgatar a recompensa "<strong>Usar Sprite</strong>" e digitar o número do Elemental para invocar os seguintes efeitos no <strong>próximo spawn</strong>:</p>
+                <ul>
+                    <li><strong>[1] Elemental de Água:</strong> Inunda o campo no próximo spawn. Todos os viewers terão a sua probabilidade de captura reduzida em <strong>40%</strong> (debuff).</li>
+                    <li><strong>[2] Elemental de Terra:</strong> Deita poeira e impede que elementais comuns apareçam (apenas saem raros, BurntPeanut ou Users).</li>
+                    <li><strong>[3] Elemental de Fogo:</strong> Acelera o ritmo da stream, fazendo com que ocorra <strong>1 spawn a cada 6 minutos</strong> durante a próxima hora.</li>
+                    <li><em>Nota:</em> Apenas podem ser usados no máximo 2 elementais entre cada spawn.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <footer id="update-timer">
         A carregar dados da stream...
     </footer>
