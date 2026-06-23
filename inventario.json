@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23 05:32:37 UTC",
+  "updatedAt": "2026-06-23 05:41:15 UTC",
   "availableUsers": [
     { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
     { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },
@@ -34,11 +34,6 @@
       "inventario": {"1_1":2,"2_1":2,"2_2":1,"3_1":1,"3_2":1,"4_1":1,"5_1":1,"8_1":1,"9_1":1}
     },
     {
-      "username": "z3rgtv",
-      "pontos": 70,
-      "inventario": {"10_1":1,"2_1":1,"3_1":1,"4_1":1,"6_1":1}
-    },
-    {
       "username": "marquesrcarol",
       "pontos": 60,
       "inventario": {"2_1":2,"3_1":2,"5_1":1,"8_1":1}
@@ -59,27 +54,22 @@
       "inventario": {"2_1":2,"4_1":2}
     },
     {
-      "username": "eimezdumipima_",
-      "pontos": 20,
-      "inventario": {"1_1":1,"2_1":1}
-    },
-    {
-      "username": "z3rgtvvod",
-      "pontos": 20,
-      "inventario": {"2_1":1,"5_1":1}
-    },
-    {
       "username": "themarysimmer",
       "pontos": 20,
       "inventario": {"1_1":1,"3_1":1}
     },
     {
-      "username": "astroz1nvlr",
+      "username": "eimezdumipima_",
+      "pontos": 20,
+      "inventario": {"1_1":1,"2_1":1}
+    },
+    {
+      "username": "hst_playz_pt",
       "pontos": 10,
       "inventario": {"1_1":1}
     },
     {
-      "username": "hst_playz_pt",
+      "username": "astroz1nvlr",
       "pontos": 10,
       "inventario": {"1_1":1}
     }
