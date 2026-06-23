@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23 05:19:08 UTC",
+  "updatedAt": "2026-06-23 05:32:18 UTC",
   "availableUsers": [
     { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
     { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },
@@ -36,7 +36,7 @@
     {
       "username": "z3rgtv",
       "pontos": 80,
-      "inventario": {"10_1":1,"1_1":1,"2_1":2,"3_1":1,"4_1":1,"6_1":1}
+      "inventario": {"10_1":1,"1_1":1,"2_1":1,"3_1":1,"4_1":1,"6_1":1}
     },
     {
       "username": "marquesrcarol",
