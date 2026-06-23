@@ -54,30 +54,20 @@ async function carregarDados() {
         
         document.getElementById('update-timer').textContent = `Última sincronização com a Stream: ${data.updatedAt || 'Pendente'}`;
         
-        // Fazer varredura de elementais de utilizadores dinamicamente a partir dos inventários
-        const userSet = new Set();
-        dadosGlobais.forEach(p => {
-            if (p.inventario) {
-                Object.keys(p.inventario).forEach(id => {
-                    if (id.startsWith('u_')) {
-                        userSet.add(id);
-                    }
-                });
-            }
-        });
+        // Obter os users disponíveis do JSON (ou fallback dos inventários se disponível)
+        const availableUsers = data.availableUsers || [];
 
         // Limpar entradas anteriores de utilizadores em elementaisMap (o mapa base tem 43 itens até BurntPeanut)
         const baseLength = 43;
         elementaisMap.length = baseLength;
 
-        // Inserir os utilizadores encontrados ordenados alfabeticamente a seguir ao BurntPeanut
-        Array.from(userSet).sort().forEach(id => {
-            const nameWithoutPrefix = id.substring(2);
+        // Adicionar todos os utilizadores disponíveis a seguir ao BurntPeanut
+        availableUsers.forEach(u => {
             elementaisMap.push({
-                id: id,
-                file: `Users/${nameWithoutPrefix}.png`,
+                id: u.id,
+                file: u.file,
                 isUser: true,
-                name: nameWithoutPrefix
+                name: u.name
             });
         });
         
