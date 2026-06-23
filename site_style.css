@@ -163,6 +163,31 @@ h2 {
     box-shadow: 0 1px 4px rgba(0,0,0,0.6);
 }
 
+.grid-item.user-slot {
+    border-color: rgba(161, 84, 242, 0.25);
+}
+
+.user-name-tag {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8px;
+    font-weight: 800;
+    color: #fff;
+    background: rgba(10, 10, 15, 0.85);
+    padding: 1px 6px;
+    border-radius: 6px;
+    border: 1px solid rgba(161, 84, 242, 0.4);
+    box-shadow: 0 0 6px rgba(161, 84, 242, 0.3);
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 footer {
     text-align: center;
     padding: 15px;
@@ -257,3 +282,4 @@ footer {
         transform: translate(-3px, -3px) rotate(-4deg) scale(0.95);
     }
 }
+
