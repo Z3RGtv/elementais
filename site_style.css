@@ -283,3 +283,69 @@ footer {
     }
 }
 
+/* =========================================================================
+   ℹ️ ESTILOS DA SECÇÃO DE INSTRUÇÕES (GLASSMORPHISM PREMIUM)
+   ========================================================================= */
+.instructions-section {
+    background: var(--panel-dark);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 25px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin: 0 40px 40px 40px;
+}
+
+.instructions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.instruction-card {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.instruction-card h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: var(--accent);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.instruction-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.instruction-card ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.instruction-card li strong {
+    color: #fff;
+}
+
+@media (max-width: 850px) {
+    .instructions-section {
+        margin: 15px;
+        padding: 15px;
+    }
+    .instructions-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
