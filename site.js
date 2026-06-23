@@ -54,6 +54,33 @@ async function carregarDados() {
         
         document.getElementById('update-timer').textContent = `Última sincronização com a Stream: ${data.updatedAt || 'Pendente'}`;
         
+        // Fazer varredura de elementais de utilizadores dinamicamente a partir dos inventários
+        const userSet = new Set();
+        dadosGlobais.forEach(p => {
+            if (p.inventario) {
+                Object.keys(p.inventario).forEach(id => {
+                    if (id.startsWith('u_')) {
+                        userSet.add(id);
+                    }
+                });
+            }
+        });
+
+        // Limpar entradas anteriores de utilizadores em elementaisMap (o mapa base tem 43 itens até BurntPeanut)
+        const baseLength = 43;
+        elementaisMap.length = baseLength;
+
+        // Inserir os utilizadores encontrados ordenados alfabeticamente a seguir ao BurntPeanut
+        Array.from(userSet).sort().forEach(id => {
+            const nameWithoutPrefix = id.substring(2);
+            elementaisMap.push({
+                id: id,
+                file: `Users/${nameWithoutPrefix}.png`,
+                isUser: true,
+                name: nameWithoutPrefix
+            });
+        });
+        
         renderizarRanking(dadosGlobais);
     } catch (e) {
         document.getElementById('update-timer').textContent = "A aguardar a primeira captura da stream para gerar o catálogo...";
@@ -91,6 +118,9 @@ function selecionarUtilizador(player, elementoDOM) {
         const qty = player.inventario[elem.id] || 0;
         const slot = document.createElement('div');
         slot.className = 'grid-item';
+        if (elem.isUser) {
+            slot.classList.add('user-slot');
+        }
 
         const img = document.createElement('img');
         img.src = `Sprites/${elem.file}`;
@@ -116,6 +146,15 @@ function selecionarUtilizador(player, elementoDOM) {
             slot.appendChild(img);
             slot.appendChild(badge);
         }
+
+        // Adicionar uma etiqueta pequena com o nome nos elementais de User
+        if (elem.isUser) {
+            const nameTag = document.createElement('span');
+            nameTag.className = 'user-name-tag';
+            nameTag.textContent = elem.name;
+            slot.appendChild(nameTag);
+        }
+
         grid.appendChild(slot);
     });
 }
@@ -134,3 +173,4 @@ document.getElementById('search-input').addEventListener('input', (e) => {
 // Execução inicial e Polling em background (15 segundos)
 carregarDados();
 setInterval(carregarDados, 15000);
+
