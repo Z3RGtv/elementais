@@ -1,5 +1,17 @@
 {
-  "updatedAt": "2026-06-23 03:06:06 UTC",
+  "updatedAt": "2026-06-23 03:10:14 UTC",
+  "availableUsers": [
+    { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
+    { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },
+    { "id": "u_iPowerlz", "file": "Users/iPowerlz.png", "name": "iPowerlz" },
+    { "id": "u_ManoDrico", "file": "Users/ManoDrico.png", "name": "ManoDrico" },
+    { "id": "u_manu12321_", "file": "Users/manu12321_.png", "name": "manu12321_" },
+    { "id": "u_MarquesrCarol", "file": "Users/MarquesrCarol.png", "name": "MarquesrCarol" },
+    { "id": "u_MilhafreTuga", "file": "Users/MilhafreTuga.png", "name": "MilhafreTuga" },
+    { "id": "u_Minichef9", "file": "Users/Minichef9.png", "name": "Minichef9" },
+    { "id": "u_steve_osvaldo", "file": "Users/steve_osvaldo.png", "name": "steve_osvaldo" },
+    { "id": "u_TheMarySimmer", "file": "Users/TheMarySimmer.png", "name": "TheMarySimmer" }
+  ],
   "ranking": [
     {
       "username": "milhafretuga",
