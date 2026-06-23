@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23 04:50:37 UTC",
+  "updatedAt": "2026-06-23 04:55:23 UTC",
   "availableUsers": [
     { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
     { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },
@@ -14,68 +14,73 @@
   ],
   "ranking": [
     {
-      "username": "milhafretuga",
-      "pontos": 435,
-      "inventario": {"10_1":2,"11_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"4_1":2,"5_1":2,"5_2":1,"6_1":2,"6_2":2,"7_1":2,"7_2":1,"8_1":2,"8_2":1,"9_1":2}
-    },
-    {
-      "username": "ipowerlz",
-      "pontos": 215,
-      "inventario": {"11_1":2,"1_1":1,"2_1":2,"3_1":1,"4_1":1,"4_2":1,"5_1":2,"7_1":1,"9_1":2}
-    },
-    {
       "username": "gui_z0",
-      "pontos": 165,
+      "pontos": 100,
       "inventario": {"11_1":1,"1_1":1,"2_1":1,"3_1":1,"3_2":1,"4_1":1}
     },
     {
+      "username": "ipowerlz",
+      "pontos": 100,
+      "inventario": {"11_1":2,"1_1":1,"2_1":2,"3_1":1,"4_1":1,"4_2":1,"5_1":2,"7_1":1,"9_1":2}
+    },
+    {
+      "username": "milhafretuga",
+      "pontos": 100,
+      "inventario": {"10_1":2,"11_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"4_1":2,"5_1":2,"5_2":1,"6_1":2,"6_2":2,"7_1":2,"7_2":1,"8_1":2,"8_2":1,"9_1":2}
+    },
+    {
       "username": "sheisdani",
-      "pontos": 160,
+      "pontos": 0,
       "inventario": {"1_1":2,"2_1":2,"2_2":1,"3_1":1,"3_2":1,"4_1":1,"5_1":1,"8_1":1,"9_1":1}
     },
     {
-      "username": "marquesrcarol",
-      "pontos": 60,
-      "inventario": {"2_1":2,"3_1":2,"5_1":1,"8_1":1}
-    },
-    {
-      "username": "manodrico",
-      "pontos": 50,
-      "inventario": {"1_1":2,"2_1":1,"4_1":1,"6_1":2,"7_1":1}
-    },
-    {
-      "username": "1509_martim",
-      "pontos": 40,
-      "inventario": {"1_1":1,"2_1":2,"3_1":1,"6_1":1}
-    },
-    {
       "username": "manu12321_",
-      "pontos": 20,
+      "pontos": 0,
       "inventario": {"2_1":2,"4_1":2}
     },
     {
-      "username": "eimezdumipima_",
-      "pontos": 20,
-      "inventario": {"1_1":1,"2_1":1}
+      "username": "marquesrcarol",
+      "pontos": 0,
+      "inventario": {"2_1":2,"3_1":2,"5_1":1,"8_1":1}
     },
     {
-      "username": "z3rgtvvod",
-      "pontos": 20,
-      "inventario": {"2_1":1,"5_1":1}
-    },
-    {
-      "username": "themarysimmer",
-      "pontos": 20,
-      "inventario": {"1_1":1,"3_1":1}
+      "username": "1509_martim",
+      "pontos": 0,
+      "inventario": {"1_1":1,"2_1":2,"3_1":1,"6_1":1}
     },
     {
       "username": "astroz1nvlr",
-      "pontos": 10,
+      "pontos": 0,
       "inventario": {"1_1":1}
     },
     {
+      "username": "themarysimmer",
+      "pontos": 0,
+      "inventario": {"1_1":1,"3_1":1}
+    },
+    {
+      "username": "manodrico",
+      "pontos": 0,
+      "inventario": {"1_1":2,"2_1":1,"4_1":1,"6_1":2,"7_1":1}
+    },
+    {
+      "username": "eimezdumipima_",
+      "pontos": 0,
+      "inventario": {"1_1":1,"2_1":1}
+    },
+    {
+      "username": "z3rgtv",
+      "pontos": 0,
+      "inventario": {"1_1":2,"2_1":2,"3_1":2}
+    },
+    {
+      "username": "z3rgtvvod",
+      "pontos": 0,
+      "inventario": {"2_1":1,"5_1":1}
+    },
+    {
       "username": "hst_playz_pt",
-      "pontos": 10,
+      "pontos": 0,
       "inventario": {"1_1":1}
     }
   ]
