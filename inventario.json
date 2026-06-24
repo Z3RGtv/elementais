@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24 17:03:16 UTC",
+  "updatedAt": "2026-06-24 17:14:58 UTC",
   "availableUsers": [
     { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
     { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },
@@ -41,7 +41,7 @@
     {
       "username": "manodrico",
       "pontos": 50,
-      "inventario": {"1_1":1,"2_1":2,"4_1":1,"6_1":2,"7_1":1}
+      "inventario": {"1_1":1,"2_1":1,"4_1":1,"6_1":2,"7_1":1}
     },
     {
       "username": "1509_martim",
