@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24 19:11:33 UTC",
+  "updatedAt": "2026-06-24 19:15:04 UTC",
   "availableUsers": [
     { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
     { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },
@@ -39,14 +39,14 @@
       "inventario": {"1_1":1,"2_1":1,"3_1":1,"5_1":1,"8_1":2,"9_1":1,"9_2":1}
     },
     {
+      "username": "manodrico",
+      "pontos": 65,
+      "inventario": {"1_1":1,"4_1":1,"5_2":1,"6_1":2,"7_1":1}
+    },
+    {
       "username": "1509_martim",
       "pontos": 40,
       "inventario": {"1_1":1,"2_1":2,"3_1":1,"6_1":1}
-    },
-    {
-      "username": "manodrico",
-      "pontos": 40,
-      "inventario": {"1_1":1,"4_1":1,"6_1":2,"7_1":1}
     },
     {
       "username": "manu12321_",
