@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25 23:20:21 UTC",
+  "updatedAt": "2026-06-25 23:33:13 UTC",
   "availableUsers": [
     { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
     { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },
@@ -16,7 +16,7 @@
     {
       "username": "sheisdani",
       "pontos": 465,
-      "inventario": {"11_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"3_2":1,"4_1":2,"4_3":1,"5_1":1,"5_2":1,"6_1":2,"7_1":1,"8_1":2,"9_1":2,"u_ManoDrico":1}
+      "inventario": {"11_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"3_2":1,"4_1":2,"4_3":1,"5_1":1,"5_2":2,"6_1":2,"7_1":1,"8_1":2,"9_1":2,"u_ManoDrico":1}
     },
     {
       "username": "milhafretuga",
