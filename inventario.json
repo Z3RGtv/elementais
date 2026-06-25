@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25 21:11:36 UTC",
+  "updatedAt": "2026-06-25 21:22:25 UTC",
   "availableUsers": [
     { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
     { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },
@@ -54,14 +54,14 @@
       "inventario": {"1_1":1,"2_1":2,"4_1":2,"8_1":1}
     },
     {
+      "username": "soniagoncalves",
+      "pontos": 60,
+      "inventario": {"10_1":1,"1_1":1,"4_1":1,"7_1":1}
+    },
+    {
       "username": "eimezdumipima_",
       "pontos": 50,
       "inventario": {"1_1":1,"2_1":2,"8_1":1}
-    },
-    {
-      "username": "soniagoncalves",
-      "pontos": 50,
-      "inventario": {"10_1":1,"1_1":1,"4_1":1}
     },
     {
       "username": "themarysimmer",
