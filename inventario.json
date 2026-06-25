@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25 16:46:25 UTC",
+  "updatedAt": "2026-06-25 17:00:12 UTC",
   "availableUsers": [
     { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
     { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },
@@ -25,8 +25,8 @@
     },
     {
       "username": "ipowerlz",
-      "pontos": 245,
-      "inventario": {"11_1":2,"1_1":1,"2_1":2,"3_1":1,"4_1":1,"4_2":1,"5_1":2,"7_1":1,"8_1":1,"9_1":2}
+      "pontos": 255,
+      "inventario": {"11_1":2,"1_1":1,"2_1":2,"3_1":1,"4_1":1,"4_2":1,"5_1":2,"6_1":1,"7_1":1,"8_1":1,"9_1":2}
     },
     {
       "username": "gui_z0",
