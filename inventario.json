@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25 20:10:50 UTC",
+  "updatedAt": "2026-06-25 20:13:17 UTC",
   "availableUsers": [
     { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
     { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },
@@ -55,8 +55,8 @@
     },
     {
       "username": "manu12321_",
-      "pontos": 20,
-      "inventario": {"2_1":2,"4_1":2}
+      "pontos": 30,
+      "inventario": {"1_1":1,"2_1":2,"4_1":2}
     },
     {
       "username": "themarysimmer",
