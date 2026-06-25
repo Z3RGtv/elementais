@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25 20:01:30 UTC",
+  "updatedAt": "2026-06-25 20:10:50 UTC",
   "availableUsers": [
     { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
     { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },
@@ -31,7 +31,7 @@
     {
       "username": "1509_martim",
       "pontos": 230,
-      "inventario": {"1_1":2,"2_1":2,"3_1":1,"5_1":1,"6_1":2,"8_2":1,"9_1":1,"9_2":1}
+      "inventario": {"1_1":1,"2_1":2,"3_1":1,"5_1":1,"6_1":2,"8_2":1,"9_1":1,"9_2":1}
     },
     {
       "username": "gui_z0",
