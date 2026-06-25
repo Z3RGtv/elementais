@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25 22:15:44 UTC",
+  "updatedAt": "2026-06-25 22:21:51 UTC",
   "availableUsers": [
     { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
     { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },
@@ -34,6 +34,11 @@
       "inventario": {"11_1":2,"1_1":1,"2_1":2,"3_1":1,"4_1":1,"4_2":1,"5_1":2,"6_1":1,"6_2":1,"7_1":1,"8_1":1,"9_1":2}
     },
     {
+      "username": "marquesrcarol",
+      "pontos": 275,
+      "inventario": {"1_1":1,"2_1":2,"3_1":2,"5_1":1,"8_1":2,"9_1":1,"9_2":1,"u_iPowerlz":1}
+    },
+    {
       "username": "1509_martim",
       "pontos": 230,
       "inventario": {"1_1":1,"2_1":2,"3_1":1,"5_1":1,"6_1":2,"8_2":1,"9_1":1,"9_2":1}
@@ -42,11 +47,6 @@
       "username": "manodrico",
       "pontos": 175,
       "inventario": {"1_1":2,"3_2":1,"4_1":2,"5_1":1,"5_2":1,"6_1":2,"7_1":1,"8_2":1}
-    },
-    {
-      "username": "marquesrcarol",
-      "pontos": 175,
-      "inventario": {"1_1":1,"2_1":2,"3_1":2,"5_1":1,"8_1":2,"9_1":1,"9_2":1}
     },
     {
       "username": "manu12321_",
