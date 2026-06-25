@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25 18:18:43 UTC",
+  "updatedAt": "2026-06-25 19:06:27 UTC",
   "availableUsers": [
     { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
     { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },
@@ -70,6 +70,11 @@
     },
     {
       "username": "minichef9",
+      "pontos": 10,
+      "inventario": {"1_1":1}
+    },
+    {
+      "username": "soniagoncalves",
       "pontos": 10,
       "inventario": {"1_1":1}
     },
