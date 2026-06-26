@@ -779,7 +779,9 @@ function renderizarEstatisticas(estatisticas, recentes) {
             card.innerHTML = `
                 <div class="ball-card-header">
                     <span>${info.name}</span>
-                    <img src="${info.img}" alt="${info.name}">
+                    <div class="ball-img-wrapper">
+                        <img src="${info.img}" alt="${info.name}">
+                    </div>
                 </div>
                 <div class="ball-stats-numbers">
                     Lançamentos: <strong>${data.total}</strong><br>
@@ -820,7 +822,9 @@ function renderizarEstatisticas(estatisticas, recentes) {
                 <td><strong>@${row.username}</strong></td>
                 <td>${elemName}</td>
                 <td>
-                    <img src="${info.img}" class="recent-ball-icon" alt="${info.name}">
+                    <div class="recent-ball-wrapper">
+                        <img src="${info.img}" class="recent-ball-icon" alt="${info.name}">
+                    </div>
                     ${info.name}
                 </td>
                 <td>
