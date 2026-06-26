@@ -715,3 +715,21 @@ async function inicializarApp() {
 
 // Iniciar a aplicação
 inicializarApp();
+
+// Controlo do Painel Lateral (Sidebar) de Pontos e Raridades
+document.getElementById('btn-abrir-sidebar').onclick = (e) => {
+    e.stopPropagation();
+    document.getElementById('sidebar-pontos').classList.add('active');
+};
+
+document.getElementById('btn-fechar-sidebar').onclick = () => {
+    document.getElementById('sidebar-pontos').classList.remove('active');
+};
+
+// Fechar a sidebar se clicar fora dela no ecrã
+window.addEventListener('click', (event) => {
+    const sidebar = document.getElementById('sidebar-pontos');
+    if (sidebar.classList.contains('active') && event.target !== sidebar && !sidebar.contains(event.target)) {
+        sidebar.classList.remove('active');
+    }
+});
