@@ -1,1 +1,102 @@
-{\n  "updatedAt": "2026-06-26 16:01:39 UTC",\n  "availableUsers": [\n    { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },\n    { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },\n    { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },\n    { "id": "u_iPowerlz", "file": "Users/iPowerlz.png", "name": "iPowerlz" },\n    { "id": "u_ManoDrico", "file": "Users/ManoDrico.png", "name": "ManoDrico" },\n    { "id": "u_manu12321_", "file": "Users/manu12321_.png", "name": "manu12321_" },\n    { "id": "u_MarquesrCarol", "file": "Users/MarquesrCarol.png", "name": "MarquesrCarol" },\n    { "id": "u_MilhafreTuga", "file": "Users/MilhafreTuga.png", "name": "MilhafreTuga" },\n    { "id": "u_Minichef9", "file": "Users/Minichef9.png", "name": "Minichef9" },\n    { "id": "u_sheisdani", "file": "Users/sheisdani.png", "name": "sheisdani" },\n    { "id": "u_steve_osvaldo", "file": "Users/steve_osvaldo.png", "name": "steve_osvaldo" },\n    { "id": "u_TheMarySimmer", "file": "Users/TheMarySimmer.png", "name": "TheMarySimmer" }\n  ],\n  "propostas": [\n\n  ],\n  "ranking": [\n    {\n      "username": "sheisdani",\n      "pontos": 465,\n      "inventario": {"11_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"3_2":1,"4_1":2,"4_3":1,"5_1":1,"5_2":2,"6_1":2,"7_1":1,"8_1":2,"9_1":2,"u_ManoDrico":1}\n    },\n    {\n      "username": "milhafretuga",\n      "pontos": 435,\n      "inventario": {"10_1":2,"11_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"4_1":2,"5_1":2,"5_2":1,"6_1":2,"6_2":2,"7_1":2,"7_2":1,"8_1":2,"8_2":1,"9_1":2}\n    },\n    {\n      "username": "gui_z0",\n      "pontos": 400,\n      "inventario": {"11_1":1,"1_1":2,"1_2":1,"2_1":2,"3_1":1,"3_2":1,"4_1":1,"5_1":2,"5_2":1,"6_2":1,"9_3":1}\n    },\n    {\n      "username": "ipowerlz",\n      "pontos": 340,\n      "inventario": {"11_1":2,"1_1":1,"1_3":1,"2_1":2,"3_1":1,"4_1":1,"4_2":1,"5_1":2,"6_1":1,"6_2":1,"7_1":1,"8_1":1,"9_1":2}\n    },\n    {\n      "username": "marquesrcarol",\n      "pontos": 310,\n      "inventario": {"1_1":1,"2_1":2,"3_1":2,"4_1":1,"4_2":1,"5_1":1,"8_1":2,"9_1":1,"9_2":1,"u_iPowerlz":1}\n    },\n    {\n      "username": "1509_martim",\n      "pontos": 230,\n      "inventario": {"1_1":1,"2_1":2,"3_1":1,"5_1":1,"6_1":2,"8_2":1,"9_1":1,"9_2":1}\n    },\n    {\n      "username": "manodrico",\n      "pontos": 175,\n      "inventario": {"1_1":2,"3_2":1,"4_1":1,"5_1":1,"5_2":1,"6_1":2,"7_1":1,"8_2":1}\n    },\n    {\n      "username": "manu12321_",\n      "pontos": 90,\n      "inventario": {"10_1":1,"1_1":2,"2_1":2,"4_1":2,"8_1":1}\n    },\n    {\n      "username": "soniagoncalves",\n      "pontos": 60,\n      "inventario": {"10_1":1,"1_1":1,"4_1":1,"7_1":1}\n    },\n    {\n      "username": "eimezdumipima_",\n      "pontos": 50,\n      "inventario": {"1_1":1,"2_1":2,"8_1":1}\n    },\n    {\n      "username": "citrusbow123",\n      "pontos": 40,\n      "inventario": {"3_1":1,"8_1":1}\n    },\n    {\n      "username": "themarysimmer",\n      "pontos": 20,\n      "inventario": {"1_1":1,"3_1":1}\n    },\n    {\n      "username": "z3rgtv",\n      "pontos": 10,\n      "inventario": {"6_1":1}\n    },\n    {\n      "username": "hst_playz_pt",\n      "pontos": 10,\n      "inventario": {"1_1":1}\n    },\n    {\n      "username": "astroz1nvlr",\n      "pontos": 10,\n      "inventario": {"1_1":1}\n    },\n    {\n      "username": "minichef9",\n      "pontos": 10,\n      "inventario": {"1_1":1}\n    }\n  ]\n}
+{
+  "updatedAt": "2026-06-26 16:04:26 UTC",
+  "availableUsers": [
+    { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
+    { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
+    { "id": "u_gui_z0", "file": "Users/gui_z0.png", "name": "gui_z0" },
+    { "id": "u_iPowerlz", "file": "Users/iPowerlz.png", "name": "iPowerlz" },
+    { "id": "u_ManoDrico", "file": "Users/ManoDrico.png", "name": "ManoDrico" },
+    { "id": "u_manu12321_", "file": "Users/manu12321_.png", "name": "manu12321_" },
+    { "id": "u_MarquesrCarol", "file": "Users/MarquesrCarol.png", "name": "MarquesrCarol" },
+    { "id": "u_MilhafreTuga", "file": "Users/MilhafreTuga.png", "name": "MilhafreTuga" },
+    { "id": "u_Minichef9", "file": "Users/Minichef9.png", "name": "Minichef9" },
+    { "id": "u_sheisdani", "file": "Users/sheisdani.png", "name": "sheisdani" },
+    { "id": "u_steve_osvaldo", "file": "Users/steve_osvaldo.png", "name": "steve_osvaldo" },
+    { "id": "u_TheMarySimmer", "file": "Users/TheMarySimmer.png", "name": "TheMarySimmer" }
+  ],
+  "propostas": [
+
+  ],
+  "ranking": [
+    {
+      "username": "sheisdani",
+      "pontos": 465,
+      "inventario": {"11_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"3_2":1,"4_1":2,"4_3":1,"5_1":1,"5_2":2,"6_1":2,"7_1":1,"8_1":2,"9_1":2,"u_ManoDrico":1}
+    },
+    {
+      "username": "milhafretuga",
+      "pontos": 435,
+      "inventario": {"10_1":2,"11_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"4_1":2,"5_1":2,"5_2":1,"6_1":2,"6_2":2,"7_1":2,"7_2":1,"8_1":2,"8_2":1,"9_1":2}
+    },
+    {
+      "username": "gui_z0",
+      "pontos": 400,
+      "inventario": {"11_1":1,"1_1":2,"1_2":1,"2_1":2,"3_1":1,"3_2":1,"4_1":1,"5_1":2,"5_2":1,"6_2":1,"9_3":1}
+    },
+    {
+      "username": "ipowerlz",
+      "pontos": 340,
+      "inventario": {"11_1":2,"1_1":1,"1_3":1,"2_1":2,"3_1":1,"4_1":1,"4_2":1,"5_1":2,"6_1":1,"6_2":1,"7_1":1,"8_1":1,"9_1":2}
+    },
+    {
+      "username": "marquesrcarol",
+      "pontos": 310,
+      "inventario": {"1_1":1,"2_1":2,"3_1":2,"4_1":1,"4_2":1,"5_1":1,"8_1":2,"9_1":1,"9_2":1,"u_iPowerlz":1}
+    },
+    {
+      "username": "1509_martim",
+      "pontos": 230,
+      "inventario": {"1_1":1,"2_1":2,"3_1":1,"5_1":1,"6_1":2,"8_2":1,"9_1":1,"9_2":1}
+    },
+    {
+      "username": "manodrico",
+      "pontos": 175,
+      "inventario": {"1_1":2,"3_2":1,"4_1":1,"5_1":1,"5_2":1,"6_1":2,"7_1":1,"8_2":1}
+    },
+    {
+      "username": "manu12321_",
+      "pontos": 90,
+      "inventario": {"10_1":1,"1_1":2,"2_1":2,"4_1":2,"8_1":1}
+    },
+    {
+      "username": "soniagoncalves",
+      "pontos": 60,
+      "inventario": {"10_1":1,"1_1":1,"4_1":1,"7_1":1}
+    },
+    {
+      "username": "eimezdumipima_",
+      "pontos": 50,
+      "inventario": {"1_1":1,"2_1":2,"8_1":1}
+    },
+    {
+      "username": "citrusbow123",
+      "pontos": 40,
+      "inventario": {"3_1":1,"8_1":1}
+    },
+    {
+      "username": "themarysimmer",
+      "pontos": 20,
+      "inventario": {"1_1":1,"3_1":1}
+    },
+    {
+      "username": "z3rgtv",
+      "pontos": 10,
+      "inventario": {"6_1":1}
+    },
+    {
+      "username": "hst_playz_pt",
+      "pontos": 10,
+      "inventario": {"1_1":1}
+    },
+    {
+      "username": "astroz1nvlr",
+      "pontos": 10,
+      "inventario": {"1_1":1}
+    },
+    {
+      "username": "minichef9",
+      "pontos": 10,
+      "inventario": {"1_1":1}
+    }
+  ]
+}
