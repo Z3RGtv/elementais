@@ -1182,11 +1182,23 @@ footer {
 }
 
 .ball-card-header img {
-    width: 24px;
-    height: 24px;
+    width: 44px;
+    height: 44px;
     object-fit: contain;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.5));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
+
+/* Contorno suave e colorido para a bola em cada cartão */
+.ball-normal .ball-card-header img { border-color: rgba(239, 68, 68, 0.3); box-shadow: 0 0 10px rgba(239, 68, 68, 0.1); }
+.ball-super .ball-card-header img { border-color: rgba(59, 130, 246, 0.3); box-shadow: 0 0 10px rgba(59, 130, 246, 0.1); }
+.ball-ultra .ball-card-header img { border-color: rgba(234, 179, 8, 0.3); box-shadow: 0 0 10px rgba(234, 179, 8, 0.1); }
+.ball-master .ball-card-header img { border-color: rgba(168, 85, 247, 0.3); box-shadow: 0 0 10px rgba(168, 85, 247, 0.1); }
 
 .ball-stats-numbers {
     font-size: 11px;
@@ -1283,11 +1295,15 @@ footer {
 }
 
 .recent-ball-icon {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     vertical-align: middle;
-    margin-right: 5px;
-    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
+    margin-right: 8px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    padding: 3px;
+    background: rgba(255, 255, 255, 0.02);
 }
 
 .badge-outcome {
