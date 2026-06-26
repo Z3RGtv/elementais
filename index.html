@@ -49,6 +49,44 @@
         </section>
     </main>
 
+    <!-- Estatísticas & Histórico de Lançamentos -->
+    <section class="stats-section">
+        <h2>📊 Estatísticas e Histórico de Pokébolas</h2>
+        <div class="stats-container">
+            <!-- Painel de Cartões de Bolas -->
+            <div class="stats-card">
+                <h3>Taxa de Sucesso por Bola</h3>
+                <div id="stats-balls-container" class="stats-balls-grid">
+                    <!-- Gerado dinamicamente pelo JS -->
+                </div>
+            </div>
+
+            <!-- Painel de Lançamentos Recentes -->
+            <div class="stats-card">
+                <h3>Últimos 30 Lançamentos na Stream</h3>
+                <div class="stats-feed-wrapper">
+                    <table class="tabela-recentes">
+                        <thead>
+                            <tr>
+                                <th>Data/Hora</th>
+                                <th>Utilizador</th>
+                                <th>Elemental</th>
+                                <th>Bola</th>
+                                <th>Resultado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="stats-recent-feed">
+                            <!-- Gerado dinamicamente pelo JS -->
+                            <tr>
+                                <td colspan="5" style="text-align: center; color: var(--text-muted); padding: 20px;">Nenhum lançamento registado ainda.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Guia de Como Jogar & Habilidades -->
     <section class="instructions-section">
         <h2>ℹ️ Guia do Jogo (Como Jogar & Comandos)</h2>
