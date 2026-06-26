@@ -10,6 +10,9 @@
 
     <header>
         <h1>🏆 PORTAL DE ELEMENTAIS</h1>
+        <div id="my-profile-container" class="my-profile-container">
+            <!-- Injetado pelo JS -->
+        </div>
         <div class="search-container">
             <input type="text" id="search-input" placeholder="Pesquisar utilizador no chat...">
         </div>
@@ -26,8 +29,20 @@
 
         <!-- Coluna Direita: Álbum de Cartas -->
         <section class="collection-section">
-            <h2 id="view-title">Seleciona um utilizador para ver a coleção</h2>
+            <div class="collection-header-row">
+                <h2 id="view-title">Seleciona um utilizador para ver a coleção</h2>
+                <div class="collection-actions">
+                    <button id="btn-propor-troca" class="btn hidden">Propor Troca 🔄</button>
+                    <button id="btn-definir-conta" class="btn btn-secondary hidden">Esta é a minha Conta 👤</button>
+                </div>
+            </div>
             <p id="user-points-panel" class="hidden">Pontuação Total: <span id="user-points-val">0</span> pts</p>
+            
+            <!-- Propostas pendentes para o utilizador atual -->
+            <div id="propostas-pendentes-container" class="propostas-container hidden">
+                <!-- Injetado pelo JS -->
+            </div>
+
             <div id="site-grid" class="site-grid">
                 <!-- Injetado dinamicamente pelo JS -->
             </div>
@@ -67,6 +82,61 @@
     <footer id="update-timer">
         A carregar dados da stream...
     </footer>
+
+    <!-- Modal do Assistente de Proposta de Troca -->
+    <div id="modal-troca" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" id="btn-fechar-modal">&times;</span>
+            <h2>Assistente de Troca 🔄</h2>
+            <p class="modal-desc">Estás a propor uma troca a <strong id="modal-target-username">@jogador</strong>. Seleciona as cartas correspondentes:</p>
+            
+            <div class="troca-wizard-row">
+                <!-- Lado Esquerdo: Eu ofereço -->
+                <div class="wizard-side">
+                    <h3>Eu Ofereço:</h3>
+                    <div id="my-offer-card-selection" class="wizard-grid">
+                        <!-- Minhas cartas disponíveis -->
+                    </div>
+                </div>
+
+                <!-- Seta indicadora -->
+                <div class="wizard-divider">➡️</div>
+
+                <!-- Lado Direito: Ele dá -->
+                <div class="wizard-side">
+                    <h3>Eu Quero Receber:</h3>
+                    <div id="target-request-card-selection" class="wizard-grid">
+                        <!-- Cartas dele disponíveis -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resumo e Comando Twitch -->
+            <div id="troca-resumo-container" class="troca-resumo hidden">
+                <div class="resumo-visual">
+                    <div class="resumo-item">
+                        <span class="resumo-label">Tu dás:</span>
+                        <div id="resumo-oferecido-img" class="resumo-card-preview"></div>
+                        <span id="resumo-oferecido-nome">Elemental A</span>
+                    </div>
+                    <div class="resumo-vs">🔄</div>
+                    <div class="resumo-item">
+                        <span class="resumo-label">Tu recebes:</span>
+                        <div id="resumo-pedido-img" class="resumo-card-preview"></div>
+                        <span id="resumo-pedido-nome">Elemental B</span>
+                    </div>
+                </div>
+                
+                <div class="twitch-command-box">
+                    <p class="twitch-desc">Copia o comando abaixo, vai ao chat da Twitch e resgata o prémio <strong>"Trocar Elemental"</strong> colando o seguinte texto:</p>
+                    <div class="command-input-row">
+                        <input type="text" id="twitch-command-input" readonly value="">
+                        <button id="btn-copiar-comando" class="btn btn-primary">Copiar 📋</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="site.js"></script>
 </body>
