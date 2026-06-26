@@ -135,19 +135,16 @@ function selecionarUtilizador(player, elementoDOM) {
     const btnPropor = document.getElementById('btn-propor-troca');
     const btnDefinir = document.getElementById('btn-definir-conta');
 
+    btnDefinir.classList.add('hidden'); // Ocultar, pois usamos login da Twitch seguro
+
     if (meuUsername) {
         if (meuUsername.toLowerCase() === player.username.toLowerCase()) {
             btnPropor.classList.add('hidden');
-            btnDefinir.classList.add('hidden');
         } else {
             btnPropor.classList.remove('hidden');
-            btnDefinir.classList.remove('hidden');
-            btnDefinir.textContent = "Esta é a minha Conta 👤";
         }
     } else {
         btnPropor.classList.add('hidden');
-        btnDefinir.classList.remove('hidden');
-        btnDefinir.textContent = "Esta é a minha Conta 👤";
     }
 
     renderizarGridColecao(player, 'site-grid', false);
@@ -209,20 +206,17 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
                 selectCallback(elem.id, elem);
             };
         } else if (!isSelectionMode) {
-            // FLUXO DE ATALHO DE CLIQUE EM ELEMENTAL QUE EU TENHO
+            // FLUXO DE ATALHO DE CLIQUE EM ELEMENTAL QUE EU TENHO (Apenas se for o dono autenticado)
             slot.onclick = () => {
                 if (qty >= 1) {
-                    // 1. Assumir que esta é a minha conta
-                    meuUsername = player.username;
-                    localStorage.setItem('meuUsername', meuUsername);
-                    atualizarUIConta();
-                    
-                    // Destacar visualmente no ranking e atualizar botões
-                    selecionarUtilizador(player, document.querySelector('.ranking-item.active'));
-
-                    // 2. Pre-selecionar o card oferecido e abrir modal no modo de busca de jogadores
-                    oferecidoId = elem.id;
-                    abrirModalTrocaComCardPreSelecionado(elem);
+                    if (!meuUsername) {
+                        alert("Por favor, entra com a tua conta da Twitch no topo da página para poderes propor trocas!");
+                        return;
+                    }
+                    if (meuUsername.toLowerCase() === player.username.toLowerCase()) {
+                        oferecidoId = elem.id;
+                        abrirModalTrocaComCardPreSelecionado(elem);
+                    }
                 }
             };
         }
@@ -231,34 +225,47 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
     });
 }
 
-// Lógica de Conta Local (Minha Conta)
+// Lógica de Conta Local (Minha Conta / Twitch)
 function atualizarUIConta() {
     const container = document.getElementById('my-profile-container');
+    const avatar = localStorage.getItem('meuProfileImage') || '';
+    
     if (meuUsername) {
         container.innerHTML = `
-            <span>Olá, <strong>@${meuUsername}</strong>!</span>
-            <button onclick="limparConta()">Alterar ✖</button>
+            <div class="profile-info">
+                ${avatar ? `<img src="${avatar}" class="twitch-avatar" alt="Avatar">` : ''}
+                <span>Olá, <strong>@${meuUsername}</strong>!</span>
+            </div>
+            <button class="logout-btn" onclick="limparConta()">Sair ✖</button>
         `;
     } else {
+        const clientId = "9xa7l560hxwruznfapxxrwm3543fk0";
+        // Usa o URL de produção ou localhost dinamicamente dependendo de onde o site está a rodar
+        const redirectUri = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+            ? window.location.origin + '/'
+            : 'https://z3rgtv.github.io/elementais/';
+            
+        const authUrl = `https://id.twitch.tv/oauth2/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=token&scope=`;
+        
         container.innerHTML = `
-            <span style="font-size: 12px; color: var(--text-muted);">Identidade Twitch não configurada.</span>
+            <a href="${authUrl}" class="twitch-login-btn">
+                <svg class="twitch-icon" viewBox="0 0 24 24" width="16" height="16" style="vertical-align: middle; margin-right: 6px;">
+                    <path fill="currentColor" d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/>
+                </svg>
+                Entrar com a Twitch
+            </a>
         `;
     }
 }
 
-document.getElementById('btn-definir-conta').onclick = () => {
-    if (jogadorSelecionado) {
-        meuUsername = jogadorSelecionado.username;
-        localStorage.setItem('meuUsername', meuUsername);
-        atualizarUIConta();
-        
-        selecionarUtilizador(jogadorSelecionado, document.querySelector('.ranking-item.active'));
-    }
-};
+// Ocultar e ignorar botão legado
+document.getElementById('btn-definir-conta').classList.add('hidden');
 
 function limparConta() {
     meuUsername = '';
     localStorage.removeItem('meuUsername');
+    localStorage.removeItem('twitch_access_token');
+    localStorage.removeItem('meuProfileImage');
     atualizarUIConta();
     if (jogadorSelecionado) {
         selecionarUtilizador(jogadorSelecionado, document.querySelector('.ranking-item.active'));
@@ -572,6 +579,60 @@ document.getElementById('search-input').addEventListener('input', (e) => {
     renderizarRanking(filtrados);
 });
 
-// Execução inicial e Polling em background (15 segundos)
-carregarDados();
-setInterval(carregarDados, 15000);
+// Processar o token de autenticação da Twitch no URL hash
+function verificarLoginTwitch() {
+    const hash = window.location.hash;
+    if (hash && hash.includes('access_token=')) {
+        const params = new URLSearchParams(hash.substring(1));
+        const token = params.get('access_token');
+        if (token) {
+            localStorage.setItem('twitch_access_token', token);
+            // Limpa o hash do URL para ficar limpo
+            history.replaceState(null, document.title, window.location.pathname + window.location.search);
+        }
+    }
+}
+
+// Obter dados do perfil do utilizador autenticado
+async function obterPerfilTwitch() {
+    const token = localStorage.getItem('twitch_access_token');
+    if (!token) return;
+
+    try {
+        const res = await fetch('https://api.twitch.tv/helix/users', {
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Client-Id': '9xa7l560hxwruznfapxxrwm3543fk0'
+            }
+        });
+        
+        if (res.status === 401) {
+            // Token expirou ou é inválido, limpa a sessão
+            limparConta();
+            return;
+        }
+
+        const data = await res.json();
+        if (data && data.data && data.data.length > 0) {
+            const user = data.data[0];
+            meuUsername = user.login; // Guardado em minúsculas (igual ao username da BD)
+            localStorage.setItem('meuUsername', meuUsername);
+            localStorage.setItem('meuProfileImage', user.profile_image_url);
+        }
+    } catch (e) {
+        console.error("Erro ao carregar perfil da Twitch:", e);
+    }
+}
+
+// Inicialização segura
+async function inicializarApp() {
+    verificarLoginTwitch();
+    if (localStorage.getItem('twitch_access_token')) {
+        await obterPerfilTwitch();
+    }
+    await carregarDados();
+    setInterval(carregarDados, 15000);
+}
+
+// Iniciar a aplicação
+inicializarApp();
