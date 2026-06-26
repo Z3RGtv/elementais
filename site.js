@@ -101,6 +101,7 @@ async function carregarDados() {
         
         renderizarRanking(dadosGlobais);
         atualizarUIConta();
+        renderizarEstatisticas(data.estatisticas_bolas || {}, data.recentes_lancamentos || []);
         
         // Se já tivermos um jogador selecionado, atualiza a exibição dele
         if (jogadorSelecionado) {
@@ -753,3 +754,104 @@ window.addEventListener('click', (event) => {
         sidebar.classList.remove('active');
     }
 });
+
+// Renderizar estatísticas de lançamentos e feed recente
+function renderizarEstatisticas(estatisticas, recentes) {
+    const ballsContainer = document.getElementById('stats-balls-container');
+    const feedBody = document.getElementById('stats-recent-feed');
+
+    const ballLabels = {
+        normal: { name: "Pokébola", img: "balls/close_1.png", class: "ball-normal" },
+        super: { name: "Super Bola", img: "balls/close_2.png", class: "ball-super" },
+        ultra: { name: "Ultra Bola", img: "balls/close_3.png", class: "ball-ultra" },
+        master: { name: "Master Bola", img: "balls/close_4.png", class: "ball-master" }
+    };
+
+    if (ballsContainer) {
+        ballsContainer.innerHTML = '';
+        const keys = ["normal", "super", "ultra", "master"];
+        keys.forEach(k => {
+            const info = ballLabels[k];
+            const data = estatisticas[k] || { total: 0, sucesso: 0, rate: "0.0" };
+            
+            const card = document.createElement('div');
+            card.className = `stats-ball-card ${info.class}`;
+            card.innerHTML = `
+                <div class="ball-card-header">
+                    <span>${info.name}</span>
+                    <img src="${info.img}" alt="${info.name}">
+                </div>
+                <div class="ball-stats-numbers">
+                    Lançamentos: <strong>${data.total}</strong><br>
+                    Capturas: <strong>${data.sucesso}</strong>
+                </div>
+                <div>
+                    <div class="ball-rate-value">${data.rate}%</div>
+                    <div class="stats-progress-bar-container">
+                        <div class="stats-progress-bar" style="width: ${data.rate}%"></div>
+                    </div>
+                </div>
+            `;
+            ballsContainer.appendChild(card);
+        });
+    }
+
+    if (feedBody) {
+        if (recentes.length === 0) {
+            feedBody.innerHTML = `
+                <tr>
+                    <td colspan="5" style="text-align: center; color: var(--text-muted); padding: 20px;">Nenhum lançamento registado ainda.</td>
+                </tr>
+            `;
+            return;
+        }
+
+        feedBody.innerHTML = '';
+        recentes.forEach(row => {
+            const elemInfo = elementaisMap.find(e => e.id === row.elementalId);
+            const elemName = elemInfo ? (elemInfo.isUser ? elemInfo.name : obterNomeSimplesBicho(row.elementalId)) : row.elementalId;
+
+            const info = ballLabels[row.bola] || { name: row.bola, img: "balls/close_1.png" };
+            const dataFormatada = row.date ? row.date.substring(5, 16) : 'Pendente'; // Mostrar "MM-DD HH:MM"
+
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td class="recent-time">${dataFormatada}</td>
+                <td><strong>@${row.username}</strong></td>
+                <td>${elemName}</td>
+                <td>
+                    <img src="${info.img}" class="recent-ball-icon" alt="${info.name}">
+                    ${info.name}
+                </td>
+                <td>
+                    <span class="badge-outcome ${row.sucesso ? 'sucesso' : 'falha'}">
+                        ${row.sucesso ? 'Sucesso' : 'Falhou'}
+                    </span>
+                </td>
+            `;
+            feedBody.appendChild(tr);
+        });
+    }
+}
+
+function obterNomeSimplesBicho(id) {
+    const partes = id.split('_');
+    const especie = parseInt(partes[0]);
+    const variante = parseInt(partes[1]);
+    
+    const nomesEspecies = {
+        1: "Water", 2: "Earth", 3: "Fire", 4: "Duck", 5: "Ghost", 
+        6: "Sleepy", 7: "Demon", 8: "Punk", 9: "King", 10: "ZeroPoint",
+        11: "BurntPeanut", 12: "Fishy", 13: "Striker", 14: "Aura", 
+        15: "Boss", 16: "Grim"
+    };
+
+    const nomesVariantes = {
+        1: "Normal", 2: "Gold", 3: "Gummy", 4: "Galaxy"
+    };
+
+    const nomeBase = nomesEspecies[especie] || id;
+    if (especie === 11) return "BurntPeanut";
+    const nomeVar = nomesVariantes[variante] || "";
+    return `${nomeBase} (${nomeVar})`;
+}
