@@ -18,7 +18,7 @@ const elementaisMap = [
     { id: "4_4", file: "T_Icon_BR_Duck_Galaxy_L.webp" },
     { id: "5_1", file: "T_Icon_BR_Creature_Sprite_Ghost_Unvault_L.webp" },
     { id: "5_2", file: "T_Icon_BR_Creature_Sprite_Ghost_Gold_L.webp" },
-    { id: "5_3", file: "T_Icon_BR_Creature_Sprite_Ghost_Candy_ui_L.webp" },
+    { id: "5_3", file: "T_Icon_BR_Creature_Sprite_Ghost_Candy_L.webp" },
     { id: "5_4", file: "T_Icon_BR_Creature_Sprite_Ghost_Galaxy_L.webp" },
     { id: "6_1", file: "T_Icon_BR_Creature_Sprite_Sleepy_ui_L.webp" },
     { id: "6_2", file: "T_Icon_BR_Creature_Sprite_Sleepy_Gold_ui_L.webp" },
