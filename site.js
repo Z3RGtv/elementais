@@ -45,12 +45,15 @@ const elementaisMap = [
 
 let dadosGlobais = [];
 let meuUsername = localStorage.getItem('meuUsername') || '';
-let jogadorSelecionado = null;
+let jogadorSelecionado = null; // Jogador cuja coleção estamos a ver
+let jogadorSelecionadoTroca = null; // Alvo selecionado dentro do modal
 let propostasAtivas = [];
 
 // Seletores do Assistente de Troca
 let oferecidoId = null;
 let pedidoId = null;
+let cacheOferecido = null;
+let cachePedido = null;
 
 async function carregarDados() {
     try {
@@ -83,7 +86,6 @@ async function carregarDados() {
         if (jogadorSelecionado) {
             const atualizado = dadosGlobais.find(p => p.username.toLowerCase() === jogadorSelecionado.username.toLowerCase());
             if (atualizado) {
-                // Manter o DOM destacado encontrando o elemento correspondente
                 const items = document.querySelectorAll('.ranking-item');
                 let foundEl = null;
                 items.forEach(el => {
@@ -130,7 +132,6 @@ function selecionarUtilizador(player, elementoDOM) {
     document.getElementById('user-points-val').textContent = player.pontos;
     document.getElementById('user-points-panel').classList.remove('hidden');
 
-    // Controlar visibilidade dos botões de ação de troca
     const btnPropor = document.getElementById('btn-propor-troca');
     const btnDefinir = document.getElementById('btn-definir-conta');
 
@@ -207,6 +208,23 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
                 slot.classList.add('selected');
                 selectCallback(elem.id, elem);
             };
+        } else if (!isSelectionMode) {
+            // FLUXO DE ATALHO DE CLIQUE EM ELEMENTAL QUE EU TENHO
+            slot.onclick = () => {
+                if (qty >= 1) {
+                    // 1. Assumir que esta é a minha conta
+                    meuUsername = player.username;
+                    localStorage.setItem('meuUsername', meuUsername);
+                    atualizarUIConta();
+                    
+                    // Destacar visualmente no ranking e atualizar botões
+                    selecionarUtilizador(player, document.querySelector('.ranking-item.active'));
+
+                    // 2. Pre-selecionar o card oferecido e abrir modal no modo de busca de jogadores
+                    oferecidoId = elem.id;
+                    abrirModalTrocaComCardPreSelecionado(elem);
+                }
+            };
         }
 
         grid.appendChild(slot);
@@ -234,7 +252,6 @@ document.getElementById('btn-definir-conta').onclick = () => {
         localStorage.setItem('meuUsername', meuUsername);
         atualizarUIConta();
         
-        // Atualiza botões
         selecionarUtilizador(jogadorSelecionado, document.querySelector('.ranking-item.active'));
     }
 };
@@ -257,7 +274,6 @@ function renderizarPropostas() {
         return;
     }
 
-    // Filtrar propostas onde eu sou o proponente ou o alvo
     const minhasPropostas = propostasAtivas.filter(p => 
         p.proposerName.toLowerCase() === meuUsername.toLowerCase() || 
         p.targetName.toLowerCase() === meuUsername.toLowerCase()
@@ -337,30 +353,130 @@ function copiarComandoResposta(resposta, proponenteName, botao) {
 const modal = document.getElementById('modal-troca');
 const btnFecharModal = document.getElementById('btn-fechar-modal');
 
-document.getElementById('btn-propor-troca').onclick = () => {
-    if (!meuUsername || !jogadorSelecionado) return;
+// FLUXO A: Iniciar clicando num elemental meu
+function abrirModalTrocaComCardPreSelecionado(elemOferecido) {
+    document.getElementById('modal-target-username').textContent = "outro jogador";
     
-    // Configurar nomes no modal
-    document.getElementById('modal-target-username').textContent = `@${jogadorSelecionado.username}`;
-    
-    // Obter objeto do proponente (eu)
     const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
 
-    // Limpar estados
-    oferecidoId = null;
     pedidoId = null;
+    jogadorSelecionadoTroca = null;
+    cacheOferecido = elemOferecido;
+    cachePedido = null;
     document.getElementById('troca-resumo-container').classList.add('hidden');
 
-    // Renderizar seleções de cartas
+    // Mostrar bloco de seleção de jogador e esconder cartas do alvo
+    document.getElementById('modal-player-select-block').classList.remove('hidden');
+    document.getElementById('modal-target-cards-block').classList.add('hidden');
+    document.getElementById('modal-search-player').value = '';
+
+    // Renderizar meu inventário no modal
     renderizarGridColecao(meuPerfil, 'my-offer-card-selection', true, (id, elem) => {
         oferecidoId = id;
+        cacheOferecido = elem;
         atualizarResumoTroca(elem, null);
     });
 
-    renderizarGridColecao(jogadorSelecionado, 'target-request-card-selection', true, (id, elem) => {
+    // Destacar visualmente o card oferecido que foi clicado
+    setTimeout(() => {
+        const gridOferta = document.getElementById('my-offer-card-selection');
+        gridOferta.querySelectorAll('.grid-item').forEach(slot => {
+            const img = slot.querySelector('img');
+            if (img && img.src.includes(elemOferecido.file)) {
+                slot.classList.add('selected');
+            }
+        });
+    }, 50);
+
+    // Listar outros jogadores
+    renderizarListaJogadoresModal();
+
+    modal.classList.remove('hidden');
+}
+
+function renderizarListaJogadoresModal() {
+    const list = document.getElementById('modal-player-list');
+    list.innerHTML = '';
+
+    const termo = document.getElementById('modal-search-player').value.toLowerCase().trim();
+
+    // Filtrar todos os jogadores do ranking exceto o proponente (meuUsername)
+    const outrosJogadores = dadosGlobais.filter(p => 
+        p.username.toLowerCase() !== meuUsername.toLowerCase() &&
+        p.username.toLowerCase().includes(termo)
+    );
+
+    if (outrosJogadores.length === 0) {
+        list.innerHTML = '<div style="font-size: 12px; color: var(--text-muted); text-align: center; padding: 10px;">Nenhum outro jogador encontrado.</div>';
+        return;
+    }
+
+    outrosJogadores.forEach(player => {
+        const item = document.createElement('div');
+        item.className = 'modal-player-item';
+        item.innerHTML = `
+            <span><strong>@${player.username}</strong></span>
+            <span style="font-size: 11px; color: var(--text-muted);">${Object.keys(player.inventario).length} espécies</span>
+        `;
+        item.onclick = () => selecionarJogadorTrocaNoModal(player);
+        list.appendChild(item);
+    });
+}
+
+function selecionarJogadorTrocaNoModal(player) {
+    jogadorSelecionadoTroca = player;
+    document.getElementById('modal-target-username').textContent = `@${player.username}`;
+    document.getElementById('modal-active-target-label').textContent = `Cartas de @${player.username}`;
+
+    // Mostrar bloco de cartas do alvo
+    document.getElementById('modal-player-select-block').classList.add('hidden');
+    document.getElementById('modal-target-cards-block').classList.remove('hidden');
+
+    // Renderizar as cartas dele
+    renderizarGridColecao(player, 'target-request-card-selection', true, (id, elem) => {
         pedidoId = id;
+        cachePedido = elem;
         atualizarResumoTroca(null, elem);
     });
+}
+
+// Botão de voltar à lista de jogadores no modal
+document.getElementById('btn-modal-mudar-jogador').onclick = () => {
+    jogadorSelecionadoTroca = null;
+    pedidoId = null;
+    document.getElementById('modal-target-username').textContent = "outro jogador";
+    document.getElementById('modal-player-select-block').classList.remove('hidden');
+    document.getElementById('modal-target-cards-block').classList.add('hidden');
+    document.getElementById('modal-search-player').value = '';
+    renderizarListaJogadoresModal();
+    atualizarResumoTroca(null, null);
+};
+
+// Escuta input de pesquisa de jogadores no modal
+document.getElementById('modal-search-player').addEventListener('input', renderizarListaJogadoresModal);
+
+
+// FLUXO B: Iniciar clicando no botão "Propor Troca" no perfil de outro jogador
+document.getElementById('btn-propor-troca').onclick = () => {
+    if (!meuUsername || !jogadorSelecionado) return;
+    
+    const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
+
+    oferecidoId = null;
+    pedidoId = null;
+    cacheOferecido = null;
+    cachePedido = null;
+    document.getElementById('troca-resumo-container').classList.add('hidden');
+
+    // Renderizar meu inventário
+    renderizarGridColecao(meuPerfil, 'my-offer-card-selection', true, (id, elem) => {
+        oferecidoId = id;
+        cacheOferecido = elem;
+        atualizarResumoTroca(elem, null);
+    });
+
+    // Selecionar diretamente o jogador cuja página estamos a visualizar
+    selecionarJogadorTrocaNoModal(jogadorSelecionado);
 
     modal.classList.remove('hidden');
 };
@@ -375,15 +491,11 @@ window.onclick = (event) => {
     }
 };
 
-let cacheOferecido = null;
-let cachePedido = null;
-
 function atualizarResumoTroca(elemOferecido, elemPedido) {
     if (elemOferecido) cacheOferecido = elemOferecido;
     if (elemPedido) cachePedido = elemPedido;
 
     if (oferecidoId && pedidoId && cacheOferecido && cachePedido) {
-        // Exibir previews
         const divOferecido = document.getElementById('resumo-oferecido-img');
         const divPedido = document.getElementById('resumo-pedido-img');
 
@@ -393,8 +505,8 @@ function atualizarResumoTroca(elemOferecido, elemPedido) {
         document.getElementById('resumo-oferecido-nome').textContent = cacheOferecido.isUser ? cacheOferecido.name : cacheOferecido.id;
         document.getElementById('resumo-pedido-nome').textContent = cachePedido.isUser ? cachePedido.name : cachePedido.id;
 
-        // Comando Twitch formatado
-        const command = `${jogadorSelecionado.username} ${oferecidoId} ${pedidoId}`;
+        const targetUser = jogadorSelecionadoTroca ? jogadorSelecionadoTroca.username : (jogadorSelecionado ? jogadorSelecionado.username : "");
+        const command = `${targetUser} ${oferecidoId} ${pedidoId}`;
         document.getElementById('twitch-command-input').value = command;
 
         document.getElementById('troca-resumo-container').classList.remove('hidden');
@@ -414,7 +526,7 @@ document.getElementById('btn-copiar-comando').onclick = () => {
     });
 };
 
-// Configuração da Barra de Pesquisa Dinâmica
+// Configuração da Barra de Pesquisa Dinâmica (Filtro Geral)
 document.getElementById('search-input').addEventListener('input', (e) => {
     const termo = e.target.value.toLowerCase().trim();
     if (!termo) {
