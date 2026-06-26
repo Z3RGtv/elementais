@@ -872,5 +872,30 @@ footer {
     font-size: 13.5px;
 }
 
+/* Estilos de desativação por limite de inventário */
+.modal-player-item.disabled-trade {
+    opacity: 0.55;
+    cursor: not-allowed;
+    border-color: rgba(255, 74, 74, 0.15);
+}
+
+.modal-player-item.disabled-trade:hover {
+    transform: none;
+    background: rgba(255, 255, 255, 0.02);
+    border-color: rgba(255, 74, 74, 0.15);
+}
+
+.disabled-btn {
+    opacity: 0.4 !important;
+    cursor: not-allowed !important;
+    background: #444 !important;
+    box-shadow: none !important;
+}
+
+.disabled-btn:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
 
 
