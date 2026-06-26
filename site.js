@@ -375,6 +375,7 @@ function abrirModalTrocaComCardPreSelecionado(elemOferecido) {
         oferecidoId = id;
         cacheOferecido = elem;
         atualizarResumoTroca(elem, null);
+        renderizarListaJogadoresModal(); // Re-renderiza a lista para atualizar quem fica indisponível
     });
 
     // Destacar visualmente o card oferecido que foi clicado
@@ -414,11 +415,27 @@ function renderizarListaJogadoresModal() {
     outrosJogadores.forEach(player => {
         const item = document.createElement('div');
         item.className = 'modal-player-item';
-        item.innerHTML = `
-            <span><strong>@${player.username}</strong></span>
-            <span style="font-size: 11px; color: var(--text-muted);">${Object.keys(player.inventario).length} espécies</span>
-        `;
-        item.onclick = () => selecionarJogadorTrocaNoModal(player);
+
+        // Verificar se o jogador alvo já possui 2 ou mais cópias do elemental oferecido
+        const qtyTarget = player.inventario[oferecidoId] || 0;
+        const jaTemLimite = oferecidoId && (qtyTarget >= 2);
+
+        if (jaTemLimite) {
+            item.classList.add('disabled-trade');
+            item.innerHTML = `
+                <span><strong style="color: #ff5555;">@${player.username}</strong> <small style="color: #ff5555; font-size: 10px; margin-left: 5px;">(Já tem 2)</small></span>
+                <span style="font-size: 11px; color: var(--text-muted);">${Object.keys(player.inventario).length} espécies</span>
+            `;
+            item.onclick = (e) => {
+                e.stopPropagation();
+            };
+        } else {
+            item.innerHTML = `
+                <span><strong>@${player.username}</strong></span>
+                <span style="font-size: 11px; color: var(--text-muted);">${Object.keys(player.inventario).length} espécies</span>
+            `;
+            item.onclick = () => selecionarJogadorTrocaNoModal(player);
+        }
         list.appendChild(item);
     });
 }
@@ -473,6 +490,7 @@ document.getElementById('btn-propor-troca').onclick = () => {
         oferecidoId = id;
         cacheOferecido = elem;
         atualizarResumoTroca(elem, null);
+        renderizarListaJogadoresModal(); // Re-renderiza a lista de jogadores caso o utilizador decida mudar de jogador
     });
 
     // Selecionar diretamente o jogador cuja página estamos a visualizar
@@ -505,9 +523,26 @@ function atualizarResumoTroca(elemOferecido, elemPedido) {
         document.getElementById('resumo-oferecido-nome').textContent = cacheOferecido.isUser ? cacheOferecido.name : cacheOferecido.id;
         document.getElementById('resumo-pedido-nome').textContent = cachePedido.isUser ? cachePedido.name : cachePedido.id;
 
-        const targetUser = jogadorSelecionadoTroca ? jogadorSelecionadoTroca.username : (jogadorSelecionado ? jogadorSelecionado.username : "");
-        const command = `${targetUser} ${oferecidoId} ${pedidoId}`;
-        document.getElementById('twitch-command-input').value = command;
+        const targetPlayer = jogadorSelecionadoTroca || jogadorSelecionado;
+        const targetUser = targetPlayer ? targetPlayer.username : "";
+        const qtyTarget = targetPlayer && targetPlayer.inventario ? (targetPlayer.inventario[oferecidoId] || 0) : 0;
+        const jaTemLimite = qtyTarget >= 2;
+
+        const commandInput = document.getElementById('twitch-command-input');
+        const btnCopiar = document.getElementById('btn-copiar-comando');
+
+        if (jaTemLimite) {
+            commandInput.value = `Inválido: @${targetUser} já tem o limite de 2 cópias!`;
+            commandInput.style.color = '#ff5555';
+            btnCopiar.disabled = true;
+            btnCopiar.classList.add('disabled-btn');
+        } else {
+            const command = `${targetUser} ${oferecidoId} ${pedidoId}`;
+            commandInput.value = command;
+            commandInput.style.color = '';
+            btnCopiar.disabled = false;
+            btnCopiar.classList.remove('disabled-btn');
+        }
 
         document.getElementById('troca-resumo-container').classList.remove('hidden');
     } else {
