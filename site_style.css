@@ -1091,6 +1091,263 @@ footer {
 .tabela-pontos-calc tr.rarity-mitico td:first-child { color: #fef08a; }
 .tabela-pontos-calc tr.rarity-especial td:first-child { color: #e9d5ff; }
 
+/* =========================================================================
+   📊 SECÇÃO DE ESTATÍSTICAS E HISTÓRICO DE LANÇAMENTOS
+   ========================================================================= */
+.stats-section {
+    background: var(--panel-dark);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 25px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin: 0 40px 40px 40px;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.stats-card {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stats-card h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: var(--accent);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+/* Grelha dos Cartões das Bolas */
+.stats-balls-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    flex: 1;
+}
+
+.stats-ball-card {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito Hover Neon para as Bolas */
+.stats-ball-card:hover {
+    transform: translateY(-3px);
+}
+
+.stats-ball-card.ball-normal { border-color: rgba(239, 68, 68, 0.15); }
+.stats-ball-card.ball-normal:hover { border-color: #ef4444; box-shadow: 0 0 15px rgba(239, 68, 68, 0.3); }
+
+.stats-ball-card.ball-super { border-color: rgba(59, 130, 246, 0.15); }
+.stats-ball-card.ball-super:hover { border-color: #3b82f6; box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); }
+
+.stats-ball-card.ball-ultra { border-color: rgba(234, 179, 8, 0.15); }
+.stats-ball-card.ball-ultra:hover { border-color: #eab308; box-shadow: 0 0 15px rgba(234, 179, 8, 0.3); }
+
+.stats-ball-card.ball-master { border-color: rgba(168, 85, 247, 0.15); }
+.stats-ball-card.ball-master:hover { border-color: #a855f7; box-shadow: 0 0 15px rgba(168, 85, 247, 0.3); }
+
+.ball-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ball-card-header span {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.ball-card-header img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.ball-stats-numbers {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.ball-stats-numbers strong {
+    color: #fff;
+}
+
+.ball-rate-value {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    text-shadow: 0 0 8px rgba(255,255,255,0.1);
+}
+
+.ball-normal .ball-rate-value { color: #ef4444; text-shadow: 0 0 8px rgba(239,68,68,0.2); }
+.ball-super .ball-rate-value { color: #3b82f6; text-shadow: 0 0 8px rgba(59,130,246,0.2); }
+.ball-ultra .ball-rate-value { color: #eab308; text-shadow: 0 0 8px rgba(234,179,8,0.2); }
+.ball-master .ball-rate-value { color: #a855f7; text-shadow: 0 0 8px rgba(168,85,247,0.2); }
+
+/* Barras de Progresso */
+.stats-progress-bar-container {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.stats-progress-bar {
+    height: 100%;
+    border-radius: 3px;
+    width: 0%;
+    transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ball-normal .stats-progress-bar { background: #ef4444; }
+.ball-super .stats-progress-bar { background: #3b82f6; }
+.ball-ultra .stats-progress-bar { background: #eab308; }
+.ball-master .stats-progress-bar { background: #a855f7; }
+
+/* Tabela de Lançamentos Recentes */
+.stats-feed-wrapper {
+    max-height: 250px;
+    overflow-y: auto;
+    flex: 1;
+    padding-right: 5px;
+}
+
+.stats-feed-wrapper::-webkit-scrollbar {
+    width: 6px;
+}
+.stats-feed-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 3px;
+}
+
+.tabela-recentes {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    text-align: left;
+}
+
+.tabela-recentes th {
+    padding: 8px 10px;
+    color: var(--text-muted);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    position: sticky;
+    top: 0;
+    background: rgba(20, 20, 35, 0.95);
+    z-index: 2;
+}
+
+.tabela-recentes td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.tabela-recentes tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.recent-time {
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+.recent-ball-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
+}
+
+.badge-outcome {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.badge-outcome.sucesso {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    box-shadow: 0 0 6px rgba(16, 185, 129, 0.1);
+}
+
+.badge-outcome.falha {
+    background: rgba(239, 68, 68, 0.12);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* Responsividade Mobile para Estatísticas */
+@media (max-width: 850px) {
+    .stats-section {
+        margin: 15px;
+        padding: 15px;
+    }
+    
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .stats-balls-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
+    .stats-ball-card {
+        padding: 12px;
+    }
+    
+    .ball-rate-value {
+        font-size: 20px;
+    }
+    
+    .tabela-recentes {
+        font-size: 11.5px;
+    }
+    
+    .tabela-recentes th, .tabela-recentes td {
+        padding: 8px 5px;
+    }
+}
+
 
 
 
