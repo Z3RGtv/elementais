@@ -1184,10 +1184,6 @@ footer {
 .ball-img-wrapper {
     width: 44px;
     height: 44px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.03);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1200,16 +1196,10 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    /* Ajusta e desloca a Pokébola visualmente para o centro da circunferência e escala em 1.2x */
-    transform: translate(14%, 3%) scale(1.2);
+    /* Ajusta e desloca a Pokébola visualmente para o centro */
+    transform: translate(22%, -3.4%) scale(1.45);
     filter: drop-shadow(0 3px 6px rgba(0,0,0,0.5));
 }
-
-/* Contorno suave e colorido para a bola em cada cartão */
-.ball-normal .ball-img-wrapper { border-color: rgba(239, 68, 68, 0.3); box-shadow: 0 0 10px rgba(239, 68, 68, 0.1); }
-.ball-super .ball-img-wrapper { border-color: rgba(59, 130, 246, 0.3); box-shadow: 0 0 10px rgba(59, 130, 246, 0.1); }
-.ball-ultra .ball-img-wrapper { border-color: rgba(234, 179, 8, 0.3); box-shadow: 0 0 10px rgba(234, 179, 8, 0.1); }
-.ball-master .ball-img-wrapper { border-color: rgba(168, 85, 247, 0.3); box-shadow: 0 0 10px rgba(168, 85, 247, 0.1); }
 
 .ball-stats-numbers {
     font-size: 11px;
@@ -1311,9 +1301,6 @@ footer {
     align-items: center;
     width: 24px;
     height: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.02);
     overflow: hidden;
     vertical-align: middle;
     margin-right: 8px;
@@ -1323,7 +1310,7 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    transform: translate(14%, 3%) scale(1.2);
+    transform: translate(22%, -3.4%) scale(1.45);
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
 }
 
