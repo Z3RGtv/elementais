@@ -135,16 +135,32 @@ function selecionarUtilizador(player, elementoDOM) {
     const btnPropor = document.getElementById('btn-propor-troca');
     const btnDefinir = document.getElementById('btn-definir-conta');
 
-    btnDefinir.classList.add('hidden'); // Ocultar, pois usamos login da Twitch seguro
+    const isTwitchLoggedIn = !!localStorage.getItem('twitch_access_token');
 
-    if (meuUsername) {
-        if (meuUsername.toLowerCase() === player.username.toLowerCase()) {
+    if (isTwitchLoggedIn) {
+        // Se estiver logado com a Twitch, esconde o botão de definir conta (identidade já está garantida)
+        btnDefinir.classList.add('hidden');
+        if (meuUsername && meuUsername.toLowerCase() === player.username.toLowerCase()) {
             btnPropor.classList.add('hidden');
         } else {
             btnPropor.classList.remove('hidden');
         }
     } else {
-        btnPropor.classList.add('hidden');
+        // Se não estiver logado, permite definir a conta manualmente (Fluxo Livre / Debug)
+        if (meuUsername) {
+            if (meuUsername.toLowerCase() === player.username.toLowerCase()) {
+                btnPropor.classList.add('hidden');
+                btnDefinir.classList.add('hidden');
+            } else {
+                btnPropor.classList.remove('hidden');
+                btnDefinir.classList.remove('hidden');
+                btnDefinir.textContent = "Esta é a minha Conta 👤";
+            }
+        } else {
+            btnPropor.classList.add('hidden');
+            btnDefinir.classList.remove('hidden');
+            btnDefinir.textContent = "Esta é a minha Conta 👤";
+        }
     }
 
     renderizarGridColecao(player, 'site-grid', false);
@@ -206,14 +222,25 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
                 selectCallback(elem.id, elem);
             };
         } else if (!isSelectionMode) {
-            // FLUXO DE ATALHO DE CLIQUE EM ELEMENTAL QUE EU TENHO (Apenas se for o dono autenticado)
+            // FLUXO DE ATALHO DE CLIQUE EM ELEMENTAL QUE EU TENHO
             slot.onclick = () => {
                 if (qty >= 1) {
-                    if (!meuUsername) {
-                        alert("Por favor, entra com a tua conta da Twitch no topo da página para poderes propor trocas!");
-                        return;
-                    }
-                    if (meuUsername.toLowerCase() === player.username.toLowerCase()) {
+                    const isTwitchLoggedIn = !!localStorage.getItem('twitch_access_token');
+                    if (isTwitchLoggedIn) {
+                        // Se estiver logado via Twitch, só permite abrir a proposta se for a sua própria conta
+                        if (meuUsername.toLowerCase() === player.username.toLowerCase()) {
+                            oferecidoId = elem.id;
+                            abrirModalTrocaComCardPreSelecionado(elem);
+                        }
+                    } else {
+                        // Fluxo Livre (sem login Twitch): assume a identidade automaticamente e abre o modal
+                        meuUsername = player.username;
+                        localStorage.setItem('meuUsername', meuUsername);
+                        atualizarUIConta();
+                        
+                        // Destacar visualmente no ranking e atualizar botões
+                        selecionarUtilizador(player, document.querySelector('.ranking-item.active'));
+
                         oferecidoId = elem.id;
                         abrirModalTrocaComCardPreSelecionado(elem);
                     }
@@ -229,25 +256,49 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
 function atualizarUIConta() {
     const container = document.getElementById('my-profile-container');
     const avatar = localStorage.getItem('meuProfileImage') || '';
+    const isTwitchLoggedIn = !!localStorage.getItem('twitch_access_token');
     
     if (meuUsername) {
-        container.innerHTML = `
-            <div class="profile-info">
-                ${avatar ? `<img src="${avatar}" class="twitch-avatar" alt="Avatar">` : ''}
-                <span>Olá, <strong>@${meuUsername}</strong>!</span>
-            </div>
-            <button class="logout-btn" onclick="limparConta()">Sair ✖</button>
-        `;
+        if (isTwitchLoggedIn) {
+            // Utilizador Logado via Twitch
+            container.innerHTML = `
+                <div class="profile-info">
+                    ${avatar ? `<img src="${avatar}" class="twitch-avatar" alt="Avatar">` : ''}
+                    <span>Olá, <strong>@${meuUsername}</strong>!</span>
+                </div>
+                <button class="logout-btn" onclick="limparConta()">Sair ✖</button>
+            `;
+        } else {
+            // Utilizador definiu a conta manualmente (sem login)
+            const clientId = "9xa7l560hxwruznfapxxrwm3543fk0";
+            const redirectUri = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+                ? window.location.origin + '/'
+                : 'https://z3rgtv.github.io/elementais/';
+            const authUrl = `https://id.twitch.tv/oauth2/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=token&scope=`;
+
+            container.innerHTML = `
+                <div class="profile-info">
+                    <span>Conta manual: <strong>@${meuUsername}</strong></span>
+                    <button class="logout-btn" onclick="limparConta()" style="margin-left: 5px; margin-right: 15px;">Alterar ✖</button>
+                </div>
+                <a href="${authUrl}" class="twitch-login-btn">
+                    <svg class="twitch-icon" viewBox="0 0 24 24" width="16" height="16" style="vertical-align: middle; margin-right: 6px;">
+                        <path fill="currentColor" d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/>
+                    </svg>
+                    Entrar com a Twitch
+                </a>
+            `;
+        }
     } else {
+        // Nenhuma identidade selecionada
         const clientId = "9xa7l560hxwruznfapxxrwm3543fk0";
-        // Usa o URL de produção ou localhost dinamicamente dependendo de onde o site está a rodar
         const redirectUri = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
             ? window.location.origin + '/'
             : 'https://z3rgtv.github.io/elementais/';
-            
         const authUrl = `https://id.twitch.tv/oauth2/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=token&scope=`;
         
         container.innerHTML = `
+            <span style="font-size: 12px; color: var(--text-muted); margin-right: 15px;">Sem conta selecionada.</span>
             <a href="${authUrl}" class="twitch-login-btn">
                 <svg class="twitch-icon" viewBox="0 0 24 24" width="16" height="16" style="vertical-align: middle; margin-right: 6px;">
                     <path fill="currentColor" d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/>
@@ -258,8 +309,18 @@ function atualizarUIConta() {
     }
 }
 
-// Ocultar e ignorar botão legado
-document.getElementById('btn-definir-conta').classList.add('hidden');
+// Configurar o clique no botão Definir Conta
+document.getElementById('btn-definir-conta').onclick = () => {
+    const isTwitchLoggedIn = !!localStorage.getItem('twitch_access_token');
+    if (isTwitchLoggedIn) return; // Se estiver logado pela Twitch, ignora
+
+    if (jogadorSelecionado) {
+        meuUsername = jogadorSelecionado.username;
+        localStorage.setItem('meuUsername', meuUsername);
+        atualizarUIConta();
+        selecionarUtilizador(jogadorSelecionado, document.querySelector('.ranking-item.active'));
+    }
+};
 
 function limparConta() {
     meuUsername = '';
