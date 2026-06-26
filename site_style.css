@@ -1073,23 +1073,23 @@ footer {
 }
 
 /* Badges de Raridade */
-.badge-comum, .badge-raro, .badge-lendario, .badge-mitico {
+.badge-raro, .badge-epico, .badge-lendario, .badge-mitico {
     font-weight: 800;
     font-size: 9px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
-.badge-comum { color: #8e8ea0; }
-.badge-raro { color: #3b82f6; }
-.badge-lendario { color: #eab308; }
-.badge-mitico { color: #ec4899; text-shadow: 0 0 5px rgba(236, 72, 153, 0.4); }
+.badge-raro { color: #3b82f6; } /* Azul (Rare) */
+.badge-epico { color: #a855f7; } /* Roxo (Epic) */
+.badge-lendario { color: #f97316; } /* Laranja (Legendary) */
+.badge-mitico { color: #eab308; text-shadow: 0 0 5px rgba(234, 179, 8, 0.4); } /* Amarelo/Dourado (Mythic) */
 
-.tabela-pontos-calc tr.rarity-comum td:first-child { color: #fff; }
 .tabela-pontos-calc tr.rarity-raro td:first-child { color: #60a5fa; }
-.tabela-pontos-calc tr.rarity-lendario td:first-child { color: #fde047; }
-.tabela-pontos-calc tr.rarity-mitico td:first-child { color: #f472b6; }
-.tabela-pontos-calc tr.rarity-especial td:first-child { color: #c084fc; }
+.tabela-pontos-calc tr.rarity-epico td:first-child { color: #c084fc; }
+.tabela-pontos-calc tr.rarity-lendario td:first-child { color: #fdba74; }
+.tabela-pontos-calc tr.rarity-mitico td:first-child { color: #fef08a; }
+.tabela-pontos-calc tr.rarity-especial td:first-child { color: #e9d5ff; }
 
 
 
