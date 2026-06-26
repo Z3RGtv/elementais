@@ -40,7 +40,27 @@ const elementaisMap = [
     { id: "10_2", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Gold_ui_L.webp" },
     { id: "10_3", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Candy_ui_L.webp" },
     { id: "10_4", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Galaxy_ui_L.webp" },
-    { id: "11_1", file: "T_Icon_BR_Creature_Sprite_BurntPeanut_ui_L.webp" }
+    { id: "11_1", file: "T_Icon_BR_Creature_Sprite_BurntPeanut_ui_L.webp" },
+    { id: "12_1", file: "T_Icon_BR_Creature_Sprite_Fishy_ui_L.webp" },
+    { id: "12_2", file: "T_Icon_BR_Creature_Sprite_Fishy_Gold_ui_L.webp" },
+    { id: "12_3", file: "T_Icon_BR_Creature_Sprite_Fishy_Candy_ui_L.webp" },
+    { id: "12_4", file: "T_Icon_BR_Creature_Sprite_Fishy_Galaxy_ui_L.webp" },
+    { id: "13_1", file: "T_Icon_BR_Creature_Sprite_Soccer_ui_L.webp" },
+    { id: "13_2", file: "T_Icon_BR_Creature_Sprite_Soccer_Gold_L.webp" },
+    { id: "13_3", file: "T_Icon_BR_Creature_Sprite_Soccer_Candy_L.webp" },
+    { id: "13_4", file: "T_Icon_BR_Creature_Sprite_Soccer_Galaxy_L.webp" },
+    { id: "14_1", file: "T_Icon_BR_Creature_Sprite_Drifter_ui_L.webp" },
+    { id: "14_2", file: "T_Icon_BR_Creature_Sprite_Drifter_Gold_ui_L.webp" },
+    { id: "14_3", file: "T_Icon_BR_Creature_Sprite_Drifter_Candy_ui_L.webp" },
+    { id: "14_4", file: "T_Icon_BR_Creature_Sprite_Drifter_Galaxy_ui_L.webp" },
+    { id: "15_1", file: "T_Icon_BR_Creature_Sprite_Boss_ui_L.webp" },
+    { id: "15_2", file: "T_Icon_BR_Creature_Sprite_Boss_Gold_ui_L.webp" },
+    { id: "15_3", file: "T_Icon_BR_Creature_Sprite_Boss_Candy_ui_L.webp" },
+    { id: "15_4", file: "T_Icon_BR_Creature_Sprite_Boss_Galaxy_ui_L.webp" },
+    { id: "16_1", file: "T_Icon_BR_GrimReaper_Default_L.webp" },
+    { id: "16_2", file: "T_Icon_BR_GrimReaper_Gold_L.webp" },
+    { id: "16_3", file: "T_Icon_BR_GrimReaper_Candy_L.webp" },
+    { id: "16_4", file: "T_Icon_BR_GrimReaper_Galaxy_L.webp" }
 ];
 
 let dadosGlobais = [];
@@ -67,7 +87,7 @@ async function carregarDados() {
         const availableUsers = data.availableUsers || [];
 
         // Limpar e re-mapear elementaisMap
-        const baseLength = 43;
+        const baseLength = 61;
         elementaisMap.length = baseLength;
 
         availableUsers.forEach(u => {
