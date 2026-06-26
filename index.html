@@ -102,11 +102,29 @@
                 <!-- Seta indicadora -->
                 <div class="wizard-divider">➡️</div>
 
-                <!-- Lado Direito: Ele dá -->
+                <!-- Lado Direito: Ele dá / Seleção de Jogador -->
                 <div class="wizard-side">
-                    <h3>Eu Quero Receber:</h3>
-                    <div id="target-request-card-selection" class="wizard-grid">
-                        <!-- Cartas dele disponíveis -->
+                    <h3 id="wizard-right-title">Eu Quero Receber:</h3>
+                    
+                    <!-- Bloco 1: Seleção de Jogador -->
+                    <div id="modal-player-select-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0;">
+                        <div class="modal-search-box">
+                            <input type="text" id="modal-search-player" placeholder="Pesquisar jogador...">
+                        </div>
+                        <div id="modal-player-list" class="modal-player-list">
+                            <!-- Injetado pelo JS -->
+                        </div>
+                    </div>
+
+                    <!-- Bloco 2: Grelha de Elementais do Jogador Alvo -->
+                    <div id="modal-target-cards-block" class="hidden" style="display: flex; flex-direction: column; flex: 1; min-height: 0;">
+                        <div class="modal-target-header">
+                            <span id="modal-active-target-label">Cartas de @jogador</span>
+                            <button id="btn-modal-mudar-jogador" class="btn btn-secondary btn-sm" style="padding: 3px 8px; font-size: 11px;">Mudar 🔄</button>
+                        </div>
+                        <div id="target-request-card-selection" class="wizard-grid">
+                            <!-- Cartas dele disponíveis -->
+                        </div>
                     </div>
                 </div>
             </div>
