@@ -136,31 +136,24 @@ function selecionarUtilizador(player, elementoDOM) {
     const btnDefinir = document.getElementById('btn-definir-conta');
 
     const isTwitchLoggedIn = !!localStorage.getItem('twitch_access_token');
+    const autenticadas = JSON.parse(localStorage.getItem('contas_autenticadas_twitch') || '[]');
+    const contaJaAutenticada = autenticadas.includes(player.username.toLowerCase());
 
-    if (isTwitchLoggedIn) {
-        // Se estiver logado com a Twitch, esconde o botão de definir conta (identidade já está garantida)
+    // O botão "Esta é a minha conta" só aparece nas contas que NUNCA fizeram login com a Twitch neste navegador
+    // e que também não são a nossa conta atualmente selecionada (caso tenhamos uma ativa)
+    if (contaJaAutenticada || (meuUsername && meuUsername.toLowerCase() === player.username.toLowerCase())) {
         btnDefinir.classList.add('hidden');
-        if (meuUsername && meuUsername.toLowerCase() === player.username.toLowerCase()) {
-            btnPropor.classList.add('hidden');
-        } else {
-            btnPropor.classList.remove('hidden');
-        }
     } else {
-        // Se não estiver logado, permite definir a conta manualmente (Fluxo Livre / Debug)
-        if (meuUsername) {
-            if (meuUsername.toLowerCase() === player.username.toLowerCase()) {
-                btnPropor.classList.add('hidden');
-                btnDefinir.classList.add('hidden');
-            } else {
-                btnPropor.classList.remove('hidden');
-                btnDefinir.classList.remove('hidden');
-                btnDefinir.textContent = "Esta é a minha Conta 👤";
-            }
-        } else {
-            btnPropor.classList.add('hidden');
-            btnDefinir.classList.remove('hidden');
-            btnDefinir.textContent = "Esta é a minha Conta 👤";
-        }
+        btnDefinir.classList.remove('hidden');
+        btnDefinir.textContent = "Esta é a minha Conta 👤";
+    }
+
+    // O botão "Propor Troca" só aparece se tivermos uma conta ativa configurada (meuUsername)
+    // e essa conta for diferente da conta do jogador selecionado
+    if (meuUsername && meuUsername.toLowerCase() !== player.username.toLowerCase()) {
+        btnPropor.classList.remove('hidden');
+    } else {
+        btnPropor.classList.add('hidden');
     }
 
     renderizarGridColecao(player, 'site-grid', false);
@@ -226,23 +219,37 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
             slot.onclick = () => {
                 if (qty >= 1) {
                     const isTwitchLoggedIn = !!localStorage.getItem('twitch_access_token');
-                    if (isTwitchLoggedIn) {
-                        // Se estiver logado via Twitch, só permite abrir a proposta se for a sua própria conta
-                        if (meuUsername.toLowerCase() === player.username.toLowerCase()) {
+                    const autenticadas = JSON.parse(localStorage.getItem('contas_autenticadas_twitch') || '[]');
+                    const contaJaAutenticada = autenticadas.includes(player.username.toLowerCase());
+
+                    if (contaJaAutenticada) {
+                        // Se a conta já foi autenticada via Twitch, só deixa abrir se for a sua própria conta autenticada
+                        if (meuUsername && meuUsername.toLowerCase() === player.username.toLowerCase()) {
+                            oferecidoId = elem.id;
+                            abrirModalTrocaComCardPreSelecionado(elem);
+                        } else {
+                            alert(`Esta conta (@${player.username}) já foi autenticada via Twitch neste navegador. Por favor, faz login no topo da página para a usar.`);
+                        }
+                    } else {
+                        // Conta não autenticada via Twitch (Fluxo Livre)
+                        if (isTwitchLoggedIn) {
+                            // Se estivermos logados com a Twitch, não deixamos mudar de conta automaticamente clicando no bicho de outra pessoa
+                            if (meuUsername && meuUsername.toLowerCase() === player.username.toLowerCase()) {
+                                oferecidoId = elem.id;
+                                abrirModalTrocaComCardPreSelecionado(elem);
+                            }
+                        } else {
+                            // Se não estivermos logados com a Twitch, assumimos a identidade automaticamente (Fluxo Livre) e abrimos o modal
+                            meuUsername = player.username;
+                            localStorage.setItem('meuUsername', meuUsername);
+                            atualizarUIConta();
+                            
+                            // Destacar visualmente no ranking e atualizar botões
+                            selecionarUtilizador(player, document.querySelector('.ranking-item.active'));
+
                             oferecidoId = elem.id;
                             abrirModalTrocaComCardPreSelecionado(elem);
                         }
-                    } else {
-                        // Fluxo Livre (sem login Twitch): assume a identidade automaticamente e abre o modal
-                        meuUsername = player.username;
-                        localStorage.setItem('meuUsername', meuUsername);
-                        atualizarUIConta();
-                        
-                        // Destacar visualmente no ranking e atualizar botões
-                        selecionarUtilizador(player, document.querySelector('.ranking-item.active'));
-
-                        oferecidoId = elem.id;
-                        abrirModalTrocaComCardPreSelecionado(elem);
                     }
                 }
             };
@@ -311,10 +318,14 @@ function atualizarUIConta() {
 
 // Configurar o clique no botão Definir Conta
 document.getElementById('btn-definir-conta').onclick = () => {
-    const isTwitchLoggedIn = !!localStorage.getItem('twitch_access_token');
-    if (isTwitchLoggedIn) return; // Se estiver logado pela Twitch, ignora
-
     if (jogadorSelecionado) {
+        // Se estiver logado pela Twitch, ao definir uma conta manual, fazemos logout automático do Twitch
+        const isTwitchLoggedIn = !!localStorage.getItem('twitch_access_token');
+        if (isTwitchLoggedIn) {
+            localStorage.removeItem('twitch_access_token');
+            localStorage.removeItem('meuProfileImage');
+        }
+
         meuUsername = jogadorSelecionado.username;
         localStorage.setItem('meuUsername', meuUsername);
         atualizarUIConta();
@@ -679,6 +690,13 @@ async function obterPerfilTwitch() {
             meuUsername = user.login; // Guardado em minúsculas (igual ao username da BD)
             localStorage.setItem('meuUsername', meuUsername);
             localStorage.setItem('meuProfileImage', user.profile_image_url);
+            
+            // Adicionar esta conta à lista local de contas que já se autenticaram via Twitch
+            let autenticadas = JSON.parse(localStorage.getItem('contas_autenticadas_twitch') || '[]');
+            if (!autenticadas.includes(meuUsername.toLowerCase())) {
+                autenticadas.push(meuUsername.toLowerCase());
+                localStorage.setItem('contas_autenticadas_twitch', JSON.stringify(autenticadas));
+            }
         }
     } catch (e) {
         console.error("Erro ao carregar perfil da Twitch:", e);
