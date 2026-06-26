@@ -897,5 +897,64 @@ footer {
     box-shadow: none !important;
 }
 
+/* Estilos para o Login da Twitch */
+.twitch-login-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #9146FF;
+    color: white !important;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 800;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(145, 70, 255, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.twitch-login-btn:hover {
+    background-color: #772CE8;
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(145, 70, 255, 0.5);
+}
+
+.twitch-icon {
+    flex-shrink: 0;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.twitch-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #9146FF;
+    box-shadow: 0 0 8px rgba(145, 70, 255, 0.4);
+    object-fit: cover;
+}
+
+.logout-btn {
+    background: transparent;
+    border: none;
+    color: #ff5555;
+    margin-left: 15px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 12px;
+    transition: color 0.2s;
+    font-family: inherit;
+}
+
+.logout-btn:hover {
+    color: #ff3333;
+    text-decoration: underline;
+}
+
 
 
