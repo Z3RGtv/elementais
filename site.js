@@ -421,20 +421,25 @@ function renderizarPropostas() {
         const elemPropInfo = elementaisMap.find(e => e.id === p.elemProposer) || { file: 'default.png', id: p.elemProposer };
         const elemTargInfo = elementaisMap.find(e => e.id === p.elemTarget) || { file: 'default.png', id: p.elemTarget };
 
-        const propNomeLegivel = elemPropInfo.isUser ? elemPropInfo.name : p.elemProposer;
-        const targNomeLegivel = elemTargInfo.isUser ? elemTargInfo.name : p.elemTarget;
+        const propNomeLegivel = elemPropInfo.isUser ? elemPropInfo.name : obterNomeSimplesBicho(p.elemProposer);
+        const targNomeLegivel = elemTargInfo.isUser ? elemTargInfo.name : obterNomeSimplesBicho(p.elemTarget);
 
         let content = '';
         if (souAlvo) {
             content = `
                 <div class="prop-players-info">
-                    <span><strong>@${p.proposerName}</strong> quer:</span>
+                    <span><strong>@${p.proposerName}</strong> propõe:</span>
                     <div class="prop-visual-swap">
+                        <span class="prop-action-label give">Oferece</span>
                         <img src="Sprites/${elemPropInfo.file}" class="prop-card-mini" title="${propNomeLegivel}">
+                        <span class="prop-item-name">${propNomeLegivel}</span>
+                        
                         <span class="prop-arrow">➡️</span>
+                        
+                        <span class="prop-action-label take">Pede-te</span>
                         <img src="Sprites/${elemTargInfo.file}" class="prop-card-mini" title="${targNomeLegivel}">
+                        <span class="prop-item-name">${targNomeLegivel}</span>
                     </div>
-                    <span>pelo teu elemental.</span>
                 </div>
                 <div class="prop-actions">
                     <button class="btn btn-sm" onclick="copiarComandoResposta('sim', '${p.proposerName}', this)">Aceitar (sim) 🤝</button>
@@ -444,16 +449,21 @@ function renderizarPropostas() {
         } else {
             content = `
                 <div class="prop-players-info">
-                    <span>Ofereceste a <strong>@${p.targetName}</strong>:</span>
+                    <span>Propuseste a <strong>@${p.targetName}</strong>:</span>
                     <div class="prop-visual-swap">
+                        <span class="prop-action-label give">Dás</span>
                         <img src="Sprites/${elemPropInfo.file}" class="prop-card-mini" title="${propNomeLegivel}">
+                        <span class="prop-item-name">${propNomeLegivel}</span>
+                        
                         <span class="prop-arrow">➡️</span>
+                        
+                        <span class="prop-action-label take">Pedes</span>
                         <img src="Sprites/${elemTargInfo.file}" class="prop-card-mini" title="${targNomeLegivel}">
+                        <span class="prop-item-name">${targNomeLegivel}</span>
                     </div>
-                    <span>(Aguardando resposta dele no chat).</span>
                 </div>
                 <div class="prop-actions">
-                    <span style="font-size: 12px; color: var(--text-muted);">Enviada</span>
+                    <span style="font-size: 12px; color: var(--text-muted); font-style: italic;">Aguardando resposta no chat</span>
                 </div>
             `;
         }
