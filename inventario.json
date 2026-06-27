@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27 01:10:33 UTC",
+  "updatedAt": "2026-06-27 01:14:19 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 1, "sucesso": 1, "rate": 100.0 },
@@ -88,17 +88,22 @@
       "inventario": {"1_1":1,"3_1":1}
     },
     {
+      "username": "z3rgtv",
+      "pontos": 10,
+      "inventario": {"1_1":1}
+    },
+    {
       "username": "hst_playz_pt",
       "pontos": 10,
       "inventario": {"1_1":1}
     },
     {
-      "username": "minichef9",
+      "username": "astroz1nvlr",
       "pontos": 10,
       "inventario": {"1_1":1}
     },
     {
-      "username": "astroz1nvlr",
+      "username": "minichef9",
       "pontos": 10,
       "inventario": {"1_1":1}
     }
