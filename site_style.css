@@ -130,6 +130,38 @@ h2 {
     letter-spacing: 0.5px;
 }
 
+.rank-crown {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    font-size: 15px;
+}
+.rank-crown.gold {
+    filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.7));
+}
+.rank-crown.silver {
+    filter: drop-shadow(0 0 3px rgba(192, 192, 192, 0.7));
+}
+.rank-crown.bronze {
+    filter: drop-shadow(0 0 3px rgba(205, 127, 50, 0.7));
+}
+
+.prize-badge-rank {
+    background: rgba(46, 204, 113, 0.15);
+    color: #2ecc71;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: 1px solid rgba(46, 204, 113, 0.3);
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 6px rgba(46, 204, 113, 0.2);
+}
+
 #user-points-panel {
     font-size: 15px;
     color: var(--text-muted);
