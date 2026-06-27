@@ -143,20 +143,19 @@ function renderizarRanking(jogadores) {
 
         let rankPrefix = `<strong>${index + 1}º</strong>`;
         if (index === 0) {
-            rankPrefix = `<span class="rank-crown gold" title="1º Classificado">👑</span> <strong>1º</strong>`;
+            rankPrefix = `<span class="rank-trophy gold" title="1º Classificado">🏆</span> <strong>1º</strong>`;
         } else if (index === 1) {
-            rankPrefix = `<span class="rank-crown silver" title="2º Classificado">👑</span> <strong>2º</strong>`;
+            rankPrefix = `<span class="rank-trophy silver" title="2º Classificado">🏆</span> <strong>2º</strong>`;
         } else if (index === 2) {
-            rankPrefix = `<span class="rank-crown bronze" title="3º Classificado">👑</span> <strong>3º</strong>`;
-        }
-
-        let prizeBadge = '';
-        if (index === 3 || index === 4) {
-            prizeBadge = ` <span class="prize-badge-rank" title="Prémio Top 5">Prémio</span>`;
+            rankPrefix = `<span class="rank-trophy bronze" title="3º Classificado">🏆</span> <strong>3º</strong>`;
+        } else if (index === 3) {
+            rankPrefix = `<span class="rank-badge prize-4" title="4º Classificado - Prémio">4º</span>`;
+        } else if (index === 4) {
+            rankPrefix = `<span class="rank-badge prize-5" title="5º Classificado - Prémio">5º</span>`;
         }
 
         item.innerHTML = `
-            <span>${rankPrefix} @${player.username} ${isMe ? '<span class="my-account-badge">Tu</span>' : ''}${prizeBadge}</span>
+            <span>${rankPrefix} @${player.username} ${isMe ? '<span class="my-account-badge">Tu</span>' : ''}</span>
             <span>${player.pontos} pts</span>
         `;
         item.onclick = () => selecionarUtilizador(player, item);
