@@ -230,7 +230,25 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
 
         if (isSelectionMode && selectCallback) {
+            // Se for o grid de pedidos do alvo e eu já tiver 2 cópias desse bicho, desativa visualmente
+            if (targetGridId === 'target-request-card-selection') {
+                const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
+                const qtyEu = meuPerfil.inventario[elem.id] || 0;
+                if (qtyEu >= 2) {
+                    slot.classList.add('disabled-selection');
+                    slot.title = "Já tens o limite de 2 cópias deste elemental na tua coleção!";
+                }
+            }
+
             slot.onclick = () => {
+                if (targetGridId === 'target-request-card-selection') {
+                    const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
+                    const qtyEu = meuPerfil.inventario[elem.id] || 0;
+                    if (qtyEu >= 2) {
+                        alert(`Não podes propor receber este elemental porque já tens o limite máximo de 2 cópias na tua coleção!`);
+                        return;
+                    }
+                }
                 grid.querySelectorAll('.grid-item').forEach(i => i.classList.remove('selected'));
                 slot.classList.add('selected');
                 selectCallback(elem.id, elem);
@@ -243,6 +261,12 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
                     
                     // Caso 1: Clicar no elemental de outra pessoa (Proposta direta se estiver logado)
                     if (meuUsername && meuUsername.toLowerCase() !== player.username.toLowerCase()) {
+                        const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
+                        const minhasCopias = meuPerfil.inventario[elem.id] || 0;
+                        if (minhasCopias >= 2) {
+                            alert(`Não podes propor receber este elemental porque já tens o limite máximo de 2 cópias na tua coleção!`);
+                            return;
+                        }
                         abrirModalTrocaComCardPedidoPreSelecionado(player, elem);
                         return;
                     }
@@ -669,14 +693,24 @@ function atualizarResumoTroca(elemOferecido, elemPedido) {
 
         const targetPlayer = jogadorSelecionadoTroca || jogadorSelecionado;
         const targetUser = targetPlayer ? targetPlayer.username : "";
+        
         const qtyTarget = targetPlayer && targetPlayer.inventario ? (targetPlayer.inventario[oferecidoId] || 0) : 0;
-        const jaTemLimite = qtyTarget >= 2;
+        const jaTemLimiteAlvo = qtyTarget >= 2;
+
+        const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
+        const qtyEu = meuPerfil.inventario[pedidoId] || 0;
+        const jaTemLimiteEu = qtyEu >= 2;
 
         const commandInput = document.getElementById('twitch-command-input');
         const btnCopiar = document.getElementById('btn-copiar-comando');
 
-        if (jaTemLimite) {
+        if (jaTemLimiteAlvo) {
             commandInput.value = `Inválido: @${targetUser} já tem o limite de 2 cópias!`;
+            commandInput.style.color = '#ff5555';
+            btnCopiar.disabled = true;
+            btnCopiar.classList.add('disabled-btn');
+        } else if (jaTemLimiteEu) {
+            commandInput.value = `Inválido: Já tens o limite de 2 cópias!`;
             commandInput.style.color = '#ff5555';
             btnCopiar.disabled = true;
             btnCopiar.classList.add('disabled-btn');
