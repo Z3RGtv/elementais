@@ -236,15 +236,20 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
                 selectCallback(elem.id, elem);
             };
         } else if (!isSelectionMode) {
-            // FLUXO DE ATALHO DE CLIQUE EM ELEMENTAL QUE EU TENHO
             slot.onclick = () => {
                 if (qty >= 1) {
                     const isTwitchLoggedIn = !!localStorage.getItem('twitch_access_token');
                     const autenticadas = JSON.parse(localStorage.getItem('contas_autenticadas_twitch') || '[]');
-                    const contaJaAutenticada = autenticadas.includes(player.username.toLowerCase());
+                    
+                    // Caso 1: Clicar no elemental de outra pessoa (Proposta direta se estiver logado)
+                    if (meuUsername && meuUsername.toLowerCase() !== player.username.toLowerCase()) {
+                        abrirModalTrocaComCardPedidoPreSelecionado(player, elem);
+                        return;
+                    }
 
+                    // Caso 2: Clicar no meu próprio elemental (Definir o que oferecer primeiro)
+                    const contaJaAutenticada = autenticadas.includes(player.username.toLowerCase());
                     if (contaJaAutenticada) {
-                        // Se a conta já foi autenticada via Twitch, só deixa abrir se for a sua própria conta autenticada
                         if (meuUsername && meuUsername.toLowerCase() === player.username.toLowerCase()) {
                             oferecidoId = elem.id;
                             abrirModalTrocaComCardPreSelecionado(elem);
@@ -252,15 +257,13 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
                             alert(`Esta conta (@${player.username}) já foi autenticada via Twitch neste navegador. Por favor, faz login no topo da página para a usar.`);
                         }
                     } else {
-                        // Conta não autenticada via Twitch (Fluxo Livre)
                         if (isTwitchLoggedIn) {
-                            // Se estivermos logados com a Twitch, não deixamos mudar de conta automaticamente clicando no bicho de outra pessoa
                             if (meuUsername && meuUsername.toLowerCase() === player.username.toLowerCase()) {
                                 oferecidoId = elem.id;
                                 abrirModalTrocaComCardPreSelecionado(elem);
                             }
                         } else {
-                            // Se não estivermos logados com a Twitch, assumimos a identidade automaticamente (Fluxo Livre) e abrimos o modal
+                            // Fluxo Livre: Assumir identidade automaticamente
                             meuUsername = player.username;
                             localStorage.setItem('meuUsername', meuUsername);
                             atualizarUIConta();
@@ -491,6 +494,47 @@ function abrirModalTrocaComCardPreSelecionado(elemOferecido) {
 
     // Listar outros jogadores
     renderizarListaJogadoresModal();
+
+    modal.classList.remove('hidden');
+}
+
+function abrirModalTrocaComCardPedidoPreSelecionado(targetPlayer, elemPedido) {
+    if (!meuUsername) return;
+    
+    const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
+
+    oferecidoId = null;
+    pedidoId = elemPedido.id;
+    cacheOferecido = null;
+    cachePedido = elemPedido;
+    document.getElementById('troca-resumo-container').classList.add('hidden');
+
+    // Renderizar meu inventário para eu escolher o que ofereço
+    renderizarGridColecao(meuPerfil, 'my-offer-card-selection', true, (id, elem) => {
+        oferecidoId = id;
+        cacheOferecido = elem;
+        atualizarResumoTroca(elem, null);
+        renderizarListaJogadoresModal(); // Re-renderiza a lista de jogadores caso decida mudar
+    });
+
+    // Selecionar diretamente o jogador cuja página estamos a visualizar
+    selecionarJogadorTrocaNoModal(targetPlayer);
+
+    // Destacar visualmente o card pedido que foi clicado no grid do alvo
+    setTimeout(() => {
+        const gridPedido = document.getElementById('target-request-card-selection');
+        if (gridPedido) {
+            gridPedido.querySelectorAll('.grid-item').forEach(slot => {
+                const img = slot.querySelector('img');
+                if (img && img.src.includes(elemPedido.file)) {
+                    slot.classList.add('selected');
+                }
+            });
+        }
+    }, 50);
+
+    // Atualizar o resumo da troca já com o item pedido
+    atualizarResumoTroca(null, elemPedido);
 
     modal.classList.remove('hidden');
 }
