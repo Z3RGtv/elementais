@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27 01:06:46 UTC",
+  "updatedAt": "2026-06-27 01:10:33 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 1, "sucesso": 1, "rate": 100.0 },
@@ -24,7 +24,7 @@
     { "id": "u_TheMarySimmer", "file": "Users/TheMarySimmer.png", "name": "TheMarySimmer" }
   ],
   "propostas": [
-    { "proposerName": "z3rgtv", "targetName": "z3rgtvvod", "elemProposer": "14_3", "elemTarget": "1_1", "createdAt": "2026-06-27T01:06:45.9810670Z" }
+
   ],
   "ranking": [
     {
@@ -38,14 +38,14 @@
       "inventario": {"11_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"3_2":1,"4_1":2,"4_3":1,"5_1":1,"5_2":2,"6_1":2,"7_1":1,"8_1":2,"9_1":2,"u_ManoDrico":1}
     },
     {
-      "username": "ipowerlz",
-      "pontos": 425,
-      "inventario": {"11_1":2,"1_1":1,"1_3":1,"2_1":2,"3_1":1,"4_1":1,"4_2":1,"5_1":2,"6_1":1,"6_2":1,"7_1":1,"8_1":1,"9_1":2}
-    },
-    {
       "username": "gui_z0",
       "pontos": 425,
       "inventario": {"11_1":1,"1_1":2,"1_2":1,"2_1":2,"3_1":1,"3_2":1,"4_1":1,"5_1":2,"5_2":1,"6_2":1,"9_3":1}
+    },
+    {
+      "username": "ipowerlz",
+      "pontos": 425,
+      "inventario": {"11_1":2,"1_1":1,"1_3":1,"2_1":2,"3_1":1,"4_1":1,"4_2":1,"5_1":2,"6_1":1,"6_2":1,"7_1":1,"8_1":1,"9_1":2}
     },
     {
       "username": "marquesrcarol",
@@ -56,11 +56,6 @@
       "username": "manodrico",
       "pontos": 230,
       "inventario": {"1_1":2,"3_2":1,"4_1":1,"5_1":1,"5_2":1,"6_1":2,"7_1":1,"8_2":1}
-    },
-    {
-      "username": "z3rgtv",
-      "pontos": 225,
-      "inventario": {"10_1":1,"14_3":1,"1_1":1,"2_2":1,"4_1":1,"6_1":1}
     },
     {
       "username": "1509_martim",
@@ -78,11 +73,6 @@
       "inventario": {"10_1":1,"1_1":1,"4_1":1,"7_1":1}
     },
     {
-      "username": "z3rgtvvod",
-      "pontos": 90,
-      "inventario": {"1_1":1,"1_2":1,"3_1":1,"5_2":1}
-    },
-    {
       "username": "eimezdumipima_",
       "pontos": 50,
       "inventario": {"1_1":1,"2_1":2,"8_1":1}
@@ -98,12 +88,12 @@
       "inventario": {"1_1":1,"3_1":1}
     },
     {
-      "username": "minichef9",
+      "username": "hst_playz_pt",
       "pontos": 10,
       "inventario": {"1_1":1}
     },
     {
-      "username": "hst_playz_pt",
+      "username": "minichef9",
       "pontos": 10,
       "inventario": {"1_1":1}
     },
