@@ -131,11 +131,17 @@ function renderizarRanking(jogadores) {
     jogadores.forEach((player, index) => {
         const item = document.createElement('div');
         item.className = 'ranking-item';
+        
+        const isMe = meuUsername && player.username.toLowerCase() === meuUsername.toLowerCase();
+        if (isMe) {
+            item.classList.add('my-account');
+        }
+        
         if (jogadorSelecionado && jogadorSelecionado.username.toLowerCase() === player.username.toLowerCase()) {
             item.classList.add('active');
         }
         item.innerHTML = `
-            <span><strong>${index + 1}º</strong> @${player.username}</span>
+            <span><strong>${index + 1}º</strong> @${player.username} ${isMe ? '<span class="my-account-badge">Tu</span>' : ''}</span>
             <span>${player.pontos} pts</span>
         `;
         item.onclick = () => selecionarUtilizador(player, item);
