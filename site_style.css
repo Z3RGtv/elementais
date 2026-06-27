@@ -104,6 +104,32 @@ h2 {
     transform: translateX(5px);
 }
 
+.ranking-item.my-account {
+    border-color: rgba(161, 84, 242, 0.45);
+    background: rgba(161, 84, 242, 0.08);
+    box-shadow: 0 0 10px rgba(161, 84, 242, 0.15), inset 0 0 8px rgba(161, 84, 242, 0.05);
+}
+
+.ranking-item.my-account:hover, .ranking-item.my-account.active {
+    background: rgba(161, 84, 242, 0.18);
+    box-shadow: 0 0 15px rgba(161, 84, 242, 0.3), inset 0 0 10px rgba(161, 84, 242, 0.1);
+}
+
+.my-account-badge {
+    background: linear-gradient(135deg, #a154f2, #8a2be2);
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 12px;
+    margin-left: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    box-shadow: 0 0 6px rgba(161, 84, 242, 0.4);
+    letter-spacing: 0.5px;
+}
+
 #user-points-panel {
     font-size: 15px;
     color: var(--text-muted);
