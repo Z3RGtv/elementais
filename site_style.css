@@ -1372,6 +1372,18 @@ footer {
     }
 }
 
+/* Desativação de slots de seleção por limite de cópias */
+.grid-item.disabled-selection {
+    opacity: 0.35;
+    cursor: not-allowed;
+    filter: grayscale(100%);
+}
+
+.grid-item.disabled-selection:hover {
+    transform: none !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
 
 
 
