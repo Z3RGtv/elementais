@@ -140,8 +140,23 @@ function renderizarRanking(jogadores) {
         if (jogadorSelecionado && jogadorSelecionado.username.toLowerCase() === player.username.toLowerCase()) {
             item.classList.add('active');
         }
+
+        let rankPrefix = `<strong>${index + 1}º</strong>`;
+        if (index === 0) {
+            rankPrefix = `<span class="rank-crown gold" title="1º Classificado">👑</span> <strong>1º</strong>`;
+        } else if (index === 1) {
+            rankPrefix = `<span class="rank-crown silver" title="2º Classificado">👑</span> <strong>2º</strong>`;
+        } else if (index === 2) {
+            rankPrefix = `<span class="rank-crown bronze" title="3º Classificado">👑</span> <strong>3º</strong>`;
+        }
+
+        let prizeBadge = '';
+        if (index === 3 || index === 4) {
+            prizeBadge = ` <span class="prize-badge-rank" title="Prémio Top 5">Prémio</span>`;
+        }
+
         item.innerHTML = `
-            <span><strong>${index + 1}º</strong> @${player.username} ${isMe ? '<span class="my-account-badge">Tu</span>' : ''}</span>
+            <span>${rankPrefix} @${player.username} ${isMe ? '<span class="my-account-badge">Tu</span>' : ''}${prizeBadge}</span>
             <span>${player.pontos} pts</span>
         `;
         item.onclick = () => selecionarUtilizador(player, item);
