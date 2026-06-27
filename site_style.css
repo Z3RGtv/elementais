@@ -503,6 +503,28 @@ footer {
     font-weight: 800;
 }
 
+.prop-action-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 3px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+.prop-action-label.give {
+    background: rgba(46, 204, 113, 0.15);
+    color: #2ecc71;
+}
+.prop-action-label.take {
+    background: rgba(231, 76, 60, 0.15);
+    color: #e74c3c;
+}
+.prop-item-name {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 13.5px;
+}
+
 .prop-actions {
     display: flex;
     gap: 8px;
