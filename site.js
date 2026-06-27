@@ -142,16 +142,8 @@ function renderizarRanking(jogadores) {
         }
 
         let rankPrefix = `<strong>${index + 1}º</strong>`;
-        if (index === 0) {
-            rankPrefix = `<span class="rank-trophy gold" title="1º Classificado">🏆</span> <strong>1º</strong>`;
-        } else if (index === 1) {
-            rankPrefix = `<span class="rank-trophy silver" title="2º Classificado">🏆</span> <strong>2º</strong>`;
-        } else if (index === 2) {
-            rankPrefix = `<span class="rank-trophy bronze" title="3º Classificado">🏆</span> <strong>3º</strong>`;
-        } else if (index === 3) {
-            rankPrefix = `<span class="rank-badge prize-4" title="4º Classificado - Prémio">4º</span>`;
-        } else if (index === 4) {
-            rankPrefix = `<span class="rank-badge prize-5" title="5º Classificado - Prémio">5º</span>`;
+        if (index >= 0 && index <= 4) {
+            rankPrefix = `<img src="badges/${index + 1}.png" class="rank-badge-img" title="${index + 1}º Classificado" alt="${index + 1}º">`;
         }
 
         item.innerHTML = `
