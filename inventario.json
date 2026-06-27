@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-06-27 00:46:46 UTC",
+  "updatedAt": "2026-06-27 00:52:15 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
-    "super": { "total": 0, "sucesso": 0, "rate": 0.0 },
+    "super": { "total": 1, "sucesso": 1, "rate": 100.0 },
     "ultra": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "master": { "total": 0, "sucesso": 0, "rate": 0.0 }
   },
   "recentes_lancamentos": [
-
+    { "username": "z3rgtv", "elementalId": "13_3", "bola": "super", "sucesso": 1, "date": "2026-06-27 01:49:45" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -63,6 +63,11 @@
       "inventario": {"1_1":1,"2_1":2,"3_1":1,"5_1":1,"6_1":2,"8_2":1,"9_1":1,"9_2":1}
     },
     {
+      "username": "z3rgtv",
+      "pontos": 175,
+      "inventario": {"13_3":1,"1_1":2,"2_2":1,"4_1":1,"6_1":1}
+    },
+    {
       "username": "z3rgtvvod",
       "pontos": 130,
       "inventario": {"10_1":1,"1_2":1,"3_1":1,"5_2":1}
@@ -76,11 +81,6 @@
       "username": "soniagoncalves",
       "pontos": 90,
       "inventario": {"10_1":1,"1_1":1,"4_1":1,"7_1":1}
-    },
-    {
-      "username": "z3rgtv",
-      "pontos": 85,
-      "inventario": {"1_1":2,"2_2":1,"4_1":1,"6_1":1}
     },
     {
       "username": "eimezdumipima_",
