@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27 01:01:04 UTC",
+  "updatedAt": "2026-06-27 01:04:17 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 1, "sucesso": 1, "rate": 100.0 },
@@ -24,7 +24,7 @@
     { "id": "u_TheMarySimmer", "file": "Users/TheMarySimmer.png", "name": "TheMarySimmer" }
   ],
   "propostas": [
-    { "proposerName": "z3rgtv", "targetName": "z3rgtvvod", "elemProposer": "1_1", "elemTarget": "10_1", "createdAt": "2026-06-27T01:01:03.4563570Z" }
+
   ],
   "ranking": [
     {
@@ -58,19 +58,14 @@
       "inventario": {"1_1":2,"3_2":1,"4_1":1,"5_1":1,"5_2":1,"6_1":2,"7_1":1,"8_2":1}
     },
     {
+      "username": "z3rgtv",
+      "pontos": 225,
+      "inventario": {"10_1":1,"14_3":1,"1_1":1,"2_2":1,"4_1":1,"6_1":1}
+    },
+    {
       "username": "1509_martim",
       "pontos": 205,
       "inventario": {"1_1":1,"2_1":2,"3_1":1,"5_1":1,"6_1":2,"8_2":1,"9_1":1,"9_2":1}
-    },
-    {
-      "username": "z3rgtv",
-      "pontos": 175,
-      "inventario": {"14_3":1,"1_1":2,"2_2":1,"4_1":1,"6_1":1}
-    },
-    {
-      "username": "z3rgtvvod",
-      "pontos": 130,
-      "inventario": {"10_1":1,"1_2":1,"3_1":1,"5_2":1}
     },
     {
       "username": "manu12321_",
@@ -81,6 +76,11 @@
       "username": "soniagoncalves",
       "pontos": 90,
       "inventario": {"10_1":1,"1_1":1,"4_1":1,"7_1":1}
+    },
+    {
+      "username": "z3rgtvvod",
+      "pontos": 90,
+      "inventario": {"1_1":1,"1_2":1,"3_1":1,"5_2":1}
     },
     {
       "username": "eimezdumipima_",
