@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-06-29 19:55:11 UTC",
+  "updatedAt": "2026-06-29 20:00:55 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 4, "sucesso": 1, "rate": 25.0 },
     "ultra": { "total": 4, "sucesso": 3, "rate": 75.0 },
-    "master": { "total": 24, "sucesso": 23, "rate": 95.8 }
+    "master": { "total": 25, "sucesso": 24, "rate": 96.0 }
   },
   "recentes_lancamentos": [
+    { "username": "soniagoncalves", "elementalId": "4_4", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:58:25" },
     { "username": "manu12321_", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:52:41" },
     { "username": "1509_martim", "elementalId": "6_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:46:22" },
     { "username": "ipowerlz", "elementalId": "5_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:40:40" },
@@ -35,8 +36,7 @@
     { "username": "marquesrcarol", "elementalId": "4_1", "bola": "ultra", "sucesso": 1, "date": "2026-06-29 18:18:02" },
     { "username": "marquesrcarol", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 18:08:12" },
     { "username": "marquesrcarol", "elementalId": "4_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:58:13" },
-    { "username": "sheisdani", "elementalId": "4_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:49:49" },
-    { "username": "minichef9", "elementalId": "4_2", "bola": "super", "sucesso": 0, "date": "2026-06-29 17:49:41" }
+    { "username": "sheisdani", "elementalId": "4_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:49:49" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -87,6 +87,11 @@
       "inventario": {"1_1":2,"3_2":1,"4_1":1,"5_1":1,"5_2":1,"6_1":1,"7_1":1,"7_2":1,"8_1":1,"8_2":1}
     },
     {
+      "username": "soniagoncalves",
+      "pontos": 290,
+      "inventario": {"10_1":1,"1_1":1,"4_1":1,"4_4":1,"7_1":1}
+    },
+    {
       "username": "1509_martim",
       "pontos": 280,
       "inventario": {"1_1":1,"2_1":2,"3_1":1,"5_1":1,"6_1":2,"6_2":1,"8_2":1,"9_1":1,"9_2":1}
@@ -95,11 +100,6 @@
       "username": "manu12321_",
       "pontos": 125,
       "inventario": {"10_1":1,"12_1":1,"1_1":2,"2_1":2,"4_1":2,"8_1":1}
-    },
-    {
-      "username": "soniagoncalves",
-      "pontos": 90,
-      "inventario": {"10_1":1,"1_1":1,"4_1":1,"7_1":1}
     },
     {
       "username": "minichef9",
