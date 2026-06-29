@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29 17:00:44 UTC",
+  "updatedAt": "2026-06-29 17:07:26 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 2, "sucesso": 1, "rate": 50.0 },
@@ -30,7 +30,8 @@
   "propostas": [
     { "proposerName": "marquesrcarol", "targetName": "ipowerlz", "elemProposer": "8_1", "elemTarget": "1_3", "createdAt": "2026-06-29T16:41:24.3513758Z" },
     { "proposerName": "manu12321_", "targetName": "ipowerlz", "elemProposer": "10_1", "elemTarget": "11_1", "createdAt": "2026-06-29T16:44:24.2893505Z" },
-    { "proposerName": "marquesrcarol", "targetName": "manodrico", "elemProposer": "8_1", "elemTarget": "6_1", "createdAt": "2026-06-29T16:44:33.7790889Z" }
+    { "proposerName": "marquesrcarol", "targetName": "manodrico", "elemProposer": "8_1", "elemTarget": "6_1", "createdAt": "2026-06-29T16:44:33.7790889Z" },
+    { "proposerName": "marquesrcarol", "targetName": "sheisdani", "elemProposer": "4_2", "elemTarget": "5_2", "createdAt": "2026-06-29T17:07:26.6683925Z" }
   ],
   "ranking": [
     {
