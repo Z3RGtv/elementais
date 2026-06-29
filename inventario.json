@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-06-29 19:19:09 UTC",
+  "updatedAt": "2026-06-29 19:25:09 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 4, "sucesso": 1, "rate": 25.0 },
     "ultra": { "total": 4, "sucesso": 3, "rate": 75.0 },
-    "master": { "total": 18, "sucesso": 17, "rate": 94.4 }
+    "master": { "total": 19, "sucesso": 18, "rate": 94.7 }
   },
   "recentes_lancamentos": [
+    { "username": "sheisdani", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:22:38" },
     { "username": "sheisdani", "elementalId": "5_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:16:38" },
     { "username": "ipowerlz", "elementalId": "3_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:10:15" },
     { "username": "marquesrcarol", "elementalId": "7_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:04:30" },
@@ -53,14 +54,14 @@
   ],
   "ranking": [
     {
+      "username": "sheisdani",
+      "pontos": 640,
+      "inventario": {"11_1":1,"12_3":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"3_2":1,"4_1":2,"4_2":1,"4_3":1,"5_1":2,"5_2":2,"6_1":2,"7_1":1,"8_1":2,"9_1":2,"u_ManoDrico":1}
+    },
+    {
       "username": "ipowerlz",
       "pontos": 600,
       "inventario": {"11_1":2,"14_1":1,"1_1":1,"1_3":1,"2_1":2,"3_1":1,"3_2":1,"4_1":1,"4_2":1,"5_1":2,"5_3":1,"6_1":1,"6_2":1,"7_1":1,"7_2":1,"8_1":1,"9_1":2}
-    },
-    {
-      "username": "sheisdani",
-      "pontos": 580,
-      "inventario": {"11_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"3_2":1,"4_1":2,"4_2":1,"4_3":1,"5_1":2,"5_2":2,"6_1":2,"7_1":1,"8_1":2,"9_1":2,"u_ManoDrico":1}
     },
     {
       "username": "milhafretuga",
