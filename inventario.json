@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-06-29 19:48:53 UTC",
+  "updatedAt": "2026-06-29 19:55:11 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 4, "sucesso": 1, "rate": 25.0 },
     "ultra": { "total": 4, "sucesso": 3, "rate": 75.0 },
-    "master": { "total": 23, "sucesso": 22, "rate": 95.7 }
+    "master": { "total": 24, "sucesso": 23, "rate": 95.8 }
   },
   "recentes_lancamentos": [
+    { "username": "manu12321_", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:52:41" },
     { "username": "1509_martim", "elementalId": "6_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:46:22" },
     { "username": "ipowerlz", "elementalId": "5_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:40:40" },
     { "username": "ipowerlz", "elementalId": "10_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:34:39" },
@@ -35,8 +36,7 @@
     { "username": "marquesrcarol", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 18:08:12" },
     { "username": "marquesrcarol", "elementalId": "4_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:58:13" },
     { "username": "sheisdani", "elementalId": "4_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:49:49" },
-    { "username": "minichef9", "elementalId": "4_2", "bola": "super", "sucesso": 0, "date": "2026-06-29 17:49:41" },
-    { "username": "marquesrcarol", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:36:19" }
+    { "username": "minichef9", "elementalId": "4_2", "bola": "super", "sucesso": 0, "date": "2026-06-29 17:49:41" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -93,8 +93,8 @@
     },
     {
       "username": "manu12321_",
-      "pontos": 115,
-      "inventario": {"10_1":1,"1_1":2,"2_1":2,"4_1":2,"8_1":1}
+      "pontos": 125,
+      "inventario": {"10_1":1,"12_1":1,"1_1":2,"2_1":2,"4_1":2,"8_1":1}
     },
     {
       "username": "soniagoncalves",
