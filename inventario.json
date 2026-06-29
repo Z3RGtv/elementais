@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29 20:31:14 UTC",
+  "updatedAt": "2026-06-29 20:33:57 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 5, "sucesso": 2, "rate": 40.0 },
@@ -53,7 +53,7 @@
     { "id": "u_TheMarySimmer", "file": "Users/TheMarySimmer.png", "name": "TheMarySimmer" }
   ],
   "propostas": [
-    { "proposerName": "marquesrcarol", "targetName": "milhafretuga", "elemProposer": "4_2", "elemTarget": "10_1", "createdAt": "2026-06-29T20:26:53.7224834Z" }
+
   ],
   "ranking": [
     {
@@ -68,13 +68,13 @@
     },
     {
       "username": "milhafretuga",
-      "pontos": 560,
-      "inventario": {"10_1":2,"11_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"4_1":2,"5_1":2,"5_2":1,"6_1":2,"6_2":2,"7_1":2,"7_2":1,"8_1":2,"8_2":1,"9_1":2}
+      "pontos": 600,
+      "inventario": {"10_1":1,"11_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"4_1":2,"4_2":1,"5_1":2,"5_2":1,"6_1":2,"6_2":2,"7_1":2,"7_2":1,"8_1":2,"8_2":1,"9_1":2}
     },
     {
       "username": "marquesrcarol",
-      "pontos": 470,
-      "inventario": {"12_1":1,"12_3":1,"13_1":1,"14_1":1,"1_1":1,"2_1":2,"3_1":1,"4_1":2,"4_2":2,"5_1":1,"6_1":2,"7_1":2,"7_2":1,"8_1":1,"9_1":1,"9_2":1,"u_iPowerlz":1}
+      "pontos": 520,
+      "inventario": {"10_1":1,"12_1":1,"12_3":1,"13_1":1,"14_1":1,"1_1":1,"2_1":2,"3_1":1,"4_1":2,"4_2":1,"5_1":1,"6_1":2,"7_1":2,"7_2":1,"8_1":1,"9_1":1,"9_2":1,"u_iPowerlz":1}
     },
     {
       "username": "manodrico",
