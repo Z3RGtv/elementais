@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-06-27 01:14:19 UTC",
+  "updatedAt": "2026-06-29 16:38:51 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 1, "sucesso": 1, "rate": 100.0 },
     "ultra": { "total": 0, "sucesso": 0, "rate": 0.0 },
-    "master": { "total": 0, "sucesso": 0, "rate": 0.0 }
+    "master": { "total": 1, "sucesso": 1, "rate": 100.0 }
   },
   "recentes_lancamentos": [
+    { "username": "marquesrcarol", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:36:19" },
     { "username": "z3rgtv", "elementalId": "14_3", "bola": "super", "sucesso": 1, "date": "2026-06-27 01:49:45" }
   ],
   "availableUsers": [
@@ -38,19 +39,19 @@
       "inventario": {"11_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"3_2":1,"4_1":2,"4_3":1,"5_1":1,"5_2":2,"6_1":2,"7_1":1,"8_1":2,"9_1":2,"u_ManoDrico":1}
     },
     {
-      "username": "gui_z0",
-      "pontos": 425,
-      "inventario": {"11_1":1,"1_1":2,"1_2":1,"2_1":2,"3_1":1,"3_2":1,"4_1":1,"5_1":2,"5_2":1,"6_2":1,"9_3":1}
-    },
-    {
       "username": "ipowerlz",
       "pontos": 425,
       "inventario": {"11_1":2,"1_1":1,"1_3":1,"2_1":2,"3_1":1,"4_1":1,"4_2":1,"5_1":2,"6_1":1,"6_2":1,"7_1":1,"8_1":1,"9_1":2}
     },
     {
+      "username": "gui_z0",
+      "pontos": 425,
+      "inventario": {"11_1":1,"1_1":2,"1_2":1,"2_1":2,"3_1":1,"3_2":1,"4_1":1,"5_1":2,"5_2":1,"6_2":1,"9_3":1}
+    },
+    {
       "username": "marquesrcarol",
-      "pontos": 285,
-      "inventario": {"1_1":1,"2_1":2,"3_1":2,"4_1":1,"4_2":1,"5_1":1,"8_1":2,"9_1":1,"9_2":1,"u_iPowerlz":1}
+      "pontos": 300,
+      "inventario": {"13_1":1,"1_1":1,"2_1":2,"3_1":2,"4_1":1,"4_2":1,"5_1":1,"8_1":2,"9_1":1,"9_2":1,"u_iPowerlz":1}
     },
     {
       "username": "manodrico",
@@ -88,7 +89,12 @@
       "inventario": {"1_1":1,"3_1":1}
     },
     {
-      "username": "z3rgtv",
+      "username": "astroz1nvlr",
+      "pontos": 10,
+      "inventario": {"1_1":1}
+    },
+    {
+      "username": "minichef9",
       "pontos": 10,
       "inventario": {"1_1":1}
     },
@@ -98,12 +104,7 @@
       "inventario": {"1_1":1}
     },
     {
-      "username": "astroz1nvlr",
-      "pontos": 10,
-      "inventario": {"1_1":1}
-    },
-    {
-      "username": "minichef9",
+      "username": "z3rgtv",
       "pontos": 10,
       "inventario": {"1_1":1}
     }
