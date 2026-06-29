@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-06-29 18:27:38 UTC",
+  "updatedAt": "2026-06-29 18:31:06 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 3, "sucesso": 1, "rate": 33.3 },
     "ultra": { "total": 3, "sucesso": 3, "rate": 100.0 },
-    "master": { "total": 8, "sucesso": 8, "rate": 100.0 }
+    "master": { "total": 9, "sucesso": 9, "rate": 100.0 }
   },
   "recentes_lancamentos": [
+    { "username": "manodrico", "elementalId": "7_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 19:28:35" },
     { "username": "marquesrcarol", "elementalId": "6_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 19:23:14" },
     { "username": "marquesrcarol", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 19:11:52" },
     { "username": "marquesrcarol", "elementalId": "7_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 18:59:24" },
@@ -67,8 +68,8 @@
     },
     {
       "username": "manodrico",
-      "pontos": 260,
-      "inventario": {"1_1":2,"3_2":1,"4_1":1,"5_1":1,"5_2":1,"6_1":1,"7_1":1,"8_1":1,"8_2":1}
+      "pontos": 300,
+      "inventario": {"1_1":2,"3_2":1,"4_1":1,"5_1":1,"5_2":1,"6_1":1,"7_1":1,"7_2":1,"8_1":1,"8_2":1}
     },
     {
       "username": "1509_martim",
