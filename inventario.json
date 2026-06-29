@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29 20:25:10 UTC",
+  "updatedAt": "2026-06-29 20:26:54 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 5, "sucesso": 2, "rate": 40.0 },
@@ -53,7 +53,7 @@
     { "id": "u_TheMarySimmer", "file": "Users/TheMarySimmer.png", "name": "TheMarySimmer" }
   ],
   "propostas": [
-
+    { "proposerName": "marquesrcarol", "targetName": "milhafretuga", "elemProposer": "4_2", "elemTarget": "10_1", "createdAt": "2026-06-29T20:26:53.7224834Z" }
   ],
   "ranking": [
     {
