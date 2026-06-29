@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29 18:01:55 UTC",
+  "updatedAt": "2026-06-29 18:11:04 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 3, "sucesso": 1, "rate": 33.3 },
@@ -35,8 +35,6 @@
     { "id": "u_TheMarySimmer", "file": "Users/TheMarySimmer.png", "name": "TheMarySimmer" }
   ],
   "propostas": [
-    { "proposerName": "marquesrcarol", "targetName": "ipowerlz", "elemProposer": "8_1", "elemTarget": "1_3", "createdAt": "2026-06-29T16:41:24.3513758Z" },
-    { "proposerName": "manu12321_", "targetName": "ipowerlz", "elemProposer": "10_1", "elemTarget": "11_1", "createdAt": "2026-06-29T16:44:24.2893505Z" },
     { "proposerName": "marquesrcarol", "targetName": "sheisdani", "elemProposer": "4_2", "elemTarget": "5_2", "createdAt": "2026-06-29T17:07:26.6683925Z" }
   ],
   "ranking": [
