@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-06-29 20:13:12 UTC",
+  "updatedAt": "2026-06-29 20:19:26 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
-    "super": { "total": 4, "sucesso": 1, "rate": 25.0 },
+    "super": { "total": 5, "sucesso": 2, "rate": 40.0 },
     "ultra": { "total": 4, "sucesso": 3, "rate": 75.0 },
     "master": { "total": 27, "sucesso": 26, "rate": 96.3 }
   },
   "recentes_lancamentos": [
+    { "username": "manodrico", "elementalId": "4_1", "bola": "super", "sucesso": 1, "date": "2026-06-29 21:16:56" },
     { "username": "manu12321_", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 21:10:41" },
     { "username": "ipowerlz", "elementalId": "16_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 21:04:37" },
     { "username": "soniagoncalves", "elementalId": "4_4", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:58:25" },
@@ -35,8 +36,7 @@
     { "username": "sabido_1309", "elementalId": "7_1", "bola": "super", "sucesso": 0, "date": "2026-06-29 18:50:08" },
     { "username": "marquesrcarol", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-06-29 18:36:18" },
     { "username": "ipowerlz", "elementalId": "7_2", "bola": "ultra", "sucesso": 1, "date": "2026-06-29 18:26:26" },
-    { "username": "marquesrcarol", "elementalId": "4_1", "bola": "ultra", "sucesso": 1, "date": "2026-06-29 18:18:02" },
-    { "username": "marquesrcarol", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 18:08:12" }
+    { "username": "marquesrcarol", "elementalId": "4_1", "bola": "ultra", "sucesso": 1, "date": "2026-06-29 18:18:02" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -84,7 +84,7 @@
     {
       "username": "manodrico",
       "pontos": 300,
-      "inventario": {"1_1":2,"3_2":1,"4_1":1,"5_1":1,"5_2":1,"6_1":1,"7_1":1,"7_2":1,"8_1":1,"8_2":1}
+      "inventario": {"1_1":2,"3_2":1,"4_1":2,"5_1":1,"5_2":1,"6_1":1,"7_1":1,"7_2":1,"8_1":1,"8_2":1}
     },
     {
       "username": "soniagoncalves",
