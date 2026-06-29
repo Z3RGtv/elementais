@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-06-29 20:00:55 UTC",
+  "updatedAt": "2026-06-29 20:07:08 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 4, "sucesso": 1, "rate": 25.0 },
     "ultra": { "total": 4, "sucesso": 3, "rate": 75.0 },
-    "master": { "total": 25, "sucesso": 24, "rate": 96.0 }
+    "master": { "total": 26, "sucesso": 25, "rate": 96.2 }
   },
   "recentes_lancamentos": [
+    { "username": "ipowerlz", "elementalId": "16_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 21:04:37" },
     { "username": "soniagoncalves", "elementalId": "4_4", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:58:25" },
     { "username": "manu12321_", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:52:41" },
     { "username": "1509_martim", "elementalId": "6_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:46:22" },
@@ -35,8 +36,7 @@
     { "username": "ipowerlz", "elementalId": "7_2", "bola": "ultra", "sucesso": 1, "date": "2026-06-29 18:26:26" },
     { "username": "marquesrcarol", "elementalId": "4_1", "bola": "ultra", "sucesso": 1, "date": "2026-06-29 18:18:02" },
     { "username": "marquesrcarol", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 18:08:12" },
-    { "username": "marquesrcarol", "elementalId": "4_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:58:13" },
-    { "username": "sheisdani", "elementalId": "4_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:49:49" }
+    { "username": "marquesrcarol", "elementalId": "4_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:58:13" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -58,8 +58,8 @@
   "ranking": [
     {
       "username": "ipowerlz",
-      "pontos": 690,
-      "inventario": {"10_1":1,"11_1":2,"14_1":1,"1_1":1,"1_3":1,"2_1":2,"3_1":1,"3_2":1,"4_1":1,"4_2":1,"5_1":2,"5_2":1,"5_3":1,"6_1":1,"6_2":1,"7_1":1,"7_2":1,"8_1":1,"9_1":2}
+      "pontos": 810,
+      "inventario": {"10_1":1,"11_1":2,"14_1":1,"16_2":1,"1_1":1,"1_3":1,"2_1":2,"3_1":1,"3_2":1,"4_1":1,"4_2":1,"5_1":2,"5_2":1,"5_3":1,"6_1":1,"6_2":1,"7_1":1,"7_2":1,"8_1":1,"9_1":2}
     },
     {
       "username": "sheisdani",
