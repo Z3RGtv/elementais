@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-06-29 20:37:13 UTC",
+  "updatedAt": "2026-06-29 20:43:13 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 5, "sucesso": 2, "rate": 40.0 },
     "ultra": { "total": 5, "sucesso": 4, "rate": 80.0 },
-    "master": { "total": 29, "sucesso": 28, "rate": 96.6 }
+    "master": { "total": 30, "sucesso": 29, "rate": 96.7 }
   },
   "recentes_lancamentos": [
+    { "username": "sheisdani", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 21:40:43" },
     { "username": "marquesrcarol", "elementalId": "9_1", "bola": "ultra", "sucesso": 1, "date": "2026-06-29 21:34:42" },
     { "username": "minichef9", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 21:28:43" },
     { "username": "manodrico", "elementalId": "15_3", "bola": "master", "sucesso": 1, "date": "2026-06-29 21:22:40" },
@@ -35,8 +36,7 @@
     { "username": "marquesrcarol", "elementalId": "6_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 19:23:14" },
     { "username": "marquesrcarol", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 19:11:52" },
     { "username": "marquesrcarol", "elementalId": "7_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 18:59:24" },
-    { "username": "minichef9", "elementalId": "7_1", "bola": "ultra", "sucesso": 1, "date": "2026-06-29 18:50:16" },
-    { "username": "sabido_1309", "elementalId": "7_1", "bola": "super", "sucesso": 0, "date": "2026-06-29 18:50:08" }
+    { "username": "minichef9", "elementalId": "7_1", "bola": "ultra", "sucesso": 1, "date": "2026-06-29 18:50:16" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -63,8 +63,8 @@
     },
     {
       "username": "sheisdani",
-      "pontos": 655,
-      "inventario": {"11_1":1,"12_3":1,"13_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"3_2":1,"4_1":2,"4_2":1,"4_3":1,"5_1":2,"5_2":2,"6_1":2,"7_1":1,"8_1":2,"9_1":2,"u_ManoDrico":1}
+      "pontos": 665,
+      "inventario": {"11_1":1,"12_1":1,"12_3":1,"13_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"3_2":1,"4_1":2,"4_2":1,"4_3":1,"5_1":2,"5_2":2,"6_1":2,"7_1":1,"8_1":2,"9_1":2,"u_ManoDrico":1}
     },
     {
       "username": "milhafretuga",
