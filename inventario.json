@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-06-29 17:07:26 UTC",
+  "updatedAt": "2026-06-29 17:10:22 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 2, "sucesso": 1, "rate": 50.0 },
     "ultra": { "total": 0, "sucesso": 0, "rate": 0.0 },
-    "master": { "total": 3, "sucesso": 3, "rate": 100.0 }
+    "master": { "total": 4, "sucesso": 4, "rate": 100.0 }
   },
   "recentes_lancamentos": [
+    { "username": "marquesrcarol", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 18:08:12" },
     { "username": "marquesrcarol", "elementalId": "4_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:58:13" },
     { "username": "sheisdani", "elementalId": "4_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:49:49" },
     { "username": "minichef9", "elementalId": "4_2", "bola": "super", "sucesso": 0, "date": "2026-06-29 17:49:41" },
@@ -30,7 +31,6 @@
   "propostas": [
     { "proposerName": "marquesrcarol", "targetName": "ipowerlz", "elemProposer": "8_1", "elemTarget": "1_3", "createdAt": "2026-06-29T16:41:24.3513758Z" },
     { "proposerName": "manu12321_", "targetName": "ipowerlz", "elemProposer": "10_1", "elemTarget": "11_1", "createdAt": "2026-06-29T16:44:24.2893505Z" },
-    { "proposerName": "marquesrcarol", "targetName": "manodrico", "elemProposer": "8_1", "elemTarget": "6_1", "createdAt": "2026-06-29T16:44:33.7790889Z" },
     { "proposerName": "marquesrcarol", "targetName": "sheisdani", "elemProposer": "4_2", "elemTarget": "5_2", "createdAt": "2026-06-29T17:07:26.6683925Z" }
   ],
   "ranking": [
@@ -56,13 +56,13 @@
     },
     {
       "username": "marquesrcarol",
-      "pontos": 300,
-      "inventario": {"13_1":1,"1_1":1,"2_1":2,"3_1":2,"4_1":1,"4_2":2,"5_1":1,"8_1":2,"9_1":1,"9_2":1,"u_iPowerlz":1}
+      "pontos": 345,
+      "inventario": {"13_1":1,"14_1":1,"1_1":1,"2_1":2,"3_1":2,"4_1":1,"4_2":2,"5_1":1,"6_1":1,"8_1":1,"9_1":1,"9_2":1,"u_iPowerlz":1}
     },
     {
       "username": "manodrico",
-      "pontos": 230,
-      "inventario": {"1_1":2,"3_2":1,"4_1":1,"5_1":1,"5_2":1,"6_1":2,"7_1":1,"8_2":1}
+      "pontos": 260,
+      "inventario": {"1_1":2,"3_2":1,"4_1":1,"5_1":1,"5_2":1,"6_1":1,"7_1":1,"8_1":1,"8_2":1}
     },
     {
       "username": "1509_martim",
