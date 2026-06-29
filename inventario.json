@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-06-29 17:38:49 UTC",
+  "updatedAt": "2026-06-29 17:52:47 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
-    "super": { "total": 2, "sucesso": 1, "rate": 50.0 },
-    "ultra": { "total": 2, "sucesso": 2, "rate": 100.0 },
+    "super": { "total": 3, "sucesso": 1, "rate": 33.3 },
+    "ultra": { "total": 3, "sucesso": 3, "rate": 100.0 },
     "master": { "total": 5, "sucesso": 5, "rate": 100.0 }
   },
   "recentes_lancamentos": [
+    { "username": "minichef9", "elementalId": "7_1", "bola": "ultra", "sucesso": 1, "date": "2026-06-29 18:50:16" },
+    { "username": "sabido_1309", "elementalId": "7_1", "bola": "super", "sucesso": 0, "date": "2026-06-29 18:50:08" },
     { "username": "marquesrcarol", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-06-29 18:36:18" },
     { "username": "ipowerlz", "elementalId": "7_2", "bola": "ultra", "sucesso": 1, "date": "2026-06-29 18:26:26" },
     { "username": "marquesrcarol", "elementalId": "4_1", "bola": "ultra", "sucesso": 1, "date": "2026-06-29 18:18:02" },
@@ -93,17 +95,17 @@
       "inventario": {"3_1":1,"8_1":1}
     },
     {
+      "username": "minichef9",
+      "pontos": 25,
+      "inventario": {"1_1":1,"7_1":1}
+    },
+    {
       "username": "themarysimmer",
       "pontos": 20,
       "inventario": {"1_1":1,"3_1":1}
     },
     {
       "username": "astroz1nvlr",
-      "pontos": 10,
-      "inventario": {"1_1":1}
-    },
-    {
-      "username": "minichef9",
       "pontos": 10,
       "inventario": {"1_1":1}
     },
