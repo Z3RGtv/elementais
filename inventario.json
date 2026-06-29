@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29 16:41:24 UTC",
+  "updatedAt": "2026-06-29 16:44:24 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 1, "sucesso": 1, "rate": 100.0 },
@@ -25,7 +25,8 @@
     { "id": "u_TheMarySimmer", "file": "Users/TheMarySimmer.png", "name": "TheMarySimmer" }
   ],
   "propostas": [
-    { "proposerName": "marquesrcarol", "targetName": "ipowerlz", "elemProposer": "8_1", "elemTarget": "1_3", "createdAt": "2026-06-29T16:41:24.3513758Z" }
+    { "proposerName": "marquesrcarol", "targetName": "ipowerlz", "elemProposer": "8_1", "elemTarget": "1_3", "createdAt": "2026-06-29T16:41:24.3513758Z" },
+    { "proposerName": "manu12321_", "targetName": "ipowerlz", "elemProposer": "10_1", "elemTarget": "11_1", "createdAt": "2026-06-29T16:44:24.2893505Z" }
   ],
   "ranking": [
     {
@@ -76,7 +77,7 @@
     {
       "username": "eimezdumipima_",
       "pontos": 50,
-      "inventario": {"1_1":1,"2_1":2,"8_1":1}
+      "inventario": {"1_1":1,"2_1":1,"8_1":1}
     },
     {
       "username": "citrusbow123",
