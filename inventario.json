@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-06-29 16:52:19 UTC",
+  "updatedAt": "2026-06-29 17:00:44 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 2, "sucesso": 1, "rate": 50.0 },
     "ultra": { "total": 0, "sucesso": 0, "rate": 0.0 },
-    "master": { "total": 2, "sucesso": 2, "rate": 100.0 }
+    "master": { "total": 3, "sucesso": 3, "rate": 100.0 }
   },
   "recentes_lancamentos": [
+    { "username": "marquesrcarol", "elementalId": "4_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:58:13" },
     { "username": "sheisdani", "elementalId": "4_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:49:49" },
     { "username": "minichef9", "elementalId": "4_2", "bola": "super", "sucesso": 0, "date": "2026-06-29 17:49:41" },
     { "username": "marquesrcarol", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 17:36:19" },
@@ -55,7 +56,7 @@
     {
       "username": "marquesrcarol",
       "pontos": 300,
-      "inventario": {"13_1":1,"1_1":1,"2_1":2,"3_1":2,"4_1":1,"4_2":1,"5_1":1,"8_1":2,"9_1":1,"9_2":1,"u_iPowerlz":1}
+      "inventario": {"13_1":1,"1_1":1,"2_1":2,"3_1":2,"4_1":1,"4_2":2,"5_1":1,"8_1":2,"9_1":1,"9_2":1,"u_iPowerlz":1}
     },
     {
       "username": "manodrico",
