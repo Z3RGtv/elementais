@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-06-30 20:55:31 UTC",
+  "updatedAt": "2026-06-30 21:04:38 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 1, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 6, "sucesso": 2, "rate": 33.3 },
-    "ultra": { "total": 10, "sucesso": 6, "rate": 60.0 },
-    "master": { "total": 54, "sucesso": 52, "rate": 96.3 }
+    "ultra": { "total": 11, "sucesso": 6, "rate": 54.5 },
+    "master": { "total": 55, "sucesso": 53, "rate": 96.4 }
   },
   "recentes_lancamentos": [
+    { "username": "minichef9", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 22:02:08" },
+    { "username": "marquesrcarol", "elementalId": "2_1", "bola": "ultra", "sucesso": 0, "date": "2026-06-30 22:02:00" },
     { "username": "ipowerlz", "elementalId": "9_2", "bola": "master", "sucesso": 1, "date": "2026-06-30 21:53:01" },
     { "username": "marquesrcarol", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 21:43:20" },
     { "username": "marquesrcarol", "elementalId": "5_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 21:34:28" },
@@ -34,9 +36,7 @@
     { "username": "minichef9", "elementalId": "16_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 18:20:01" },
     { "username": "minichef9", "elementalId": "7_2", "bola": "master", "sucesso": 1, "date": "2026-06-30 18:14:03" },
     { "username": "minichef9", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 22:10:45" },
-    { "username": "marquesrcarol", "elementalId": "13_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 22:04:45" },
-    { "username": "manu12321_", "elementalId": "9_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 21:58:45" },
-    { "username": "manodrico", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 21:52:44" }
+    { "username": "marquesrcarol", "elementalId": "13_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 22:04:45" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
