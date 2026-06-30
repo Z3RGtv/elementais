@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-06-30 22:38:59 UTC",
+  "updatedAt": "2026-06-30 22:50:16 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 2, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 8, "sucesso": 4, "rate": 50.0 },
-    "ultra": { "total": 12, "sucesso": 7, "rate": 58.3 },
+    "ultra": { "total": 13, "sucesso": 8, "rate": 61.5 },
     "master": { "total": 60, "sucesso": 58, "rate": 96.7 }
   },
   "recentes_lancamentos": [
+    { "username": "citrusbow123", "elementalId": "13_1", "bola": "ultra", "sucesso": 1, "date": "2026-06-30 23:47:46" },
     { "username": "manodrico", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-06-30 23:36:29" },
     { "username": "sheisdani", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 23:24:46" },
     { "username": "citrusbow123", "elementalId": "5_1", "bola": "ultra", "sucesso": 1, "date": "2026-06-30 23:14:29" },
@@ -35,8 +36,7 @@
     { "username": "citrusbow123", "elementalId": "9_1", "bola": "normal", "sucesso": 0, "date": "2026-06-30 20:04:01" },
     { "username": "minichef9", "elementalId": "13_3", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:53:46" },
     { "username": "ipowerlz", "elementalId": "2_3", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:39:33" },
-    { "username": "minichef9", "elementalId": "15_3", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:26:24" },
-    { "username": "marquesrcarol", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:13:59" }
+    { "username": "minichef9", "elementalId": "15_3", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:26:24" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -128,10 +128,10 @@
     },
     {
       "username": "citrusbow123",
-      "pontos": 55,
+      "pontos": 70,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"3_1":2,"5_1":1,"8_1":1}
+      "inventario": {"13_1":1,"3_1":2,"5_1":1,"8_1":1}
     },
     {
       "username": "eimezdumipima_",
