@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30 19:20:14 UTC",
+  "updatedAt": "2026-06-30 19:24:05 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 1, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 6, "sucesso": 2, "rate": 33.3 },
@@ -53,7 +53,8 @@
     { "id": "u_TheMarySimmer", "file": "Users/TheMarySimmer.png", "name": "TheMarySimmer" }
   ],
   "propostas": [
-    { "proposerName": "marquesrcarol", "targetName": "milhafretuga", "elemProposer": "14_1", "elemTarget": "6_2", "createdAt": "2026-06-30T19:06:16.1702302Z" }
+    { "proposerName": "marquesrcarol", "targetName": "milhafretuga", "elemProposer": "14_1", "elemTarget": "6_2", "createdAt": "2026-06-30T19:06:16.1702302Z" },
+    { "proposerName": "1509_martim", "targetName": "marquesrcarol", "elemProposer": "2_1", "elemTarget": "14_1", "createdAt": "2026-06-30T19:24:05.4896877Z" }
   ],
   "ranking": [
     {
@@ -115,7 +116,7 @@
     {
       "username": "1509_martim",
       "pontos": 280,
-      "trocasDisponiveis": 3,
+      "trocasDisponiveis": 2,
       "proximaRecuperacao": null,
       "inventario": {"1_1":1,"2_1":2,"3_1":1,"5_1":1,"6_1":2,"6_2":1,"8_2":1,"9_1":1,"9_2":1}
     },
