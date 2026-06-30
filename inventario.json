@@ -1,12 +1,16 @@
 {
-  "updatedAt": "2026-06-30 18:56:16 UTC",
+  "updatedAt": "2026-06-30 19:06:16 UTC",
   "estatisticas_bolas": {
-    "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
+    "normal": { "total": 1, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 6, "sucesso": 2, "rate": 33.3 },
-    "ultra": { "total": 6, "sucesso": 5, "rate": 83.3 },
-    "master": { "total": 44, "sucesso": 43, "rate": 97.7 }
+    "ultra": { "total": 8, "sucesso": 5, "rate": 62.5 },
+    "master": { "total": 45, "sucesso": 44, "rate": 97.8 }
   },
   "recentes_lancamentos": [
+    { "username": "minichef9", "elementalId": "9_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 20:04:27" },
+    { "username": "manodrico", "elementalId": "9_1", "bola": "ultra", "sucesso": 0, "date": "2026-06-30 20:04:19" },
+    { "username": "manodrico", "elementalId": "9_1", "bola": "ultra", "sucesso": 0, "date": "2026-06-30 20:04:10" },
+    { "username": "citrusbow123", "elementalId": "9_1", "bola": "normal", "sucesso": 0, "date": "2026-06-30 20:04:01" },
     { "username": "minichef9", "elementalId": "13_3", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:53:46" },
     { "username": "ipowerlz", "elementalId": "2_3", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:39:33" },
     { "username": "minichef9", "elementalId": "15_3", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:26:24" },
@@ -32,11 +36,7 @@
     { "username": "ipowerlz", "elementalId": "16_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 21:04:37" },
     { "username": "soniagoncalves", "elementalId": "4_4", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:58:25" },
     { "username": "manu12321_", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:52:41" },
-    { "username": "1509_martim", "elementalId": "6_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:46:22" },
-    { "username": "ipowerlz", "elementalId": "5_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:40:40" },
-    { "username": "ipowerlz", "elementalId": "10_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:34:39" },
-    { "username": "sheisdani", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:28:37" },
-    { "username": "sheisdani", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:22:38" }
+    { "username": "1509_martim", "elementalId": "6_2", "bola": "master", "sucesso": 1, "date": "2026-06-29 20:46:22" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -53,7 +53,7 @@
     { "id": "u_TheMarySimmer", "file": "Users/TheMarySimmer.png", "name": "TheMarySimmer" }
   ],
   "propostas": [
-
+    { "proposerName": "marquesrcarol", "targetName": "milhafretuga", "elemProposer": "14_1", "elemTarget": "6_2", "createdAt": "2026-06-30T19:06:16.1702302Z" }
   ],
   "ranking": [
     {
@@ -73,7 +73,7 @@
     {
       "username": "marquesrcarol",
       "pontos": 610,
-      "trocasDisponiveis": 3,
+      "trocasDisponiveis": 2,
       "proximaRecuperacao": null,
       "inventario": {"10_1":1,"12_1":1,"12_3":1,"13_1":1,"13_2":1,"14_1":2,"16_1":1,"1_1":1,"2_1":1,"3_1":1,"4_1":2,"4_2":1,"5_1":1,"6_1":2,"7_1":2,"7_2":1,"8_1":1,"9_1":2,"9_2":1,"u_iPowerlz":1}
     },
@@ -93,10 +93,10 @@
     },
     {
       "username": "minichef9",
-      "pontos": 445,
+      "pontos": 460,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"13_3":1,"14_2":1,"15_3":1,"16_1":1,"1_1":1,"2_1":1,"3_1":1,"6_1":1,"7_1":1,"7_2":1}
+      "inventario": {"13_3":1,"14_2":1,"15_3":1,"16_1":1,"1_1":1,"2_1":1,"3_1":1,"6_1":1,"7_1":1,"7_2":1,"9_1":1}
     },
     {
       "username": "gui_z0",
