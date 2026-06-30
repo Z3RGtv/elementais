@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30 23:45:53 UTC",
+  "updatedAt": "2026-06-30 23:48:40 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 3, "sucesso": 1, "rate": 33.3 },
     "super": { "total": 8, "sucesso": 4, "rate": 50.0 },
@@ -103,7 +103,7 @@
       "pontos": 490,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"13_3":1,"14_2":1,"15_3":1,"16_1":1,"1_1":1,"2_1":1,"3_1":1,"4_1":2,"5_1":1,"6_1":1,"7_1":2,"7_2":1,"9_1":1}
+      "inventario": {"13_3":1,"14_2":1,"15_3":1,"16_1":1,"1_1":1,"2_1":1,"3_1":1,"4_1":1,"5_1":1,"6_1":1,"7_1":2,"7_2":1,"9_1":1}
     },
     {
       "username": "soniagoncalves",
