@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-06-30 22:04:19 UTC",
+  "updatedAt": "2026-06-30 22:17:00 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 2, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 8, "sucesso": 4, "rate": 50.0 },
-    "ultra": { "total": 11, "sucesso": 6, "rate": 54.5 },
+    "ultra": { "total": 12, "sucesso": 7, "rate": 58.3 },
     "master": { "total": 58, "sucesso": 56, "rate": 96.6 }
   },
   "recentes_lancamentos": [
+    { "username": "citrusbow123", "elementalId": "5_1", "bola": "ultra", "sucesso": 1, "date": "2026-06-30 23:14:29" },
     { "username": "minichef9", "elementalId": "4_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 23:01:48" },
     { "username": "ipowerlz", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-06-30 22:47:17" },
     { "username": "manodrico", "elementalId": "2_1", "bola": "super", "sucesso": 1, "date": "2026-06-30 22:32:46" },
@@ -35,8 +36,7 @@
     { "username": "minichef9", "elementalId": "15_3", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:26:24" },
     { "username": "marquesrcarol", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:13:59" },
     { "username": "minichef9", "elementalId": "14_2", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:01:10" },
-    { "username": "minichef9", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 18:53:03" },
-    { "username": "sabido_1309", "elementalId": "1_1", "bola": "super", "sucesso": 0, "date": "2026-06-30 18:52:55" }
+    { "username": "minichef9", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 18:53:03" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -127,18 +127,18 @@
       "inventario": {"10_1":1,"12_1":1,"1_1":2,"2_1":2,"2_2":1,"4_1":2,"8_1":1,"9_1":1}
     },
     {
+      "username": "citrusbow123",
+      "pontos": 55,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"3_1":2,"5_1":1,"8_1":1}
+    },
+    {
       "username": "eimezdumipima_",
       "pontos": 50,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"1_1":1,"2_1":1,"8_1":1}
-    },
-    {
-      "username": "citrusbow123",
-      "pontos": 40,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"3_1":2,"8_1":1}
     },
     {
       "username": "themarysimmer",
