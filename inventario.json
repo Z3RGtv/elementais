@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30 17:55:33 UTC",
+  "updatedAt": "2026-06-30 17:58:05 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 0, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 6, "sucesso": 2, "rate": 33.3 },
@@ -124,7 +124,7 @@
       "pontos": 165,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"16_1":1,"1_1":2,"2_1":1,"3_1":1,"6_1":1,"7_1":1,"7_2":1}
+      "inventario": {"16_1":1,"1_1":1,"2_1":1,"3_1":1,"6_1":1,"7_1":1,"7_2":1}
     },
     {
       "username": "eimezdumipima_",
