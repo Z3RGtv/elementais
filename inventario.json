@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-06-30 22:17:00 UTC",
+  "updatedAt": "2026-06-30 22:27:16 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 2, "sucesso": 0, "rate": 0.0 },
     "super": { "total": 8, "sucesso": 4, "rate": 50.0 },
     "ultra": { "total": 12, "sucesso": 7, "rate": 58.3 },
-    "master": { "total": 58, "sucesso": 56, "rate": 96.6 }
+    "master": { "total": 59, "sucesso": 57, "rate": 96.6 }
   },
   "recentes_lancamentos": [
+    { "username": "sheisdani", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 23:24:46" },
     { "username": "citrusbow123", "elementalId": "5_1", "bola": "ultra", "sucesso": 1, "date": "2026-06-30 23:14:29" },
     { "username": "minichef9", "elementalId": "4_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 23:01:48" },
     { "username": "ipowerlz", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-06-30 22:47:17" },
@@ -35,8 +36,7 @@
     { "username": "ipowerlz", "elementalId": "2_3", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:39:33" },
     { "username": "minichef9", "elementalId": "15_3", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:26:24" },
     { "username": "marquesrcarol", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:13:59" },
-    { "username": "minichef9", "elementalId": "14_2", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:01:10" },
-    { "username": "minichef9", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 18:53:03" }
+    { "username": "minichef9", "elementalId": "14_2", "bola": "master", "sucesso": 1, "date": "2026-06-30 19:01:10" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -72,10 +72,10 @@
     },
     {
       "username": "sheisdani",
-      "pontos": 665,
+      "pontos": 680,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"11_1":1,"12_1":1,"12_3":1,"13_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"3_2":1,"4_1":2,"4_2":1,"4_3":1,"5_1":2,"5_2":2,"6_1":2,"7_1":2,"8_1":2,"9_1":2,"u_ManoDrico":1}
+      "inventario": {"11_1":1,"12_1":1,"12_3":1,"13_1":1,"14_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"3_2":1,"4_1":2,"4_2":1,"4_3":1,"5_1":2,"5_2":2,"6_1":2,"7_1":2,"8_1":2,"9_1":2,"u_ManoDrico":1}
     },
     {
       "username": "milhafretuga",
