@@ -274,6 +274,19 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
                     // Caso 1: Clicar no elemental de outra pessoa (Proposta direta se estiver logado)
                     if (meuUsername && meuUsername.toLowerCase() !== player.username.toLowerCase()) {
                         const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
+                        
+                        // Verificar limites de trocas do próprio utilizador e do alvo
+                        const meuDisp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 3;
+                        if (meuDisp < 1) {
+                            alert(`Não tens trocas disponíveis de momento (máximo 3 por semana)!`);
+                            return;
+                        }
+                        const targetDisp = player.trocasDisponiveis !== undefined ? player.trocasDisponiveis : 3;
+                        if (targetDisp < 1) {
+                            alert(`O jogador @${player.username} não tem trocas disponíveis esta semana!`);
+                            return;
+                        }
+
                         const minhasCopias = meuPerfil.inventario[elem.id] || 0;
                         if (minhasCopias >= 2) {
                             alert(`Não podes propor receber este elemental porque já tens o limite máximo de 2 cópias na tua coleção!`);
@@ -326,12 +339,34 @@ function atualizarUIConta() {
     const isTwitchLoggedIn = !!localStorage.getItem('twitch_access_token');
     
     if (meuUsername) {
+        let tradeWidgetHtml = '';
+        if (dadosGlobais) {
+            const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase());
+            if (meuPerfil) {
+                const disp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 3;
+                const prox = meuPerfil.proximaRecuperacao || null;
+                
+                let timerHtml = '';
+                if (disp < 3 && prox) {
+                    timerHtml = `<span class="trade-timer-badge" data-endtime="${prox}">...</span>`;
+                }
+                
+                tradeWidgetHtml = `
+                    <div class="user-trade-status">
+                        <span class="trade-charges-label">🔄 Trocas: <strong>${disp}/3</strong></span>
+                        ${timerHtml}
+                    </div>
+                `;
+            }
+        }
+
         if (isTwitchLoggedIn) {
             // Utilizador Logado via Twitch
             container.innerHTML = `
                 <div class="profile-info">
                     ${avatar ? `<img src="${avatar}" class="twitch-avatar" alt="Avatar">` : ''}
                     <span>Olá, <strong>@${meuUsername}</strong>!</span>
+                    ${tradeWidgetHtml}
                 </div>
                 <button class="logout-btn" onclick="limparConta()">Sair ✖</button>
             `;
@@ -346,6 +381,7 @@ function atualizarUIConta() {
             container.innerHTML = `
                 <div class="profile-info">
                     <span>Conta manual: <strong>@${meuUsername}</strong></span>
+                    ${tradeWidgetHtml}
                     <button class="logout-btn" onclick="limparConta()" style="margin-left: 5px; margin-right: 15px;">Alterar ✖</button>
                 </div>
                 <a href="${authUrl}" class="twitch-login-btn">
@@ -609,11 +645,13 @@ function renderizarListaJogadoresModal() {
         // Verificar se o jogador alvo já possui 2 ou mais cópias do elemental oferecido
         const qtyTarget = player.inventario[oferecidoId] || 0;
         const jaTemLimite = oferecidoId && (qtyTarget >= 2);
+        const semTrocasTarget = player.trocasDisponiveis !== undefined && player.trocasDisponiveis < 1;
 
-        if (jaTemLimite) {
+        if (jaTemLimite || semTrocasTarget) {
             item.classList.add('disabled-trade');
+            let labelExtra = jaTemLimite ? "(Já tem 2)" : "(Sem trocas)";
             item.innerHTML = `
-                <span><strong style="color: #ff5555;">@${player.username}</strong> <small style="color: #ff5555; font-size: 10px; margin-left: 5px;">(Já tem 2)</small></span>
+                <span><strong style="color: #ff5555;">@${player.username}</strong> <small style="color: #ff5555; font-size: 10px; margin-left: 5px;">${labelExtra}</small></span>
                 <span style="font-size: 11px; color: var(--text-muted);">${Object.keys(player.inventario).length} espécies</span>
             `;
             item.onclick = (e) => {
@@ -669,6 +707,20 @@ document.getElementById('btn-propor-troca').onclick = () => {
     
     const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
 
+    // Validar se o proponente tem trocas disponíveis
+    const meuDisp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 3;
+    if (meuDisp < 1) {
+        alert(`Não tens trocas disponíveis de momento (máximo 3 por semana)!`);
+        return;
+    }
+
+    // Validar se o alvo tem trocas disponíveis
+    const targetDisp = jogadorSelecionado.trocasDisponiveis !== undefined ? jogadorSelecionado.trocasDisponiveis : 3;
+    if (targetDisp < 1) {
+        alert(`O jogador @${jogadorSelecionado.username} não tem trocas disponíveis esta semana!`);
+        return;
+    }
+
     oferecidoId = null;
     pedidoId = null;
     cacheOferecido = null;
@@ -723,10 +775,23 @@ function atualizarResumoTroca(elemOferecido, elemPedido) {
         const qtyEu = meuPerfil.inventario[pedidoId] || 0;
         const jaTemLimiteEu = qtyEu >= 2;
 
+        const myDisp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 3;
+        const targetDisp = targetPlayer.trocasDisponiveis !== undefined ? targetPlayer.trocasDisponiveis : 3;
+
         const commandInput = document.getElementById('twitch-command-input');
         const btnCopiar = document.getElementById('btn-copiar-comando');
 
-        if (jaTemLimiteAlvo) {
+        if (myDisp < 1) {
+            commandInput.value = `Inválido: Não tens trocas disponíveis de momento!`;
+            commandInput.style.color = '#ff5555';
+            btnCopiar.disabled = true;
+            btnCopiar.classList.add('disabled-btn');
+        } else if (targetDisp < 1) {
+            commandInput.value = `Inválido: @${targetUser} não tem trocas disponíveis!`;
+            commandInput.style.color = '#ff5555';
+            btnCopiar.disabled = true;
+            btnCopiar.classList.add('disabled-btn');
+        } else if (jaTemLimiteAlvo) {
             commandInput.value = `Inválido: @${targetUser} já tem o limite de 2 cópias!`;
             commandInput.style.color = '#ff5555';
             btnCopiar.disabled = true;
@@ -958,4 +1023,47 @@ function obterNomeSimplesBicho(id) {
     if (especie === 11) return "BurntPeanut";
     const nomeVar = nomesVariantes[variante] || "";
     return `${nomeBase} (${nomeVar})`;
+}
+
+let intervalTemporizadoresTrocas = null;
+function iniciarTemporizadoresTrocas() {
+    if (intervalTemporizadoresTrocas) clearInterval(intervalTemporizadoresTrocas);
+    
+    const atualizarTimers = () => {
+        const badges = document.querySelectorAll('.trade-timer-badge');
+        badges.forEach(badge => {
+            const endtimeStr = badge.getAttribute('data-endtime');
+            if (!endtimeStr || endtimeStr === 'null') {
+                badge.style.display = 'none';
+                return;
+            }
+            const endTime = new Date(endtimeStr).getTime();
+            const now = new Date().getTime();
+            const diff = endTime - now;
+            
+            if (diff <= 0) {
+                badge.innerText = "Pronta!";
+                badge.classList.add('ready');
+                return;
+            }
+            
+            const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            let texto = '';
+            if (dias > 0) {
+                texto = `+1 em ${dias}d ${horas}h`;
+            } else if (horas > 0) {
+                texto = `+1 em ${horas}h ${minutos}m`;
+            } else {
+                texto = `+1 em ${minutos}m ${segundos}s`;
+            }
+            badge.innerText = texto;
+        });
+    };
+    
+    atualizarTimers();
+    intervalTemporizadoresTrocas = setInterval(atualizarTimers, 1000);
 }
