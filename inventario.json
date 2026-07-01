@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-01 20:54:33 UTC",
+  "updatedAt": "2026-07-01 21:08:08 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 11, "sucesso": 2, "rate": 18.2 },
     "super": { "total": 15, "sucesso": 6, "rate": 40.0 },
     "ultra": { "total": 20, "sucesso": 11, "rate": 55.0 },
-    "master": { "total": 90, "sucesso": 84, "rate": 93.3 }
+    "master": { "total": 91, "sucesso": 85, "rate": 93.4 }
   },
   "recentes_lancamentos": [
+    { "username": "steve_osvaldo", "elementalId": "7_1", "bola": "master", "sucesso": 1, "date": "2026-07-01 22:05:38" },
     { "username": "sheisdani", "elementalId": "8_4", "bola": "master", "sucesso": 1, "date": "2026-07-01 21:52:03" },
     { "username": "manu12321_", "elementalId": "5_1", "bola": "master", "sucesso": 1, "date": "2026-07-01 21:41:25" },
     { "username": "ruialmeida_", "elementalId": "5_1", "bola": "super", "sucesso": 0, "date": "2026-07-01 21:41:16" },
@@ -35,8 +36,7 @@
     { "username": "minichef9", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-07-01 18:35:18" },
     { "username": "minichef9", "elementalId": "4_1", "bola": "master", "sucesso": 1, "date": "2026-07-01 18:23:09" },
     { "username": "manodrico", "elementalId": "4_1", "bola": "super", "sucesso": 0, "date": "2026-07-01 18:23:00" },
-    { "username": "manodrico", "elementalId": "4_1", "bola": "super", "sucesso": 0, "date": "2026-07-01 18:22:51" },
-    { "username": "minichef9", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-07-01 18:10:02" }
+    { "username": "manodrico", "elementalId": "4_1", "bola": "super", "sucesso": 0, "date": "2026-07-01 18:22:51" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -155,6 +155,13 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"13_1":1}
+    },
+    {
+      "username": "steve_osvaldo",
+      "pontos": 15,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"7_1":1}
     },
     {
       "username": "hst_playz_pt",
