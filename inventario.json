@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01 22:28:04 UTC",
+  "updatedAt": "2026-07-01 22:39:08 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 18, "sucesso": 6, "rate": 33.3 },
     "super": { "total": 16, "sucesso": 6, "rate": 37.5 },
@@ -55,7 +55,7 @@
     { "id": "u_Z3RGtv", "file": "Users/Z3RGtv.png", "name": "Z3RGtv" }
   ],
   "propostas": [
-
+    { "proposerName": "ipowerlz", "targetName": "manu12321_", "elemProposer": "3_2", "elemTarget": "4_1", "createdAt": "2026-07-01T22:39:07.8089012Z" }
   ],
   "ranking": [
     {
@@ -68,7 +68,7 @@
     {
       "username": "ipowerlz",
       "pontos": 955,
-      "trocasDisponiveis": 3,
+      "trocasDisponiveis": 2,
       "proximaRecuperacao": null,
       "inventario": {"10_1":1,"11_1":2,"14_1":1,"16_2":1,"1_1":1,"1_2":1,"1_3":1,"2_1":1,"2_2":2,"2_3":1,"3_1":1,"3_2":2,"4_2":1,"5_1":1,"5_2":1,"5_3":1,"6_1":1,"6_2":1,"7_1":1,"7_2":1,"8_1":1,"9_1":1,"9_2":1}
     },
