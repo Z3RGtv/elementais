@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-01 03:37:12 UTC",
+  "updatedAt": "2026-07-01 17:12:28 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 8, "sucesso": 2, "rate": 25.0 },
     "super": { "total": 9, "sucesso": 4, "rate": 44.4 },
     "ultra": { "total": 16, "sucesso": 10, "rate": 62.5 },
-    "master": { "total": 73, "sucesso": 67, "rate": 91.8 }
+    "master": { "total": 74, "sucesso": 68, "rate": 91.9 }
   },
   "recentes_lancamentos": [
+    { "username": "minichef9", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-07-01 18:10:02" },
     { "username": "minichef9", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-07-01 01:31:16" },
     { "username": "gui_z0", "elementalId": "7_1", "bola": "master", "sucesso": 1, "date": "2026-07-01 01:25:16" },
     { "username": "manodrico", "elementalId": "3_2", "bola": "master", "sucesso": 1, "date": "2026-07-01 01:19:03" },
@@ -35,8 +36,7 @@
     { "username": "sheisdani", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 23:24:46" },
     { "username": "citrusbow123", "elementalId": "5_1", "bola": "ultra", "sucesso": 1, "date": "2026-06-30 23:14:29" },
     { "username": "minichef9", "elementalId": "4_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 23:01:48" },
-    { "username": "ipowerlz", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-06-30 22:47:17" },
-    { "username": "manodrico", "elementalId": "2_1", "bola": "super", "sucesso": 1, "date": "2026-06-30 22:32:46" }
+    { "username": "ipowerlz", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-06-30 22:47:17" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -55,7 +55,7 @@
     { "id": "u_Z3RGtv", "file": "Users/Z3RGtv.png", "name": "Z3RGtv" }
   ],
   "propostas": [
-
+    { "proposerName": "marquesrcarol", "targetName": "ipowerlz", "elemProposer": "12_1", "elemTarget": "2_2", "createdAt": "2026-07-01T17:12:27.8967439Z" }
   ],
   "ranking": [
     {
@@ -68,7 +68,7 @@
     {
       "username": "marquesrcarol",
       "pontos": 685,
-      "trocasDisponiveis": 2,
+      "trocasDisponiveis": 1,
       "proximaRecuperacao": "2026-07-07T19:52:31Z",
       "inventario": {"10_1":1,"12_1":2,"12_3":1,"13_1":1,"13_2":1,"14_1":1,"16_1":1,"1_1":1,"2_1":1,"3_1":1,"4_1":2,"4_2":1,"5_1":2,"6_1":2,"6_2":1,"7_1":2,"7_2":1,"8_1":1,"9_1":2,"9_2":1,"u_iPowerlz":1}
     },
@@ -94,18 +94,18 @@
       "inventario": {"12_2":1,"14_1":1,"15_3":1,"1_1":2,"2_1":2,"2_2":1,"3_2":2,"4_1":1,"5_1":2,"5_2":1,"6_1":1,"7_1":2,"7_2":1,"8_1":1,"8_2":1}
     },
     {
+      "username": "minichef9",
+      "pontos": 530,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"13_3":1,"14_2":1,"15_3":1,"16_1":1,"1_1":2,"2_1":2,"3_1":1,"4_1":1,"5_1":1,"6_1":1,"7_1":2,"7_2":1,"9_1":1,"9_2":1}
+    },
+    {
       "username": "gui_z0",
       "pontos": 530,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"11_1":1,"1_1":2,"1_2":1,"2_1":1,"3_1":1,"3_2":1,"4_1":1,"4_3":1,"5_1":1,"5_2":1,"6_2":1,"7_1":1,"9_3":1}
-    },
-    {
-      "username": "minichef9",
-      "pontos": 530,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"13_3":1,"14_2":1,"15_3":1,"16_1":1,"1_1":2,"2_1":1,"3_1":1,"4_1":1,"5_1":1,"6_1":1,"7_1":2,"7_2":1,"9_1":1,"9_2":1}
     },
     {
       "username": "soniagoncalves",
@@ -150,6 +150,13 @@
       "inventario": {"1_1":1,"3_1":1}
     },
     {
+      "username": "astroz1nvlr",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"1_1":1}
+    },
+    {
       "username": "hst_playz_pt",
       "pontos": 10,
       "trocasDisponiveis": 3,
@@ -158,13 +165,6 @@
     },
     {
       "username": "z3rgtv",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_1":1}
-    },
-    {
-      "username": "astroz1nvlr",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
