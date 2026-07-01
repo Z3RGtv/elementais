@@ -1,12 +1,15 @@
 {
-  "updatedAt": "2026-07-01 22:00:06 UTC",
+  "updatedAt": "2026-07-01 22:10:07 UTC",
   "estatisticas_bolas": {
-    "normal": { "total": 15, "sucesso": 5, "rate": 33.3 },
+    "normal": { "total": 18, "sucesso": 6, "rate": 33.3 },
     "super": { "total": 16, "sucesso": 6, "rate": 37.5 },
     "ultra": { "total": 20, "sucesso": 11, "rate": 55.0 },
     "master": { "total": 95, "sucesso": 87, "rate": 91.6 }
   },
   "recentes_lancamentos": [
+    { "username": "ipowerlz", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-01 23:07:42" },
+    { "username": "minichef9", "elementalId": "1_1", "bola": "normal", "sucesso": 1, "date": "2026-07-01 23:07:37" },
+    { "username": "ipowerlz", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-01 23:07:28" },
     { "username": "minichef9", "elementalId": "8_3", "bola": "master", "sucesso": 1, "date": "2026-07-01 22:57:36" },
     { "username": "minichef9", "elementalId": "1_1", "bola": "normal", "sucesso": 1, "date": "2026-07-01 22:47:13" },
     { "username": "minichef9", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-01 22:47:03" },
@@ -33,10 +36,7 @@
     { "username": "manodrico", "elementalId": "13_1", "bola": "normal", "sucesso": 0, "date": "2026-07-01 20:07:14" },
     { "username": "sheisdani", "elementalId": "13_1", "bola": "ultra", "sucesso": 0, "date": "2026-07-01 20:07:05" },
     { "username": "ipowerlz", "elementalId": "13_1", "bola": "ultra", "sucesso": 0, "date": "2026-07-01 20:06:57" },
-    { "username": "sheisdani", "elementalId": "u_ManoDrico", "bola": "master", "sucesso": 1, "date": "2026-07-01 19:57:26" },
-    { "username": "k1ngpt14", "elementalId": "u_ManoDrico", "bola": "super", "sucesso": 0, "date": "2026-07-01 19:57:17" },
-    { "username": "minichef9", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-07-01 19:43:17" },
-    { "username": "minichef9", "elementalId": "5_1", "bola": "master", "sucesso": 1, "date": "2026-07-01 19:31:09" }
+    { "username": "sheisdani", "elementalId": "u_ManoDrico", "bola": "master", "sucesso": 1, "date": "2026-07-01 19:57:26" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
