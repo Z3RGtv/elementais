@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-01 00:16:11 UTC",
+  "updatedAt": "2026-07-01 00:21:33 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 8, "sucesso": 2, "rate": 25.0 },
     "super": { "total": 9, "sucesso": 4, "rate": 44.4 },
     "ultra": { "total": 16, "sucesso": 10, "rate": 62.5 },
-    "master": { "total": 69, "sucesso": 64, "rate": 92.8 }
+    "master": { "total": 71, "sucesso": 65, "rate": 91.5 }
   },
   "recentes_lancamentos": [
+    { "username": "manodrico", "elementalId": "3_2", "bola": "master", "sucesso": 1, "date": "2026-07-01 01:19:03" },
+    { "username": "gui_z0", "elementalId": "3_2", "bola": "master", "sucesso": 0, "date": "2026-07-01 01:18:54" },
     { "username": "manu12321_", "elementalId": "8_3", "bola": "master", "sucesso": 1, "date": "2026-07-01 01:12:53" },
     { "username": "manodrico", "elementalId": "5_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-01 01:07:38" },
     { "username": "manu12321_", "elementalId": "5_1", "bola": "master", "sucesso": 0, "date": "2026-07-01 01:07:33" },
@@ -34,9 +36,7 @@
     { "username": "ipowerlz", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-06-30 22:47:17" },
     { "username": "manodrico", "elementalId": "2_1", "bola": "super", "sucesso": 1, "date": "2026-06-30 22:32:46" },
     { "username": "citrusbow123", "elementalId": "3_1", "bola": "super", "sucesso": 1, "date": "2026-06-30 22:20:09" },
-    { "username": "1509_martim", "elementalId": "3_1", "bola": "normal", "sucesso": 0, "date": "2026-06-30 22:20:01" },
-    { "username": "soniagoncalves", "elementalId": "9_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 22:11:19" },
-    { "username": "minichef9", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-06-30 22:02:08" }
+    { "username": "1509_martim", "elementalId": "3_1", "bola": "normal", "sucesso": 0, "date": "2026-06-30 22:20:01" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -89,7 +89,7 @@
       "pontos": 535,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_2":1,"14_1":1,"15_3":1,"1_1":2,"2_1":2,"2_2":1,"3_2":1,"4_1":1,"5_1":2,"5_2":1,"6_1":1,"7_1":2,"7_2":1,"8_1":1,"8_2":1}
+      "inventario": {"12_2":1,"14_1":1,"15_3":1,"1_1":2,"2_1":2,"2_2":1,"3_2":2,"4_1":1,"5_1":2,"5_2":1,"6_1":1,"7_1":2,"7_2":1,"8_1":1,"8_2":1}
     },
     {
       "username": "minichef9",
