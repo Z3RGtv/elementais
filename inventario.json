@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-01 20:20:31 UTC",
+  "updatedAt": "2026-07-01 20:32:44 UTC",
   "estatisticas_bolas": {
-    "normal": { "total": 10, "sucesso": 2, "rate": 20.0 },
+    "normal": { "total": 11, "sucesso": 2, "rate": 18.2 },
     "super": { "total": 14, "sucesso": 6, "rate": 42.9 },
     "ultra": { "total": 20, "sucesso": 11, "rate": 55.0 },
-    "master": { "total": 87, "sucesso": 81, "rate": 93.1 }
+    "master": { "total": 88, "sucesso": 82, "rate": 93.2 }
   },
   "recentes_lancamentos": [
+    { "username": "sheisdani", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-07-01 21:30:14" },
+    { "username": "manodrico", "elementalId": "13_1", "bola": "normal", "sucesso": 0, "date": "2026-07-01 21:30:05" },
     { "username": "themarysimmer", "elementalId": "3_1", "bola": "master", "sucesso": 1, "date": "2026-07-01 21:18:01" },
     { "username": "minichef9", "elementalId": "3_1", "bola": "normal", "sucesso": 0, "date": "2026-07-01 21:17:52" },
     { "username": "manodrico", "elementalId": "1_2", "bola": "ultra", "sucesso": 1, "date": "2026-07-01 21:09:04" },
@@ -34,9 +36,7 @@
     { "username": "minichef9", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-07-01 18:10:02" },
     { "username": "minichef9", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-07-01 01:31:16" },
     { "username": "gui_z0", "elementalId": "7_1", "bola": "master", "sucesso": 1, "date": "2026-07-01 01:25:16" },
-    { "username": "manodrico", "elementalId": "3_2", "bola": "master", "sucesso": 1, "date": "2026-07-01 01:19:03" },
-    { "username": "gui_z0", "elementalId": "3_2", "bola": "master", "sucesso": 0, "date": "2026-07-01 01:18:54" },
-    { "username": "manu12321_", "elementalId": "8_3", "bola": "master", "sucesso": 1, "date": "2026-07-01 01:12:53" }
+    { "username": "manodrico", "elementalId": "3_2", "bola": "master", "sucesso": 1, "date": "2026-07-01 01:19:03" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -70,7 +70,7 @@
       "pontos": 830,
       "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-07-08T19:47:23Z",
-      "inventario": {"11_1":1,"12_1":1,"12_3":1,"13_1":1,"14_1":1,"15_3":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"3_2":1,"4_1":2,"4_2":1,"4_3":1,"5_1":2,"5_2":2,"6_1":2,"7_1":2,"8_1":2,"9_1":2,"u_ManoDrico":1}
+      "inventario": {"11_1":1,"12_1":1,"12_3":1,"13_1":2,"14_1":1,"15_3":1,"1_1":2,"2_1":2,"2_2":2,"3_1":2,"3_2":1,"4_1":2,"4_2":1,"4_3":1,"5_1":2,"5_2":2,"6_1":2,"7_1":2,"8_1":2,"9_1":2,"u_ManoDrico":1}
     },
     {
       "username": "marquesrcarol",
