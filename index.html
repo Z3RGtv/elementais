@@ -36,7 +36,14 @@
                     <button id="btn-definir-conta" class="btn btn-secondary hidden">Esta é a minha Conta 👤</button>
                 </div>
             </div>
-            <p id="user-points-panel" class="hidden">Pontuação Total: <span id="user-points-val">0</span> pts</p>
+            <p id="user-points-panel" class="hidden">
+                Pontuação Total: <span id="user-points-val">0</span> pts 
+                <span class="divider">|</span> 
+                Coleção: <strong id="user-progress-val" style="color: #00bcff;">0 / 0</strong>
+                <span class="progress-bar-container">
+                    <span id="user-progress-bar" class="progress-bar-fill"></span>
+                </span>
+            </p>
             
             <!-- Propostas pendentes para o utilizador atual -->
             <div id="propostas-pendentes-container" class="propostas-container hidden">
