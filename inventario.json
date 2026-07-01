@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01 19:46:07 UTC",
+  "updatedAt": "2026-07-01 19:49:54 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 9, "sucesso": 2, "rate": 22.2 },
     "super": { "total": 14, "sucesso": 6, "rate": 42.9 },
@@ -55,7 +55,7 @@
     { "id": "u_Z3RGtv", "file": "Users/Z3RGtv.png", "name": "Z3RGtv" }
   ],
   "propostas": [
-    { "proposerName": "manodrico", "targetName": "sheisdani", "elemProposer": "15_3", "elemTarget": "u_ManoDrico", "createdAt": "2026-07-01T19:46:07.3311611Z" }
+
   ],
   "ranking": [
     {
@@ -64,6 +64,13 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"10_1":1,"11_1":2,"14_1":1,"16_2":1,"1_1":1,"1_2":1,"1_3":1,"2_1":1,"2_2":2,"2_3":1,"3_1":1,"3_2":1,"4_2":1,"5_1":1,"5_2":1,"5_3":1,"6_1":1,"6_2":1,"7_1":1,"7_2":1,"8_1":1,"9_1":1,"9_2":1}
+    },
+    {
+      "username": "sheisdani",
+      "pontos": 830,
+      "trocasDisponiveis": 2,
+      "proximaRecuperacao": "2026-07-08T19:47:23Z",
+      "inventario": {"11_1":1,"12_1":1,"12_3":1,"13_1":1,"14_1":1,"15_3":1,"1_1":2,"2_1":2,"2_2":2,"3_1":1,"3_2":1,"4_1":2,"4_2":1,"4_3":1,"5_1":2,"5_2":2,"6_1":2,"7_1":2,"8_1":2,"9_1":2,"u_ManoDrico":1}
     },
     {
       "username": "marquesrcarol",
@@ -78,13 +85,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":1,"12_2":1,"13_3":1,"14_2":1,"15_1":1,"15_3":1,"16_1":1,"1_1":1,"2_1":1,"3_1":1,"4_1":2,"5_1":1,"6_1":1,"7_1":1,"7_2":1,"9_1":1,"9_2":1,"u_Z3RGtv":1}
-    },
-    {
-      "username": "sheisdani",
-      "pontos": 680,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"11_1":1,"12_1":1,"12_3":1,"13_1":1,"14_1":1,"1_1":2,"2_1":2,"2_2":2,"3_1":1,"3_2":1,"4_1":2,"4_2":1,"4_3":1,"5_1":2,"5_2":2,"6_1":2,"7_1":2,"8_1":2,"9_1":2,"u_ManoDrico":2}
     },
     {
       "username": "milhafretuga",
@@ -102,10 +102,10 @@
     },
     {
       "username": "manodrico",
-      "pontos": 545,
+      "pontos": 495,
       "trocasDisponiveis": 2,
-      "proximaRecuperacao": null,
-      "inventario": {"12_2":1,"14_1":1,"15_3":1,"1_1":2,"2_1":1,"2_2":1,"3_2":2,"4_1":1,"4_2":1,"5_1":2,"5_2":1,"6_1":1,"7_1":2,"7_2":1,"8_2":1}
+      "proximaRecuperacao": "2026-07-08T19:47:23Z",
+      "inventario": {"12_2":1,"14_1":1,"1_1":2,"2_1":1,"2_2":1,"3_2":2,"4_1":1,"4_2":1,"5_1":2,"5_2":1,"6_1":1,"7_1":2,"7_2":1,"8_2":1,"u_ManoDrico":1}
     },
     {
       "username": "soniagoncalves",
