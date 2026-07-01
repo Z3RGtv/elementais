@@ -910,6 +910,7 @@ async function inicializarApp() {
         await obterPerfilTwitch();
     }
     await carregarDados();
+    iniciarTemporizadoresTrocas();
     setInterval(carregarDados, 15000);
 }
 
