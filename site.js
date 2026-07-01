@@ -163,6 +163,20 @@ function selecionarUtilizador(player, elementoDOM) {
 
     document.getElementById('view-title').textContent = `Coleção de @${player.username}`;
     document.getElementById('user-points-val').textContent = player.pontos;
+
+    // Calcular o progresso de elementais obtidos em relação ao catálogo total dinâmico
+    const totalCatalog = elementaisMap.length;
+    const totalObtidos = Object.keys(player.inventario).filter(key => player.inventario[key] > 0).length;
+    
+    document.getElementById('user-progress-val').textContent = `${totalObtidos} / ${totalCatalog}`;
+    
+    const pct = totalCatalog > 0 ? (totalObtidos / totalCatalog * 100) : 0;
+    const progressBar = document.getElementById('user-progress-bar');
+    if (progressBar) {
+        progressBar.style.width = `${pct}%`;
+        progressBar.title = `${totalObtidos} de ${totalCatalog} elementais (${Math.round(pct)}%)`;
+    }
+
     document.getElementById('user-points-panel').classList.remove('hidden');
 
     const btnPropor = document.getElementById('btn-propor-troca');
