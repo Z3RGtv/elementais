@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-04 18:50:25 UTC",
+  "updatedAt": "2026-07-04 19:04:09 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 27, "sucesso": 9, "rate": 33.3 },
     "super": { "total": 21, "sucesso": 10, "rate": 47.6 },
     "ultra": { "total": 23, "sucesso": 13, "rate": 56.5 },
-    "master": { "total": 103, "sucesso": 94, "rate": 91.3 }
+    "master": { "total": 104, "sucesso": 95, "rate": 91.3 }
   },
   "recentes_lancamentos": [
+    { "username": "steve_osvaldo", "elementalId": "u_ManoDrico", "bola": "master", "sucesso": 1, "date": "2026-07-04 20:04:09" },
     { "username": "ruialmeida_", "elementalId": "1_1", "bola": "super", "sucesso": 1, "date": "2026-07-04 19:50:24" },
     { "username": "marquesrcarol", "elementalId": "9_1", "bola": "master", "sucesso": 1, "date": "2026-07-04 19:40:13" },
     { "username": "minichef9", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-07-04 19:33:36" },
@@ -35,8 +36,7 @@
     { "username": "ipowerlz", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-01 23:07:42" },
     { "username": "minichef9", "elementalId": "1_1", "bola": "normal", "sucesso": 1, "date": "2026-07-01 23:07:37" },
     { "username": "ipowerlz", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-01 23:07:28" },
-    { "username": "minichef9", "elementalId": "8_3", "bola": "master", "sucesso": 1, "date": "2026-07-01 22:57:36" },
-    { "username": "minichef9", "elementalId": "1_1", "bola": "normal", "sucesso": 1, "date": "2026-07-01 22:47:13" }
+    { "username": "minichef9", "elementalId": "8_3", "bola": "master", "sucesso": 1, "date": "2026-07-01 22:57:36" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -129,6 +129,13 @@
       "inventario": {"1_1":1,"2_1":2,"3_1":1,"5_1":1,"6_1":2,"6_2":1,"8_2":1,"9_1":1,"9_2":1}
     },
     {
+      "username": "steve_osvaldo",
+      "pontos": 110,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"3_1":2,"u_ManoDrico":1}
+    },
+    {
       "username": "citrusbow123",
       "pontos": 70,
       "trocasDisponiveis": 3,
@@ -162,13 +169,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"1_1":1}
-    },
-    {
-      "username": "steve_osvaldo",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"3_1":2}
     },
     {
       "username": "z3rgtv",
