@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04 19:10:33 UTC",
+  "updatedAt": "2026-07-04 19:21:42 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 27, "sucesso": 9, "rate": 33.3 },
     "super": { "total": 21, "sucesso": 10, "rate": 47.6 },
@@ -98,7 +98,7 @@
       "pontos": 560,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"11_1":1,"1_1":2,"1_2":1,"2_1":1,"3_1":1,"3_2":1,"4_1":1,"4_3":1,"5_1":1,"5_2":1,"6_2":1,"7_1":1,"8_1":1,"9_3":1}
+      "inventario": {"11_1":1,"1_1":1,"1_2":1,"2_1":1,"3_1":1,"3_2":1,"4_1":1,"4_3":1,"5_1":1,"5_2":1,"6_2":1,"7_1":1,"8_1":1,"9_3":1}
     },
     {
       "username": "manodrico",
@@ -133,7 +133,7 @@
       "pontos": 110,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"3_1":2,"u_ManoDrico":1}
+      "inventario": {"3_1":1,"u_ManoDrico":1}
     },
     {
       "username": "citrusbow123",
