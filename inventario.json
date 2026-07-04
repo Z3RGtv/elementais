@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04 20:47:59 UTC",
+  "updatedAt": "2026-07-04 20:51:18 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 28, "sucesso": 9, "rate": 32.1 },
     "super": { "total": 23, "sucesso": 11, "rate": 47.8 },
@@ -55,7 +55,7 @@
     { "id": "u_Z3RGtv", "file": "Users/Z3RGtv.png", "name": "Z3RGtv" }
   ],
   "propostas": [
-
+    { "proposerName": "marquesrcarol", "targetName": "sheisdani", "elemProposer": "7_2", "elemTarget": "5_2", "createdAt": "2026-07-04T20:51:18.0654029Z" }
   ],
   "ranking": [
     {
@@ -82,7 +82,7 @@
     {
       "username": "marquesrcarol",
       "pontos": 705,
-      "trocasDisponiveis": 1,
+      "trocasDisponiveis": 0,
       "proximaRecuperacao": "2026-07-07T19:52:31Z",
       "inventario": {"10_1":1,"12_1":1,"12_2":1,"12_3":1,"13_1":2,"13_2":1,"14_1":1,"16_1":1,"1_1":1,"2_1":1,"2_2":1,"3_1":1,"4_1":1,"5_1":2,"6_1":2,"6_2":1,"7_1":1,"7_2":2,"8_1":1,"9_1":2,"9_2":1,"u_iPowerlz":1}
     },
