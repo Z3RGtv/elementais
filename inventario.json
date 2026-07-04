@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-04 21:00:19 UTC",
+  "updatedAt": "2026-07-04 21:06:31 UTC",
   "estatisticas_bolas": {
-    "normal": { "total": 28, "sucesso": 9, "rate": 32.1 },
-    "super": { "total": 24, "sucesso": 11, "rate": 45.8 },
+    "normal": { "total": 29, "sucesso": 10, "rate": 34.5 },
+    "super": { "total": 25, "sucesso": 11, "rate": 44.0 },
     "ultra": { "total": 26, "sucesso": 16, "rate": 61.5 },
     "master": { "total": 114, "sucesso": 105, "rate": 92.1 }
   },
   "recentes_lancamentos": [
+    { "username": "ipowerlz", "elementalId": "3_1", "bola": "normal", "sucesso": 1, "date": "2026-07-04 22:06:30" },
+    { "username": "ruialmeida_", "elementalId": "3_1", "bola": "super", "sucesso": 0, "date": "2026-07-04 22:06:19" },
     { "username": "salvadormdm", "elementalId": "3_1", "bola": "master", "sucesso": 1, "date": "2026-07-04 22:00:19" },
     { "username": "marquesrcarol", "elementalId": "3_1", "bola": "master", "sucesso": 1, "date": "2026-07-04 21:54:41" },
     { "username": "gui_z0", "elementalId": "3_1", "bola": "super", "sucesso": 0, "date": "2026-07-04 21:54:18" },
@@ -34,9 +36,7 @@
     { "username": "minichef9", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-07-02 00:55:12" },
     { "username": "steve_osvaldo", "elementalId": "3_1", "bola": "normal", "sucesso": 1, "date": "2026-07-02 00:49:20" },
     { "username": "ruialmeida_", "elementalId": "3_1", "bola": "normal", "sucesso": 0, "date": "2026-07-02 00:49:11" },
-    { "username": "minichef9", "elementalId": "3_1", "bola": "super", "sucesso": 1, "date": "2026-07-02 00:43:20" },
-    { "username": "steve_osvaldo", "elementalId": "3_1", "bola": "normal", "sucesso": 1, "date": "2026-07-02 00:43:19" },
-    { "username": "minichef9", "elementalId": "3_1", "bola": "normal", "sucesso": 0, "date": "2026-07-02 00:43:11" }
+    { "username": "minichef9", "elementalId": "3_1", "bola": "super", "sucesso": 1, "date": "2026-07-02 00:43:20" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -77,7 +77,7 @@
       "pontos": 985,
       "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-07-08T22:43:34Z",
-      "inventario": {"10_1":1,"11_1":2,"13_1":1,"14_1":1,"16_2":1,"1_1":1,"1_2":1,"1_3":1,"2_1":1,"2_2":2,"2_3":1,"3_1":1,"3_2":1,"4_1":1,"4_2":1,"5_1":1,"5_2":1,"5_3":1,"6_1":1,"6_2":1,"7_1":1,"7_2":1,"8_1":1,"9_1":1,"9_2":1}
+      "inventario": {"10_1":1,"11_1":2,"13_1":1,"14_1":1,"16_2":1,"1_1":1,"1_2":1,"1_3":1,"2_1":1,"2_2":2,"2_3":1,"3_1":2,"3_2":1,"4_1":1,"4_2":1,"5_1":1,"5_2":1,"5_3":1,"6_1":1,"6_2":1,"7_1":1,"7_2":1,"8_1":1,"9_1":1,"9_2":1}
     },
     {
       "username": "marquesrcarol",
