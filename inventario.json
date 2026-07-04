@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04 20:37:41 UTC",
+  "updatedAt": "2026-07-04 20:40:00 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 28, "sucesso": 9, "rate": 32.1 },
     "super": { "total": 23, "sucesso": 11, "rate": 47.8 },
@@ -84,7 +84,7 @@
       "pontos": 705,
       "trocasDisponiveis": 1,
       "proximaRecuperacao": "2026-07-07T19:52:31Z",
-      "inventario": {"10_1":1,"12_1":1,"12_2":1,"12_3":1,"13_1":2,"13_2":1,"14_1":1,"16_1":1,"1_1":1,"2_1":1,"2_2":1,"3_1":1,"4_1":1,"5_1":2,"6_1":1,"6_2":1,"7_1":1,"7_2":2,"8_1":1,"9_1":2,"9_2":1,"u_iPowerlz":1}
+      "inventario": {"10_1":1,"12_1":1,"12_2":1,"12_3":1,"13_1":2,"13_2":1,"14_1":1,"16_1":1,"1_1":1,"2_1":1,"2_2":1,"3_1":1,"4_1":1,"5_1":2,"6_1":2,"6_2":1,"7_1":1,"7_2":2,"8_1":1,"9_1":2,"9_2":1,"u_iPowerlz":1}
     },
     {
       "username": "gui_z0",
@@ -164,14 +164,7 @@
       "inventario": {"1_1":1,"3_1":2}
     },
     {
-      "username": "hst_playz_pt",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_1":1}
-    },
-    {
-      "username": "z3rgtv",
+      "username": "astroz1nvlr",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
@@ -185,7 +178,14 @@
       "inventario": {"2_1":1}
     },
     {
-      "username": "astroz1nvlr",
+      "username": "z3rgtv",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"1_1":1}
+    },
+    {
+      "username": "hst_playz_pt",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
