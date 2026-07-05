@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05 21:25:03 UTC",
+  "updatedAt": "2026-07-05 21:27:33 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 32, "sucesso": 11, "rate": 34.4 },
     "super": { "total": 29, "sucesso": 13, "rate": 44.8 },
@@ -125,10 +125,10 @@
     },
     {
       "username": "milhafretuga",
-      "pontos": 225,
+      "pontos": 185,
       "trocasDisponiveis": 1,
       "proximaRecuperacao": "2026-07-07T19:52:31Z",
-      "inventario": {"10_1":1,"11_1":1,"12_1":1,"14_1":1,"3_1":1,"7_2":1}
+      "inventario": {"10_1":1,"11_1":1,"12_1":1,"14_1":1,"3_1":1}
     },
     {
       "username": "steve_osvaldo",
