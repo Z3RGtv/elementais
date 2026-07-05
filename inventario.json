@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-05 21:53:54 UTC",
+  "updatedAt": "2026-07-05 21:57:17 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 33, "sucesso": 12, "rate": 36.4 },
     "super": { "total": 29, "sucesso": 13, "rate": 44.8 },
     "ultra": { "total": 33, "sucesso": 19, "rate": 57.6 },
-    "master": { "total": 125, "sucesso": 116, "rate": 92.8 }
+    "master": { "total": 126, "sucesso": 117, "rate": 92.9 }
   },
   "recentes_lancamentos": [
+    { "username": "minichef9", "elementalId": "15_3", "bola": "master", "sucesso": 1, "date": "2026-07-05 22:57:17" },
     { "username": "gui_z0", "elementalId": "13_1", "bola": "normal", "sucesso": 1, "date": "2026-07-05 22:31:14" },
     { "username": "minichef9", "elementalId": "13_1", "bola": "ultra", "sucesso": 0, "date": "2026-07-05 22:31:05" },
     { "username": "marquesrcarol", "elementalId": "9_1", "bola": "master", "sucesso": 1, "date": "2026-07-05 22:25:03" },
@@ -35,8 +36,7 @@
     { "username": "salvadormdm", "elementalId": "6_1", "bola": "ultra", "sucesso": 0, "date": "2026-07-04 22:15:54" },
     { "username": "ipowerlz", "elementalId": "3_1", "bola": "normal", "sucesso": 1, "date": "2026-07-04 22:06:30" },
     { "username": "ruialmeida_", "elementalId": "3_1", "bola": "super", "sucesso": 0, "date": "2026-07-04 22:06:19" },
-    { "username": "salvadormdm", "elementalId": "3_1", "bola": "master", "sucesso": 1, "date": "2026-07-04 22:00:19" },
-    { "username": "marquesrcarol", "elementalId": "3_1", "bola": "master", "sucesso": 1, "date": "2026-07-04 21:54:41" }
+    { "username": "salvadormdm", "elementalId": "3_1", "bola": "master", "sucesso": 1, "date": "2026-07-04 22:00:19" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -72,7 +72,7 @@
       "pontos": 1220,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_1":2,"12_2":1,"13_2":1,"13_3":1,"14_1":2,"14_2":2,"15_1":1,"15_3":1,"16_1":1,"1_1":2,"2_1":2,"2_2":1,"3_1":2,"4_1":2,"5_1":1,"6_1":2,"7_1":1,"7_2":1,"8_3":1,"8_4":1,"9_2":1,"u_Z3RGtv":1}
+      "inventario": {"12_1":2,"12_2":1,"13_2":1,"13_3":1,"14_1":2,"14_2":2,"15_1":1,"15_3":2,"16_1":1,"1_1":2,"2_1":2,"2_2":1,"3_1":2,"4_1":2,"5_1":1,"6_1":2,"7_1":1,"7_2":1,"8_3":1,"8_4":1,"9_2":1,"u_Z3RGtv":1}
     },
     {
       "username": "ipowerlz",
