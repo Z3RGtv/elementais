@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05 00:38:30 UTC",
+  "updatedAt": "2026-07-05 02:12:34 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 32, "sucesso": 11, "rate": 34.4 },
     "super": { "total": 28, "sucesso": 13, "rate": 46.4 },
@@ -48,11 +48,13 @@
     { "id": "u_MarquesrCarol", "file": "Users/MarquesrCarol.png", "name": "MarquesrCarol" },
     { "id": "u_MilhafreTuga", "file": "Users/MilhafreTuga.png", "name": "MilhafreTuga" },
     { "id": "u_Minichef9", "file": "Users/Minichef9.png", "name": "Minichef9" },
+    { "id": "u_ruialmeida_", "file": "Users/ruialmeida_.png", "name": "ruialmeida_" },
     { "id": "u_sheisdani", "file": "Users/sheisdani.png", "name": "sheisdani" },
     { "id": "u_soniagoncalves", "file": "Users/soniagoncalves.png", "name": "soniagoncalves" },
     { "id": "u_steve_osvaldo", "file": "Users/steve_osvaldo.png", "name": "steve_osvaldo" },
     { "id": "u_TheMarySimmer", "file": "Users/TheMarySimmer.png", "name": "TheMarySimmer" },
-    { "id": "u_Z3RGtv", "file": "Users/Z3RGtv.png", "name": "Z3RGtv" }
+    { "id": "u_Z3RGtv", "file": "Users/Z3RGtv.png", "name": "Z3RGtv" },
+    { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
 
@@ -164,21 +166,7 @@
       "inventario": {"1_1":1,"3_1":2}
     },
     {
-      "username": "salvadormdm",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"3_1":1}
-    },
-    {
       "username": "hst_playz_pt",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_1":1}
-    },
-    {
-      "username": "z3rgtv",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
@@ -192,11 +180,25 @@
       "inventario": {"2_1":1}
     },
     {
+      "username": "z3rgtv",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"1_1":1}
+    },
+    {
       "username": "astroz1nvlr",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"1_1":1}
+    },
+    {
+      "username": "salvadormdm",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"3_1":1}
     }
   ]
 }
