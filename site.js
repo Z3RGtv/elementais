@@ -1024,9 +1024,9 @@ function obterNomeSimplesBicho(id) {
     const variante = parseInt(partes[1]);
     
     const nomesEspecies = {
-        1: "Water", 2: "Earth", 3: "Fire", 4: "Duck", 5: "Ghost", 
-        6: "Sleepy", 7: "Demon", 8: "Punk", 9: "King", 10: "ZeroPoint",
-        11: "BurntPeanut", 12: "Fishy", 13: "Striker", 14: "Aura", 
+        1: "Água", 2: "Terra", 3: "Fogo", 4: "Pato", 5: "Fantasma", 
+        6: "Dos Sonhos", 7: "Demónio", 8: "Punk", 9: "Rei", 10: "Ponto Zero",
+        11: "BurntPeanut", 12: "Peixoto", 13: "Atacante", 14: "Aura", 
         15: "Boss", 16: "Grim"
     };
 
