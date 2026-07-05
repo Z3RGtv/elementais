@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05 21:35:13 UTC",
+  "updatedAt": "2026-07-05 21:46:09 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 33, "sucesso": 12, "rate": 36.4 },
     "super": { "total": 29, "sucesso": 13, "rate": 44.8 },
@@ -69,10 +69,10 @@
     },
     {
       "username": "minichef9",
-      "pontos": 1220,
+      "pontos": 1235,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_1":2,"12_2":1,"13_2":1,"13_3":1,"14_1":2,"14_2":2,"15_1":2,"15_3":1,"16_1":1,"1_1":2,"2_1":2,"2_2":1,"3_1":2,"4_1":2,"5_1":1,"6_1":2,"7_1":1,"7_2":1,"8_3":1,"8_4":1,"9_2":1,"u_Z3RGtv":1}
+      "inventario": {"12_1":2,"12_2":1,"13_2":1,"13_3":1,"14_1":2,"14_2":2,"15_1":2,"15_3":1,"16_1":1,"1_1":2,"2_1":2,"2_2":1,"3_1":2,"4_1":2,"5_1":1,"6_1":2,"7_1":1,"7_2":1,"8_3":1,"8_4":1,"9_1":1,"9_2":1,"u_Z3RGtv":1}
     },
     {
       "username": "ipowerlz",
@@ -125,10 +125,10 @@
     },
     {
       "username": "milhafretuga",
-      "pontos": 170,
+      "pontos": 160,
       "trocasDisponiveis": 1,
       "proximaRecuperacao": "2026-07-07T19:52:31Z",
-      "inventario": {"10_1":1,"11_1":1,"12_1":1,"3_1":1}
+      "inventario": {"10_1":1,"11_1":1,"12_1":1}
     },
     {
       "username": "steve_osvaldo",
@@ -166,21 +166,7 @@
       "inventario": {"1_1":1,"3_1":2}
     },
     {
-      "username": "salvadormdm",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"3_1":1}
-    },
-    {
       "username": "hst_playz_pt",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_1":1}
-    },
-    {
-      "username": "z3rgtv",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
@@ -194,11 +180,25 @@
       "inventario": {"2_1":1}
     },
     {
+      "username": "z3rgtv",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"1_1":1}
+    },
+    {
       "username": "astroz1nvlr",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"1_1":1}
+    },
+    {
+      "username": "salvadormdm",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"3_1":1}
     }
   ]
 }
