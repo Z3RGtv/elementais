@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07 18:19:26 UTC",
+  "updatedAt": "2026-07-07 18:19:50 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 42, "sucesso": 12, "rate": 28.6 },
     "super": { "total": 36, "sucesso": 15, "rate": 41.7 },
@@ -97,10 +97,10 @@
     },
     {
       "username": "manodrico",
-      "pontos": 525,
+      "pontos": 515,
       "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-07-08T19:47:23Z",
-      "inventario": {"12_2":1,"14_1":1,"1_1":1,"1_2":1,"2_1":1,"2_2":1,"3_2":2,"4_2":1,"5_1":2,"5_2":1,"6_1":1,"7_1":2,"7_2":1,"8_2":1,"9_1":1,"u_ManoDrico":1}
+      "inventario": {"12_2":1,"14_1":1,"1_1":1,"1_2":1,"2_2":1,"3_2":2,"4_2":1,"5_1":2,"5_2":1,"6_1":1,"7_1":2,"7_2":1,"8_2":1,"9_1":1,"u_ManoDrico":1}
     },
     {
       "username": "soniagoncalves",
