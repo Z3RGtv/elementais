@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-07 23:37:08 UTC",
+  "updatedAt": "2026-07-07 23:42:43 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 57, "sucesso": 15, "rate": 26.3 },
     "super": { "total": 45, "sucesso": 19, "rate": 42.2 },
     "ultra": { "total": 47, "sucesso": 28, "rate": 59.6 },
-    "master": { "total": 173, "sucesso": 161, "rate": 93.1 }
+    "master": { "total": 174, "sucesso": 162, "rate": 93.1 }
   },
   "recentes_lancamentos": [
+    { "username": "ipowerlz", "elementalId": "u_soniagoncalves", "bola": "master", "sucesso": 1, "date": "2026-07-08 00:42:43" },
     { "username": "grandesleitadores", "elementalId": "12_1", "bola": "normal", "sucesso": 1, "date": "2026-07-08 00:37:07" },
     { "username": "manu12321_", "elementalId": "14_2", "bola": "master", "sucesso": 1, "date": "2026-07-08 00:30:40" },
     { "username": "sheisdani", "elementalId": "9_1", "bola": "super", "sucesso": 0, "date": "2026-07-08 00:25:30" },
@@ -35,8 +36,7 @@
     { "username": "grandesleitadores", "elementalId": "4_1", "bola": "super", "sucesso": 0, "date": "2026-07-07 22:43:35" },
     { "username": "grandesleitadores", "elementalId": "4_1", "bola": "normal", "sucesso": 0, "date": "2026-07-07 22:43:24" },
     { "username": "marquesrcarol", "elementalId": "4_1", "bola": "normal", "sucesso": 0, "date": "2026-07-07 22:43:16" },
-    { "username": "marquesrcarol", "elementalId": "4_1", "bola": "normal", "sucesso": 0, "date": "2026-07-07 22:43:01" },
-    { "username": "marquesrcarol", "elementalId": "8_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-07 22:37:53" }
+    { "username": "marquesrcarol", "elementalId": "4_1", "bola": "normal", "sucesso": 0, "date": "2026-07-07 22:43:01" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -76,10 +76,10 @@
     },
     {
       "username": "ipowerlz",
-      "pontos": 1255,
+      "pontos": 1355,
       "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-07-08T22:43:34Z",
-      "inventario": {"10_1":1,"11_1":2,"12_1":1,"12_2":1,"13_1":1,"14_1":1,"14_2":1,"14_3":1,"16_2":1,"1_1":1,"1_2":1,"1_3":1,"2_1":1,"2_2":2,"2_3":1,"3_1":1,"3_2":1,"4_1":1,"4_2":1,"5_1":1,"5_2":1,"5_3":1,"6_1":1,"6_2":1,"7_1":1,"7_2":2,"8_1":1,"9_1":2,"9_2":2,"u_1509_martim":1}
+      "inventario": {"10_1":1,"11_1":2,"12_1":1,"12_2":1,"13_1":1,"14_1":1,"14_2":1,"14_3":1,"16_2":1,"1_1":1,"1_2":1,"1_3":1,"2_1":1,"2_2":2,"2_3":1,"3_1":1,"3_2":1,"4_1":1,"4_2":1,"5_1":1,"5_2":1,"5_3":1,"6_1":1,"6_2":1,"7_1":1,"7_2":2,"8_1":1,"9_1":2,"9_2":2,"u_1509_martim":1,"u_soniagoncalves":1}
     },
     {
       "username": "marquesrcarol",
