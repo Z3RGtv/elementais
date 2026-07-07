@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07 20:51:02 UTC",
+  "updatedAt": "2026-07-07 20:51:30 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 46, "sucesso": 12, "rate": 26.1 },
     "super": { "total": 38, "sucesso": 17, "rate": 44.7 },
@@ -97,10 +97,10 @@
     },
     {
       "username": "manodrico",
-      "pontos": 605,
+      "pontos": 595,
       "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-07-08T19:47:23Z",
-      "inventario": {"12_2":1,"13_3":1,"14_1":1,"1_1":1,"1_2":1,"2_2":1,"3_2":2,"4_2":1,"5_1":2,"5_2":1,"6_1":2,"7_1":1,"7_2":1,"8_2":1,"9_1":1,"u_ManoDrico":1}
+      "inventario": {"12_2":1,"13_3":1,"14_1":1,"1_2":1,"2_2":1,"3_2":2,"4_2":1,"5_1":2,"5_2":1,"6_1":2,"7_1":1,"7_2":1,"8_2":1,"9_1":1,"u_ManoDrico":1}
     },
     {
       "username": "manu12321_",
