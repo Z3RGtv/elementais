@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-07 22:31:31 UTC",
+  "updatedAt": "2026-07-07 22:31:33 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 54, "sucesso": 14, "rate": 25.9 },
-    "super": { "total": 43, "sucesso": 18, "rate": 41.9 },
+    "super": { "total": 44, "sucesso": 19, "rate": 43.2 },
     "ultra": { "total": 45, "sucesso": 27, "rate": 60.0 },
     "master": { "total": 167, "sucesso": 155, "rate": 92.8 }
   },
   "recentes_lancamentos": [
+    { "username": "midnight_8k", "elementalId": "7_1", "bola": "super", "sucesso": 1, "date": "2026-07-07 23:31:32" },
     { "username": "sheisdani", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-07-07 23:25:04" },
     { "username": "manu12321_", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-07-07 23:19:04" },
     { "username": "sheisdani", "elementalId": "3_3", "bola": "master", "sucesso": 1, "date": "2026-07-07 23:13:02" },
@@ -35,8 +36,7 @@
     { "username": "manodrico", "elementalId": "1_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-07 21:53:34" },
     { "username": "manu12321_", "elementalId": "7_1", "bola": "master", "sucesso": 1, "date": "2026-07-07 21:47:33" },
     { "username": "marquesrcarol", "elementalId": "3_1", "bola": "super", "sucesso": 1, "date": "2026-07-07 21:42:08" },
-    { "username": "manodrico", "elementalId": "3_1", "bola": "normal", "sucesso": 0, "date": "2026-07-07 21:41:57" },
-    { "username": "marquesrcarol", "elementalId": "3_1", "bola": "ultra", "sucesso": 0, "date": "2026-07-07 21:41:41" }
+    { "username": "manodrico", "elementalId": "3_1", "bola": "normal", "sucesso": 0, "date": "2026-07-07 21:41:57" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -173,11 +173,11 @@
       "inventario": {"1_1":1,"3_1":2}
     },
     {
-      "username": "manuel2019rodrigues",
-      "pontos": 10,
+      "username": "midnight_8k",
+      "pontos": 15,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"2_1":1}
+      "inventario": {"7_1":1}
     },
     {
       "username": "hst_playz_pt",
@@ -199,6 +199,13 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"1_1":1}
+    },
+    {
+      "username": "manuel2019rodrigues",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"2_1":1}
     },
     {
       "username": "astroz1nvlr",
