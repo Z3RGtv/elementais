@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-08 18:36:19 UTC",
+  "updatedAt": "2026-07-08 18:37:13 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 64, "sucesso": 15, "rate": 23.4 },
     "super": { "total": 47, "sucesso": 19, "rate": 40.4 },
     "ultra": { "total": 56, "sucesso": 34, "rate": 60.7 },
-    "master": { "total": 185, "sucesso": 169, "rate": 91.4 }
+    "master": { "total": 186, "sucesso": 170, "rate": 91.4 }
   },
   "recentes_lancamentos": [
+    { "username": "manodrico", "elementalId": "u_gui_z0", "bola": "master", "sucesso": 1, "date": "2026-07-08 19:37:13" },
     { "username": "soniagoncalves", "elementalId": "u_EIMEZ", "bola": "master", "sucesso": 1, "date": "2026-07-08 19:27:07" },
     { "username": "ipowerlz", "elementalId": "8_1", "bola": "master", "sucesso": 1, "date": "2026-07-08 02:18:01" },
     { "username": "sheisdani", "elementalId": "1_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-08 02:12:02" },
@@ -35,8 +36,7 @@
     { "username": "sheisdani", "elementalId": "2_1", "bola": "super", "sucesso": 0, "date": "2026-07-08 01:01:18" },
     { "username": "grandesleitadores", "elementalId": "2_1", "bola": "normal", "sucesso": 0, "date": "2026-07-08 01:01:09" },
     { "username": "milhafretuga", "elementalId": "u_1509_martim", "bola": "master", "sucesso": 1, "date": "2026-07-08 00:55:00" },
-    { "username": "ipowerlz", "elementalId": "10_3", "bola": "master", "sucesso": 1, "date": "2026-07-08 00:48:53" },
-    { "username": "ipowerlz", "elementalId": "u_soniagoncalves", "bola": "master", "sucesso": 1, "date": "2026-07-08 00:42:43" }
+    { "username": "ipowerlz", "elementalId": "10_3", "bola": "master", "sucesso": 1, "date": "2026-07-08 00:48:53" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -89,18 +89,18 @@
       "inventario": {"10_1":1,"10_2":1,"12_1":2,"12_2":2,"12_3":1,"13_1":2,"13_2":1,"14_1":2,"14_2":1,"16_1":1,"1_1":1,"1_2":1,"2_1":1,"2_2":1,"3_1":2,"4_1":1,"4_2":1,"5_1":1,"5_2":1,"5_4":1,"6_1":2,"6_2":1,"7_1":2,"7_2":1,"8_1":2,"9_1":1,"9_2":1,"u_iPowerlz":2}
     },
     {
+      "username": "manodrico",
+      "pontos": 715,
+      "trocasDisponiveis": 2,
+      "proximaRecuperacao": "2026-07-08T19:47:23Z",
+      "inventario": {"12_2":1,"13_3":1,"14_1":1,"1_1":1,"1_2":1,"2_1":1,"2_2":1,"3_2":2,"4_2":1,"5_1":2,"5_2":1,"6_1":2,"7_1":1,"7_2":1,"8_2":1,"9_1":1,"u_ManoDrico":1,"u_gui_z0":1}
+    },
+    {
       "username": "gui_z0",
       "pontos": 620,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"11_1":1,"12_2":1,"13_1":1,"14_1":1,"1_1":1,"1_2":1,"2_1":1,"3_1":1,"3_2":1,"4_1":1,"4_3":1,"5_1":2,"5_2":2,"6_2":1,"7_1":2,"8_1":1,"9_3":1}
-    },
-    {
-      "username": "manodrico",
-      "pontos": 615,
-      "trocasDisponiveis": 2,
-      "proximaRecuperacao": "2026-07-08T19:47:23Z",
-      "inventario": {"12_2":1,"13_3":1,"14_1":1,"1_1":1,"1_2":1,"2_1":1,"2_2":1,"3_2":2,"4_2":1,"5_1":2,"5_2":1,"6_1":2,"7_1":1,"7_2":1,"8_2":1,"9_1":1,"u_ManoDrico":1}
     },
     {
       "username": "soniagoncalves",
@@ -152,18 +152,18 @@
       "inventario": {"1_1":1,"2_1":1,"8_1":1}
     },
     {
-      "username": "hugoandre07",
-      "pontos": 45,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_1":1,"2_1":1,"3_1":1,"9_1":1}
-    },
-    {
       "username": "ruialmeida_",
       "pontos": 45,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":1,"13_1":2,"1_1":2,"3_1":1}
+    },
+    {
+      "username": "hugoandre07",
+      "pontos": 45,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"1_1":1,"2_1":1,"3_1":1,"9_1":1}
     },
     {
       "username": "themarysimmer",
@@ -187,20 +187,6 @@
       "inventario": {"7_1":1}
     },
     {
-      "username": "hst_playz_pt",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_1":1}
-    },
-    {
-      "username": "manuel2019rodrigues",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"2_1":1}
-    },
-    {
       "username": "grandesleitadores",
       "pontos": 10,
       "trocasDisponiveis": 3,
@@ -208,11 +194,25 @@
       "inventario": {"12_1":1}
     },
     {
+      "username": "hst_playz_pt",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"1_1":1}
+    },
+    {
       "username": "salvadormdm",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"3_1":1}
+    },
+    {
+      "username": "manuel2019rodrigues",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"2_1":1}
     },
     {
       "username": "astroz1nvlr",
