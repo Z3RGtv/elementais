@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08 22:57:06 UTC",
+  "updatedAt": "2026-07-08 22:57:31 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 67, "sucesso": 16, "rate": 23.9 },
     "super": { "total": 49, "sucesso": 19, "rate": 38.8 },
@@ -93,7 +93,7 @@
       "pontos": 790,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"13_1":1,"13_3":1,"14_1":2,"1_1":1,"1_2":1,"2_2":1,"3_2":2,"4_2":1,"5_1":2,"5_2":1,"6_1":2,"7_1":1,"7_2":1,"8_2":1,"9_1":2,"u_ManoDrico":1,"u_gui_z0":1,"u_soniagoncalves":1}
+      "inventario": {"13_1":1,"13_3":1,"14_1":2,"1_1":1,"1_2":1,"2_2":1,"3_2":2,"4_2":1,"5_1":2,"5_2":1,"6_1":2,"7_1":1,"7_2":1,"8_2":1,"9_1":1,"u_ManoDrico":1,"u_gui_z0":1,"u_soniagoncalves":1}
     },
     {
       "username": "milhafretuga",
