@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-08 23:12:00 UTC",
+  "updatedAt": "2026-07-08 23:26:28 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 67, "sucesso": 16, "rate": 23.9 },
     "super": { "total": 50, "sucesso": 20, "rate": 40.0 },
-    "ultra": { "total": 67, "sucesso": 43, "rate": 64.2 },
+    "ultra": { "total": 68, "sucesso": 44, "rate": 64.7 },
     "master": { "total": 204, "sucesso": 186, "rate": 91.2 }
   },
   "recentes_lancamentos": [
+    { "username": "grandesleitadores", "elementalId": "12_2", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 00:26:28" },
     { "username": "manodrico", "elementalId": "4_1", "bola": "super", "sucesso": 1, "date": "2026-07-09 00:12:00" },
     { "username": "manodrico", "elementalId": "u_Z3RGtv_og", "bola": "master", "sucesso": 1, "date": "2026-07-09 00:03:11" },
     { "username": "milhafretuga", "elementalId": "12_1", "bola": "normal", "sucesso": 1, "date": "2026-07-08 23:55:08" },
@@ -35,8 +36,7 @@
     { "username": "manodrico", "elementalId": "u_soniagoncalves", "bola": "master", "sucesso": 1, "date": "2026-07-08 20:56:25" },
     { "username": "sheisdani", "elementalId": "2_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-08 20:50:41" },
     { "username": "hugoandre07", "elementalId": "14_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-08 20:44:39" },
-    { "username": "marquesrcarol", "elementalId": "3_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-08 20:38:38" },
-    { "username": "ipowerlz", "elementalId": "3_2", "bola": "master", "sucesso": 1, "date": "2026-07-08 20:32:24" }
+    { "username": "marquesrcarol", "elementalId": "3_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-08 20:38:38" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -166,6 +166,13 @@
       "inventario": {"12_1":2,"13_1":2,"1_1":2,"3_1":1}
     },
     {
+      "username": "grandesleitadores",
+      "pontos": 40,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_1":1,"12_2":1}
+    },
+    {
       "username": "themarysimmer",
       "pontos": 20,
       "trocasDisponiveis": 3,
@@ -185,13 +192,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"7_1":1}
-    },
-    {
-      "username": "grandesleitadores",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"12_1":1}
     },
     {
       "username": "hst_playz_pt",
