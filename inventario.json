@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08 18:37:13 UTC",
+  "updatedAt": "2026-07-08 18:40:22 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 64, "sucesso": 15, "rate": 23.4 },
     "super": { "total": 47, "sucesso": 19, "rate": 40.4 },
@@ -100,7 +100,7 @@
       "pontos": 620,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"11_1":1,"12_2":1,"13_1":1,"14_1":1,"1_1":1,"1_2":1,"2_1":1,"3_1":1,"3_2":1,"4_1":1,"4_3":1,"5_1":2,"5_2":2,"6_2":1,"7_1":2,"8_1":1,"9_3":1}
+      "inventario": {"11_1":1,"12_2":1,"13_1":1,"14_1":1,"1_1":1,"1_2":1,"2_1":1,"3_1":1,"3_2":1,"4_1":1,"4_3":1,"5_1":2,"5_2":2,"6_2":1,"7_1":2,"8_1":2,"9_3":1}
     },
     {
       "username": "soniagoncalves",
@@ -152,18 +152,18 @@
       "inventario": {"1_1":1,"2_1":1,"8_1":1}
     },
     {
-      "username": "ruialmeida_",
-      "pontos": 45,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"13_1":2,"1_1":2,"3_1":1}
-    },
-    {
       "username": "hugoandre07",
       "pontos": 45,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"1_1":1,"2_1":1,"3_1":1,"9_1":1}
+    },
+    {
+      "username": "ruialmeida_",
+      "pontos": 45,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_1":1,"13_1":2,"1_1":2,"3_1":1}
     },
     {
       "username": "themarysimmer",
@@ -187,13 +187,6 @@
       "inventario": {"7_1":1}
     },
     {
-      "username": "grandesleitadores",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"12_1":1}
-    },
-    {
       "username": "hst_playz_pt",
       "pontos": 10,
       "trocasDisponiveis": 3,
@@ -201,18 +194,25 @@
       "inventario": {"1_1":1}
     },
     {
-      "username": "salvadormdm",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"3_1":1}
-    },
-    {
       "username": "manuel2019rodrigues",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"2_1":1}
+    },
+    {
+      "username": "grandesleitadores",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_1":1}
+    },
+    {
+      "username": "salvadormdm",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"3_1":1}
     },
     {
       "username": "astroz1nvlr",
