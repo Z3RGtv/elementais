@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-08 22:02:02 UTC",
+  "updatedAt": "2026-07-08 22:16:49 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 66, "sucesso": 15, "rate": 22.7 },
     "super": { "total": 48, "sucesso": 19, "rate": 39.6 },
-    "ultra": { "total": 66, "sucesso": 42, "rate": 63.6 },
+    "ultra": { "total": 67, "sucesso": 43, "rate": 64.2 },
     "master": { "total": 200, "sucesso": 183, "rate": 91.5 }
   },
   "recentes_lancamentos": [
+    { "username": "ruialmeida_", "elementalId": "12_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-08 23:16:49" },
     { "username": "marquesrcarol", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-07-08 23:02:02" },
     { "username": "marquesrcarol", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-07-08 22:51:53" },
     { "username": "manu12321_", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-07-08 22:36:57" },
@@ -35,8 +36,7 @@
     { "username": "san7zinn", "elementalId": "3_1", "bola": "normal", "sucesso": 0, "date": "2026-07-08 20:12:18" },
     { "username": "manodrico", "elementalId": "13_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-08 19:58:21" },
     { "username": "manodrico", "elementalId": "u_gui_z0", "bola": "master", "sucesso": 1, "date": "2026-07-08 19:37:13" },
-    { "username": "soniagoncalves", "elementalId": "u_EIMEZ", "bola": "master", "sucesso": 1, "date": "2026-07-08 19:27:07" },
-    { "username": "ipowerlz", "elementalId": "8_1", "bola": "master", "sucesso": 1, "date": "2026-07-08 02:18:01" }
+    { "username": "soniagoncalves", "elementalId": "u_EIMEZ", "bola": "master", "sucesso": 1, "date": "2026-07-08 19:27:07" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -163,7 +163,7 @@
       "pontos": 45,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"13_1":2,"1_1":2,"3_1":1}
+      "inventario": {"12_1":2,"13_1":2,"1_1":2,"3_1":1}
     },
     {
       "username": "themarysimmer",
