@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-08 20:07:44 UTC",
+  "updatedAt": "2026-07-08 20:10:25 UTC",
   "estatisticas_bolas": {
-    "normal": { "total": 65, "sucesso": 15, "rate": 23.1 },
+    "normal": { "total": 66, "sucesso": 15, "rate": 22.7 },
     "super": { "total": 48, "sucesso": 19, "rate": 39.6 },
     "ultra": { "total": 62, "sucesso": 39, "rate": 62.9 },
-    "master": { "total": 189, "sucesso": 173, "rate": 91.5 }
+    "master": { "total": 190, "sucesso": 174, "rate": 91.6 }
   },
   "recentes_lancamentos": [
+    { "username": "soniagoncalves", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-07-08 21:10:24" },
+    { "username": "milhafretuga", "elementalId": "13_1", "bola": "normal", "sucesso": 0, "date": "2026-07-08 21:09:45" },
     { "username": "milhafretuga", "elementalId": "u_MarquesrCarol", "bola": "master", "sucesso": 1, "date": "2026-07-08 21:02:18" },
     { "username": "manodrico", "elementalId": "u_soniagoncalves", "bola": "master", "sucesso": 1, "date": "2026-07-08 20:56:25" },
     { "username": "sheisdani", "elementalId": "2_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-08 20:50:41" },
@@ -34,9 +36,7 @@
     { "username": "manodrico", "elementalId": "13_1", "bola": "normal", "sucesso": 0, "date": "2026-07-08 01:37:29" },
     { "username": "hugoandre07", "elementalId": "13_1", "bola": "master", "sucesso": 0, "date": "2026-07-08 01:36:38" },
     { "username": "minichef9", "elementalId": "13_1", "bola": "master", "sucesso": 0, "date": "2026-07-08 01:36:16" },
-    { "username": "hugoandre07", "elementalId": "13_1", "bola": "ultra", "sucesso": 0, "date": "2026-07-08 01:36:07" },
-    { "username": "minichef9", "elementalId": "13_1", "bola": "master", "sucesso": 0, "date": "2026-07-08 01:35:58" },
-    { "username": "minichef9", "elementalId": "9_2", "bola": "master", "sucesso": 1, "date": "2026-07-08 01:29:57" }
+    { "username": "hugoandre07", "elementalId": "13_1", "bola": "ultra", "sucesso": 0, "date": "2026-07-08 01:36:07" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -105,10 +105,10 @@
     },
     {
       "username": "soniagoncalves",
-      "pontos": 505,
+      "pontos": 520,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"10_1":1,"1_1":1,"4_1":1,"4_4":1,"7_1":1,"9_1":1,"u_EIMEZ":1,"u_steve_osvaldo":1}
+      "inventario": {"10_1":1,"13_1":1,"1_1":1,"4_1":1,"4_4":1,"7_1":1,"9_1":1,"u_EIMEZ":1,"u_steve_osvaldo":1}
     },
     {
       "username": "manu12321_",
