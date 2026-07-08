@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-08 19:56:25 UTC",
+  "updatedAt": "2026-07-08 20:02:18 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 65, "sucesso": 15, "rate": 23.1 },
     "super": { "total": 48, "sucesso": 19, "rate": 39.6 },
     "ultra": { "total": 62, "sucesso": 39, "rate": 62.9 },
-    "master": { "total": 188, "sucesso": 172, "rate": 91.5 }
+    "master": { "total": 189, "sucesso": 173, "rate": 91.5 }
   },
   "recentes_lancamentos": [
+    { "username": "milhafretuga", "elementalId": "u_MarquesrCarol", "bola": "master", "sucesso": 1, "date": "2026-07-08 21:02:18" },
     { "username": "manodrico", "elementalId": "u_soniagoncalves", "bola": "master", "sucesso": 1, "date": "2026-07-08 20:56:25" },
     { "username": "sheisdani", "elementalId": "2_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-08 20:50:41" },
     { "username": "hugoandre07", "elementalId": "14_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-08 20:44:39" },
@@ -35,8 +36,7 @@
     { "username": "minichef9", "elementalId": "13_1", "bola": "master", "sucesso": 0, "date": "2026-07-08 01:36:16" },
     { "username": "hugoandre07", "elementalId": "13_1", "bola": "ultra", "sucesso": 0, "date": "2026-07-08 01:36:07" },
     { "username": "minichef9", "elementalId": "13_1", "bola": "master", "sucesso": 0, "date": "2026-07-08 01:35:58" },
-    { "username": "minichef9", "elementalId": "9_2", "bola": "master", "sucesso": 1, "date": "2026-07-08 01:29:57" },
-    { "username": "sheisdani", "elementalId": "9_2", "bola": "master", "sucesso": 1, "date": "2026-07-08 01:23:57" }
+    { "username": "minichef9", "elementalId": "9_2", "bola": "master", "sucesso": 1, "date": "2026-07-08 01:29:57" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -118,10 +118,10 @@
     },
     {
       "username": "milhafretuga",
-      "pontos": 360,
+      "pontos": 460,
       "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-07-15T19:34:53Z",
-      "inventario": {"10_1":2,"12_1":1,"u_1509_martim":1,"u_iPowerlz":1,"u_ruialmeida_":1}
+      "inventario": {"10_1":2,"12_1":1,"u_1509_martim":1,"u_MarquesrCarol":1,"u_iPowerlz":1,"u_ruialmeida_":1}
     },
     {
       "username": "1509_martim",
