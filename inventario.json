@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08 19:26:46 UTC",
+  "updatedAt": "2026-07-08 19:28:57 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 65, "sucesso": 15, "rate": 23.1 },
     "super": { "total": 48, "sucesso": 19, "rate": 39.6 },
@@ -57,7 +57,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-
+    { "proposerName": "ipowerlz", "targetName": "marquesrcarol", "elemProposer": "11_1", "elemTarget": "u_iPowerlz", "createdAt": "2026-07-08T19:28:57.4827576Z" }
   ],
   "ranking": [
     {
@@ -70,7 +70,7 @@
     {
       "username": "ipowerlz",
       "pontos": 1605,
-      "trocasDisponiveis": 2,
+      "trocasDisponiveis": 1,
       "proximaRecuperacao": "2026-07-08T22:43:34Z",
       "inventario": {"10_1":1,"10_3":1,"11_1":2,"12_1":1,"12_2":1,"13_1":1,"14_1":1,"14_2":1,"14_3":1,"16_2":1,"1_1":1,"1_2":1,"1_3":1,"2_1":1,"2_2":2,"2_3":1,"3_1":1,"3_2":1,"4_1":1,"4_2":1,"5_1":1,"5_2":1,"5_3":1,"6_1":1,"6_2":1,"7_1":1,"7_2":2,"8_1":2,"9_1":2,"9_2":2,"u_1509_martim":1,"u_soniagoncalves":1}
     },
