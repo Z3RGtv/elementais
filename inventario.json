@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-09 18:38:28 UTC",
+  "updatedAt": "2026-07-09 18:42:02 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 80, "sucesso": 20, "rate": 25.0 },
     "super": { "total": 53, "sucesso": 23, "rate": 43.4 },
-    "ultra": { "total": 78, "sucesso": 51, "rate": 65.4 },
+    "ultra": { "total": 80, "sucesso": 52, "rate": 65.0 },
     "master": { "total": 233, "sucesso": 208, "rate": 89.3 }
   },
   "recentes_lancamentos": [
+    { "username": "gui_z0", "elementalId": "13_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 19:42:02" },
+    { "username": "milhafretuga", "elementalId": "13_1", "bola": "ultra", "sucesso": 0, "date": "2026-07-09 19:41:53" },
     { "username": "milhafretuga", "elementalId": "5_2", "bola": "master", "sucesso": 1, "date": "2026-07-09 19:36:18" },
     { "username": "manodrico", "elementalId": "5_2", "bola": "normal", "sucesso": 0, "date": "2026-07-09 19:36:09" },
     { "username": "milhafretuga", "elementalId": "5_2", "bola": "master", "sucesso": 0, "date": "2026-07-09 19:35:52" },
@@ -34,9 +36,7 @@
     { "username": "sheisdani", "elementalId": "9_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 17:34:18" },
     { "username": "steve_osvaldo", "elementalId": "4_2", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 17:23:19" },
     { "username": "hugoandre07", "elementalId": "5_1", "bola": "super", "sucesso": 1, "date": "2026-07-09 17:13:56" },
-    { "username": "gui_z0", "elementalId": "1_3", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 16:59:22" },
-    { "username": "hugoandre07", "elementalId": "5_1", "bola": "master", "sucesso": 1, "date": "2026-07-09 16:45:03" },
-    { "username": "steve_osvaldo", "elementalId": "5_1", "bola": "master", "sucesso": 0, "date": "2026-07-09 16:44:55" }
+    { "username": "gui_z0", "elementalId": "1_3", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 16:59:22" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -107,7 +107,7 @@
       "pontos": 675,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"11_1":1,"12_1":1,"12_2":1,"13_1":1,"14_1":1,"1_1":1,"1_2":1,"1_3":1,"3_1":1,"3_2":1,"4_3":1,"5_1":1,"5_2":2,"6_2":1,"7_1":2,"7_2":1,"9_3":1}
+      "inventario": {"11_1":1,"12_1":1,"12_2":1,"13_1":2,"14_1":1,"1_1":1,"1_2":1,"1_3":1,"3_1":1,"3_2":1,"4_3":1,"5_1":1,"5_2":2,"6_2":1,"7_1":2,"7_2":1,"9_3":1}
     },
     {
       "username": "soniagoncalves",
