@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-09 19:36:37 UTC",
+  "updatedAt": "2026-07-09 19:42:35 UTC",
   "estatisticas_bolas": {
-    "normal": { "total": 80, "sucesso": 20, "rate": 25.0 },
-    "super": { "total": 55, "sucesso": 24, "rate": 43.6 },
+    "normal": { "total": 81, "sucesso": 21, "rate": 25.9 },
+    "super": { "total": 56, "sucesso": 24, "rate": 42.9 },
     "ultra": { "total": 81, "sucesso": 52, "rate": 64.2 },
     "master": { "total": 239, "sucesso": 214, "rate": 89.5 }
   },
   "recentes_lancamentos": [
+    { "username": "hugoandre07", "elementalId": "2_1", "bola": "normal", "sucesso": 1, "date": "2026-07-09 20:42:35" },
+    { "username": "milhafretuga", "elementalId": "2_1", "bola": "super", "sucesso": 0, "date": "2026-07-09 20:42:26" },
     { "username": "ipowerlz", "elementalId": "1_1", "bola": "super", "sucesso": 1, "date": "2026-07-09 20:36:37" },
     { "username": "milhafretuga", "elementalId": "1_1", "bola": "super", "sucesso": 0, "date": "2026-07-09 20:36:33" },
     { "username": "ipowerlz", "elementalId": "1_1", "bola": "ultra", "sucesso": 0, "date": "2026-07-09 20:36:25" },
@@ -34,9 +36,7 @@
     { "username": "manodrico", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-09 18:41:49" },
     { "username": "manodrico", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-09 18:41:35" },
     { "username": "steve_osvaldo", "elementalId": "3_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 18:35:34" },
-    { "username": "manodrico", "elementalId": "3_1", "bola": "super", "sucesso": 1, "date": "2026-07-09 18:30:08" },
-    { "username": "manodrico", "elementalId": "3_1", "bola": "normal", "sucesso": 0, "date": "2026-07-09 18:29:55" },
-    { "username": "sheisdani", "elementalId": "u_MilhafreTuga", "bola": "master", "sucesso": 1, "date": "2026-07-09 18:17:33" }
+    { "username": "manodrico", "elementalId": "3_1", "bola": "super", "sucesso": 1, "date": "2026-07-09 18:30:08" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -142,7 +142,7 @@
       "pontos": 90,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"13_1":2,"14_1":1,"1_1":1,"2_1":1,"3_1":2,"5_1":2,"9_1":2}
+      "inventario": {"13_1":2,"14_1":1,"1_1":1,"2_1":2,"3_1":2,"5_1":2,"9_1":2}
     },
     {
       "username": "citrusbow123",
