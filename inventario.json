@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-09 16:13:56 UTC",
+  "updatedAt": "2026-07-09 16:23:20 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 71, "sucesso": 18, "rate": 25.4 },
     "super": { "total": 51, "sucesso": 21, "rate": 41.2 },
-    "ultra": { "total": 73, "sucesso": 48, "rate": 65.8 },
+    "ultra": { "total": 74, "sucesso": 49, "rate": 66.2 },
     "master": { "total": 223, "sucesso": 199, "rate": 89.2 }
   },
   "recentes_lancamentos": [
+    { "username": "steve_osvaldo", "elementalId": "4_2", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 17:23:19" },
     { "username": "hugoandre07", "elementalId": "5_1", "bola": "super", "sucesso": 1, "date": "2026-07-09 17:13:56" },
     { "username": "gui_z0", "elementalId": "1_3", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 16:59:22" },
     { "username": "hugoandre07", "elementalId": "5_1", "bola": "master", "sucesso": 1, "date": "2026-07-09 16:45:03" },
@@ -35,8 +36,7 @@
     { "username": "sheisdani", "elementalId": "15_1", "bola": "master", "sucesso": 0, "date": "2026-07-09 00:57:52" },
     { "username": "minichef9", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-07-09 00:51:42" },
     { "username": "sheisdani", "elementalId": "7_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 00:46:02" },
-    { "username": "manodrico", "elementalId": "1_2", "bola": "normal", "sucesso": 1, "date": "2026-07-09 00:35:39" },
-    { "username": "grandesleitadores", "elementalId": "12_2", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 00:26:28" }
+    { "username": "manodrico", "elementalId": "1_2", "bola": "normal", "sucesso": 1, "date": "2026-07-09 00:35:39" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -132,10 +132,10 @@
     },
     {
       "username": "steve_osvaldo",
-      "pontos": 100,
+      "pontos": 140,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"u_ManoDrico":1}
+      "inventario": {"4_2":1,"u_ManoDrico":1}
     },
     {
       "username": "hugoandre07",
