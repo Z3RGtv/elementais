@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-09 16:34:18 UTC",
+  "updatedAt": "2026-07-09 16:42:47 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 71, "sucesso": 18, "rate": 25.4 },
     "super": { "total": 51, "sucesso": 21, "rate": 41.2 },
     "ultra": { "total": 75, "sucesso": 50, "rate": 66.7 },
-    "master": { "total": 223, "sucesso": 199, "rate": 89.2 }
+    "master": { "total": 224, "sucesso": 200, "rate": 89.3 }
   },
   "recentes_lancamentos": [
+    { "username": "hugoandre07", "elementalId": "9_1", "bola": "master", "sucesso": 1, "date": "2026-07-09 17:42:47" },
     { "username": "sheisdani", "elementalId": "9_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 17:34:18" },
     { "username": "steve_osvaldo", "elementalId": "4_2", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 17:23:19" },
     { "username": "hugoandre07", "elementalId": "5_1", "bola": "super", "sucesso": 1, "date": "2026-07-09 17:13:56" },
@@ -35,8 +36,7 @@
     { "username": "ruialmeida_", "elementalId": "4_1", "bola": "ultra", "sucesso": 0, "date": "2026-07-09 01:03:44" },
     { "username": "minichef9", "elementalId": "15_1", "bola": "master", "sucesso": 1, "date": "2026-07-09 00:58:00" },
     { "username": "sheisdani", "elementalId": "15_1", "bola": "master", "sucesso": 0, "date": "2026-07-09 00:57:52" },
-    { "username": "minichef9", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-07-09 00:51:42" },
-    { "username": "sheisdani", "elementalId": "7_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 00:46:02" }
+    { "username": "minichef9", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-07-09 00:51:42" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -142,7 +142,7 @@
       "pontos": 75,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"14_1":1,"1_1":1,"2_1":1,"3_1":2,"5_1":2,"9_1":1}
+      "inventario": {"14_1":1,"1_1":1,"2_1":1,"3_1":2,"5_1":2,"9_1":2}
     },
     {
       "username": "citrusbow123",
