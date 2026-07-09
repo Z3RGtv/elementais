@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-09 17:30:08 UTC",
+  "updatedAt": "2026-07-09 17:35:34 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 73, "sucesso": 19, "rate": 26.0 },
     "super": { "total": 52, "sucesso": 22, "rate": 42.3 },
-    "ultra": { "total": 75, "sucesso": 50, "rate": 66.7 },
+    "ultra": { "total": 76, "sucesso": 51, "rate": 67.1 },
     "master": { "total": 228, "sucesso": 204, "rate": 89.5 }
   },
   "recentes_lancamentos": [
+    { "username": "steve_osvaldo", "elementalId": "3_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-09 18:35:34" },
     { "username": "manodrico", "elementalId": "3_1", "bola": "super", "sucesso": 1, "date": "2026-07-09 18:30:08" },
     { "username": "manodrico", "elementalId": "3_1", "bola": "normal", "sucesso": 0, "date": "2026-07-09 18:29:55" },
     { "username": "sheisdani", "elementalId": "u_MilhafreTuga", "bola": "master", "sucesso": 1, "date": "2026-07-09 18:17:33" },
@@ -35,8 +36,7 @@
     { "username": "minichef9", "elementalId": "2_4", "bola": "master", "sucesso": 1, "date": "2026-07-09 01:22:24" },
     { "username": "minichef9", "elementalId": "2_4", "bola": "master", "sucesso": 0, "date": "2026-07-09 01:22:15" },
     { "username": "minichef9", "elementalId": "2_4", "bola": "master", "sucesso": 0, "date": "2026-07-09 01:22:06" },
-    { "username": "minichef9", "elementalId": "2_4", "bola": "master", "sucesso": 0, "date": "2026-07-09 01:21:55" },
-    { "username": "minichef9", "elementalId": "2_4", "bola": "master", "sucesso": 0, "date": "2026-07-09 01:21:41" }
+    { "username": "minichef9", "elementalId": "2_4", "bola": "master", "sucesso": 0, "date": "2026-07-09 01:21:55" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -132,10 +132,10 @@
     },
     {
       "username": "steve_osvaldo",
-      "pontos": 140,
+      "pontos": 150,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"4_2":1,"u_ManoDrico":1}
+      "inventario": {"3_1":1,"4_2":1,"u_ManoDrico":1}
     },
     {
       "username": "hugoandre07",
