@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09 21:23:05 UTC",
+  "updatedAt": "2026-07-09 21:24:52 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 86, "sucesso": 22, "rate": 25.6 },
     "super": { "total": 57, "sucesso": 25, "rate": 43.9 },
@@ -57,7 +57,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-    { "proposerName": "manodrico", "targetName": "soniagoncalves", "elemProposer": "u_soniagoncalves", "elemTarget": "u_EIMEZ", "createdAt": "2026-07-09T20:02:46.9163661Z" }
+
   ],
   "ranking": [
     {
@@ -98,7 +98,7 @@
     {
       "username": "manodrico",
       "pontos": 965,
-      "trocasDisponiveis": 2,
+      "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"13_1":1,"13_3":1,"14_1":2,"1_1":1,"1_2":2,"2_2":1,"3_2":1,"4_2":1,"5_1":2,"5_2":1,"6_1":1,"7_1":1,"7_2":1,"8_2":1,"9_3":1,"u_ManoDrico":1,"u_Z3RGtv_og":1,"u_gui_z0":1,"u_soniagoncalves":1}
     },
