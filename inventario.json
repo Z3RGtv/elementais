@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09 19:14:44 UTC",
+  "updatedAt": "2026-07-09 19:17:27 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 80, "sucesso": 20, "rate": 25.0 },
     "super": { "total": 53, "sucesso": 23, "rate": 43.4 },
@@ -97,10 +97,10 @@
     },
     {
       "username": "manodrico",
-      "pontos": 975,
+      "pontos": 965,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"13_1":1,"13_3":1,"14_1":2,"1_1":1,"1_2":2,"2_2":1,"3_1":1,"3_2":1,"4_2":1,"5_1":2,"5_2":1,"6_1":1,"7_1":1,"7_2":1,"8_2":1,"9_3":1,"u_ManoDrico":1,"u_Z3RGtv_og":1,"u_gui_z0":1,"u_soniagoncalves":1}
+      "inventario": {"13_1":1,"13_3":1,"14_1":2,"1_1":1,"1_2":2,"2_2":1,"3_2":1,"4_2":1,"5_1":2,"5_2":1,"6_1":1,"7_1":1,"7_2":1,"8_2":1,"9_3":1,"u_ManoDrico":1,"u_Z3RGtv_og":1,"u_gui_z0":1,"u_soniagoncalves":1}
     },
     {
       "username": "gui_z0",
