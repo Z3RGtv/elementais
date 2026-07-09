@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-09 22:32:09 UTC",
+  "updatedAt": "2026-07-09 22:37:57 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 90, "sucesso": 23, "rate": 25.6 },
-    "super": { "total": 60, "sucesso": 26, "rate": 43.3 },
+    "super": { "total": 62, "sucesso": 27, "rate": 43.5 },
     "ultra": { "total": 86, "sucesso": 56, "rate": 65.1 },
     "master": { "total": 252, "sucesso": 226, "rate": 89.7 }
   },
   "recentes_lancamentos": [
+    { "username": "midnight_8k", "elementalId": "13_1", "bola": "super", "sucesso": 1, "date": "2026-07-09 23:37:56" },
+    { "username": "milhafretuga", "elementalId": "13_1", "bola": "super", "sucesso": 0, "date": "2026-07-09 23:37:52" },
     { "username": "ruialmeida_", "elementalId": "4_1", "bola": "super", "sucesso": 1, "date": "2026-07-09 23:32:09" },
     { "username": "manodrico", "elementalId": "4_1", "bola": "super", "sucesso": 0, "date": "2026-07-09 23:32:00" },
     { "username": "milhafretuga", "elementalId": "4_1", "bola": "super", "sucesso": 0, "date": "2026-07-09 23:31:51" },
@@ -34,9 +36,7 @@
     { "username": "manu12321_", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-07-09 21:12:39" },
     { "username": "manodrico", "elementalId": "12_1", "bola": "normal", "sucesso": 0, "date": "2026-07-09 21:12:30" },
     { "username": "sheisdani", "elementalId": "4_1", "bola": "master", "sucesso": 1, "date": "2026-07-09 21:06:37" },
-    { "username": "manodrico", "elementalId": "4_1", "bola": "normal", "sucesso": 0, "date": "2026-07-09 21:06:29" },
-    { "username": "soniagoncalves", "elementalId": "8_4", "bola": "master", "sucesso": 1, "date": "2026-07-09 21:00:18" },
-    { "username": "sheisdani", "elementalId": "1_2", "bola": "master", "sucesso": 1, "date": "2026-07-09 20:54:27" }
+    { "username": "manodrico", "elementalId": "4_1", "bola": "normal", "sucesso": 0, "date": "2026-07-09 21:06:29" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -173,6 +173,13 @@
       "inventario": {"12_1":1,"12_2":1}
     },
     {
+      "username": "midnight_8k",
+      "pontos": 30,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"13_1":1,"7_1":1}
+    },
+    {
       "username": "themarysimmer",
       "pontos": 20,
       "trocasDisponiveis": 3,
@@ -185,13 +192,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"1_1":1,"3_1":1}
-    },
-    {
-      "username": "midnight_8k",
-      "pontos": 15,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"7_1":1}
     },
     {
       "username": "hst_playz_pt",
