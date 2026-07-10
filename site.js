@@ -173,6 +173,7 @@ function selecionarUtilizador(player, elementoDOM) {
     jogadorSelecionado = player;
 
     document.getElementById('view-title').textContent = `Coleção de @${player.username}`;
+    document.getElementById('user-points-label-container').style.display = 'inline';
     document.getElementById('user-points-val').textContent = player.pontos;
 
     // Calcular o progresso de elementais obtidos em relação ao catálogo total dinâmico
@@ -292,6 +293,10 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
             };
         } else if (!isSelectionMode) {
             slot.onclick = () => {
+                if (player.username === "Inventário Global") {
+                    mostrarPossuidoresCard(elem);
+                    return;
+                }
                 if (qty >= 1) {
                     const isTwitchLoggedIn = !!localStorage.getItem('twitch_access_token');
                     const autenticadas = JSON.parse(localStorage.getItem('contas_autenticadas_twitch') || '[]');
@@ -1142,7 +1147,7 @@ function selecionarInventarioGlobal() {
 
     document.getElementById('view-title').textContent = "Álbum Global (Treinadores Acumulados)";
     document.getElementById('user-points-panel').classList.remove('hidden');
-    document.getElementById('user-points-val').textContent = totalPoints;
+    document.getElementById('user-points-label-container').style.display = 'none';
     document.getElementById('user-progress-val').textContent = `${uniqueOwned} / ${totalCatalog}`;
 
     const pct = totalCatalog > 0 ? (uniqueOwned / totalCatalog) * 100 : 0;
@@ -1154,3 +1159,64 @@ function selecionarInventarioGlobal() {
     renderizarGridColecao(globalPlayer, 'site-grid', false);
     renderizarPropostas();
 }
+
+function mostrarPossuidoresCard(elem) {
+    const title = document.getElementById('modal-owners-title');
+    const list = document.getElementById('modal-owners-list');
+    if (!title || !list) return;
+
+    const nomeAmigavel = obterNomeSimplesBicho(elem.id);
+    title.textContent = `Quem possui ${nomeAmigavel}?`;
+
+    list.innerHTML = '';
+
+    const possuidores = [];
+    dadosGlobais.forEach(player => {
+        const qty = player.inventario[elem.id] || 0;
+        if (qty > 0) {
+            possuidores.push({ username: player.username, qty, playerObj: player });
+        }
+    });
+
+    possuidores.sort((a, b) => b.qty - a.qty);
+
+    if (possuidores.length === 0) {
+        list.innerHTML = '<p style="text-align: center; color: var(--text-muted); margin: 20px 0; font-size: 12px;">Nenhum treinador possui este elemental ainda. 😢</p>';
+    } else {
+        possuidores.forEach(pos => {
+            const item = document.createElement('div');
+            item.className = 'modal-owner-item';
+            item.innerHTML = `
+                <span>@${pos.username}</span>
+                <span class="censo-badge-total">x${pos.qty}</span>
+            `;
+            item.onclick = () => {
+                document.getElementById('modal-owners').classList.add('hidden');
+                
+                const rankingItems = document.querySelectorAll('.ranking-list .ranking-item');
+                let foundEl = null;
+                rankingItems.forEach(el => {
+                    if (el.textContent.includes(`@${pos.username}`)) {
+                        foundEl = el;
+                    }
+                });
+                
+                selecionarUtilizador(pos.playerObj, foundEl);
+            };
+            list.appendChild(item);
+        });
+    }
+
+    document.getElementById('modal-owners').classList.remove('hidden');
+}
+
+document.getElementById('btn-fechar-modal-owners').onclick = () => {
+    document.getElementById('modal-owners').classList.add('hidden');
+};
+
+window.addEventListener('click', (event) => {
+    const modalOwners = document.getElementById('modal-owners');
+    if (event.target === modalOwners) {
+        modalOwners.classList.add('hidden');
+    }
+});
