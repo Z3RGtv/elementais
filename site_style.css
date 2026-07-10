@@ -1149,6 +1149,13 @@ footer {
 .tabela-pontos-calc tr.rarity-mitico td:first-child { color: #fef08a; }
 .tabela-pontos-calc tr.rarity-especial td:first-child { color: #e9d5ff; }
 
+/* Estilos de Cores das Colunas da Tabela de Pontos */
+.tabela-pontos-calc td.col-normal { color: #cbd5e1; font-weight: 700; }
+.tabela-pontos-calc td.col-gold { color: #ffd700; font-weight: 700; text-shadow: 0 0 4px rgba(255, 215, 0, 0.25); }
+.tabela-pontos-calc td.col-gummy { color: #ff69b4; font-weight: 700; text-shadow: 0 0 4px rgba(255, 105, 180, 0.25); }
+.tabela-pontos-calc td.col-galaxy { color: #bf5cff; font-weight: 700; text-shadow: 0 0 5px rgba(191, 92, 255, 0.3); }
+.tabela-pontos-calc td.col-holo { color: #00ffcc; font-weight: 700; text-shadow: 0 0 5px rgba(0, 255, 204, 0.3); }
+
 /* =========================================================================
    📊 SECÇÃO DE ESTATÍSTICAS E HISTÓRICO DE LANÇAMENTOS
    ========================================================================= */
