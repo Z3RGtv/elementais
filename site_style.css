@@ -1530,6 +1530,73 @@ footer {
     margin: 0 10px;
 }
 
+/* --- CENSO GLOBAL --- */
+.censo-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.censo-item {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.censo-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.censo-nome {
+    font-weight: 700;
+    color: #f8fafc;
+    font-size: 11px;
+}
+
+.censo-badge-total {
+    background: rgba(161, 84, 242, 0.12);
+    border: 1px solid rgba(161, 84, 242, 0.25);
+    color: #c084fc;
+    font-size: 9px;
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.censo-breakdown {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    font-size: 9px;
+}
+
+.censo-var {
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.censo-var.var-n { background: rgba(203, 213, 225, 0.06); color: #cbd5e1; }
+.censo-var.var-go { background: rgba(255, 215, 0, 0.06); color: #ffd700; }
+.censo-var.var-gu { background: rgba(255, 105, 180, 0.06); color: #ff69b4; }
+.censo-var.var-ga { background: rgba(191, 92, 255, 0.06); color: #bf5cff; }
+.censo-var.var-ho { background: rgba(0, 255, 204, 0.06); color: #00ffcc; }
+
+.censo-especial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(161, 84, 242, 0.03);
+    border: 1px solid rgba(161, 84, 242, 0.08);
+}
+
 
 
 
