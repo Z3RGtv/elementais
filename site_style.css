@@ -1548,6 +1548,41 @@ footer {
     margin: 0 10px;
 }
 
+/* Itens de Possuidores no Modal */
+.modal-owner-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 12px;
+}
+
+.modal-owner-item:hover {
+    background: rgba(161, 84, 242, 0.08);
+    border-color: rgba(161, 84, 242, 0.2);
+    transform: translateX(4px);
+}
+
+.modal-owner-item span:first-child {
+    font-weight: 700;
+    color: #cbd5e1;
+}
+
+.modal-owner-item .censo-badge-total {
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    color: #34d399;
+    font-size: 9px;
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-weight: 800;
+}
+
 
 
 
