@@ -105,23 +105,28 @@ async function carregarDados() {
         });
         
         renderizarRanking(dadosGlobais);
-        atualizarCensoGlobal();
         atualizarUIConta();
         renderizarEstatisticas(data.estatisticas_bolas || {}, data.recentes_lancamentos || []);
         
-        // Se já tivermos um jogador selecionado, atualiza a exibição dele
+        // Se já tivermos um jogador selecionado, atualiza a exibição dele, senão mostra o Inventário Global por defeito
         if (jogadorSelecionado) {
-            const atualizado = dadosGlobais.find(p => p.username.toLowerCase() === jogadorSelecionado.username.toLowerCase());
-            if (atualizado) {
-                const items = document.querySelectorAll('.ranking-item');
-                let foundEl = null;
-                items.forEach(el => {
-                    if (el.textContent.includes(`@${atualizado.username}`)) {
-                        foundEl = el;
-                    }
-                });
-                selecionarUtilizador(atualizado, foundEl);
+            if (jogadorSelecionado.username === "Inventário Global") {
+                selecionarInventarioGlobal();
+            } else {
+                const atualizado = dadosGlobais.find(p => p.username.toLowerCase() === jogadorSelecionado.username.toLowerCase());
+                if (atualizado) {
+                    const items = document.querySelectorAll('.ranking-item');
+                    let foundEl = null;
+                    items.forEach(el => {
+                        if (el.textContent.includes(`@${atualizado.username}`)) {
+                            foundEl = el;
+                        }
+                    });
+                    selecionarUtilizador(atualizado, foundEl);
+                }
             }
+        } else {
+            selecionarInventarioGlobal();
         }
         
         renderizarPropostas();
@@ -846,6 +851,10 @@ document.getElementById('btn-copiar-comando').onclick = () => {
     });
 };
 
+document.getElementById('btn-ver-globais').addEventListener('click', () => {
+    selecionarInventarioGlobal();
+});
+
 // Configuração da Barra de Pesquisa Dinâmica (Filtro Geral)
 document.getElementById('search-input').addEventListener('input', (e) => {
     const termo = e.target.value.toLowerCase().trim();
@@ -1089,107 +1098,59 @@ function iniciarTemporizadoresTrocas() {
     intervalTemporizadoresTrocas = setInterval(atualizarTimers, 1000);
 }
 
-function atualizarCensoGlobal() {
-    const container = document.getElementById('censo-global-container');
-    if (!container) return;
-
-    const contagens = {};
-    
-    const especiesInfo = {
-        1: { nome: "Água", emoji: "💧" },
-        2: { nome: "Terra", emoji: "🪨" },
-        3: { nome: "Fogo", emoji: "🔥" },
-        4: { nome: "Pato", emoji: "🦆" },
-        5: { nome: "Fantasma", emoji: "👻" },
-        6: { nome: "Dos Sonhos", emoji: "💤" },
-        7: { nome: "Demónio", emoji: "😈" },
-        8: { nome: "Punk", emoji: "🎸" },
-        9: { nome: "Rei", emoji: "👑" },
-        10: { nome: "Ponto Zero", emoji: "🌌" },
-        11: { nome: "BurntPeanut", emoji: "🥜" },
-        12: { nome: "Peixoto", emoji: "🐟" },
-        13: { nome: "Atacante", emoji: "⚽" },
-        14: { nome: "Aura", emoji: "✨" },
-        15: { nome: "Boss", emoji: "👑" },
-        16: { nome: "Grim", emoji: "💀" }
-    };
-
-    for (let espId in especiesInfo) {
-        contagens[espId] = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, total: 0 };
-    }
-
-    let totalViewers = 0;
+function calcularInventarioGlobal() {
+    const globalInv = {};
+    elementaisMap.forEach(elem => {
+        globalInv[elem.id] = 0;
+    });
 
     dadosGlobais.forEach(player => {
         if (!player.inventario) return;
         for (let elemId in player.inventario) {
             const qty = player.inventario[elemId] || 0;
-            if (qty <= 0) continue;
-
-            if (elemId.startsWith('u_')) {
-                totalViewers += qty;
-                continue;
-            }
-
-            const partes = elemId.split('_');
-            if (partes.length === 2) {
-                const esp = partes[0];
-                const v = partes[1];
-                if (contagens[esp]) {
-                    contagens[esp][v] = (contagens[esp][v] || 0) + qty;
-                    contagens[esp].total += qty;
-                }
+            if (qty > 0) {
+                globalInv[elemId] = (globalInv[elemId] || 0) + qty;
             }
         }
     });
 
-    let html = '<div class="censo-lista">';
-    const sortedEspIds = Object.keys(especiesInfo).sort((a, b) => parseInt(a) - parseInt(b));
+    return globalInv;
+}
+
+function selecionarInventarioGlobal() {
+    document.querySelectorAll('.ranking-list .ranking-item').forEach(item => item.classList.remove('active'));
+
+    const globalInv = calcularInventarioGlobal();
+    const totalCatalog = elementaisMap.length;
     
-    sortedEspIds.forEach(espId => {
-        const info = especiesInfo[espId];
-        const cont = contagens[espId];
-
-        if (espId === "11") {
-            if (cont.total > 0) {
-                html += `
-                    <div class="censo-item censo-especial">
-                        <span class="censo-nome">${info.emoji} ${info.nome}</span>
-                        <span class="censo-badge-total">${cont.total} total</span>
-                    </div>
-                `;
-            }
-            return;
-        }
-
-        const temHolo = (espId === "1" || espId === "3" || espId === "5" || espId === "9" || espId === "13");
-
-        html += `
-            <div class="censo-item">
-                <div class="censo-item-header">
-                    <span class="censo-nome">${info.emoji} ${info.nome}</span>
-                    <span class="censo-badge-total">${cont.total} total</span>
-                </div>
-                <div class="censo-breakdown">
-                    <span class="censo-var var-n" title="Normal">N: ${cont[1]}</span>
-                    <span class="censo-var var-go" title="Gold">Go: ${cont[2]}</span>
-                    <span class="censo-var var-gu" title="Gummy">Gu: ${cont[3]}</span>
-                    <span class="censo-var var-ga" title="Galaxy">Ga: ${cont[4]}</span>
-                    ${temHolo ? `<span class="censo-var var-ho" title="Holofoil">Ho: ${cont[5]}</span>` : ''}
-                </div>
-            </div>
-        `;
+    let uniqueOwned = 0;
+    let totalPoints = 0;
+    elementaisMap.forEach(elem => {
+        const qty = globalInv[elem.id] || 0;
+        if (qty > 0) uniqueOwned++;
     });
 
-    if (totalViewers > 0) {
-        html += `
-            <div class="censo-item censo-especial">
-                <span class="censo-nome">👥 Viewers (Users)</span>
-                <span class="censo-badge-total">${totalViewers} total</span>
-            </div>
-        `;
-    }
+    dadosGlobais.forEach(p => totalPoints += (p.pontos || 0));
 
-    html += '</div>';
-    container.innerHTML = html;
+    const globalPlayer = {
+        username: "Inventário Global",
+        pontos: totalPoints,
+        inventario: globalInv
+    };
+
+    jogadorSelecionado = globalPlayer;
+
+    document.getElementById('view-title').textContent = "Álbum Global (Treinadores Acumulados)";
+    document.getElementById('user-points-panel').classList.remove('hidden');
+    document.getElementById('user-points-val').textContent = totalPoints;
+    document.getElementById('user-progress-val').textContent = `${uniqueOwned} / ${totalCatalog}`;
+
+    const pct = totalCatalog > 0 ? (uniqueOwned / totalCatalog) * 100 : 0;
+    document.getElementById('user-progress-bar').style.width = `${pct}%`;
+
+    document.getElementById('btn-propor-troca').classList.add('hidden');
+    document.getElementById('btn-definir-conta').classList.add('hidden');
+
+    renderizarGridColecao(globalPlayer, 'site-grid', false);
+    renderizarPropostas();
 }
