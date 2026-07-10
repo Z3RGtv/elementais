@@ -1031,7 +1031,7 @@ function obterNomeSimplesBicho(id) {
     };
 
     const nomesVariantes = {
-        1: "Normal", 2: "Gold", 3: "Gummy", 4: "Galaxy"
+        1: "Normal", 2: "Gold", 3: "Gummy", 4: "Galaxy", 5: "Holofoil"
     };
 
     const nomeBase = nomesEspecies[especie] || id;
