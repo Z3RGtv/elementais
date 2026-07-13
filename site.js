@@ -92,7 +92,7 @@ async function carregarDados() {
         const availableUsers = data.availableUsers || [];
 
         // Limpar e re-mapear elementaisMap
-        const baseLength = 61;
+        const baseLength = 68;
         elementaisMap.length = baseLength;
 
         availableUsers.forEach(u => {
