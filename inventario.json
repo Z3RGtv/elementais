@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13 19:43:47 UTC",
+  "updatedAt": "2026-07-13 19:44:55 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 93, "sucesso": 23, "rate": 24.7 },
     "super": { "total": 64, "sucesso": 28, "rate": 43.8 },
@@ -83,10 +83,10 @@
     },
     {
       "username": "milhafretuga",
-      "pontos": 1335,
+      "pontos": 1325,
       "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-07-15T19:34:53Z",
-      "inventario": {"10_1":2,"12_1":1,"12_2":1,"13_1":1,"14_1":2,"14_2":1,"16_1":1,"1_1":1,"1_2":1,"2_1":1,"3_1":1,"4_1":1,"4_2":2,"5_1":1,"5_2":2,"6_4":1,"9_1":1,"9_2":1,"u_1509_martim":1,"u_EIMEZ":1,"u_MarquesrCarol":1,"u_MilhafreTuga":1,"u_iPowerlz":1,"u_ruialmeida_":1}
+      "inventario": {"10_1":2,"12_1":1,"12_2":1,"13_1":1,"14_1":2,"14_2":1,"16_1":1,"1_2":1,"2_1":1,"3_1":1,"4_1":1,"4_2":2,"5_1":1,"5_2":2,"6_4":1,"9_1":1,"9_2":1,"u_1509_martim":1,"u_EIMEZ":1,"u_MarquesrCarol":1,"u_MilhafreTuga":1,"u_iPowerlz":1,"u_ruialmeida_":1}
     },
     {
       "username": "marquesrcarol",
