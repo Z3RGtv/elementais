@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-13 20:52:24 UTC",
+  "updatedAt": "2026-07-13 20:55:01 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 93, "sucesso": 23, "rate": 24.7 },
     "super": { "total": 67, "sucesso": 29, "rate": 43.3 },
-    "ultra": { "total": 90, "sucesso": 56, "rate": 62.2 },
+    "ultra": { "total": 91, "sucesso": 57, "rate": 62.6 },
     "master": { "total": 285, "sucesso": 255, "rate": 89.5 }
   },
   "recentes_lancamentos": [
+    { "username": "gunblade_sis_", "elementalId": "1_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-13 21:55:01" },
     { "username": "milhafretuga", "elementalId": "3_4", "bola": "master", "sucesso": 1, "date": "2026-07-13 21:48:46" },
     { "username": "milhafretuga", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-07-13 21:43:10" },
     { "username": "manu12321_", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-07-13 21:36:45" },
@@ -35,8 +36,7 @@
     { "username": "midnight_8k", "elementalId": "9_1", "bola": "master", "sucesso": 1, "date": "2026-07-13 19:37:40" },
     { "username": "minichef9", "elementalId": "u_gui_z0", "bola": "master", "sucesso": 1, "date": "2026-07-13 19:31:37" },
     { "username": "milhafretuga", "elementalId": "3_1", "bola": "super", "sucesso": 1, "date": "2026-07-13 19:26:02" },
-    { "username": "ipowerlz", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-07-13 19:16:11" },
-    { "username": "ipowerlz", "elementalId": "4_1", "bola": "master", "sucesso": 1, "date": "2026-07-13 19:07:29" }
+    { "username": "ipowerlz", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-07-13 19:16:11" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -166,18 +166,18 @@
       "inventario": {"1_1":1,"2_1":1,"8_1":1}
     },
     {
+      "username": "gunblade_sis_",
+      "pontos": 50,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_2":1,"1_1":1,"2_1":1}
+    },
+    {
       "username": "grandesleitadores",
       "pontos": 40,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":1,"12_2":1}
-    },
-    {
-      "username": "gunblade_sis_",
-      "pontos": 40,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"12_2":1,"2_1":1}
     },
     {
       "username": "midnight_8k",
