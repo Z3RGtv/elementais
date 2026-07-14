@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-14 22:06:48 UTC",
+  "updatedAt": "2026-07-14 22:12:57 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 99, "sucesso": 25, "rate": 25.3 },
     "super": { "total": 72, "sucesso": 30, "rate": 41.7 },
     "ultra": { "total": 95, "sucesso": 60, "rate": 63.2 },
-    "master": { "total": 336, "sucesso": 302, "rate": 89.9 }
+    "master": { "total": 338, "sucesso": 303, "rate": 89.6 }
   },
   "recentes_lancamentos": [
+    { "username": "1509_martim", "elementalId": "3_3", "bola": "master", "sucesso": 1, "date": "2026-07-14 23:12:57" },
+    { "username": "sheisdani", "elementalId": "3_3", "bola": "master", "sucesso": 0, "date": "2026-07-14 23:12:48" },
     { "username": "manodrico", "elementalId": "3_1", "bola": "normal", "sucesso": 1, "date": "2026-07-14 23:06:48" },
     { "username": "1509_martim", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-07-14 23:00:48" },
     { "username": "milhafretuga", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-07-14 22:54:48" },
@@ -34,9 +36,7 @@
     { "username": "manodrico", "elementalId": "12_1", "bola": "normal", "sucesso": 1, "date": "2026-07-14 20:48:51" },
     { "username": "milhafretuga", "elementalId": "1_2", "bola": "master", "sucesso": 1, "date": "2026-07-14 20:31:43" },
     { "username": "milhafretuga", "elementalId": "2_3", "bola": "master", "sucesso": 1, "date": "2026-07-14 20:25:22" },
-    { "username": "manodrico", "elementalId": "u_Minichef9", "bola": "master", "sucesso": 1, "date": "2026-07-14 20:19:19" },
-    { "username": "sheisdani", "elementalId": "10_3", "bola": "master", "sucesso": 1, "date": "2026-07-14 20:13:15" },
-    { "username": "ipowerlz", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-07-14 20:07:41" }
+    { "username": "manodrico", "elementalId": "u_Minichef9", "bola": "master", "sucesso": 1, "date": "2026-07-14 20:19:19" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -125,10 +125,10 @@
     },
     {
       "username": "1509_martim",
-      "pontos": 295,
+      "pontos": 355,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"13_1":1,"1_1":1,"2_1":2,"3_1":1,"5_1":1,"6_1":2,"6_2":1,"8_2":1,"9_1":1,"9_2":1}
+      "inventario": {"13_1":1,"1_1":1,"2_1":2,"3_1":1,"3_3":1,"5_1":1,"6_1":2,"6_2":1,"8_2":1,"9_1":1,"9_2":1}
     },
     {
       "username": "hugoandre07",
