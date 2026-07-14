@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14 21:45:32 UTC",
+  "updatedAt": "2026-07-14 21:46:33 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 98, "sucesso": 24, "rate": 24.5 },
     "super": { "total": 72, "sucesso": 30, "rate": 41.7 },
@@ -57,7 +57,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-
+    { "proposerName": "milhafretuga", "targetName": "marquesrcarol", "elemProposer": "u_1509_martim", "elemTarget": "10_1", "createdAt": "2026-07-14T21:46:32.7370240Z" }
   ],
   "ranking": [
     {
@@ -77,7 +77,7 @@
     {
       "username": "milhafretuga",
       "pontos": 2225,
-      "trocasDisponiveis": 2,
+      "trocasDisponiveis": 1,
       "proximaRecuperacao": "2026-07-15T19:34:53Z",
       "inventario": {"10_1":1,"10_3":1,"12_1":1,"12_2":1,"12_3":1,"13_1":2,"14_1":1,"14_2":1,"16_1":1,"1_1":2,"1_2":2,"2_1":2,"2_3":1,"3_1":1,"3_2":2,"3_3":1,"3_4":1,"4_1":1,"4_2":2,"4_3":1,"5_1":1,"5_2":2,"6_4":1,"7_1":1,"8_2":1,"9_1":1,"9_2":1,"u_1509_martim":2,"u_EIMEZ":1,"u_MarquesrCarol":1,"u_MilhafreTuga":1,"u_iPowerlz":1,"u_ruialmeida_":2,"u_soniagoncalves":1}
     },
