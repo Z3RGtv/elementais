@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14 19:33:55 UTC",
+  "updatedAt": "2026-07-14 19:38:27 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 95, "sucesso": 23, "rate": 24.2 },
     "super": { "total": 71, "sucesso": 30, "rate": 42.3 },
@@ -139,10 +139,10 @@
     },
     {
       "username": "steve_osvaldo",
-      "pontos": 160,
+      "pontos": 150,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"1_1":1,"3_1":1,"4_2":1,"u_ManoDrico":1}
+      "inventario": {"3_1":1,"4_2":1,"u_ManoDrico":1}
     },
     {
       "username": "ruialmeida_",
