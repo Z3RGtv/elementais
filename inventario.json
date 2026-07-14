@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-14 19:57:31 UTC",
+  "updatedAt": "2026-07-14 20:05:35 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 96, "sucesso": 24, "rate": 25.0 },
     "super": { "total": 71, "sucesso": 30, "rate": 42.3 },
     "ultra": { "total": 95, "sucesso": 60, "rate": 63.2 },
-    "master": { "total": 316, "sucesso": 285, "rate": 90.2 }
+    "master": { "total": 317, "sucesso": 286, "rate": 90.2 }
   },
   "recentes_lancamentos": [
+    { "username": "ipowerlz", "elementalId": "4_3", "bola": "master", "sucesso": 1, "date": "2026-07-14 21:05:34" },
     { "username": "manodrico", "elementalId": "12_1", "bola": "normal", "sucesso": 1, "date": "2026-07-14 20:48:51" },
     { "username": "milhafretuga", "elementalId": "1_2", "bola": "master", "sucesso": 1, "date": "2026-07-14 20:31:43" },
     { "username": "milhafretuga", "elementalId": "2_3", "bola": "master", "sucesso": 1, "date": "2026-07-14 20:25:22" },
@@ -35,8 +36,7 @@
     { "username": "manodrico", "elementalId": "5_2", "bola": "normal", "sucesso": 0, "date": "2026-07-14 01:00:03" },
     { "username": "milhafretuga", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-07-14 00:51:14" },
     { "username": "ruialmeida_", "elementalId": "2_1", "bola": "super", "sucesso": 1, "date": "2026-07-14 00:40:42" },
-    { "username": "manodrico", "elementalId": "2_1", "bola": "super", "sucesso": 0, "date": "2026-07-14 00:40:33" },
-    { "username": "manodrico", "elementalId": "2_1", "bola": "super", "sucesso": 0, "date": "2026-07-14 00:40:22" }
+    { "username": "manodrico", "elementalId": "2_1", "bola": "super", "sucesso": 0, "date": "2026-07-14 00:40:33" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -69,10 +69,10 @@
     },
     {
       "username": "ipowerlz",
-      "pontos": 2245,
+      "pontos": 2335,
       "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-07-20T19:29:58Z",
-      "inventario": {"10_1":1,"10_3":1,"11_1":2,"12_1":1,"12_2":1,"12_3":1,"13_1":2,"13_2":1,"14_1":1,"14_2":1,"14_3":1,"15_1":1,"16_2":1,"1_1":1,"1_2":1,"1_3":1,"2_1":1,"2_2":2,"2_3":1,"3_1":1,"3_2":1,"3_3":1,"4_1":2,"4_2":1,"5_1":1,"5_2":2,"5_3":1,"6_1":1,"6_2":1,"7_1":1,"7_2":1,"8_1":1,"8_3":1,"9_1":1,"9_2":1,"u_1509_martim":1,"u_MarquesrCarol":1,"u_Minichef9":1,"u_iPowerlz":1,"u_soniagoncalves":1}
+      "inventario": {"10_1":1,"10_3":1,"11_1":2,"12_1":1,"12_2":1,"12_3":1,"13_1":2,"13_2":1,"14_1":1,"14_2":1,"14_3":1,"15_1":1,"16_2":1,"1_1":1,"1_2":1,"1_3":1,"2_1":1,"2_2":2,"2_3":1,"3_1":1,"3_2":1,"3_3":1,"4_1":2,"4_2":1,"4_3":1,"5_1":1,"5_2":2,"5_3":1,"6_1":1,"6_2":1,"7_1":1,"7_2":1,"8_1":1,"8_3":1,"9_1":1,"9_2":1,"u_1509_martim":1,"u_MarquesrCarol":1,"u_Minichef9":1,"u_iPowerlz":1,"u_soniagoncalves":1}
     },
     {
       "username": "milhafretuga",
@@ -159,18 +159,18 @@
       "inventario": {"13_1":1,"3_1":2,"5_1":1,"8_1":1}
     },
     {
-      "username": "gunblade_sis_",
-      "pontos": 50,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"12_2":1,"1_1":1,"2_1":1}
-    },
-    {
       "username": "eimezdumipima_",
       "pontos": 50,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"1_1":1,"2_1":1,"8_1":1}
+    },
+    {
+      "username": "gunblade_sis_",
+      "pontos": 50,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_2":1,"1_1":1,"2_1":1}
     },
     {
       "username": "grandesleitadores",
@@ -208,6 +208,13 @@
       "inventario": {"1_1":1}
     },
     {
+      "username": "astroz1nvlr",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"1_1":1}
+    },
+    {
       "username": "manuel2019rodrigues",
       "pontos": 10,
       "trocasDisponiveis": 3,
@@ -220,13 +227,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"3_1":1}
-    },
-    {
-      "username": "astroz1nvlr",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_1":1}
     }
   ]
 }
