@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15 15:58:15 UTC",
+  "updatedAt": "2026-07-15 16:02:58 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 99, "sucesso": 25, "rate": 25.3 },
     "super": { "total": 75, "sucesso": 31, "rate": 41.3 },
@@ -146,10 +146,10 @@
     },
     {
       "username": "steve_osvaldo",
-      "pontos": 115,
+      "pontos": 100,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"5_1":1,"u_ManoDrico":1}
+      "inventario": {"u_ManoDrico":1}
     },
     {
       "username": "citrusbow123",
