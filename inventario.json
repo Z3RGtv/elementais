@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-15 15:37:16 UTC",
+  "updatedAt": "2026-07-15 15:49:01 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 99, "sucesso": 25, "rate": 25.3 },
     "super": { "total": 75, "sucesso": 31, "rate": 41.3 },
-    "ultra": { "total": 95, "sucesso": 60, "rate": 63.2 },
+    "ultra": { "total": 96, "sucesso": 61, "rate": 63.5 },
     "master": { "total": 356, "sucesso": 321, "rate": 90.2 }
   },
   "recentes_lancamentos": [
+    { "username": "steve_osvaldo", "elementalId": "5_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-15 16:49:00" },
     { "username": "rstraveler", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-07-15 16:37:16" },
     { "username": "1509_martim", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-07-15 16:26:27" },
     { "username": "manu12321_", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-07-15 16:17:26" },
@@ -35,8 +36,7 @@
     { "username": "milhafretuga", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-07-14 22:54:48" },
     { "username": "ipowerlz", "elementalId": "6_2", "bola": "master", "sucesso": 1, "date": "2026-07-14 22:48:46" },
     { "username": "sheisdani", "elementalId": "6_2", "bola": "master", "sucesso": 0, "date": "2026-07-14 22:48:37" },
-    { "username": "hugoandre07", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-07-14 22:43:30" },
-    { "username": "1509_martim", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-14 22:43:15" }
+    { "username": "hugoandre07", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-07-14 22:43:30" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -146,10 +146,10 @@
     },
     {
       "username": "steve_osvaldo",
-      "pontos": 100,
+      "pontos": 115,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"u_ManoDrico":1}
+      "inventario": {"5_1":1,"u_ManoDrico":1}
     },
     {
       "username": "citrusbow123",
