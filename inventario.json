@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-15 16:02:58 UTC",
+  "updatedAt": "2026-07-15 16:11:32 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 99, "sucesso": 25, "rate": 25.3 },
     "super": { "total": 75, "sucesso": 31, "rate": 41.3 },
-    "ultra": { "total": 96, "sucesso": 61, "rate": 63.5 },
+    "ultra": { "total": 97, "sucesso": 62, "rate": 63.9 },
     "master": { "total": 357, "sucesso": 322, "rate": 90.2 }
   },
   "recentes_lancamentos": [
+    { "username": "steve_osvaldo", "elementalId": "1_2", "bola": "ultra", "sucesso": 1, "date": "2026-07-15 17:11:32" },
     { "username": "ipowerlz", "elementalId": "16_1", "bola": "master", "sucesso": 1, "date": "2026-07-15 16:58:15" },
     { "username": "steve_osvaldo", "elementalId": "5_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-15 16:49:00" },
     { "username": "rstraveler", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-07-15 16:37:16" },
@@ -35,8 +36,7 @@
     { "username": "manodrico", "elementalId": "3_1", "bola": "normal", "sucesso": 1, "date": "2026-07-14 23:06:48" },
     { "username": "1509_martim", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-07-14 23:00:48" },
     { "username": "milhafretuga", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-07-14 22:54:48" },
-    { "username": "ipowerlz", "elementalId": "6_2", "bola": "master", "sucesso": 1, "date": "2026-07-14 22:48:46" },
-    { "username": "sheisdani", "elementalId": "6_2", "bola": "master", "sucesso": 0, "date": "2026-07-14 22:48:37" }
+    { "username": "ipowerlz", "elementalId": "6_2", "bola": "master", "sucesso": 1, "date": "2026-07-14 22:48:46" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -146,10 +146,10 @@
     },
     {
       "username": "steve_osvaldo",
-      "pontos": 100,
+      "pontos": 130,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"u_ManoDrico":1}
+      "inventario": {"1_2":1,"u_ManoDrico":1}
     },
     {
       "username": "citrusbow123",
