@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-16 22:34:11 UTC",
+  "updatedAt": "2026-07-16 22:41:10 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 109, "sucesso": 27, "rate": 24.8 },
     "super": { "total": 82, "sucesso": 32, "rate": 39.0 },
     "ultra": { "total": 105, "sucesso": 65, "rate": 61.9 },
-    "master": { "total": 423, "sucesso": 384, "rate": 90.8 }
+    "master": { "total": 424, "sucesso": 385, "rate": 90.8 }
   },
   "recentes_lancamentos": [
+    { "username": "nsfp37", "elementalId": "7_2", "bola": "master", "sucesso": 1, "date": "2026-07-16 23:41:09" },
     { "username": "manodrico", "elementalId": "3_1", "bola": "normal", "sucesso": 0, "date": "2026-07-16 23:31:04" },
     { "username": "sheisdani", "elementalId": "3_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 23:31:03" },
     { "username": "manodrico", "elementalId": "6_1", "bola": "normal", "sucesso": 1, "date": "2026-07-16 23:20:00" },
@@ -35,8 +36,7 @@
     { "username": "1509_martim", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 20:34:22" },
     { "username": "sheisdani", "elementalId": "10_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 20:27:58" },
     { "username": "steve_osvaldo", "elementalId": "2_1", "bola": "super", "sucesso": 1, "date": "2026-07-16 20:22:30" },
-    { "username": "pikachu066201", "elementalId": "2_1", "bola": "normal", "sucesso": 0, "date": "2026-07-16 20:22:21" },
-    { "username": "1509_martim", "elementalId": "7_2", "bola": "master", "sucesso": 1, "date": "2026-07-16 20:16:15" }
+    { "username": "pikachu066201", "elementalId": "2_1", "bola": "normal", "sucesso": 0, "date": "2026-07-16 20:22:21" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -145,6 +145,13 @@
       "inventario": {"12_1":2,"13_1":2,"1_1":2,"2_1":2,"3_1":1,"3_2":1,"4_1":1,"7_1":1,"9_1":1}
     },
     {
+      "username": "nsfp37",
+      "pontos": 130,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"1_2":1,"3_2":1,"7_2":1,"8_1":1}
+    },
+    {
       "username": "steve_osvaldo",
       "pontos": 130,
       "trocasDisponiveis": 3,
@@ -157,13 +164,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_2":1,"1_1":1,"2_1":1,"3_3":1}
-    },
-    {
-      "username": "nsfp37",
-      "pontos": 90,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_2":1,"3_2":1,"8_1":1}
     },
     {
       "username": "eimezdumipima_",
