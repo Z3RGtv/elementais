@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-16 23:29:41 UTC",
+  "updatedAt": "2026-07-16 23:35:13 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 113, "sucesso": 28, "rate": 24.8 },
     "super": { "total": 84, "sucesso": 33, "rate": 39.3 },
     "ultra": { "total": 105, "sucesso": 65, "rate": 61.9 },
-    "master": { "total": 432, "sucesso": 391, "rate": 90.5 }
+    "master": { "total": 433, "sucesso": 392, "rate": 90.5 }
   },
   "recentes_lancamentos": [
+    { "username": "hugoandre07", "elementalId": "2_3", "bola": "master", "sucesso": 1, "date": "2026-07-17 00:35:13" },
     { "username": "sheisdani", "elementalId": "14_2", "bola": "super", "sucesso": 1, "date": "2026-07-17 00:29:41" },
     { "username": "manodrico", "elementalId": "14_2", "bola": "normal", "sucesso": 0, "date": "2026-07-17 00:29:22" },
     { "username": "manodrico", "elementalId": "14_2", "bola": "normal", "sucesso": 0, "date": "2026-07-17 00:29:12" },
@@ -35,8 +36,7 @@
     { "username": "gunblade_sis_", "elementalId": "3_3", "bola": "master", "sucesso": 1, "date": "2026-07-16 22:33:57" },
     { "username": "nsfp37", "elementalId": "1_2", "bola": "master", "sucesso": 1, "date": "2026-07-16 22:28:17" },
     { "username": "nsfp37", "elementalId": "8_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 22:22:28" },
-    { "username": "sheisdani", "elementalId": "8_1", "bola": "master", "sucesso": 0, "date": "2026-07-16 22:22:17" },
-    { "username": "soniagoncalves", "elementalId": "4_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 22:16:25" }
+    { "username": "sheisdani", "elementalId": "8_1", "bola": "master", "sucesso": 0, "date": "2026-07-16 22:22:17" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -132,10 +132,10 @@
     },
     {
       "username": "hugoandre07",
-      "pontos": 225,
+      "pontos": 285,
       "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-07-20T19:29:58Z",
-      "inventario": {"10_1":1,"12_1":2,"13_1":2,"14_1":1,"1_1":2,"1_2":2,"2_1":2,"3_1":2,"3_2":1,"4_1":1,"5_1":2,"9_1":1}
+      "inventario": {"10_1":1,"12_1":2,"13_1":2,"14_1":1,"1_1":2,"1_2":2,"2_1":2,"2_3":1,"3_1":2,"3_2":1,"4_1":1,"5_1":2,"9_1":1}
     },
     {
       "username": "nsfp37",
