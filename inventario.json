@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16 19:22:30 UTC",
+  "updatedAt": "2026-07-16 19:25:06 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 107, "sucesso": 26, "rate": 24.3 },
     "super": { "total": 81, "sucesso": 32, "rate": 39.5 },
@@ -138,18 +138,18 @@
       "inventario": {"12_1":2,"13_1":2,"14_1":1,"1_1":2,"1_2":2,"2_1":2,"3_1":2,"3_2":1,"4_1":1,"5_1":2,"9_1":1}
     },
     {
-      "username": "steve_osvaldo",
-      "pontos": 140,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_2":1,"2_1":1,"u_ManoDrico":1}
-    },
-    {
       "username": "ruialmeida_",
       "pontos": 130,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":2,"13_1":2,"1_1":2,"2_1":2,"3_1":1,"3_2":1,"4_1":1,"7_1":1,"9_1":1}
+    },
+    {
+      "username": "steve_osvaldo",
+      "pontos": 130,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"1_2":1,"u_ManoDrico":1}
     },
     {
       "username": "eimezdumipima_",
