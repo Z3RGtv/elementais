@@ -1,12 +1,15 @@
 {
-  "updatedAt": "2026-07-16 22:53:34 UTC",
+  "updatedAt": "2026-07-16 22:59:34 UTC",
   "estatisticas_bolas": {
-    "normal": { "total": 109, "sucesso": 27, "rate": 24.8 },
-    "super": { "total": 82, "sucesso": 32, "rate": 39.0 },
+    "normal": { "total": 111, "sucesso": 28, "rate": 25.2 },
+    "super": { "total": 83, "sucesso": 32, "rate": 38.6 },
     "ultra": { "total": 105, "sucesso": 65, "rate": 61.9 },
     "master": { "total": 427, "sucesso": 387, "rate": 90.6 }
   },
   "recentes_lancamentos": [
+    { "username": "manodrico", "elementalId": "3_3", "bola": "normal", "sucesso": 1, "date": "2026-07-16 23:59:33" },
+    { "username": "sheisdani", "elementalId": "3_3", "bola": "super", "sucesso": 0, "date": "2026-07-16 23:59:19" },
+    { "username": "manodrico", "elementalId": "3_3", "bola": "normal", "sucesso": 0, "date": "2026-07-16 23:59:10" },
     { "username": "manu12321_", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 23:53:33" },
     { "username": "nsfp37", "elementalId": "13_1", "bola": "master", "sucesso": 0, "date": "2026-07-16 23:53:09" },
     { "username": "sheisdani", "elementalId": "10_4", "bola": "master", "sucesso": 1, "date": "2026-07-16 23:47:09" },
@@ -33,10 +36,7 @@
     { "username": "nsfp37", "elementalId": "3_2", "bola": "master", "sucesso": 1, "date": "2026-07-16 21:35:48" },
     { "username": "pikachu066201", "elementalId": "3_2", "bola": "super", "sucesso": 0, "date": "2026-07-16 21:35:39" },
     { "username": "nsfp37", "elementalId": "2_3", "bola": "master", "sucesso": 1, "date": "2026-07-16 21:22:36" },
-    { "username": "sheisdani", "elementalId": "1_3", "bola": "master", "sucesso": 1, "date": "2026-07-16 21:09:14" },
-    { "username": "marquesrcarol", "elementalId": "u_Z3RGtv", "bola": "master", "sucesso": 1, "date": "2026-07-16 20:55:52" },
-    { "username": "marquesrcarol", "elementalId": "7_3", "bola": "master", "sucesso": 1, "date": "2026-07-16 20:45:13" },
-    { "username": "1509_martim", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 20:34:22" }
+    { "username": "sheisdani", "elementalId": "1_3", "bola": "master", "sucesso": 1, "date": "2026-07-16 21:09:14" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -90,10 +90,10 @@
     },
     {
       "username": "manodrico",
-      "pontos": 2145,
+      "pontos": 2205,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_3":1,"12_4":1,"13_1":1,"13_3":1,"14_1":2,"15_3":1,"1_1":1,"1_2":2,"2_2":1,"2_3":1,"2_4":1,"3_2":1,"4_4":1,"5_1":1,"5_2":1,"6_1":2,"6_3":1,"7_1":1,"7_2":1,"8_2":1,"9_3":1,"u_ManoDrico":1,"u_Minichef9":1,"u_Z3RGtv_og":1,"u_gui_z0":1,"u_manu12321_":1,"u_ruialmeida_":1,"u_soniagoncalves":1}
+      "inventario": {"12_3":1,"12_4":1,"13_1":1,"13_3":1,"14_1":2,"15_3":1,"1_1":1,"1_2":2,"2_2":1,"2_3":1,"2_4":1,"3_2":1,"3_3":1,"4_4":1,"5_1":1,"5_2":1,"6_1":2,"6_3":1,"7_1":1,"7_2":1,"8_2":1,"9_3":1,"u_ManoDrico":1,"u_Minichef9":1,"u_Z3RGtv_og":1,"u_gui_z0":1,"u_manu12321_":1,"u_ruialmeida_":1,"u_soniagoncalves":1}
     },
     {
       "username": "minichef9",
