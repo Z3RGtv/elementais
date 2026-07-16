@@ -1,12 +1,15 @@
 {
-  "updatedAt": "2026-07-16 18:58:20 UTC",
+  "updatedAt": "2026-07-16 19:06:24 UTC",
   "estatisticas_bolas": {
-    "normal": { "total": 104, "sucesso": 26, "rate": 25.0 },
+    "normal": { "total": 106, "sucesso": 26, "rate": 24.5 },
     "super": { "total": 80, "sucesso": 31, "rate": 38.8 },
     "ultra": { "total": 101, "sucesso": 65, "rate": 64.4 },
-    "master": { "total": 399, "sucesso": 361, "rate": 90.5 }
+    "master": { "total": 400, "sucesso": 362, "rate": 90.5 }
   },
   "recentes_lancamentos": [
+    { "username": "rstraveler", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-07-16 20:06:23" },
+    { "username": "manodrico", "elementalId": "12_2", "bola": "normal", "sucesso": 0, "date": "2026-07-16 20:04:44" },
+    { "username": "manodrico", "elementalId": "12_2", "bola": "normal", "sucesso": 0, "date": "2026-07-16 20:04:20" },
     { "username": "milhafretuga", "elementalId": "4_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 19:58:20" },
     { "username": "hugoandre07", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 19:54:07" },
     { "username": "manodrico", "elementalId": "12_1", "bola": "normal", "sucesso": 0, "date": "2026-07-16 19:52:39" },
@@ -33,10 +36,7 @@
     { "username": "manodrico", "elementalId": "1_1", "bola": "super", "sucesso": 0, "date": "2026-07-15 20:53:47" },
     { "username": "manodrico", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-15 20:53:36" },
     { "username": "manu12321_", "elementalId": "13_3", "bola": "master", "sucesso": 1, "date": "2026-07-15 20:46:54" },
-    { "username": "manodrico", "elementalId": "3_2", "bola": "ultra", "sucesso": 1, "date": "2026-07-15 20:41:55" },
-    { "username": "manodrico", "elementalId": "3_2", "bola": "super", "sucesso": 0, "date": "2026-07-15 20:41:42" },
-    { "username": "milhafretuga", "elementalId": "7_1", "bola": "master", "sucesso": 1, "date": "2026-07-15 20:35:09" },
-    { "username": "manu12321_", "elementalId": "5_2", "bola": "master", "sucesso": 1, "date": "2026-07-15 20:29:09" }
+    { "username": "manodrico", "elementalId": "3_2", "bola": "ultra", "sucesso": 1, "date": "2026-07-15 20:41:55" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -166,6 +166,13 @@
       "inventario": {"13_1":1,"3_1":2,"5_1":1,"8_1":1}
     },
     {
+      "username": "rstraveler",
+      "pontos": 70,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_2":1,"2_1":1,"6_1":1}
+    },
+    {
       "username": "gunblade_sis_",
       "pontos": 50,
       "trocasDisponiveis": 3,
@@ -178,13 +185,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":1,"12_2":1}
-    },
-    {
-      "username": "rstraveler",
-      "pontos": 40,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"2_1":1,"6_1":1}
     },
     {
       "username": "midnight_8k",
@@ -208,13 +208,6 @@
       "inventario": {"1_1":1,"3_1":1}
     },
     {
-      "username": "salvadormdm",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"3_1":1}
-    },
-    {
       "username": "astroz1nvlr",
       "pontos": 10,
       "trocasDisponiveis": 3,
@@ -227,6 +220,13 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"2_1":1}
+    },
+    {
+      "username": "salvadormdm",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"3_1":1}
     },
     {
       "username": "hst_playz_pt",
