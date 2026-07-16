@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-16 21:10:15 UTC",
+  "updatedAt": "2026-07-16 21:16:25 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 107, "sucesso": 26, "rate": 24.3 },
     "super": { "total": 82, "sucesso": 32, "rate": 39.0 },
-    "ultra": { "total": 102, "sucesso": 65, "rate": 63.7 },
-    "master": { "total": 412, "sucesso": 374, "rate": 90.8 }
+    "ultra": { "total": 103, "sucesso": 65, "rate": 63.1 },
+    "master": { "total": 413, "sucesso": 375, "rate": 90.8 }
   },
   "recentes_lancamentos": [
+    { "username": "soniagoncalves", "elementalId": "4_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 22:16:25" },
+    { "username": "1509_martim", "elementalId": "4_1", "bola": "ultra", "sucesso": 0, "date": "2026-07-16 22:16:16" },
     { "username": "soniagoncalves", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-07-16 22:10:15" },
     { "username": "sheisdani", "elementalId": "6_2", "bola": "master", "sucesso": 1, "date": "2026-07-16 22:03:50" },
     { "username": "sheisdani", "elementalId": "7_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 21:46:32" },
@@ -34,9 +36,7 @@
     { "username": "rstraveler", "elementalId": "6_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 19:40:22" },
     { "username": "marquesrcarol", "elementalId": "4_1", "bola": "master", "sucesso": 1, "date": "2026-07-15 22:34:52" },
     { "username": "manodrico", "elementalId": "8_1", "bola": "normal", "sucesso": 1, "date": "2026-07-15 22:28:52" },
-    { "username": "milhafretuga", "elementalId": "4_3", "bola": "master", "sucesso": 1, "date": "2026-07-15 22:23:00" },
-    { "username": "manodrico", "elementalId": "4_3", "bola": "super", "sucesso": 0, "date": "2026-07-15 22:22:51" },
-    { "username": "milhafretuga", "elementalId": "3_1", "bola": "master", "sucesso": 1, "date": "2026-07-15 22:16:52" }
+    { "username": "milhafretuga", "elementalId": "4_3", "bola": "master", "sucesso": 1, "date": "2026-07-15 22:23:00" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -114,7 +114,7 @@
       "pontos": 865,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"10_1":1,"12_2":1,"13_1":1,"1_1":1,"4_1":1,"4_4":1,"5_1":1,"7_1":1,"8_4":1,"9_1":1,"u_EIMEZ":1,"u_steve_osvaldo":1}
+      "inventario": {"10_1":1,"12_2":1,"13_1":1,"1_1":1,"4_1":2,"4_4":1,"5_1":1,"7_1":1,"8_4":1,"9_1":1,"u_EIMEZ":1,"u_steve_osvaldo":1}
     },
     {
       "username": "gui_z0",
