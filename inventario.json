@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-16 21:33:57 UTC",
+  "updatedAt": "2026-07-16 21:40:29 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 107, "sucesso": 26, "rate": 24.3 },
     "super": { "total": 82, "sucesso": 32, "rate": 39.0 },
-    "ultra": { "total": 103, "sucesso": 65, "rate": 63.1 },
-    "master": { "total": 417, "sucesso": 378, "rate": 90.6 }
+    "ultra": { "total": 104, "sucesso": 65, "rate": 62.5 },
+    "master": { "total": 418, "sucesso": 379, "rate": 90.7 }
   },
   "recentes_lancamentos": [
+    { "username": "hugoandre07", "elementalId": "10_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 22:40:28" },
+    { "username": "gunblade_sis_", "elementalId": "10_1", "bola": "ultra", "sucesso": 0, "date": "2026-07-16 22:40:19" },
     { "username": "gunblade_sis_", "elementalId": "3_3", "bola": "master", "sucesso": 1, "date": "2026-07-16 22:33:57" },
     { "username": "nsfp37", "elementalId": "1_2", "bola": "master", "sucesso": 1, "date": "2026-07-16 22:28:17" },
     { "username": "nsfp37", "elementalId": "8_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 22:22:28" },
@@ -34,9 +36,7 @@
     { "username": "manodrico", "elementalId": "12_2", "bola": "normal", "sucesso": 0, "date": "2026-07-16 20:04:20" },
     { "username": "milhafretuga", "elementalId": "4_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 19:58:20" },
     { "username": "hugoandre07", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 19:54:07" },
-    { "username": "manodrico", "elementalId": "12_1", "bola": "normal", "sucesso": 0, "date": "2026-07-16 19:52:39" },
-    { "username": "manodrico", "elementalId": "12_1", "bola": "normal", "sucesso": 0, "date": "2026-07-16 19:52:26" },
-    { "username": "sheisdani", "elementalId": "15_3", "bola": "master", "sucesso": 1, "date": "2026-07-16 19:46:05" }
+    { "username": "manodrico", "elementalId": "12_1", "bola": "normal", "sucesso": 0, "date": "2026-07-16 19:52:39" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -132,10 +132,10 @@
     },
     {
       "username": "hugoandre07",
-      "pontos": 175,
+      "pontos": 225,
       "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-07-20T19:29:58Z",
-      "inventario": {"12_1":2,"13_1":2,"14_1":1,"1_1":2,"1_2":2,"2_1":2,"3_1":2,"3_2":1,"4_1":1,"5_1":2,"9_1":1}
+      "inventario": {"10_1":1,"12_1":2,"13_1":2,"14_1":1,"1_1":2,"1_2":2,"2_1":2,"3_1":2,"3_2":1,"4_1":1,"5_1":2,"9_1":1}
     },
     {
       "username": "ruialmeida_",
