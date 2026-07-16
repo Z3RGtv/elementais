@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-16 20:22:37 UTC",
+  "updatedAt": "2026-07-16 20:35:48 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 107, "sucesso": 26, "rate": 24.3 },
-    "super": { "total": 81, "sucesso": 32, "rate": 39.5 },
+    "super": { "total": 82, "sucesso": 32, "rate": 39.0 },
     "ultra": { "total": 102, "sucesso": 65, "rate": 63.7 },
-    "master": { "total": 408, "sucesso": 370, "rate": 90.7 }
+    "master": { "total": 409, "sucesso": 371, "rate": 90.7 }
   },
   "recentes_lancamentos": [
+    { "username": "nsfp37", "elementalId": "3_2", "bola": "master", "sucesso": 1, "date": "2026-07-16 21:35:48" },
+    { "username": "pikachu066201", "elementalId": "3_2", "bola": "super", "sucesso": 0, "date": "2026-07-16 21:35:39" },
     { "username": "nsfp37", "elementalId": "2_3", "bola": "master", "sucesso": 1, "date": "2026-07-16 21:22:36" },
     { "username": "sheisdani", "elementalId": "1_3", "bola": "master", "sucesso": 1, "date": "2026-07-16 21:09:14" },
     { "username": "marquesrcarol", "elementalId": "u_Z3RGtv", "bola": "master", "sucesso": 1, "date": "2026-07-16 20:55:52" },
@@ -34,9 +36,7 @@
     { "username": "milhafretuga", "elementalId": "3_1", "bola": "master", "sucesso": 1, "date": "2026-07-15 22:16:52" },
     { "username": "milhafretuga", "elementalId": "5_1", "bola": "master", "sucesso": 1, "date": "2026-07-15 22:10:51" },
     { "username": "manu12321_", "elementalId": "8_2", "bola": "master", "sucesso": 1, "date": "2026-07-15 22:04:32" },
-    { "username": "milhafretuga", "elementalId": "8_2", "bola": "master", "sucesso": 0, "date": "2026-07-15 22:04:23" },
-    { "username": "milhafretuga", "elementalId": "3_3", "bola": "master", "sucesso": 1, "date": "2026-07-15 21:52:48" },
-    { "username": "milhafretuga", "elementalId": "8_4", "bola": "master", "sucesso": 1, "date": "2026-07-15 21:46:23" }
+    { "username": "milhafretuga", "elementalId": "8_2", "bola": "master", "sucesso": 0, "date": "2026-07-15 22:04:23" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -152,6 +152,13 @@
       "inventario": {"1_2":1,"u_ManoDrico":1}
     },
     {
+      "username": "nsfp37",
+      "pontos": 90,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"2_3":1,"3_2":1}
+    },
+    {
       "username": "eimezdumipima_",
       "pontos": 80,
       "trocasDisponiveis": 3,
@@ -171,13 +178,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_2":1,"2_1":1,"6_1":1}
-    },
-    {
-      "username": "nsfp37",
-      "pontos": 60,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"2_3":1}
     },
     {
       "username": "gunblade_sis_",
