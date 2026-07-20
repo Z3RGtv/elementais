@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20 19:17:25 UTC",
+  "updatedAt": "2026-07-20 19:20:02 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 115, "sucesso": 29, "rate": 25.2 },
     "super": { "total": 84, "sucesso": 33, "rate": 39.3 },
@@ -57,13 +57,13 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-
+    { "proposerName": "sheisdani", "targetName": "marquesrcarol", "elemProposer": "4_3", "elemTarget": "5_3", "createdAt": "2026-07-20T19:20:01.7137397Z" }
   ],
   "ranking": [
     {
       "username": "sheisdani",
       "pontos": 4590,
-      "trocasDisponiveis": 3,
+      "trocasDisponiveis": 2,
       "proximaRecuperacao": null,
       "inventario": {"10_1":1,"10_2":1,"10_3":2,"10_4":1,"11_1":1,"12_1":1,"12_2":2,"12_3":2,"12_4":2,"13_1":2,"13_2":2,"14_1":1,"14_2":2,"14_3":1,"14_4":1,"15_1":2,"15_2":1,"15_3":1,"15_4":1,"17_2":1,"1_1":1,"1_2":1,"1_3":1,"2_1":1,"2_2":2,"2_3":1,"2_4":1,"3_1":1,"3_2":1,"3_3":1,"4_1":1,"4_2":1,"4_3":2,"5_1":1,"5_2":2,"6_1":1,"6_2":2,"6_3":2,"6_4":1,"7_1":1,"7_2":1,"8_1":1,"8_4":1,"9_1":1,"9_2":1,"9_3":1,"u_ManoDrico":1,"u_MilhafreTuga":1,"u_TheMarySimmer":1,"u_gui_z0":1,"u_manu12321_":1,"u_soniagoncalves":1}
     },
