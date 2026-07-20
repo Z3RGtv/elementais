@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-20 18:09:08 UTC",
+  "updatedAt": "2026-07-20 18:14:42 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 115, "sucesso": 29, "rate": 25.2 },
     "super": { "total": 84, "sucesso": 33, "rate": 39.3 },
     "ultra": { "total": 105, "sucesso": 65, "rate": 61.9 },
-    "master": { "total": 440, "sucesso": 399, "rate": 90.7 }
+    "master": { "total": 441, "sucesso": 400, "rate": 90.7 }
   },
   "recentes_lancamentos": [
+    { "username": "steve_osvaldo", "elementalId": "16_4", "bola": "master", "sucesso": 1, "date": "2026-07-20 19:14:41" },
     { "username": "minichef9", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-07-20 19:09:07" },
     { "username": "minichef9", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-07-20 18:54:39" },
     { "username": "milhafretuga", "elementalId": "9_2", "bola": "master", "sucesso": 1, "date": "2026-07-20 18:45:30" },
@@ -35,8 +36,7 @@
     { "username": "manodrico", "elementalId": "3_1", "bola": "normal", "sucesso": 0, "date": "2026-07-16 23:31:04" },
     { "username": "sheisdani", "elementalId": "3_1", "bola": "master", "sucesso": 1, "date": "2026-07-16 23:31:03" },
     { "username": "manodrico", "elementalId": "6_1", "bola": "normal", "sucesso": 1, "date": "2026-07-16 23:20:00" },
-    { "username": "ipowerlz", "elementalId": "9_2", "bola": "master", "sucesso": 1, "date": "2026-07-16 23:11:09" },
-    { "username": "marquesrcarol", "elementalId": "1_2", "bola": "master", "sucesso": 1, "date": "2026-07-16 22:58:27" }
+    { "username": "ipowerlz", "elementalId": "9_2", "bola": "master", "sucesso": 1, "date": "2026-07-16 23:11:09" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -124,6 +124,13 @@
       "inventario": {"11_1":1,"12_1":1,"12_2":1,"13_1":2,"14_1":1,"16_1":1,"1_1":1,"1_2":1,"1_3":1,"3_1":1,"3_2":1,"4_3":1,"5_1":1,"5_2":2,"6_2":1,"7_1":2,"7_2":1,"9_3":1}
     },
     {
+      "username": "steve_osvaldo",
+      "pontos": 630,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"16_4":1,"1_2":1,"u_ManoDrico":1}
+    },
+    {
       "username": "1509_martim",
       "pontos": 405,
       "trocasDisponiveis": 3,
@@ -150,13 +157,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":2,"13_1":2,"1_1":2,"2_1":2,"3_1":1,"3_2":1,"4_1":1,"7_1":1,"9_1":1}
-    },
-    {
-      "username": "steve_osvaldo",
-      "pontos": 130,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_2":1,"u_ManoDrico":1}
     },
     {
       "username": "gunblade_sis_",
