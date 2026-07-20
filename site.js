@@ -81,8 +81,8 @@ const elementaisMap = [
     { id: "19_3", file: "T_Icon_BR_FossilMeal_Candy_L.webp" },
     { id: "19_4", file: "T_Icon_BR_FossilMeal_Galaxy_L.webp" },
     { id: "19_5", file: "T_Icon_BR_FossilMeal_Holofoil_L.webp" },
-    { id: "20_1", file: "T_Icon_BR_CompanyStargazer_Default_L.webp" },
-    { id: "21_1", file: "T_Icon_BR_CokeParmesan_Default_L.webp" }
+    { id: "20_1", file: "T_Icon_BR_CokeParmesan_Default_L.webp" },
+    { id: "21_1", file: "T_Icon_BR_CompanyStargazer_Default_L.webp" }
 ];
 
 const baseLength = elementaisMap.length; // Calcula dinamicamente o número total de cromos estáticos (83)
