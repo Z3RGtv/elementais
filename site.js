@@ -65,7 +65,24 @@ const elementaisMap = [
     { id: "16_1", file: "T_Icon_BR_GrimReaper_Default_L.webp" },
     { id: "16_2", file: "T_Icon_BR_GrimReaper_Gold_L.webp" },
     { id: "16_3", file: "T_Icon_BR_GrimReaper_Candy_L.webp" },
-    { id: "16_4", file: "T_Icon_BR_GrimReaper_Galaxy_L.webp" }
+    { id: "16_4", file: "T_Icon_BR_GrimReaper_Galaxy_L.webp" },
+    { id: "17_1", file: "T_Icon_BR_Air_Default_L.webp" },
+    { id: "17_2", file: "T_Icon_BR_Air_Gold_L.webp" },
+    { id: "17_3", file: "T_Icon_BR_Air_Candy_L.webp" },
+    { id: "17_4", file: "T_Icon_BR_Air_Galaxy_L.webp" },
+    { id: "17_5", file: "T_Icon_BR_Air_Holo_L.webp" },
+    { id: "18_1", file: "T_Icon_BR_Creature_Sprite_Seven_ui_L.webp" },
+    { id: "18_2", file: "T_Icon_BR_Creature_Sprite_Seven_Gold_ui_L.webp" },
+    { id: "18_3", file: "T_Icon_BR_Creature_Sprite_Seven_Candy_ui_L.webp" },
+    { id: "18_4", file: "T_Icon_BR_Creature_Sprite_Seven_Galaxy_ui_L.webp" },
+    { id: "18_5", file: "T_Icon_BR_Creature_Sprite_Seven_Holofoil_ui_L.webp" },
+    { id: "19_1", file: "T_Icon_BR_FossilMeal_Default_L.webp" },
+    { id: "19_2", file: "T_Icon_BR_FossilMeal_Gold_L.webp" },
+    { id: "19_3", file: "T_Icon_BR_FossilMeal_Candy_L.webp" },
+    { id: "19_4", file: "T_Icon_BR_FossilMeal_Galaxy_L.webp" },
+    { id: "19_5", file: "T_Icon_BR_FossilMeal_Holofoil_L.webp" },
+    { id: "20_1", file: "T_Icon_BR_CompanyStargazer_Default_L.webp" },
+    { id: "21_1", file: "T_Icon_BR_CokeParmesan_Default_L.webp" }
 ];
 
 let dadosGlobais = [];
@@ -92,7 +109,7 @@ async function carregarDados() {
         const availableUsers = data.availableUsers || [];
 
         // Limpar e re-mapear elementaisMap
-        const baseLength = 68;
+        const baseLength = 85;
         elementaisMap.length = baseLength;
 
         availableUsers.forEach(u => {
@@ -1047,7 +1064,8 @@ function obterNomeSimplesBicho(id) {
         1: "Água", 2: "Terra", 3: "Fogo", 4: "Pato", 5: "Fantasma", 
         6: "Dos Sonhos", 7: "Demónio", 8: "Punk", 9: "Rei", 10: "Ponto Zero",
         11: "BurntPeanut", 12: "Peixoto", 13: "Atacante", 14: "Aura", 
-        15: "Boss", 16: "Grim"
+        15: "Boss", 16: "Grim", 17: "Ar", 18: "Seven", 19: "Batman",
+        20: "Vini JR", 21: "Pollo"
     };
 
     const nomesVariantes = {
@@ -1055,7 +1073,7 @@ function obterNomeSimplesBicho(id) {
     };
 
     const nomeBase = nomesEspecies[especie] || id;
-    if (especie === 11) return "BurntPeanut";
+    if (especie === 11 || especie === 20 || especie === 21) return nomesEspecies[especie] || id;
     const nomeVar = nomesVariantes[variante] || "";
     return `${nomeBase} (${nomeVar})`;
 }
