@@ -253,6 +253,10 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
             slot.classList.add('user-slot');
         }
 
+        const ptsValue = obterPontosBicho(elem.id);
+        const nomeAmigavel = elem.isUser ? elem.name : obterNomeSimplesBicho(elem.id);
+        slot.title = `${nomeAmigavel} — ${ptsValue} pts`;
+
         const img = document.createElement('img');
         img.src = `Sprites/${elem.file}`;
 
@@ -1077,6 +1081,50 @@ function obterNomeSimplesBicho(id) {
     if (especie === 11 || especie === 20 || especie === 21) return nomesEspecies[especie] || id;
     const nomeVar = nomesVariantes[variante] || "";
     return `${nomeBase} (${nomeVar})`;
+}
+
+function obterPontosBicho(id) {
+    if (!id) return 0;
+    if (id.startsWith("u_")) return 100;
+    if (id === "11_1" || id === "20_1" || id === "21_1") return 100; // BurntPeanut, Vini JR, Pollo
+
+    try {
+        const partes = id.split('_');
+        const especie = parseInt(partes[0]);
+        const variante = parseInt(partes[1]);
+
+        const ehRaro = (especie === 1 || especie === 2 || especie === 3 || especie === 12 || especie === 17);
+        const ehEpico = (especie === 4 || especie === 5 || especie === 7 || especie === 9 || especie === 13 || especie === 14);
+        const ehLendario = (especie === 6 || especie === 8 || especie === 15 || especie === 18);
+        const ehMitico = (especie === 10 || especie === 16 || especie === 19);
+
+        if (ehMitico) {
+            if (variante === 1) return 50;
+            if (variante === 2) return 120;
+            if (variante === 3) return 250;
+            if (variante === 4) return 500;
+            if (variante === 5) return 800;
+        } else if (ehLendario) {
+            if (variante === 1) return 30;
+            if (variante === 2) return 75;
+            if (variante === 3) return 150;
+            if (variante === 4) return 300;
+            if (variante === 5) return 500;
+        } else if (ehEpico) {
+            if (variante === 1) return 15;
+            if (variante === 2) return 40;
+            if (variante === 3) return 90;
+            if (variante === 4) return 200;
+            if (variante === 5) return 350;
+        } else if (ehRaro) {
+            if (variante === 1) return 10;
+            if (variante === 2) return 30;
+            if (variante === 3) return 60;
+            if (variante === 4) return 150;
+            if (variante === 5) return 250;
+        }
+    } catch(e) {}
+    return 0;
 }
 
 let intervalTemporizadoresTrocas = null;
