@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20 18:35:34 UTC",
+  "updatedAt": "2026-07-20 18:36:58 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 115, "sucesso": 29, "rate": 25.2 },
     "super": { "total": 84, "sucesso": 33, "rate": 39.3 },
@@ -215,13 +215,6 @@
       "inventario": {"1_1":1,"3_1":1}
     },
     {
-      "username": "salvadormdm",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"3_1":1}
-    },
-    {
       "username": "astroz1nvlr",
       "pontos": 10,
       "trocasDisponiveis": 3,
@@ -229,18 +222,25 @@
       "inventario": {"1_1":1}
     },
     {
-      "username": "manuel2019rodrigues",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"2_1":1}
-    },
-    {
       "username": "hst_playz_pt",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"1_1":1}
+    },
+    {
+      "username": "salvadormdm",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"3_1":1}
+    },
+    {
+      "username": "manuel2019rodrigues",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"2_1":1}
     }
   ]
 }
