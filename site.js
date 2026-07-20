@@ -85,6 +85,8 @@ const elementaisMap = [
     { id: "21_1", file: "T_Icon_BR_CokeParmesan_Default_L.webp" }
 ];
 
+const baseLength = elementaisMap.length; // Calcula dinamicamente o número total de cromos estáticos (83)
+
 let dadosGlobais = [];
 let meuUsername = localStorage.getItem('meuUsername') || '';
 let jogadorSelecionado = null; // Jogador cuja coleção estamos a ver
@@ -109,7 +111,6 @@ async function carregarDados() {
         const availableUsers = data.availableUsers || [];
 
         // Limpar e re-mapear elementaisMap
-        const baseLength = 85;
         elementaisMap.length = baseLength;
 
         availableUsers.forEach(u => {
