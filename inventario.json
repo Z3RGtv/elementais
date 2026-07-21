@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21 21:12:02 UTC",
+  "updatedAt": "2026-07-21 21:13:12 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 121, "sucesso": 30, "rate": 24.8 },
     "super": { "total": 86, "sucesso": 34, "rate": 39.5 },
@@ -57,7 +57,8 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-    { "proposerName": "manu12321_", "targetName": "sheisdani", "elemProposer": "5_3", "elemTarget": "u_manu12321_", "createdAt": "2026-07-21T21:00:29.2762083Z" }
+    { "proposerName": "manu12321_", "targetName": "sheisdani", "elemProposer": "5_3", "elemTarget": "u_manu12321_", "createdAt": "2026-07-21T21:00:29.2762083Z" },
+    { "proposerName": "manodrico", "targetName": "manu12321_", "elemProposer": "u_manu12321_", "elemTarget": "8_3", "createdAt": "2026-07-21T21:13:12.4238194Z" }
   ],
   "ranking": [
     {
@@ -91,7 +92,7 @@
     {
       "username": "manodrico",
       "pontos": 2955,
-      "trocasDisponiveis": 3,
+      "trocasDisponiveis": 2,
       "proximaRecuperacao": null,
       "inventario": {"12_3":1,"12_4":1,"13_1":2,"13_3":1,"14_1":2,"15_3":1,"19_3":1,"19_4":1,"1_1":1,"1_2":2,"2_2":1,"2_3":1,"2_4":1,"3_2":1,"3_3":1,"4_4":1,"5_1":1,"5_2":1,"6_1":2,"6_3":1,"7_1":1,"7_2":1,"8_2":1,"9_3":1,"u_ManoDrico":1,"u_Minichef9":1,"u_Z3RGtv_og":1,"u_gui_z0":1,"u_manu12321_":1,"u_ruialmeida_":1,"u_soniagoncalves":1}
     },
