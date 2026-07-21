@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-21 22:12:19 UTC",
+  "updatedAt": "2026-07-21 22:18:42 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 121, "sucesso": 30, "rate": 24.8 },
     "super": { "total": 86, "sucesso": 34, "rate": 39.5 },
     "ultra": { "total": 113, "sucesso": 68, "rate": 60.2 },
-    "master": { "total": 507, "sucesso": 460, "rate": 90.7 }
+    "master": { "total": 508, "sucesso": 461, "rate": 90.7 }
   },
   "recentes_lancamentos": [
+    { "username": "san7izinn", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-07-21 23:18:41" },
     { "username": "marquesrcarol", "elementalId": "19_3", "bola": "master", "sucesso": 1, "date": "2026-07-21 23:12:18" },
     { "username": "milhafretuga", "elementalId": "15_1", "bola": "master", "sucesso": 1, "date": "2026-07-21 23:06:41" },
     { "username": "manu12321_", "elementalId": "17_2", "bola": "master", "sucesso": 1, "date": "2026-07-21 23:00:15" },
@@ -35,8 +36,7 @@
     { "username": "hugoandre07", "elementalId": "16_3", "bola": "ultra", "sucesso": 1, "date": "2026-07-21 20:27:34" },
     { "username": "rstraveler", "elementalId": "10_3", "bola": "master", "sucesso": 1, "date": "2026-07-21 20:13:53" },
     { "username": "hugoandre07", "elementalId": "10_3", "bola": "master", "sucesso": 0, "date": "2026-07-21 20:13:45" },
-    { "username": "sheisdani", "elementalId": "17_1", "bola": "master", "sucesso": 1, "date": "2026-07-21 19:59:06" },
-    { "username": "sheisdani", "elementalId": "1_4", "bola": "master", "sucesso": 1, "date": "2026-07-21 19:53:06" }
+    { "username": "sheisdani", "elementalId": "17_1", "bola": "master", "sucesso": 1, "date": "2026-07-21 19:59:06" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -188,10 +188,10 @@
     },
     {
       "username": "san7izinn",
-      "pontos": 40,
+      "pontos": 50,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"1_1":2,"8_1":1}
+      "inventario": {"1_1":2,"2_1":1,"8_1":1}
     },
     {
       "username": "grandesleitadores",
