@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21 20:38:23 UTC",
+  "updatedAt": "2026-07-21 20:43:39 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 121, "sucesso": 30, "rate": 24.8 },
     "super": { "total": 86, "sucesso": 34, "rate": 39.5 },
@@ -90,10 +90,10 @@
     },
     {
       "username": "manodrico",
-      "pontos": 2720,
+      "pontos": 2705,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_3":1,"12_4":1,"13_1":2,"13_3":1,"14_1":2,"15_3":1,"19_4":1,"1_1":1,"1_2":2,"2_2":1,"2_3":1,"2_4":1,"3_2":1,"3_3":1,"4_4":1,"5_1":1,"5_2":1,"6_1":2,"6_3":1,"7_1":1,"7_2":1,"8_2":1,"9_1":1,"9_3":1,"u_ManoDrico":1,"u_Minichef9":1,"u_Z3RGtv_og":1,"u_gui_z0":1,"u_manu12321_":1,"u_ruialmeida_":1,"u_soniagoncalves":1}
+      "inventario": {"12_3":1,"12_4":1,"13_1":2,"13_3":1,"14_1":2,"15_3":1,"19_4":1,"1_1":1,"1_2":2,"2_2":1,"2_3":1,"2_4":1,"3_2":1,"3_3":1,"4_4":1,"5_1":1,"5_2":1,"6_1":2,"6_3":1,"7_1":1,"7_2":1,"8_2":1,"9_3":1,"u_ManoDrico":1,"u_Minichef9":1,"u_Z3RGtv_og":1,"u_gui_z0":1,"u_manu12321_":1,"u_ruialmeida_":1,"u_soniagoncalves":1}
     },
     {
       "username": "minichef9",
