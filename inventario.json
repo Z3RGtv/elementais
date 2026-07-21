@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21 21:14:19 UTC",
+  "updatedAt": "2026-07-21 21:17:53 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 121, "sucesso": 30, "rate": 24.8 },
     "super": { "total": 86, "sucesso": 34, "rate": 39.5 },
@@ -57,8 +57,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-    { "proposerName": "manu12321_", "targetName": "sheisdani", "elemProposer": "5_3", "elemTarget": "u_manu12321_", "createdAt": "2026-07-21T21:00:29.2762083Z" },
-    { "proposerName": "manodrico", "targetName": "manu12321_", "elemProposer": "u_manu12321_", "elemTarget": "8_3", "createdAt": "2026-07-21T21:13:12.4238194Z" }
+    { "proposerName": "manu12321_", "targetName": "sheisdani", "elemProposer": "5_3", "elemTarget": "u_manu12321_", "createdAt": "2026-07-21T21:00:29.2762083Z" }
   ],
   "ranking": [
     {
@@ -91,10 +90,10 @@
     },
     {
       "username": "manodrico",
-      "pontos": 2955,
+      "pontos": 3005,
       "trocasDisponiveis": 2,
-      "proximaRecuperacao": null,
-      "inventario": {"12_3":1,"12_4":1,"13_1":2,"13_3":1,"14_1":2,"15_3":1,"19_3":1,"19_4":1,"1_1":1,"1_2":2,"2_2":1,"2_3":1,"2_4":1,"3_2":1,"3_3":1,"4_4":1,"5_1":1,"5_2":1,"6_1":2,"6_3":1,"7_1":1,"7_2":1,"8_2":1,"9_3":1,"u_ManoDrico":1,"u_Minichef9":1,"u_Z3RGtv_og":1,"u_gui_z0":1,"u_manu12321_":1,"u_ruialmeida_":1,"u_soniagoncalves":1}
+      "proximaRecuperacao": "2026-07-28T21:17:52Z",
+      "inventario": {"12_3":1,"12_4":1,"13_1":2,"13_3":1,"14_1":2,"15_3":1,"19_3":1,"19_4":1,"1_1":1,"1_2":2,"2_2":1,"2_3":1,"2_4":1,"3_2":1,"3_3":1,"4_4":1,"5_1":1,"5_2":1,"6_1":2,"6_3":1,"7_1":1,"7_2":1,"8_2":1,"8_3":1,"9_3":1,"u_ManoDrico":1,"u_Minichef9":1,"u_Z3RGtv_og":1,"u_gui_z0":1,"u_ruialmeida_":1,"u_soniagoncalves":1}
     },
     {
       "username": "minichef9",
@@ -105,10 +104,10 @@
     },
     {
       "username": "manu12321_",
-      "pontos": 1320,
-      "trocasDisponiveis": 1,
+      "pontos": 1420,
+      "trocasDisponiveis": 0,
       "proximaRecuperacao": "2026-07-22T21:14:41Z",
-      "inventario": {"10_1":1,"12_1":2,"12_2":2,"12_3":2,"13_1":2,"13_3":1,"14_2":1,"15_1":2,"18_1":1,"1_1":2,"1_2":2,"2_1":2,"2_2":2,"3_1":1,"3_2":2,"4_1":1,"5_1":2,"5_2":1,"5_3":2,"5_4":1,"6_2":1,"7_1":2,"7_2":1,"8_1":2,"8_2":1,"8_3":2,"u_steve_osvaldo":1}
+      "inventario": {"10_1":1,"12_1":2,"12_2":2,"12_3":2,"13_1":2,"13_3":1,"14_2":1,"15_1":2,"18_1":1,"1_1":2,"1_2":2,"2_1":2,"2_2":2,"3_1":1,"3_2":2,"4_1":1,"5_1":2,"5_2":1,"5_3":2,"5_4":1,"6_2":1,"7_1":2,"7_2":1,"8_1":2,"8_2":1,"8_3":1,"u_manu12321_":1,"u_steve_osvaldo":1}
     },
     {
       "username": "soniagoncalves",
