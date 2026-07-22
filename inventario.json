@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-22 22:01:45 UTC",
+  "updatedAt": "2026-07-22 22:07:12 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 121, "sucesso": 30, "rate": 24.8 },
     "super": { "total": 86, "sucesso": 34, "rate": 39.5 },
@@ -58,7 +58,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-    { "proposerName": "1509_martim", "targetName": "marquesrcarol", "elemProposer": "6_1", "elemTarget": "u_MarquesrCarol", "createdAt": "2026-07-22T20:46:11.8924466Z" }
+
   ],
   "ranking": [
     {
@@ -141,7 +141,7 @@
     {
       "username": "1509_martim",
       "pontos": 465,
-      "trocasDisponiveis": 2,
+      "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":2,"12_3":1,"13_1":1,"1_1":1,"2_1":2,"3_1":1,"3_3":1,"5_1":1,"6_1":2,"6_2":1,"7_2":1,"8_2":1,"9_1":1,"9_2":1}
     },
