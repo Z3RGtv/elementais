@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-22 22:08:12 UTC",
+  "updatedAt": "2026-07-22 22:14:20 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 121, "sucesso": 30, "rate": 24.8 },
     "super": { "total": 86, "sucesso": 34, "rate": 39.5 },
     "ultra": { "total": 116, "sucesso": 70, "rate": 60.3 },
-    "master": { "total": 548, "sucesso": 498, "rate": 90.9 }
+    "master": { "total": 550, "sucesso": 499, "rate": 90.7 }
   },
   "recentes_lancamentos": [
+    { "username": "san7izinn", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-07-22 23:14:19" },
+    { "username": "san7izinn", "elementalId": "12_2", "bola": "master", "sucesso": 0, "date": "2026-07-22 23:14:10" },
     { "username": "manu12321_", "elementalId": "6_1", "bola": "master", "sucesso": 1, "date": "2026-07-22 23:08:12" },
     { "username": "marquesrcarol", "elementalId": "6_2", "bola": "master", "sucesso": 1, "date": "2026-07-22 23:01:45" },
     { "username": "san7izinn", "elementalId": "3_2", "bola": "master", "sucesso": 1, "date": "2026-07-22 22:55:56" },
@@ -34,9 +36,7 @@
     { "username": "san7izinn", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-07-22 20:11:36" },
     { "username": "marquesrcarol", "elementalId": "3_4", "bola": "master", "sucesso": 1, "date": "2026-07-22 20:01:52" },
     { "username": "sheisdani", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-07-22 19:47:21" },
-    { "username": "sheisdani", "elementalId": "19_2", "bola": "master", "sucesso": 1, "date": "2026-07-22 19:38:08" },
-    { "username": "milhafretuga", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-07-22 19:29:52" },
-    { "username": "manu12321_", "elementalId": "9_2", "bola": "master", "sucesso": 1, "date": "2026-07-22 19:18:19" }
+    { "username": "sheisdani", "elementalId": "19_2", "bola": "master", "sucesso": 1, "date": "2026-07-22 19:38:08" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -147,10 +147,10 @@
     },
     {
       "username": "san7izinn",
-      "pontos": 355,
+      "pontos": 385,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"12_3":1,"16_2":1,"1_1":2,"2_1":1,"2_3":1,"3_1":1,"3_2":1,"4_1":1,"8_1":1}
+      "inventario": {"12_1":1,"12_2":1,"12_3":1,"16_2":1,"1_1":2,"2_1":1,"2_3":1,"3_1":1,"3_2":1,"4_1":1,"8_1":1}
     },
     {
       "username": "rstraveler",
