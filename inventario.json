@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-22 00:05:04 UTC",
+  "updatedAt": "2026-07-22 03:55:55 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 121, "sucesso": 30, "rate": 24.8 },
     "super": { "total": 86, "sucesso": 34, "rate": 39.5 },
@@ -49,6 +49,7 @@
     { "id": "u_MilhafreTuga", "file": "Users/MilhafreTuga.png", "name": "MilhafreTuga" },
     { "id": "u_Minichef9", "file": "Users/Minichef9.png", "name": "Minichef9" },
     { "id": "u_ruialmeida_", "file": "Users/ruialmeida_.png", "name": "ruialmeida_" },
+    { "id": "u_san7izinn", "file": "Users/san7izinn.png", "name": "san7izinn" },
     { "id": "u_sheisdani", "file": "Users/sheisdani.png", "name": "sheisdani" },
     { "id": "u_soniagoncalves", "file": "Users/soniagoncalves.png", "name": "soniagoncalves" },
     { "id": "u_steve_osvaldo", "file": "Users/steve_osvaldo.png", "name": "steve_osvaldo" },
@@ -229,11 +230,11 @@
       "inventario": {"1_1":1}
     },
     {
-      "username": "astroz1nvlr",
+      "username": "manuel2019rodrigues",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"1_1":1}
+      "inventario": {"2_1":1}
     },
     {
       "username": "salvadormdm",
@@ -243,11 +244,11 @@
       "inventario": {"3_1":1}
     },
     {
-      "username": "manuel2019rodrigues",
+      "username": "astroz1nvlr",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"2_1":1}
+      "inventario": {"1_1":1}
     }
   ]
 }
