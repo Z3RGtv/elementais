@@ -251,6 +251,9 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         slot.className = 'grid-item';
         if (elem.isUser) {
             slot.classList.add('user-slot');
+            if (qty > 0 && player.username && elem.name && player.username.toLowerCase() === elem.name.toLowerCase()) {
+                slot.classList.add('creator-glow');
+            }
         }
 
         const ptsValue = obterPontosBicho(elem.id);
