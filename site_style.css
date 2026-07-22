@@ -218,6 +218,27 @@ h2 {
     border-color: rgba(161, 84, 242, 0.25);
 }
 
+.grid-item.creator-glow {
+    border-color: #ff9900 !important;
+    box-shadow: 0 0 10px rgba(255, 153, 0, 0.5), inset 0 0 8px rgba(255, 153, 0, 0.15);
+    animation: creatorGlowPulse 2.5s infinite ease-in-out;
+}
+
+@keyframes creatorGlowPulse {
+    0% {
+        box-shadow: 0 0 8px rgba(255, 153, 0, 0.4), inset 0 0 5px rgba(255, 153, 0, 0.1);
+        border-color: #ff9900 !important;
+    }
+    50% {
+        box-shadow: 0 0 18px rgba(255, 153, 0, 0.8), inset 0 0 12px rgba(255, 153, 0, 0.3);
+        border-color: #ffbb00 !important;
+    }
+    100% {
+        box-shadow: 0 0 8px rgba(255, 153, 0, 0.4), inset 0 0 5px rgba(255, 153, 0, 0.1);
+        border-color: #ff9900 !important;
+    }
+}
+
 .user-name-tag {
     position: absolute;
     top: 5px;
