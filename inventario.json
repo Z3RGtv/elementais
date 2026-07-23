@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23 17:45:06 UTC",
+  "updatedAt": "2026-07-23 17:58:56 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 121, "sucesso": 30, "rate": 24.8 },
     "super": { "total": 88, "sucesso": 35, "rate": 39.8 },
@@ -216,13 +216,6 @@
       "inventario": {"1_1":1,"3_1":2}
     },
     {
-      "username": "z3rgtv",
-      "pontos": 20,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_1":1,"3_1":1}
-    },
-    {
       "username": "inumerus",
       "pontos": 15,
       "trocasDisponiveis": 3,
@@ -242,6 +235,13 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"3_1":1}
+    },
+    {
+      "username": "z3rgtv",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"1_1":1}
     },
     {
       "username": "manuel2019rodrigues",
