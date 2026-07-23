@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23 21:08:43 UTC",
+  "updatedAt": "2026-07-23 21:13:22 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 123, "sucesso": 30, "rate": 24.4 },
     "super": { "total": 89, "sucesso": 35, "rate": 39.3 },
@@ -58,13 +58,12 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-    { "proposerName": "ipowerlz", "targetName": "hugoandre07", "elemProposer": "5_2", "elemTarget": "2_1", "createdAt": "2026-07-23T19:47:14.2045105Z" },
     { "proposerName": "milhafretuga", "targetName": "marquesrcarol", "elemProposer": "5_5", "elemTarget": "3_1", "createdAt": "2026-07-23T20:20:30.7514127Z" }
   ],
   "ranking": [
     {
       "username": "sheisdani",
-      "pontos": 6715,
+      "pontos": 7215,
       "trocasDisponiveis": 0,
       "proximaRecuperacao": "2026-07-27T19:22:24Z",
       "inventario": {"10_1":1,"10_2":2,"10_3":1,"10_4":1,"11_1":1,"12_1":1,"12_2":1,"12_3":2,"12_4":1,"13_1":1,"13_2":2,"14_1":1,"14_2":1,"14_3":1,"14_4":1,"15_1":2,"15_2":1,"15_3":1,"15_4":1,"15_6":1,"17_1":2,"17_2":2,"18_1":1,"19_1":1,"19_2":1,"19_5":1,"1_1":1,"1_2":1,"1_3":1,"1_4":1,"1_5":1,"2_1":1,"2_2":1,"2_3":2,"2_4":2,"3_1":1,"3_2":1,"3_3":1,"3_5":1,"4_1":1,"4_2":1,"4_3":1,"5_1":1,"5_2":2,"5_3":1,"6_1":1,"6_2":1,"6_3":2,"6_4":1,"7_1":1,"7_2":1,"8_1":2,"8_2":1,"8_4":1,"9_1":1,"9_2":1,"9_3":1,"u_1509_martim":1,"u_ManoDrico":1,"u_MarquesrCarol":1,"u_MilhafreTuga":1,"u_TheMarySimmer":1,"u_gui_z0":1,"u_manu12321_":1,"u_san7izinn":1,"u_soniagoncalves":1}
@@ -88,7 +87,7 @@
       "pontos": 3730,
       "trocasDisponiveis": 1,
       "proximaRecuperacao": "2026-07-27T20:07:01Z",
-      "inventario": {"10_1":1,"10_2":2,"10_3":1,"11_1":1,"12_1":1,"12_2":1,"12_3":1,"12_4":1,"13_1":1,"13_2":1,"14_1":1,"14_2":2,"14_3":1,"15_1":1,"16_1":1,"16_2":1,"18_3":1,"19_1":1,"1_1":1,"1_2":1,"1_3":1,"20_1":1,"2_1":1,"2_2":1,"2_3":1,"3_1":1,"3_2":1,"3_3":1,"4_1":1,"4_2":1,"4_3":1,"5_1":1,"5_2":2,"5_3":1,"6_1":1,"6_2":1,"7_1":1,"7_2":1,"7_4":1,"8_1":1,"8_2":1,"8_3":1,"8_4":1,"9_1":1,"9_2":1,"u_1509_martim":1,"u_MarquesrCarol":1,"u_Minichef9":2,"u_iPowerlz":1,"u_ruialmeida_":1,"u_sheisdani":1,"u_soniagoncalves":1}
+      "inventario": {"10_1":1,"10_2":2,"10_3":1,"11_1":1,"12_1":1,"12_2":1,"12_3":1,"12_4":1,"13_1":1,"13_2":1,"14_1":1,"14_2":2,"14_3":1,"15_1":1,"16_1":1,"16_2":1,"18_3":1,"19_1":1,"1_1":1,"1_2":1,"1_3":1,"20_1":1,"2_1":2,"2_2":1,"2_3":1,"3_1":1,"3_2":1,"3_3":1,"4_1":1,"4_2":1,"4_3":1,"5_1":1,"5_2":1,"5_3":1,"6_1":1,"6_2":1,"7_1":1,"7_2":1,"7_4":1,"8_1":1,"8_2":1,"8_3":1,"8_4":1,"9_1":1,"9_2":1,"u_1509_martim":1,"u_MarquesrCarol":1,"u_Minichef9":2,"u_iPowerlz":1,"u_ruialmeida_":1,"u_sheisdani":1,"u_soniagoncalves":1}
     },
     {
       "username": "manodrico",
@@ -127,10 +126,10 @@
     },
     {
       "username": "hugoandre07",
-      "pontos": 670,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"10_1":1,"12_1":2,"13_1":2,"14_1":1,"16_3":1,"1_1":2,"1_2":2,"2_1":2,"2_3":1,"3_1":1,"3_2":1,"5_1":2,"6_3":1,"9_1":1}
+      "pontos": 710,
+      "trocasDisponiveis": 2,
+      "proximaRecuperacao": "2026-07-30T21:13:20Z",
+      "inventario": {"10_1":1,"12_1":2,"13_1":2,"14_1":1,"16_3":1,"1_1":2,"1_2":2,"2_1":1,"2_3":1,"3_1":1,"3_2":1,"5_1":2,"5_2":1,"6_3":1,"9_1":1}
     },
     {
       "username": "steve_osvaldo",
@@ -231,13 +230,6 @@
       "inventario": {"13_1":1}
     },
     {
-      "username": "z3rgtv",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_1":1}
-    },
-    {
       "username": "salvadormdm",
       "pontos": 10,
       "trocasDisponiveis": 3,
@@ -245,7 +237,7 @@
       "inventario": {"3_1":1}
     },
     {
-      "username": "astroz1nvlr",
+      "username": "z3rgtv",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
@@ -257,6 +249,13 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"2_1":1}
+    },
+    {
+      "username": "astroz1nvlr",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"1_1":1}
     },
     {
       "username": "hst_playz_pt",
