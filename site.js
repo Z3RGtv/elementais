@@ -9,11 +9,13 @@ const elementaisMap = [
     { id: "2_2", file: "T_Icon_BR_Creature_Sprite_Earth_Gold_ui_L.webp" },
     { id: "2_3", file: "T_Icon_BR_Creature_Sprite_Earth_Candy_ui_L.webp" },
     { id: "2_4", file: "T_Icon_BR_Creature_Sprite_Earth_Galaxy_ui_L.webp" },
+    { id: "2_6", file: "T_Icon_BR_Creature_Sprite_Earth_Cube_ui_L.webp" },
     { id: "3_1", file: "T_Icon_BR_Creature_Sprite_Fire_Unvault_Ch7S3_ui_L.webp" },
     { id: "3_2", file: "T_Icon_BR_Creature_Sprite_Fire_Gold_ui_L.webp" },
     { id: "3_3", file: "T_Icon_BR_Creature_Sprite_Fire_Candy_ui_L.webp" },
     { id: "3_4", file: "T_Icon_BR_Creature_Sprite_Fire_Galaxy_ui_L.webp" },
     { id: "3_5", file: "T_Icon_BR_Creature_Sprite_Fire_Holofoil_ui_L.webp" },
+    { id: "3_6", file: "T_Icon_BR_Creature_Sprite_Fire_Cube_ui_L.webp" },
     { id: "4_1", file: "T_Icon_BR_Duck_Default_L.webp" },
     { id: "4_2", file: "T_Icon_BR_Duck_Gold_L.webp" },
     { id: "4_3", file: "T_Icon_BR_Duck_Candy_L.webp" },
@@ -27,6 +29,7 @@ const elementaisMap = [
     { id: "6_2", file: "T_Icon_BR_Creature_Sprite_Sleepy_Gold_ui_L.webp" },
     { id: "6_3", file: "T_Icon_BR_Creature_Sprite_Sleepy_Candy_ui_L.webp" },
     { id: "6_4", file: "T_Icon_BR_Creature_Sprite_Sleepy_Galaxy_ui_L.webp" },
+    { id: "6_6", file: "T_Icon_BR_Creature_Sprite_Sleepy_Cube_ui_L.webp" },
     { id: "7_1", file: "T_Icon_BR_RedDemon_Default_L.webp" },
     { id: "7_2", file: "T_Icon_BR_RedDemon_Gold_L.webp" },
     { id: "7_3", file: "T_Icon_BR_RedDemon_Candy_L.webp" },
@@ -35,6 +38,7 @@ const elementaisMap = [
     { id: "8_2", file: "T_Icon_BR_Creature_Sprite_Punk_Gold_ui_L.webp" },
     { id: "8_3", file: "T_Icon_BR_Creature_Sprite_Punk_Candy_ui_L.webp" },
     { id: "8_4", file: "T_Icon_BR_Creature_Sprite_Punk_Galaxy_ui_L.webp" },
+    { id: "8_6", file: "T_Icon_BR_Creature_Sprite_Punk_Cube_ui_L.webp" },
     { id: "9_1", file: "T_Icon_BR_Creature_Sprite_King_ui_L.webp" },
     { id: "9_2", file: "T_Icon_BR_Creature_Sprite_King_Gold_ui_L.webp" },
     { id: "9_3", file: "T_Icon_BR_Creature_Sprite_King_Candy_ui_L.webp" },
@@ -49,6 +53,7 @@ const elementaisMap = [
     { id: "12_2", file: "T_Icon_BR_Creature_Sprite_Fishy_Gold_ui_L.webp" },
     { id: "12_3", file: "T_Icon_BR_Creature_Sprite_Fishy_Candy_ui_L.webp" },
     { id: "12_4", file: "T_Icon_BR_Creature_Sprite_Fishy_Galaxy_ui_L.webp" },
+    { id: "12_6", file: "T_Icon_BR_Creature_Sprite_Fishy_Cube_L.webp" },
     { id: "13_1", file: "T_Icon_BR_Creature_Sprite_Soccer_ui_L.webp" },
     { id: "13_2", file: "T_Icon_BR_Creature_Sprite_Soccer_Gold_L.webp" },
     { id: "13_3", file: "T_Icon_BR_Creature_Sprite_Soccer_Candy_L.webp" },
@@ -62,10 +67,12 @@ const elementaisMap = [
     { id: "15_2", file: "T_Icon_BR_Creature_Sprite_Boss_Gold_ui_L.webp" },
     { id: "15_3", file: "T_Icon_BR_Creature_Sprite_Boss_Candy_ui_L.webp" },
     { id: "15_4", file: "T_Icon_BR_Creature_Sprite_Boss_Galaxy_ui_L.webp" },
+    { id: "15_6", file: "T_Icon_BR_Creature_Sprite_Boss_Cube_ui_L.webp" },
     { id: "16_1", file: "T_Icon_BR_GrimReaper_Default_L.webp" },
     { id: "16_2", file: "T_Icon_BR_GrimReaper_Gold_L.webp" },
     { id: "16_3", file: "T_Icon_BR_GrimReaper_Candy_L.webp" },
     { id: "16_4", file: "T_Icon_BR_GrimReaper_Galaxy_L.webp" },
+    { id: "16_6", file: "T_Icon_BR_GrimReaper_Cube_L.webp" },
     { id: "17_1", file: "T_Icon_BR_Air_Default_L.webp" },
     { id: "17_2", file: "T_Icon_BR_Air_Gold_L.webp" },
     { id: "17_3", file: "T_Icon_BR_Air_Candy_L.webp" },
@@ -81,6 +88,7 @@ const elementaisMap = [
     { id: "19_3", file: "T_Icon_BR_FossilMeal_Candy_L.webp" },
     { id: "19_4", file: "T_Icon_BR_FossilMeal_Galaxy_L.webp" },
     { id: "19_5", file: "T_Icon_BR_FossilMeal_Holofoil_L.webp" },
+    { id: "19_6", file: "T_Icon_BR_FossilMeal_Cube_L.webp" },
     { id: "20_1", file: "T_Icon_BR_CokeParmesan_Default_L.webp" },
     { id: "21_1", file: "T_Icon_BR_CompanyStargazer_Default_L.webp" }
 ];
@@ -1077,7 +1085,7 @@ function obterNomeSimplesBicho(id) {
     };
 
     const nomesVariantes = {
-        1: "Normal", 2: "Gold", 3: "Gummy", 4: "Galaxy", 5: "Holofoil"
+        1: "Normal", 2: "Gold", 3: "Gummy", 4: "Galaxy", 5: "Holofoil", 6: "Cube"
     };
 
     const nomeBase = nomesEspecies[especie] || id;
@@ -1106,25 +1114,25 @@ function obterPontosBicho(id) {
             if (variante === 2) return 120;
             if (variante === 3) return 250;
             if (variante === 4) return 500;
-            if (variante === 5) return 800;
+            if (variante === 5 || variante === 6) return 800;
         } else if (ehLendario) {
             if (variante === 1) return 30;
             if (variante === 2) return 75;
             if (variante === 3) return 150;
             if (variante === 4) return 300;
-            if (variante === 5) return 500;
+            if (variante === 5 || variante === 6) return 500;
         } else if (ehEpico) {
             if (variante === 1) return 15;
             if (variante === 2) return 40;
             if (variante === 3) return 90;
             if (variante === 4) return 200;
-            if (variante === 5) return 350;
+            if (variante === 5 || variante === 6) return 350;
         } else if (ehRaro) {
             if (variante === 1) return 10;
             if (variante === 2) return 30;
             if (variante === 3) return 60;
             if (variante === 4) return 150;
-            if (variante === 5) return 250;
+            if (variante === 5 || variante === 6) return 250;
         }
     } catch(e) {}
     return 0;
