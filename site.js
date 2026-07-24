@@ -443,6 +443,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         if (isCompleted) {
             groupContainer.classList.add('completed-set');
             groupContainer.style.gridColumn = `span ${group.items.length}`;
+            groupContainer.style.gridTemplateColumns = `repeat(${group.items.length}, 1fr)`;
         }
 
         group.items.forEach(elem => {
