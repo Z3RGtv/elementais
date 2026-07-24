@@ -577,6 +577,24 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
+    // Bónus de Coleção Completa de Grim: se tiver as 5 variantes (com cube, sem holofoil), ceifa 2 jogadores do Top 3
+    const hasAllGrim = !isGlobalInventory && ["16_1", "16_2", "16_3", "16_4", "16_6"].every(id => (player.inventario[id] || 0) > 0);
+    const spanGrim = document.getElementById("grim-effect-text");
+    const labelGrim = document.getElementById("grim-effect-label");
+    if (spanGrim) {
+        if (hasAllGrim) {
+            spanGrim.textContent = "dois jogadores do Top 3";
+            spanGrim.style.color = "#ffd700";
+            spanGrim.style.fontWeight = "bold";
+            if (labelGrim) labelGrim.style.color = "#ffd700";
+        } else {
+            spanGrim.textContent = "um jogador do Top 3";
+            spanGrim.style.color = "";
+            spanGrim.style.fontWeight = "";
+            if (labelGrim) labelGrim.style.color = "";
+        }
+    }
+
     speciesOrder.forEach(key => {
         const group = groups[key];
         let isCompleted = false;
