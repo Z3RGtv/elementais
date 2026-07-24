@@ -505,6 +505,24 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
+    // Bónus de Coleção Completa de Demónio: se tiver as 4 variantes, apenas quem usou pode usar Master e Ultra
+    const hasAllDemon = !isGlobalInventory && ["7_1", "7_2", "7_3", "7_4"].every(id => (player.inventario[id] || 0) > 0);
+    const spanDemon = document.getElementById("demon-effect-text");
+    const labelDemon = document.getElementById("demon-effect-label");
+    if (spanDemon) {
+        if (hasAllDemon) {
+            spanDemon.textContent = "Master Ball e Ultra Ball";
+            spanDemon.style.color = "#ffd700";
+            spanDemon.style.fontWeight = "bold";
+            if (labelDemon) labelDemon.style.color = "#ffd700";
+        } else {
+            spanDemon.textContent = "Master Ball";
+            spanDemon.style.color = "";
+            spanDemon.style.fontWeight = "";
+            if (labelDemon) labelDemon.style.color = "";
+        }
+    }
+
     speciesOrder.forEach(key => {
         const group = groups[key];
         let isCompleted = false;
