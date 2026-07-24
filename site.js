@@ -431,10 +431,12 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         speciesOrder.push("specials");
     }
 
+    const isGlobalInventory = (player.username === "Inventário Global");
+
     speciesOrder.forEach(key => {
         const group = groups[key];
         let isCompleted = false;
-        if (!group.isSpecial) {
+        if (!group.isSpecial && !isGlobalInventory) {
             isCompleted = group.items.every(elem => (player.inventario[elem.id] || 0) > 0);
         }
 
