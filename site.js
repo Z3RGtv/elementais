@@ -245,153 +245,230 @@ function selecionarUtilizador(player, elementoDOM) {
     renderizarPropostas();
 }
 
-function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCallback) {
-    const grid = document.getElementById(targetGridId);
-    grid.innerHTML = '';
+function criarSlotCard(player, elem, qty, targetGridId, isSelectionMode, selectCallback) {
+    const slot = document.createElement('div');
+    slot.className = 'grid-item';
+    if (elem.isUser) {
+        slot.classList.add('user-slot');
+        if (qty > 0 && player.username && elem.name && player.username.toLowerCase() === elem.name.toLowerCase()) {
+            slot.classList.add('creator-glow');
+        }
+    }
 
-    elementaisMap.forEach(elem => {
-        const qty = player.inventario[elem.id] || 0;
+    const ptsValue = obterPontosBicho(elem.id);
+    const nomeAmigavel = elem.isUser ? elem.name : obterNomeSimplesBicho(elem.id);
+    slot.title = `${nomeAmigavel} — ${ptsValue} pts`;
+
+    const img = document.createElement('img');
+    img.src = `Sprites/${elem.file}`;
+
+    if (qty === 0) {
+        slot.classList.add('not-owned');
+        slot.appendChild(img);
+    } else if (qty === 1) {
+        slot.appendChild(img);
+    } else if (qty >= 2) {
+        slot.classList.add('stacked');
+        img.className = 'card-front';
         
-        // No modo de seleção do assistente, só mostramos as cartas que o jogador de facto tem
-        if (isSelectionMode && qty === 0) return;
+        const imgBack = document.createElement('img');
+        imgBack.src = `Sprites/${elem.file}`;
+        imgBack.className = 'card-back';
 
-        const slot = document.createElement('div');
-        slot.className = 'grid-item';
-        if (elem.isUser) {
-            slot.classList.add('user-slot');
-            if (qty > 0 && player.username && elem.name && player.username.toLowerCase() === elem.name.toLowerCase()) {
-                slot.classList.add('creator-glow');
+        const badge = document.createElement('span');
+        badge.className = 'qty-badge';
+        badge.textContent = `x${qty}`;
+
+        slot.appendChild(imgBack);
+        slot.appendChild(img);
+        slot.appendChild(badge);
+    }
+
+    if (elem.isUser) {
+        const nameTag = document.createElement('span');
+        nameTag.className = 'user-name-tag';
+        nameTag.textContent = elem.name;
+        slot.appendChild(nameTag);
+    }
+
+    if (isSelectionMode && selectCallback) {
+        if (targetGridId === 'target-request-card-selection') {
+            const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
+            const qtyEu = meuPerfil.inventario[elem.id] || 0;
+            if (qtyEu >= 2) {
+                slot.classList.add('disabled-selection');
+                slot.title = "Já tens o limite de 2 cópias deste elemental na tua coleção!";
             }
         }
 
-        const ptsValue = obterPontosBicho(elem.id);
-        const nomeAmigavel = elem.isUser ? elem.name : obterNomeSimplesBicho(elem.id);
-        slot.title = `${nomeAmigavel} — ${ptsValue} pts`;
-
-        const img = document.createElement('img');
-        img.src = `Sprites/${elem.file}`;
-
-        if (qty === 0) {
-            slot.classList.add('not-owned');
-            slot.appendChild(img);
-        } else if (qty === 1) {
-            slot.appendChild(img);
-        } else if (qty >= 2) {
-            slot.classList.add('stacked');
-            img.className = 'card-front';
-            
-            const imgBack = document.createElement('img');
-            imgBack.src = `Sprites/${elem.file}`;
-            imgBack.className = 'card-back';
-
-            const badge = document.createElement('span');
-            badge.className = 'qty-badge';
-            badge.textContent = `x${qty}`;
-
-            slot.appendChild(imgBack);
-            slot.appendChild(img);
-            slot.appendChild(badge);
-        }
-
-        if (elem.isUser) {
-            const nameTag = document.createElement('span');
-            nameTag.className = 'user-name-tag';
-            nameTag.textContent = elem.name;
-            slot.appendChild(nameTag);
-        }
-
-        if (isSelectionMode && selectCallback) {
-            // Se for o grid de pedidos do alvo e eu já tiver 2 cópias desse bicho, desativa visualmente
+        slot.onclick = () => {
             if (targetGridId === 'target-request-card-selection') {
                 const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
                 const qtyEu = meuPerfil.inventario[elem.id] || 0;
                 if (qtyEu >= 2) {
-                    slot.classList.add('disabled-selection');
-                    slot.title = "Já tens o limite de 2 cópias deste elemental na tua coleção!";
+                    alert(`Não podes propor receber este elemental porque já tens o limite máximo de 2 cópias na tua coleção!`);
+                    return;
                 }
             }
-
-            slot.onclick = () => {
-                if (targetGridId === 'target-request-card-selection') {
+            const grid = document.getElementById(targetGridId);
+            grid.querySelectorAll('.grid-item').forEach(i => i.classList.remove('selected'));
+            slot.classList.add('selected');
+            selectCallback(elem.id, elem);
+        };
+    } else if (!isSelectionMode) {
+        slot.onclick = () => {
+            if (player.username === "Inventário Global") {
+                mostrarPossuidoresCard(elem);
+                return;
+            }
+            if (qty >= 1) {
+                const isTwitchLoggedIn = !!localStorage.getItem('twitch_access_token');
+                const autenticadas = JSON.parse(localStorage.getItem('contas_autenticadas_twitch') || '[]');
+                
+                if (meuUsername && meuUsername.toLowerCase() !== player.username.toLowerCase()) {
                     const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
-                    const qtyEu = meuPerfil.inventario[elem.id] || 0;
-                    if (qtyEu >= 2) {
+                    const meuDisp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 3;
+                    if (meuDisp < 1) {
+                        alert(`Não tens trocas disponíveis de momento (máximo 3 por semana)!`);
+                        return;
+                    }
+                    const targetDisp = player.trocasDisponiveis !== undefined ? player.trocasDisponiveis : 3;
+                    if (targetDisp < 1) {
+                        alert(`O jogador @${player.username} não tem trocas disponíveis esta semana!`);
+                        return;
+                    }
+
+                    const minhasCopias = meuPerfil.inventario[elem.id] || 0;
+                    if (minhasCopias >= 2) {
                         alert(`Não podes propor receber este elemental porque já tens o limite máximo de 2 cópias na tua coleção!`);
                         return;
                     }
-                }
-                grid.querySelectorAll('.grid-item').forEach(i => i.classList.remove('selected'));
-                slot.classList.add('selected');
-                selectCallback(elem.id, elem);
-            };
-        } else if (!isSelectionMode) {
-            slot.onclick = () => {
-                if (player.username === "Inventário Global") {
-                    mostrarPossuidoresCard(elem);
+                    abrirModalTrocaComCardPedidoPreSelecionado(player, elem);
                     return;
                 }
-                if (qty >= 1) {
-                    const isTwitchLoggedIn = !!localStorage.getItem('twitch_access_token');
-                    const autenticadas = JSON.parse(localStorage.getItem('contas_autenticadas_twitch') || '[]');
-                    
-                    // Caso 1: Clicar no elemental de outra pessoa (Proposta direta se estiver logado)
-                    if (meuUsername && meuUsername.toLowerCase() !== player.username.toLowerCase()) {
-                        const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
-                        
-                        // Verificar limites de trocas do próprio utilizador e do alvo
-                        const meuDisp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 3;
-                        if (meuDisp < 1) {
-                            alert(`Não tens trocas disponíveis de momento (máximo 3 por semana)!`);
-                            return;
-                        }
-                        const targetDisp = player.trocasDisponiveis !== undefined ? player.trocasDisponiveis : 3;
-                        if (targetDisp < 1) {
-                            alert(`O jogador @${player.username} não tem trocas disponíveis esta semana!`);
-                            return;
-                        }
 
-                        const minhasCopias = meuPerfil.inventario[elem.id] || 0;
-                        if (minhasCopias >= 2) {
-                            alert(`Não podes propor receber este elemental porque já tens o limite máximo de 2 cópias na tua coleção!`);
-                            return;
-                        }
-                        abrirModalTrocaComCardPedidoPreSelecionado(player, elem);
-                        return;
+                const contaJaAutenticada = autenticadas.includes(player.username.toLowerCase());
+                if (contaJaAutenticada) {
+                    if (meuUsername && meuUsername.toLowerCase() === player.username.toLowerCase()) {
+                        oferecidoId = elem.id;
+                        abrirModalTrocaComCardPreSelecionado(elem);
+                    } else {
+                        alert(`Esta conta (@${player.username}) já foi autenticada via Twitch neste navegador. Por favor, faz login no topo da página para a usar.`);
                     }
-
-                    // Caso 2: Clicar no meu próprio elemental (Definir o que oferecer primeiro)
-                    const contaJaAutenticada = autenticadas.includes(player.username.toLowerCase());
-                    if (contaJaAutenticada) {
+                } else {
+                    if (isTwitchLoggedIn) {
                         if (meuUsername && meuUsername.toLowerCase() === player.username.toLowerCase()) {
                             oferecidoId = elem.id;
                             abrirModalTrocaComCardPreSelecionado(elem);
-                        } else {
-                            alert(`Esta conta (@${player.username}) já foi autenticada via Twitch neste navegador. Por favor, faz login no topo da página para a usar.`);
                         }
                     } else {
-                        if (isTwitchLoggedIn) {
-                            if (meuUsername && meuUsername.toLowerCase() === player.username.toLowerCase()) {
-                                oferecidoId = elem.id;
-                                abrirModalTrocaComCardPreSelecionado(elem);
-                            }
-                        } else {
-                            // Fluxo Livre: Assumir identidade automaticamente
-                            meuUsername = player.username;
-                            localStorage.setItem('meuUsername', meuUsername);
-                            atualizarUIConta();
-                            
-                            // Destacar visualmente no ranking e atualizar botões
-                            selecionarUtilizador(player, document.querySelector('.ranking-item.active'));
-
-                            oferecidoId = elem.id;
-                            abrirModalTrocaComCardPreSelecionado(elem);
-                        }
+                        meuUsername = player.username;
+                        localStorage.setItem('meuUsername', meuUsername);
+                        atualizarUIConta();
+                        selecionarUtilizador(player, document.querySelector('.ranking-item.active'));
+                        oferecidoId = elem.id;
+                        abrirModalTrocaComCardPreSelecionado(elem);
                     }
                 }
+            }
+        };
+    }
+    return slot;
+}
+
+function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCallback) {
+    const grid = document.getElementById(targetGridId);
+    grid.innerHTML = '';
+
+    if (isSelectionMode) {
+        elementaisMap.forEach(elem => {
+            const qty = player.inventario[elem.id] || 0;
+            if (qty === 0) return;
+            const slot = criarSlotCard(player, elem, qty, targetGridId, isSelectionMode, selectCallback);
+            grid.appendChild(slot);
+        });
+        return;
+    }
+
+    const nomesEspeciesComIcon = {
+        1: "💧 Água", 2: "🪨 Terra", 3: "🔥 Fogo", 4: "🦆 Pato", 5: "👻 Fantasma", 
+        6: "💤 Dos Sonhos", 7: "😈 Demónio", 8: "🎸 Punk", 9: "👑 Rei", 10: "🌌 Ponto Zero",
+        12: "🐟 Peixoto", 13: "⚽ Atacante", 14: "✨ Aura", 15: "👑 Boss", 16: "💀 Grim",
+        17: "🌪️ Ar", 18: "⚡ Seven", 19: "🦇 Batman"
+    };
+
+    const groups = {};
+    const speciesOrder = [];
+    
+    elementaisMap.forEach(elem => {
+        let groupKey;
+        let groupName;
+        
+        if (elem.isUser || elem.id === "11_1" || elem.id === "20_1" || elem.id === "21_1") {
+            groupKey = "specials";
+            groupName = "👥 Especiais & Comunidade";
+        } else {
+            const partes = elem.id.split('_');
+            groupKey = parseInt(partes[0]);
+            groupName = nomesEspeciesComIcon[groupKey] || `Elemental ${groupKey}`;
+        }
+        
+        if (!groups[groupKey]) {
+            groups[groupKey] = {
+                key: groupKey,
+                name: groupName,
+                items: [],
+                isSpecial: (groupKey === "specials")
             };
+            speciesOrder.push(groupKey);
+        }
+        groups[groupKey].items.push(elem);
+    });
+
+    const specialsIdx = speciesOrder.indexOf("specials");
+    if (specialsIdx !== -1) {
+        speciesOrder.splice(specialsIdx, 1);
+        speciesOrder.push("specials");
+    }
+
+    speciesOrder.forEach(key => {
+        const group = groups[key];
+        let isCompleted = false;
+        if (!group.isSpecial) {
+            isCompleted = group.items.every(elem => (player.inventario[elem.id] || 0) > 0);
         }
 
-        grid.appendChild(slot);
+        const groupContainer = document.createElement('div');
+        groupContainer.className = 'species-group';
+        if (isCompleted) {
+            groupContainer.classList.add('completed-set');
+        }
+
+        const header = document.createElement('div');
+        header.className = 'species-group-header';
+        header.textContent = group.name;
+        
+        if (isCompleted) {
+            const star = document.createElement('span');
+            star.style.color = '#ffd700';
+            star.style.marginLeft = '8px';
+            star.textContent = '★ COMPLETADO';
+            header.appendChild(star);
+        }
+        
+        groupContainer.appendChild(header);
+
+        const groupGrid = document.createElement('div');
+        groupGrid.className = 'species-group-grid';
+
+        group.items.forEach(elem => {
+            const qty = player.inventario[elem.id] || 0;
+            const slot = criarSlotCard(player, elem, qty, targetGridId, isSelectionMode, selectCallback);
+            groupGrid.appendChild(slot);
+        });
+
+        groupContainer.appendChild(groupGrid);
+        grid.appendChild(groupContainer);
     });
 }
 
