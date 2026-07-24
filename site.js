@@ -469,6 +469,24 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
+    // Bónus de Coleção Completa de Pato: se tiver as 4 variantes, garante Gummy ou superior
+    const hasAllPato = !isGlobalInventory && ["4_1", "4_2", "4_3", "4_4"].every(id => (player.inventario[id] || 0) > 0);
+    const spanPato = document.getElementById("duck-effect-text");
+    const labelPato = document.getElementById("duck-effect-label");
+    if (spanPato) {
+        if (hasAllPato) {
+            spanPato.textContent = "Gummy ou superior";
+            spanPato.style.color = "#ffd700";
+            spanPato.style.fontWeight = "bold";
+            if (labelPato) labelPato.style.color = "#ffd700";
+        } else {
+            spanPato.textContent = "Ouro ou superior";
+            spanPato.style.color = "";
+            spanPato.style.fontWeight = "";
+            if (labelPato) labelPato.style.color = "";
+        }
+    }
+
     speciesOrder.forEach(key => {
         const group = groups[key];
         let isCompleted = false;
