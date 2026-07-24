@@ -559,6 +559,24 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
+    // Bónus de Coleção Completa de Boss: se tiver as 5 variantes (com cube, sem holofoil), garante Galaxy em vez de Gummy
+    const hasAllBoss = !isGlobalInventory && ["15_1", "15_2", "15_3", "15_4", "15_6"].every(id => (player.inventario[id] || 0) > 0);
+    const spanBoss = document.getElementById("boss-effect-text");
+    const labelBoss = document.getElementById("boss-effect-label");
+    if (spanBoss) {
+        if (hasAllBoss) {
+            spanBoss.textContent = "Galaxy ou superior";
+            spanBoss.style.color = "#ffd700";
+            spanBoss.style.fontWeight = "bold";
+            if (labelBoss) labelBoss.style.color = "#ffd700";
+        } else {
+            spanBoss.textContent = "Gummy ou superior";
+            spanBoss.style.color = "";
+            spanBoss.style.fontWeight = "";
+            if (labelBoss) labelBoss.style.color = "";
+        }
+    }
+
     speciesOrder.forEach(key => {
         const group = groups[key];
         let isCompleted = false;
