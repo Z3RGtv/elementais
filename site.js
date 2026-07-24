@@ -394,7 +394,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         1: "💧 Água", 2: "🪨 Terra", 3: "🔥 Fogo", 4: "🦆 Pato", 5: "👻 Fantasma", 
         6: "💤 Dos Sonhos", 7: "😈 Demónio", 8: "🎸 Punk", 9: "👑 Rei", 10: "🌌 Ponto Zero",
         12: "🐟 Peixoto", 13: "⚽ Atacante", 14: "✨ Aura", 15: "👑 Boss", 16: "💀 Grim",
-        17: "🌪️ Ar", 18: "⚡ Seven", 19: "🦇 Batman"
+        17: "🌪️ Vento", 18: "⚡ Seven", 19: "🦇 Batman"
     };
 
     const groups = {};
@@ -597,6 +597,24 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
             spanGrim.style.color = "";
             spanGrim.style.fontWeight = "";
             if (labelGrim) labelGrim.style.color = "";
+        }
+    }
+
+    // Bónus de Coleção Completa de Vento: se tiver todas as variantes, baralha até 2 vezes
+    const hasAllVento = hasCompleteCollection(17);
+    const spanVento = document.getElementById("vento-effect-text");
+    const labelVento = document.getElementById("vento-effect-label");
+    if (spanVento) {
+        if (hasAllVento) {
+            spanVento.textContent = "baralha a fila (até 2 vezes se não ficares em 1º)";
+            spanVento.style.color = "#ffd700";
+            spanVento.style.fontWeight = "bold";
+            if (labelVento) labelVento.style.color = "#ffd700";
+        } else {
+            spanVento.textContent = "baralha a fila (caso não fiques em 1º)";
+            spanVento.style.color = "";
+            spanVento.style.fontWeight = "";
+            if (labelVento) labelVento.style.color = "";
         }
     }
 
