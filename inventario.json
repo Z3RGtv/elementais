@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-24 20:14:57 UTC",
+  "updatedAt": "2026-07-24 20:27:37 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 129, "sucesso": 30, "rate": 23.3 },
-    "super": { "total": 92, "sucesso": 35, "rate": 38.0 },
+    "super": { "total": 93, "sucesso": 36, "rate": 38.7 },
     "ultra": { "total": 125, "sucesso": 74, "rate": 59.2 },
     "master": { "total": 619, "sucesso": 565, "rate": 91.3 }
   },
   "recentes_lancamentos": [
+    { "username": "coki5731", "elementalId": "7_1", "bola": "super", "sucesso": 1, "date": "2026-07-24 21:27:37" },
     { "username": "ipowerlz", "elementalId": "5_4", "bola": "master", "sucesso": 1, "date": "2026-07-24 21:14:57" },
     { "username": "coki5731", "elementalId": "7_2", "bola": "master", "sucesso": 1, "date": "2026-07-24 21:03:26" },
     { "username": "sheisdani", "elementalId": "12_2", "bola": "super", "sucesso": 0, "date": "2026-07-24 20:53:01" },
@@ -35,8 +36,7 @@
     { "username": "coki5731", "elementalId": "13_1", "bola": "normal", "sucesso": 0, "date": "2026-07-24 00:51:59" },
     { "username": "hugoandre07", "elementalId": "7_1", "bola": "master", "sucesso": 1, "date": "2026-07-24 00:39:35" },
     { "username": "coki5731", "elementalId": "7_1", "bola": "normal", "sucesso": 0, "date": "2026-07-24 00:39:26" },
-    { "username": "r_moreira16", "elementalId": "7_1", "bola": "super", "sucesso": 0, "date": "2026-07-24 00:39:18" },
-    { "username": "hugoandre07", "elementalId": "2_3", "bola": "master", "sucesso": 1, "date": "2026-07-24 00:27:22" }
+    { "username": "r_moreira16", "elementalId": "7_1", "bola": "super", "sucesso": 0, "date": "2026-07-24 00:39:18" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -203,10 +203,10 @@
     },
     {
       "username": "coki5731",
-      "pontos": 40,
+      "pontos": 55,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"7_2":1}
+      "inventario": {"7_1":1,"7_2":1}
     },
     {
       "username": "grandesleitadores",
