@@ -439,7 +439,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
     }
 
     // Bónus de Coleção Completa de Água: se tiver todas as variantes, reduz taxa em 60%
-    const hasAllWater = hasCompleteCollection("agua");
+    const hasAllWater = hasCompleteCollection(1);
     const spanAgua = document.getElementById("water-effect-percentage");
     const labelAgua = document.getElementById("water-effect-label");
     if (spanAgua) {
@@ -457,7 +457,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
     }
 
     // Bónus de Coleção Completa de Terra: se tiver todas as variantes, garante Lendário/Mítico
-    const hasAllEarth = hasCompleteCollection("terra");
+    const hasAllEarth = hasCompleteCollection(2);
     const spanTerra = document.getElementById("earth-effect-text");
     const labelTerra = document.getElementById("earth-effect-label");
     if (spanTerra) {
@@ -475,7 +475,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
     }
 
     // Bónus de Coleção Completa de Pato: se tiver todas as variantes, garante Gummy ou superior
-    const hasAllPato = hasCompleteCollection("pato");
+    const hasAllPato = hasCompleteCollection(4);
     const spanPato = document.getElementById("duck-effect-text");
     const labelPato = document.getElementById("duck-effect-label");
     if (spanPato) {
@@ -493,7 +493,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
     }
 
     // Bónus de Coleção Completa de Sonhos: se tiver todas as variantes, adormece 2 pessoas
-    const hasAllSleepy = hasCompleteCollection("sleepy");
+    const hasAllSleepy = hasCompleteCollection(6);
     const spanSleepy = document.getElementById("sleepy-effect-text");
     const labelSleepy = document.getElementById("sleepy-effect-label");
     if (spanSleepy) {
@@ -511,7 +511,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
     }
 
     // Bónus de Coleção Completa de Demónio: se tiver todas as variantes, apenas quem usou pode usar Master e Ultra
-    const hasAllDemon = hasCompleteCollection("demon");
+    const hasAllDemon = hasCompleteCollection(7);
     const spanDemon = document.getElementById("demon-effect-text");
     const labelDemon = document.getElementById("demon-effect-label");
     if (spanDemon) {
@@ -529,7 +529,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
     }
 
     // Bónus de Coleção Completa de Punk: se tiver todas as variantes, rouba de até 2 pessoas
-    const hasAllPunk = hasCompleteCollection("punk");
+    const hasAllPunk = hasCompleteCollection(8);
     const spanPunk = document.getElementById("punk-effect-text");
     const labelPunk = document.getElementById("punk-effect-label");
     if (spanPunk) {
@@ -547,7 +547,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
     }
 
     // Bónus de Coleção Completa de Peixoto: se tiver todas as variantes, pesca 2 extras
-    const hasAllPeixe = hasCompleteCollection("peixe");
+    const hasAllPeixe = hasCompleteCollection(12);
     const spanPeixe = document.getElementById("peixe-effect-text");
     const labelPeixe = document.getElementById("peixe-effect-label");
     if (spanPeixe) {
@@ -565,7 +565,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
     }
 
     // Bónus de Coleção Completa de Boss: se tiver todas as variantes, garante Galaxy em vez de Gummy
-    const hasAllBoss = hasCompleteCollection("boss");
+    const hasAllBoss = hasCompleteCollection(15);
     const spanBoss = document.getElementById("boss-effect-text");
     const labelBoss = document.getElementById("boss-effect-label");
     if (spanBoss) {
@@ -583,7 +583,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
     }
 
     // Bónus de Coleção Completa de Grim: se tiver todas as variantes, ceifa 2 jogadores do Top 3
-    const hasAllGrim = hasCompleteCollection("grim");
+    const hasAllGrim = hasCompleteCollection(16);
     const spanGrim = document.getElementById("grim-effect-text");
     const labelGrim = document.getElementById("grim-effect-label");
     if (spanGrim) {
