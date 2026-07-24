@@ -451,6 +451,24 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
+    // Bónus de Coleção Completa de Terra: se tiver as 5 variantes (sem holofoil), garante Lendário/Mítico
+    const hasAllEarth = !isGlobalInventory && ["2_1", "2_2", "2_3", "2_4", "2_6"].every(id => (player.inventario[id] || 0) > 0);
+    const spanTerra = document.getElementById("earth-effect-text");
+    const labelTerra = document.getElementById("earth-effect-label");
+    if (spanTerra) {
+        if (hasAllEarth) {
+            spanTerra.textContent = "lendário ou mítico";
+            spanTerra.style.color = "#ffd700";
+            spanTerra.style.fontWeight = "bold";
+            if (labelTerra) labelTerra.style.color = "#ffd700";
+        } else {
+            spanTerra.textContent = "épico, lendário ou mítico";
+            spanTerra.style.color = "";
+            spanTerra.style.fontWeight = "";
+            if (labelTerra) labelTerra.style.color = "";
+        }
+    }
+
     speciesOrder.forEach(key => {
         const group = groups[key];
         let isCompleted = false;
