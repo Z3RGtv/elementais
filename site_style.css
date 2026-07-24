@@ -1608,6 +1608,12 @@ footer {
 /* =========================================================================
    📦 AGRUPAMENTO POR ESPÉCIE E GLOW DE SET COMPLETO (ÁLBUM)
    ========================================================================= */
+#site-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
 .species-group {
     background: rgba(255, 255, 255, 0.015);
     border: 1px solid rgba(255, 255, 255, 0.05);
