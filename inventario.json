@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-24 00:07:57 UTC",
+  "updatedAt": "2026-07-24 00:13:57 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 127, "sucesso": 30, "rate": 23.6 },
     "super": { "total": 91, "sucesso": 35, "rate": 38.5 },
     "ultra": { "total": 122, "sucesso": 73, "rate": 59.8 },
-    "master": { "total": 602, "sucesso": 548, "rate": 91.0 }
+    "master": { "total": 603, "sucesso": 549, "rate": 91.0 }
   },
   "recentes_lancamentos": [
+    { "username": "hugoandre07", "elementalId": "6_1", "bola": "master", "sucesso": 1, "date": "2026-07-24 01:13:57" },
     { "username": "hugoandre07", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-07-24 01:07:57" },
     { "username": "manodrico", "elementalId": "1_5", "bola": "master", "sucesso": 1, "date": "2026-07-24 01:01:35" },
     { "username": "coki5731", "elementalId": "13_1", "bola": "normal", "sucesso": 0, "date": "2026-07-24 00:51:59" },
@@ -35,8 +36,7 @@
     { "username": "1509_martim", "elementalId": "7_1", "bola": "master", "sucesso": 1, "date": "2026-07-23 22:22:43" },
     { "username": "ipowerlz", "elementalId": "u_Minichef9", "bola": "master", "sucesso": 1, "date": "2026-07-23 22:00:01" },
     { "username": "sheisdani", "elementalId": "10_2", "bola": "master", "sucesso": 1, "date": "2026-07-23 21:41:11" },
-    { "username": "milhafretuga", "elementalId": "8_4", "bola": "master", "sucesso": 1, "date": "2026-07-23 21:35:10" },
-    { "username": "ipowerlz", "elementalId": "8_4", "bola": "master", "sucesso": 1, "date": "2026-07-23 21:29:12" }
+    { "username": "milhafretuga", "elementalId": "8_4", "bola": "master", "sucesso": 1, "date": "2026-07-23 21:35:10" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -126,10 +126,10 @@
     },
     {
       "username": "hugoandre07",
-      "pontos": 830,
+      "pontos": 860,
       "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-07-30T21:13:20Z",
-      "inventario": {"10_1":1,"12_1":2,"13_1":2,"14_1":1,"16_3":1,"1_1":2,"1_2":2,"2_1":1,"2_2":1,"2_3":2,"3_1":1,"3_2":1,"5_1":2,"5_2":1,"6_2":1,"6_3":1,"7_1":2,"9_1":1}
+      "inventario": {"10_1":1,"12_1":2,"13_1":2,"14_1":1,"16_3":1,"1_1":2,"1_2":2,"2_1":1,"2_2":1,"2_3":2,"3_1":1,"3_2":1,"5_1":2,"5_2":1,"6_1":1,"6_2":1,"6_3":1,"7_1":2,"9_1":1}
     },
     {
       "username": "san7izinn",
