@@ -8,6 +8,13 @@
     --text-muted: #8e8ea0;
 }
 
+.super-star {
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-right: 4px;
+}
+
 body {
     margin: 0;
     padding: 0;
