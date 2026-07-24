@@ -523,6 +523,24 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
+    // Bónus de Coleção Completa de Punk: se tiver as 5 variantes (com cube, sem holofoil), rouba de até 2 pessoas
+    const hasAllPunk = !isGlobalInventory && ["8_1", "8_2", "8_3", "8_4", "8_6"].every(id => (player.inventario[id] || 0) > 0);
+    const spanPunk = document.getElementById("punk-effect-text");
+    const labelPunk = document.getElementById("punk-effect-label");
+    if (spanPunk) {
+        if (hasAllPunk) {
+            spanPunk.textContent = "até 2 pessoas diferentes";
+            spanPunk.style.color = "#ffd700";
+            spanPunk.style.fontWeight = "bold";
+            if (labelPunk) labelPunk.style.color = "#ffd700";
+        } else {
+            spanPunk.textContent = "outro participante";
+            spanPunk.style.color = "";
+            spanPunk.style.fontWeight = "";
+            if (labelPunk) labelPunk.style.color = "";
+        }
+    }
+
     speciesOrder.forEach(key => {
         const group = groups[key];
         let isCompleted = false;
