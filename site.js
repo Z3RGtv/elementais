@@ -541,6 +541,24 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
+    // Bónus de Coleção Completa de Peixoto: se tiver as 5 variantes (com cube, sem holofoil), pesca 2 extras
+    const hasAllPeixe = !isGlobalInventory && ["12_1", "12_2", "12_3", "12_4", "12_6"].every(id => (player.inventario[id] || 0) > 0);
+    const spanPeixe = document.getElementById("peixe-effect-text");
+    const labelPeixe = document.getElementById("peixe-effect-label");
+    if (spanPeixe) {
+        if (hasAllPeixe) {
+            spanPeixe.textContent = "2 elementais normais extra";
+            spanPeixe.style.color = "#ffd700";
+            spanPeixe.style.fontWeight = "bold";
+            if (labelPeixe) labelPeixe.style.color = "#ffd700";
+        } else {
+            spanPeixe.textContent = "um elemental normal extra";
+            spanPeixe.style.color = "";
+            spanPeixe.style.fontWeight = "";
+            if (labelPeixe) labelPeixe.style.color = "";
+        }
+    }
+
     speciesOrder.forEach(key => {
         const group = groups[key];
         let isCompleted = false;
