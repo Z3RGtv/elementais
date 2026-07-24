@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-24 21:42:01 UTC",
+  "updatedAt": "2026-07-24 21:47:37 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 131, "sucesso": 31, "rate": 23.7 },
     "super": { "total": 95, "sucesso": 36, "rate": 37.9 },
     "ultra": { "total": 125, "sucesso": 74, "rate": 59.2 },
-    "master": { "total": 624, "sucesso": 570, "rate": 91.3 }
+    "master": { "total": 625, "sucesso": 571, "rate": 91.4 }
   },
   "recentes_lancamentos": [
+    { "username": "r_moreira16", "elementalId": "4_4", "bola": "master", "sucesso": 1, "date": "2026-07-24 22:47:36" },
     { "username": "gui_z0", "elementalId": "5_1", "bola": "master", "sucesso": 1, "date": "2026-07-24 22:42:01" },
     { "username": "milhafretuga", "elementalId": "2_1", "bola": "normal", "sucesso": 0, "date": "2026-07-24 22:30:11" },
     { "username": "coki5731", "elementalId": "2_1", "bola": "super", "sucesso": 0, "date": "2026-07-24 22:30:01" },
@@ -35,8 +36,7 @@
     { "username": "marquesrcarol", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-07-24 01:44:08" },
     { "username": "manodrico", "elementalId": "12_3", "bola": "ultra", "sucesso": 0, "date": "2026-07-24 01:44:00" },
     { "username": "manodrico", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-24 01:39:58" },
-    { "username": "coki5731", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-24 01:38:29" },
-    { "username": "marquesrcarol", "elementalId": "19_1", "bola": "master", "sucesso": 1, "date": "2026-07-24 01:31:55" }
+    { "username": "coki5731", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-24 01:38:29" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -160,11 +160,11 @@
       "inventario": {"10_3":1,"12_2":1,"2_1":1,"6_1":1}
     },
     {
-      "username": "nsfp37",
-      "pontos": 130,
+      "username": "r_moreira16",
+      "pontos": 225,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"1_2":1,"3_2":2,"6_1":1,"7_2":1}
+      "inventario": {"12_1":1,"13_1":1,"4_4":1}
     },
     {
       "username": "ruialmeida_",
@@ -172,6 +172,13 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":2,"13_1":2,"1_1":2,"2_1":2,"3_1":1,"3_2":1,"4_1":1,"7_1":1,"9_1":1}
+    },
+    {
+      "username": "nsfp37",
+      "pontos": 130,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"1_2":1,"3_2":2,"6_1":1,"7_2":1}
     },
     {
       "username": "gunblade_sis_",
@@ -221,13 +228,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"13_1":1,"7_1":1}
-    },
-    {
-      "username": "r_moreira16",
-      "pontos": 25,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"13_1":1}
     },
     {
       "username": "themarysimmer",
