@@ -487,6 +487,24 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
+    // Bónus de Coleção Completa de Sonhos: se tiver as 5 variantes (com cube, sem holofoil), adormece 2 pessoas
+    const hasAllSleepy = !isGlobalInventory && ["6_1", "6_2", "6_3", "6_4", "6_6"].every(id => (player.inventario[id] || 0) > 0);
+    const spanSleepy = document.getElementById("sleepy-effect-text");
+    const labelSleepy = document.getElementById("sleepy-effect-label");
+    if (spanSleepy) {
+        if (hasAllSleepy) {
+            spanSleepy.textContent = "2 pessoas";
+            spanSleepy.style.color = "#ffd700";
+            spanSleepy.style.fontWeight = "bold";
+            if (labelSleepy) labelSleepy.style.color = "#ffd700";
+        } else {
+            spanSleepy.textContent = "uma pessoa";
+            spanSleepy.style.color = "";
+            spanSleepy.style.fontWeight = "";
+            if (labelSleepy) labelSleepy.style.color = "";
+        }
+    }
+
     speciesOrder.forEach(key => {
         const group = groups[key];
         let isCompleted = false;
