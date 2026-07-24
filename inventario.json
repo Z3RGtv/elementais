@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24 01:08:07 UTC",
+  "updatedAt": "2026-07-24 02:15:21 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 129, "sucesso": 30, "rate": 23.3 },
     "super": { "total": 91, "sucesso": 35, "rate": 38.5 },
@@ -63,7 +63,7 @@
   "ranking": [
     {
       "username": "sheisdani",
-      "pontos": 7515,
+      "pontos": 7015,
       "trocasDisponiveis": 0,
       "proximaRecuperacao": "2026-07-27T19:22:24Z",
       "inventario": {"10_1":1,"10_2":2,"10_3":1,"10_4":1,"11_1":1,"12_1":1,"12_2":1,"12_3":1,"12_4":1,"13_1":1,"13_2":2,"14_1":2,"14_2":1,"14_3":1,"14_4":1,"15_1":2,"15_2":1,"15_3":1,"15_4":1,"15_6":1,"17_1":2,"17_2":2,"18_1":1,"19_1":1,"19_2":1,"19_5":1,"1_1":1,"1_2":1,"1_3":1,"1_4":1,"1_5":1,"2_1":1,"2_2":1,"2_3":2,"2_4":2,"3_1":1,"3_2":1,"3_3":1,"3_5":1,"4_1":1,"4_2":1,"4_3":1,"5_1":1,"5_2":2,"5_3":1,"5_4":1,"6_1":1,"6_2":1,"6_3":2,"6_4":1,"7_1":1,"7_2":1,"8_1":2,"8_2":1,"8_4":1,"9_1":1,"9_2":1,"9_3":1,"u_1509_martim":1,"u_ManoDrico":1,"u_MarquesrCarol":1,"u_MilhafreTuga":1,"u_Minichef9":1,"u_TheMarySimmer":1,"u_gui_z0":1,"u_manu12321_":1,"u_san7izinn":1,"u_soniagoncalves":1}
@@ -137,6 +137,13 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":1,"12_2":1,"12_3":1,"16_2":1,"1_1":2,"2_1":1,"2_3":1,"3_1":1,"3_2":1,"3_5":1,"4_1":1,"8_1":1}
+    },
+    {
+      "username": "z3rgtv",
+      "pontos": 565,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"1_1":1,"6_1":1,"6_2":1,"6_3":1,"6_4":1,"6_6":1}
     },
     {
       "username": "steve_osvaldo",
@@ -230,14 +237,14 @@
       "inventario": {"1_1":1,"3_1":2}
     },
     {
-      "username": "inumerus",
+      "username": "jptim_",
       "pontos": 15,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"13_1":1}
     },
     {
-      "username": "jptim_",
+      "username": "inumerus",
       "pontos": 15,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
@@ -258,25 +265,18 @@
       "inventario": {"1_1":1}
     },
     {
-      "username": "salvadormdm",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"3_1":1}
-    },
-    {
-      "username": "z3rgtv",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_1":1}
-    },
-    {
       "username": "manuel2019rodrigues",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"2_1":1}
+    },
+    {
+      "username": "salvadormdm",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"3_1":1}
     }
   ]
 }
