@@ -154,7 +154,7 @@ h2 {
 .site-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    gap: 15px;
+    gap: 10px;
 }
 
 .grid-item {
@@ -1616,13 +1616,13 @@ footer {
 .species-group.completed-set {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    gap: 15px;
+    gap: 10px;
     border-color: #ffd700 !important;
-    border: 2px solid #ffd700 !important;
-    border-radius: 16px;
-    padding: 10px;
+    border: 1.5px solid #ffd700 !important;
+    border-radius: 12px;
+    padding: 6px;
     background: rgba(255, 215, 0, 0.025);
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2), inset 0 0 12px rgba(255, 215, 0, 0.04);
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.2), inset 0 0 8px rgba(255, 215, 0, 0.04);
     animation: goldGlowPulse 3s infinite ease-in-out;
 }
 
