@@ -433,6 +433,21 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
 
     const isGlobalInventory = (player.username === "Inventário Global");
 
+    // Bónus de Coleção Completa de Água: se tiver as 5 variantes, reduz taxa em 60%
+    const hasAllWater = !isGlobalInventory && ["1_1", "1_2", "1_3", "1_4", "1_5"].every(id => (player.inventario[id] || 0) > 0);
+    const spanAgua = document.getElementById("water-effect-percentage");
+    if (spanAgua) {
+        if (hasAllWater) {
+            spanAgua.textContent = "60%";
+            spanAgua.style.color = "#ffd700";
+            spanAgua.style.fontWeight = "bold";
+        } else {
+            spanAgua.textContent = "40%";
+            spanAgua.style.color = "";
+            spanAgua.style.fontWeight = "";
+        }
+    }
+
     speciesOrder.forEach(key => {
         const group = groups[key];
         let isCompleted = false;
