@@ -606,12 +606,12 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
     const labelVento = document.getElementById("vento-effect-label");
     if (spanVento) {
         if (hasAllVento) {
-            spanVento.textContent = "baralha a fila até 2 vezes";
+            spanVento.textContent = "baralha-a novamente (até 2 vezes)";
             spanVento.style.color = "#ffd700";
             spanVento.style.fontWeight = "bold";
             if (labelVento) labelVento.style.color = "#ffd700";
         } else {
-            spanVento.textContent = "baralha a fila";
+            spanVento.textContent = "baralha-a novamente";
             spanVento.style.color = "";
             spanVento.style.fontWeight = "";
             if (labelVento) labelVento.style.color = "";
