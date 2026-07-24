@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-24 23:13:19 UTC",
+  "updatedAt": "2026-07-24 23:19:28 UTC",
   "estatisticas_bolas": {
-    "normal": { "total": 136, "sucesso": 32, "rate": 23.5 },
+    "normal": { "total": 137, "sucesso": 32, "rate": 23.4 },
     "super": { "total": 97, "sucesso": 37, "rate": 38.1 },
-    "ultra": { "total": 126, "sucesso": 74, "rate": 58.7 },
+    "ultra": { "total": 127, "sucesso": 75, "rate": 59.1 },
     "master": { "total": 634, "sucesso": 579, "rate": 91.3 }
   },
   "recentes_lancamentos": [
+    { "username": "r_moreira16", "elementalId": "12_4", "bola": "ultra", "sucesso": 1, "date": "2026-07-25 00:19:27" },
+    { "username": "gui_z0", "elementalId": "12_4", "bola": "normal", "sucesso": 0, "date": "2026-07-25 00:19:19" },
     { "username": "manu12321_", "elementalId": "10_2", "bola": "master", "sucesso": 1, "date": "2026-07-25 00:13:18" },
     { "username": "ipowerlz", "elementalId": "17_2", "bola": "master", "sucesso": 1, "date": "2026-07-25 00:07:18" },
     { "username": "manodrico", "elementalId": "18_3", "bola": "master", "sucesso": 1, "date": "2026-07-25 00:01:26" },
@@ -34,9 +36,7 @@
     { "username": "coki5731", "elementalId": "2_1", "bola": "normal", "sucesso": 1, "date": "2026-07-24 21:52:22" },
     { "username": "milhafretuga", "elementalId": "6_1", "bola": "master", "sucesso": 1, "date": "2026-07-24 21:40:05" },
     { "username": "coki5731", "elementalId": "6_1", "bola": "super", "sucesso": 0, "date": "2026-07-24 21:39:55" },
-    { "username": "coki5731", "elementalId": "7_1", "bola": "super", "sucesso": 1, "date": "2026-07-24 21:27:37" },
-    { "username": "ipowerlz", "elementalId": "5_4", "bola": "master", "sucesso": 1, "date": "2026-07-24 21:14:57" },
-    { "username": "coki5731", "elementalId": "7_2", "bola": "master", "sucesso": 1, "date": "2026-07-24 21:03:26" }
+    { "username": "coki5731", "elementalId": "7_1", "bola": "super", "sucesso": 1, "date": "2026-07-24 21:27:37" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -153,18 +153,18 @@
       "inventario": {"12_1":2,"12_3":1,"13_1":1,"1_1":1,"2_1":2,"3_1":1,"3_3":1,"5_1":1,"6_1":2,"6_2":1,"7_1":1,"7_2":1,"8_2":1,"9_1":1,"9_2":1}
     },
     {
+      "username": "r_moreira16",
+      "pontos": 375,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_1":1,"12_4":1,"13_1":1,"4_4":1}
+    },
+    {
       "username": "rstraveler",
       "pontos": 320,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"10_3":1,"12_2":1,"2_1":1,"6_1":1}
-    },
-    {
-      "username": "r_moreira16",
-      "pontos": 225,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"13_1":1,"4_4":1}
     },
     {
       "username": "ruialmeida_",
