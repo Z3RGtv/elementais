@@ -8,11 +8,8 @@
     --text-muted: #8e8ea0;
 }
 
-.super-star {
+.instruction-card li.super-item::marker {
     color: #ffd700;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-right: 4px;
 }
 
 body {
