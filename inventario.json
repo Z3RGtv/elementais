@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-24 20:40:06 UTC",
+  "updatedAt": "2026-07-24 20:52:22 UTC",
   "estatisticas_bolas": {
-    "normal": { "total": 129, "sucesso": 30, "rate": 23.3 },
+    "normal": { "total": 130, "sucesso": 31, "rate": 23.8 },
     "super": { "total": 94, "sucesso": 36, "rate": 38.3 },
     "ultra": { "total": 125, "sucesso": 74, "rate": 59.2 },
     "master": { "total": 620, "sucesso": 566, "rate": 91.3 }
   },
   "recentes_lancamentos": [
+    { "username": "coki5731", "elementalId": "2_1", "bola": "normal", "sucesso": 1, "date": "2026-07-24 21:52:22" },
     { "username": "milhafretuga", "elementalId": "6_1", "bola": "master", "sucesso": 1, "date": "2026-07-24 21:40:05" },
     { "username": "coki5731", "elementalId": "6_1", "bola": "super", "sucesso": 0, "date": "2026-07-24 21:39:55" },
     { "username": "coki5731", "elementalId": "7_1", "bola": "super", "sucesso": 1, "date": "2026-07-24 21:27:37" },
@@ -35,8 +36,7 @@
     { "username": "hugoandre07", "elementalId": "6_1", "bola": "master", "sucesso": 1, "date": "2026-07-24 01:13:57" },
     { "username": "hugoandre07", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-07-24 01:07:57" },
     { "username": "manodrico", "elementalId": "1_5", "bola": "master", "sucesso": 1, "date": "2026-07-24 01:01:35" },
-    { "username": "coki5731", "elementalId": "13_1", "bola": "normal", "sucesso": 0, "date": "2026-07-24 00:51:59" },
-    { "username": "hugoandre07", "elementalId": "7_1", "bola": "master", "sucesso": 1, "date": "2026-07-24 00:39:35" }
+    { "username": "coki5731", "elementalId": "13_1", "bola": "normal", "sucesso": 0, "date": "2026-07-24 00:51:59" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -195,18 +195,18 @@
       "inventario": {"13_1":1,"3_1":2,"5_1":1,"8_1":1}
     },
     {
+      "username": "coki5731",
+      "pontos": 65,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"2_1":1,"7_1":1,"7_2":1}
+    },
+    {
       "username": "dj_moletas",
       "pontos": 60,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_3":1}
-    },
-    {
-      "username": "coki5731",
-      "pontos": 55,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"7_1":1,"7_2":1}
     },
     {
       "username": "grandesleitadores",
