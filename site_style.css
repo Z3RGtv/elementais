@@ -1608,55 +1608,22 @@ footer {
 /* =========================================================================
    📦 AGRUPAMENTO POR ESPÉCIE E GLOW DE SET COMPLETO (ÁLBUM)
    ========================================================================= */
-#site-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
 .species-group {
-    background: rgba(255, 255, 255, 0.015);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    padding: 18px;
-    margin-bottom: 25px;
-    position: relative;
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.species-group-header {
-    font-size: 1.05rem;
-    font-weight: 800;
-    color: #f1f5f9;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    padding-bottom: 8px;
-    font-family: 'Outfit', 'Inter', sans-serif;
-}
-
-.species-group-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    gap: 15px;
+    display: contents; /* Mantém o fluxo contínuo idêntico ao layout antigo */
 }
 
 /* Glowing Border/Shadow para Set Completo */
 .species-group.completed-set {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 15px;
     border-color: #ffd700 !important;
+    border: 2px solid #ffd700 !important;
+    border-radius: 16px;
+    padding: 10px;
     background: rgba(255, 215, 0, 0.025);
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.2), inset 0 0 12px rgba(255, 215, 0, 0.04);
     animation: goldGlowPulse 3s infinite ease-in-out;
-}
-
-.species-group.completed-set .species-group-header {
-    color: #ffd700;
-    border-bottom-color: rgba(255, 215, 0, 0.2);
-    text-shadow: 0 0 6px rgba(255, 215, 0, 0.35);
 }
 
 @keyframes goldGlowPulse {
@@ -1673,19 +1640,12 @@ footer {
 
 /* Responsividade para Ecrãs Pequenos (Móvel) */
 @media (max-width: 768px) {
-    .species-group {
-        padding: 10px;
-        margin-bottom: 15px;
-        border-radius: 10px;
-    }
-    .species-group-header {
-        font-size: 0.85rem;
-        margin-bottom: 10px;
-        padding-bottom: 6px;
-    }
-    .species-group-grid {
+    .species-group.completed-set {
+        grid-column: 1 / -1 !important; /* Ocupa a largura total da linha */
         grid-template-columns: repeat(4, 1fr) !important;
         gap: 6px;
+        padding: 6px;
+        border-radius: 10px;
     }
 }
 
