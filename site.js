@@ -394,7 +394,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         1: "💧 Água", 2: "🪨 Terra", 3: "🔥 Fogo", 4: "🦆 Pato", 5: "👻 Fantasma", 
         6: "💤 Dos Sonhos", 7: "😈 Demónio", 8: "🎸 Punk", 9: "👑 Rei", 10: "🌌 Ponto Zero",
         12: "🐟 Peixoto", 13: "⚽ Atacante", 14: "✨ Aura", 15: "👑 Boss", 16: "💀 Grim",
-        17: "🌪️ Vento", 18: "⚡ Seven", 19: "🦇 Batman"
+        17: "🌪️ Ar", 18: "⚡ Seven", 19: "🦇 Batman"
     };
 
     const groups = {};
