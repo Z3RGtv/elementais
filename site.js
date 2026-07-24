@@ -433,8 +433,13 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
 
     const isGlobalInventory = (player.username === "Inventário Global");
 
-    // Bónus de Coleção Completa de Água: se tiver as 5 variantes, reduz taxa em 60%
-    const hasAllWater = !isGlobalInventory && ["1_1", "1_2", "1_3", "1_4", "1_5"].every(id => (player.inventario[id] || 0) > 0);
+    function hasCompleteCollection(groupKey) {
+        if (isGlobalInventory || !groups[groupKey] || !groups[groupKey].items || groups[groupKey].items.length === 0) return false;
+        return groups[groupKey].items.every(elem => (player.inventario[elem.id] || 0) > 0);
+    }
+
+    // Bónus de Coleção Completa de Água: se tiver todas as variantes, reduz taxa em 60%
+    const hasAllWater = hasCompleteCollection("agua");
     const spanAgua = document.getElementById("water-effect-percentage");
     const labelAgua = document.getElementById("water-effect-label");
     if (spanAgua) {
@@ -451,8 +456,8 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
-    // Bónus de Coleção Completa de Terra: se tiver as 5 variantes (sem holofoil), garante Lendário/Mítico
-    const hasAllEarth = !isGlobalInventory && ["2_1", "2_2", "2_3", "2_4", "2_6"].every(id => (player.inventario[id] || 0) > 0);
+    // Bónus de Coleção Completa de Terra: se tiver todas as variantes, garante Lendário/Mítico
+    const hasAllEarth = hasCompleteCollection("terra");
     const spanTerra = document.getElementById("earth-effect-text");
     const labelTerra = document.getElementById("earth-effect-label");
     if (spanTerra) {
@@ -469,8 +474,8 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
-    // Bónus de Coleção Completa de Pato: se tiver as 4 variantes, garante Gummy ou superior
-    const hasAllPato = !isGlobalInventory && ["4_1", "4_2", "4_3", "4_4"].every(id => (player.inventario[id] || 0) > 0);
+    // Bónus de Coleção Completa de Pato: se tiver todas as variantes, garante Gummy ou superior
+    const hasAllPato = hasCompleteCollection("pato");
     const spanPato = document.getElementById("duck-effect-text");
     const labelPato = document.getElementById("duck-effect-label");
     if (spanPato) {
@@ -487,8 +492,8 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
-    // Bónus de Coleção Completa de Sonhos: se tiver as 5 variantes (com cube, sem holofoil), adormece 2 pessoas
-    const hasAllSleepy = !isGlobalInventory && ["6_1", "6_2", "6_3", "6_4", "6_6"].every(id => (player.inventario[id] || 0) > 0);
+    // Bónus de Coleção Completa de Sonhos: se tiver todas as variantes, adormece 2 pessoas
+    const hasAllSleepy = hasCompleteCollection("sleepy");
     const spanSleepy = document.getElementById("sleepy-effect-text");
     const labelSleepy = document.getElementById("sleepy-effect-label");
     if (spanSleepy) {
@@ -505,8 +510,8 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
-    // Bónus de Coleção Completa de Demónio: se tiver as 4 variantes, apenas quem usou pode usar Master e Ultra
-    const hasAllDemon = !isGlobalInventory && ["7_1", "7_2", "7_3", "7_4"].every(id => (player.inventario[id] || 0) > 0);
+    // Bónus de Coleção Completa de Demónio: se tiver todas as variantes, apenas quem usou pode usar Master e Ultra
+    const hasAllDemon = hasCompleteCollection("demon");
     const spanDemon = document.getElementById("demon-effect-text");
     const labelDemon = document.getElementById("demon-effect-label");
     if (spanDemon) {
@@ -523,8 +528,8 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
-    // Bónus de Coleção Completa de Punk: se tiver as 5 variantes (com cube, sem holofoil), rouba de até 2 pessoas
-    const hasAllPunk = !isGlobalInventory && ["8_1", "8_2", "8_3", "8_4", "8_6"].every(id => (player.inventario[id] || 0) > 0);
+    // Bónus de Coleção Completa de Punk: se tiver todas as variantes, rouba de até 2 pessoas
+    const hasAllPunk = hasCompleteCollection("punk");
     const spanPunk = document.getElementById("punk-effect-text");
     const labelPunk = document.getElementById("punk-effect-label");
     if (spanPunk) {
@@ -541,8 +546,8 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
-    // Bónus de Coleção Completa de Peixoto: se tiver as 5 variantes (com cube, sem holofoil), pesca 2 extras
-    const hasAllPeixe = !isGlobalInventory && ["12_1", "12_2", "12_3", "12_4", "12_6"].every(id => (player.inventario[id] || 0) > 0);
+    // Bónus de Coleção Completa de Peixoto: se tiver todas as variantes, pesca 2 extras
+    const hasAllPeixe = hasCompleteCollection("peixe");
     const spanPeixe = document.getElementById("peixe-effect-text");
     const labelPeixe = document.getElementById("peixe-effect-label");
     if (spanPeixe) {
@@ -559,8 +564,8 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
-    // Bónus de Coleção Completa de Boss: se tiver as 5 variantes (com cube, sem holofoil), garante Galaxy em vez de Gummy
-    const hasAllBoss = !isGlobalInventory && ["15_1", "15_2", "15_3", "15_4", "15_6"].every(id => (player.inventario[id] || 0) > 0);
+    // Bónus de Coleção Completa de Boss: se tiver todas as variantes, garante Galaxy em vez de Gummy
+    const hasAllBoss = hasCompleteCollection("boss");
     const spanBoss = document.getElementById("boss-effect-text");
     const labelBoss = document.getElementById("boss-effect-label");
     if (spanBoss) {
@@ -577,8 +582,8 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         }
     }
 
-    // Bónus de Coleção Completa de Grim: se tiver as 5 variantes (com cube, sem holofoil), ceifa 2 jogadores do Top 3
-    const hasAllGrim = !isGlobalInventory && ["16_1", "16_2", "16_3", "16_4", "16_6"].every(id => (player.inventario[id] || 0) > 0);
+    // Bónus de Coleção Completa de Grim: se tiver todas as variantes, ceifa 2 jogadores do Top 3
+    const hasAllGrim = hasCompleteCollection("grim");
     const spanGrim = document.getElementById("grim-effect-text");
     const labelGrim = document.getElementById("grim-effect-label");
     if (spanGrim) {
