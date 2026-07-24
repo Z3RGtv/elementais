@@ -442,32 +442,15 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         groupContainer.className = 'species-group';
         if (isCompleted) {
             groupContainer.classList.add('completed-set');
+            groupContainer.style.gridColumn = `span ${group.items.length}`;
         }
-
-        const header = document.createElement('div');
-        header.className = 'species-group-header';
-        header.textContent = group.name;
-        
-        if (isCompleted) {
-            const star = document.createElement('span');
-            star.style.color = '#ffd700';
-            star.style.marginLeft = '8px';
-            star.textContent = '★ COMPLETADO';
-            header.appendChild(star);
-        }
-        
-        groupContainer.appendChild(header);
-
-        const groupGrid = document.createElement('div');
-        groupGrid.className = 'species-group-grid';
 
         group.items.forEach(elem => {
             const qty = player.inventario[elem.id] || 0;
             const slot = criarSlotCard(player, elem, qty, targetGridId, isSelectionMode, selectCallback);
-            groupGrid.appendChild(slot);
+            groupContainer.appendChild(slot);
         });
 
-        groupContainer.appendChild(groupGrid);
         grid.appendChild(groupContainer);
     });
 }
