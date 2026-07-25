@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-25 19:48:23 UTC",
+  "updatedAt": "2026-07-25 19:57:00 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 146, "sucesso": 36, "rate": 24.7 },
     "super": { "total": 101, "sucesso": 38, "rate": 37.6 },
@@ -153,18 +153,18 @@
       "inventario": {"12_1":2,"12_3":1,"13_1":1,"1_1":1,"2_1":2,"3_1":1,"3_3":1,"5_1":1,"6_1":2,"6_2":1,"7_1":1,"7_2":1,"8_2":1,"9_1":1,"9_2":1}
     },
     {
-      "username": "r_moreira16",
-      "pontos": 415,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"12_4":1,"13_1":1,"1_1":1,"2_2":1,"4_4":1}
-    },
-    {
       "username": "rstraveler",
       "pontos": 320,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"10_3":1,"12_2":1,"2_1":1,"6_1":1}
+    },
+    {
+      "username": "r_moreira16",
+      "pontos": 215,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_1":1,"12_4":1,"13_1":1,"1_1":1,"2_2":1}
     },
     {
       "username": "igl_migaas",
