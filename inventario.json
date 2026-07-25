@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-25 20:00:11 UTC",
+  "updatedAt": "2026-07-25 20:05:45 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 146, "sucesso": 36, "rate": 24.7 },
     "super": { "total": 101, "sucesso": 38, "rate": 37.6 },
@@ -58,7 +58,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-
+    { "proposerName": "manu12321_", "targetName": "marquesrcarol", "elemProposer": "4_4", "elemTarget": "7_4", "createdAt": "2026-07-25T20:05:44.8078742Z" }
   ],
   "ranking": [
     {
@@ -99,7 +99,7 @@
     {
       "username": "manu12321_",
       "pontos": 3800,
-      "trocasDisponiveis": 1,
+      "trocasDisponiveis": 0,
       "proximaRecuperacao": "2026-07-28T21:17:52Z",
       "inventario": {"10_2":1,"12_1":2,"12_2":2,"12_3":2,"13_1":2,"13_3":1,"14_2":1,"14_3":1,"15_1":2,"15_2":1,"16_1":1,"17_1":2,"17_2":2,"18_1":1,"18_4":1,"19_1":2,"19_5":1,"1_1":2,"1_2":2,"1_3":1,"2_1":2,"2_2":2,"2_3":1,"2_4":1,"3_1":1,"3_2":1,"4_1":2,"4_4":2,"5_1":2,"5_2":1,"5_3":2,"5_4":1,"6_1":2,"6_2":1,"6_3":1,"7_1":2,"7_2":1,"8_1":2,"8_2":1,"8_3":1,"9_1":1,"9_2":1,"u_EIMEZ":1,"u_gui_z0":1,"u_manu12321_":1,"u_steve_osvaldo":1}
     },
