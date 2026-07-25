@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-25 20:05:45 UTC",
+  "updatedAt": "2026-07-25 20:10:16 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 146, "sucesso": 36, "rate": 24.7 },
-    "super": { "total": 101, "sucesso": 38, "rate": 37.6 },
+    "super": { "total": 102, "sucesso": 38, "rate": 37.3 },
     "ultra": { "total": 130, "sucesso": 77, "rate": 59.2 },
-    "master": { "total": 657, "sucesso": 599, "rate": 91.2 }
+    "master": { "total": 658, "sucesso": 600, "rate": 91.2 }
   },
   "recentes_lancamentos": [
+    { "username": "igl_migaas", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-07-25 21:10:15" },
+    { "username": "r_moreira16", "elementalId": "12_3", "bola": "super", "sucesso": 0, "date": "2026-07-25 21:10:07" },
     { "username": "manu12321_", "elementalId": "4_4", "bola": "master", "sucesso": 1, "date": "2026-07-25 21:00:11" },
     { "username": "marquesrcarol", "elementalId": "18_4", "bola": "master", "sucesso": 1, "date": "2026-07-25 20:48:22" },
     { "username": "ipowerlz", "elementalId": "18_4", "bola": "master", "sucesso": 0, "date": "2026-07-25 20:48:11" },
@@ -34,9 +36,7 @@
     { "username": "sheisdani", "elementalId": "1_4", "bola": "master", "sucesso": 1, "date": "2026-07-25 02:37:24" },
     { "username": "r_moreira16", "elementalId": "1_4", "bola": "normal", "sucesso": 0, "date": "2026-07-25 02:37:15" },
     { "username": "manu12321_", "elementalId": "1_4", "bola": "master", "sucesso": 0, "date": "2026-07-25 02:37:07" },
-    { "username": "minichef9", "elementalId": "8_3", "bola": "master", "sucesso": 1, "date": "2026-07-25 02:31:06" },
-    { "username": "gui_z0", "elementalId": "3_2", "bola": "super", "sucesso": 1, "date": "2026-07-25 02:25:11" },
-    { "username": "manu12321_", "elementalId": "19_1", "bola": "master", "sucesso": 1, "date": "2026-07-25 02:19:04" }
+    { "username": "minichef9", "elementalId": "8_3", "bola": "master", "sucesso": 1, "date": "2026-07-25 02:31:06" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -160,18 +160,18 @@
       "inventario": {"10_3":1,"12_2":1,"2_1":1,"6_1":1}
     },
     {
+      "username": "igl_migaas",
+      "pontos": 240,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_3":1,"17_4":1,"2_2":1}
+    },
+    {
       "username": "r_moreira16",
       "pontos": 215,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":1,"12_4":1,"13_1":1,"1_1":1,"2_2":1}
-    },
-    {
-      "username": "igl_migaas",
-      "pontos": 180,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"17_4":1,"2_2":1}
     },
     {
       "username": "ruialmeida_",
