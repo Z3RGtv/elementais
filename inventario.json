@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-26 19:07:34 UTC",
+  "updatedAt": "2026-07-26 19:13:44 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 154, "sucesso": 38, "rate": 24.7 },
     "super": { "total": 107, "sucesso": 40, "rate": 37.4 },
     "ultra": { "total": 134, "sucesso": 78, "rate": 58.2 },
-    "master": { "total": 730, "sucesso": 667, "rate": 91.4 }
+    "master": { "total": 732, "sucesso": 668, "rate": 91.3 }
   },
   "recentes_lancamentos": [
+    { "username": "inumerus", "elementalId": "18_1", "bola": "master", "sucesso": 1, "date": "2026-07-26 20:13:43" },
+    { "username": "rstraveler", "elementalId": "18_1", "bola": "master", "sucesso": 0, "date": "2026-07-26 20:13:34" },
     { "username": "rstraveler", "elementalId": "1_2", "bola": "master", "sucesso": 1, "date": "2026-07-26 20:07:34" },
     { "username": "manu12321_", "elementalId": "9_5", "bola": "master", "sucesso": 1, "date": "2026-07-26 20:01:19" },
     { "username": "inumerus", "elementalId": "9_5", "bola": "master", "sucesso": 0, "date": "2026-07-26 20:01:10" },
@@ -34,9 +36,7 @@
     { "username": "sheisdani", "elementalId": "10_4", "bola": "master", "sucesso": 1, "date": "2026-07-26 17:08:13" },
     { "username": "sheisdani", "elementalId": "3_1", "bola": "master", "sucesso": 1, "date": "2026-07-26 16:56:04" },
     { "username": "1509_martim", "elementalId": "12_2", "bola": "ultra", "sucesso": 1, "date": "2026-07-26 16:44:56" },
-    { "username": "r_moreira16", "elementalId": "12_2", "bola": "super", "sucesso": 0, "date": "2026-07-26 16:44:47" },
-    { "username": "soniagoncalves", "elementalId": "17_2", "bola": "master", "sucesso": 1, "date": "2026-07-26 16:29:59" },
-    { "username": "emanuelpaulo017", "elementalId": "9_1", "bola": "master", "sucesso": 1, "date": "2026-07-26 16:15:19" }
+    { "username": "r_moreira16", "elementalId": "12_2", "bola": "super", "sucesso": 0, "date": "2026-07-26 16:44:47" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -133,10 +133,10 @@
     },
     {
       "username": "inumerus",
-      "pontos": 860,
+      "pontos": 890,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"13_1":1,"14_1":1,"15_6":1,"19_3":1,"2_1":1,"2_3":1}
+      "inventario": {"12_1":1,"13_1":1,"14_1":1,"15_6":1,"18_1":1,"19_3":1,"2_1":1,"2_3":1}
     },
     {
       "username": "r_moreira16",
