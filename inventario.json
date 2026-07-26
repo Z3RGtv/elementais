@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26 22:57:22 UTC",
+  "updatedAt": "2026-07-26 23:01:10 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 155, "sucesso": 38, "rate": 24.5 },
     "super": { "total": 107, "sucesso": 40, "rate": 37.4 },
@@ -150,7 +150,7 @@
       "pontos": 760,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"13_1":1,"14_1":1,"14_4":1,"15_1":1,"17_4":1,"18_1":1,"19_3":1,"3_2":1,"5_1":1,"7_1":2}
+      "inventario": {"12_1":1,"13_1":1,"14_1":1,"14_4":1,"15_1":1,"17_4":1,"18_1":1,"19_3":1,"3_2":1,"5_1":1,"7_1":1}
     },
     {
       "username": "san7izinn",
