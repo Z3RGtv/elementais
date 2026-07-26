@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26 22:36:14 UTC",
+  "updatedAt": "2026-07-26 22:37:11 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 155, "sucesso": 38, "rate": 24.5 },
     "super": { "total": 107, "sucesso": 40, "rate": 37.4 },
@@ -154,10 +154,10 @@
     },
     {
       "username": "san7izinn",
-      "pontos": 755,
+      "pontos": 725,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"10_2":1,"12_1":1,"12_2":1,"12_3":1,"16_2":1,"1_1":2,"2_1":1,"2_3":1,"3_1":1,"3_2":1,"3_5":1,"4_1":1,"8_1":1}
+      "inventario": {"10_2":1,"12_1":1,"12_2":1,"12_3":1,"16_2":1,"1_1":2,"2_1":1,"2_3":1,"3_1":1,"3_2":1,"3_5":1,"4_1":1}
     },
     {
       "username": "1509_martim",
