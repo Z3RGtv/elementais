@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-26 00:30:47 UTC",
+  "updatedAt": "2026-07-26 00:32:42 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 146, "sucesso": 36, "rate": 24.7 },
     "super": { "total": 104, "sucesso": 39, "rate": 37.5 },
     "ultra": { "total": 130, "sucesso": 77, "rate": 59.2 },
-    "master": { "total": 685, "sucesso": 625, "rate": 91.2 }
+    "master": { "total": 686, "sucesso": 626, "rate": 91.3 }
   },
   "recentes_lancamentos": [
+    { "username": "garzia17", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-07-26 01:32:42" },
     { "username": "hugoandre07", "elementalId": "19_6", "bola": "master", "sucesso": 1, "date": "2026-07-26 01:26:20" },
     { "username": "hugoandre07", "elementalId": "2_4", "bola": "master", "sucesso": 1, "date": "2026-07-26 01:11:52" },
     { "username": "manu12321_", "elementalId": "u_san7izinn", "bola": "master", "sucesso": 1, "date": "2026-07-26 01:01:43" },
@@ -35,8 +36,7 @@
     { "username": "marquesrcarol", "elementalId": "15_2", "bola": "master", "sucesso": 1, "date": "2026-07-25 21:55:24" },
     { "username": "coki5731", "elementalId": "9_4", "bola": "master", "sucesso": 1, "date": "2026-07-25 21:44:56" },
     { "username": "700link007", "elementalId": "17_4", "bola": "master", "sucesso": 1, "date": "2026-07-25 21:36:08" },
-    { "username": "manu12321_", "elementalId": "1_5", "bola": "master", "sucesso": 1, "date": "2026-07-25 21:24:09" },
-    { "username": "igl_migaas", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-07-25 21:10:15" }
+    { "username": "manu12321_", "elementalId": "1_5", "bola": "master", "sucesso": 1, "date": "2026-07-25 21:24:09" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -231,18 +231,18 @@
       "inventario": {"12_3":1}
     },
     {
+      "username": "garzia17",
+      "pontos": 45,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"13_1":1,"15_1":1}
+    },
+    {
       "username": "grandesleitadores",
       "pontos": 40,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":1,"12_2":1}
-    },
-    {
-      "username": "garzia17",
-      "pontos": 30,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"15_1":1}
     },
     {
       "username": "midnight_8k",
