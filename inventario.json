@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-26 17:23:13 UTC",
+  "updatedAt": "2026-07-26 17:29:13 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 154, "sucesso": 38, "rate": 24.7 },
     "super": { "total": 106, "sucesso": 39, "rate": 36.8 },
     "ultra": { "total": 133, "sucesso": 78, "rate": 58.6 },
-    "master": { "total": 720, "sucesso": 658, "rate": 91.4 }
+    "master": { "total": 721, "sucesso": 659, "rate": 91.4 }
   },
   "recentes_lancamentos": [
+    { "username": "inumerus", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-07-26 18:29:13" },
     { "username": "inumerus", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-07-26 18:23:13" },
     { "username": "rstraveler", "elementalId": "7_3", "bola": "master", "sucesso": 1, "date": "2026-07-26 18:17:12" },
     { "username": "r_moreira16", "elementalId": "13_2", "bola": "normal", "sucesso": 1, "date": "2026-07-26 18:10:49" },
@@ -35,8 +36,7 @@
     { "username": "manodrico", "elementalId": "13_5", "bola": "master", "sucesso": 1, "date": "2026-07-26 03:17:42" },
     { "username": "milhafretuga", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-07-26 03:12:12" },
     { "username": "sheisdani", "elementalId": "19_1", "bola": "master", "sucesso": 1, "date": "2026-07-26 03:06:03" },
-    { "username": "hugoandre07", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-07-26 03:00:05" },
-    { "username": "manu12321_", "elementalId": "18_4", "bola": "master", "sucesso": 1, "date": "2026-07-26 02:53:51" }
+    { "username": "hugoandre07", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-07-26 03:00:05" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -238,10 +238,10 @@
     },
     {
       "username": "inumerus",
-      "pontos": 40,
+      "pontos": 50,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"13_1":1,"14_1":1,"2_1":1}
+      "inventario": {"12_1":1,"13_1":1,"14_1":1,"2_1":1}
     },
     {
       "username": "grandesleitadores",
