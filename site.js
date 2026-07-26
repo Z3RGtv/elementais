@@ -617,6 +617,23 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
             if (labelVento) labelVento.style.color = "";
         }
     }
+    // Bónus de Coleção Completa de Atacante: se tiver todas as variantes, ganha +20% no rebound
+    const hasAllAtacante = hasCompleteCollection(13);
+    const spanAtacante = document.getElementById("atacante-effect-text");
+    const labelAtacante = document.getElementById("atacante-effect-label");
+    if (spanAtacante) {
+        if (hasAllAtacante) {
+            spanAtacante.textContent = "rebound com +20% de taxa de captura";
+            spanAtacante.style.color = "#ffd700";
+            spanAtacante.style.fontWeight = "bold";
+            if (labelAtacante) labelAtacante.style.color = "#ffd700";
+        } else {
+            spanAtacante.textContent = "rebound";
+            spanAtacante.style.color = "";
+            spanAtacante.style.fontWeight = "";
+            if (labelAtacante) labelAtacante.style.color = "";
+        }
+    }
 
     speciesOrder.forEach(key => {
         const group = groups[key];
