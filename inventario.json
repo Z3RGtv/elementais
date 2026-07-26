@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-26 17:10:49 UTC",
+  "updatedAt": "2026-07-26 17:17:13 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 154, "sucesso": 38, "rate": 24.7 },
     "super": { "total": 106, "sucesso": 39, "rate": 36.8 },
     "ultra": { "total": 133, "sucesso": 78, "rate": 58.6 },
-    "master": { "total": 718, "sucesso": 656, "rate": 91.4 }
+    "master": { "total": 719, "sucesso": 657, "rate": 91.4 }
   },
   "recentes_lancamentos": [
+    { "username": "rstraveler", "elementalId": "7_3", "bola": "master", "sucesso": 1, "date": "2026-07-26 18:17:12" },
     { "username": "r_moreira16", "elementalId": "13_2", "bola": "normal", "sucesso": 1, "date": "2026-07-26 18:10:49" },
     { "username": "inumerus", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-07-26 18:05:20" },
     { "username": "r_moreira16", "elementalId": "2_1", "bola": "normal", "sucesso": 0, "date": "2026-07-26 18:05:11" },
@@ -35,8 +36,7 @@
     { "username": "sheisdani", "elementalId": "19_1", "bola": "master", "sucesso": 1, "date": "2026-07-26 03:06:03" },
     { "username": "hugoandre07", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-07-26 03:00:05" },
     { "username": "manu12321_", "elementalId": "18_4", "bola": "master", "sucesso": 1, "date": "2026-07-26 02:53:51" },
-    { "username": "r_moreira16", "elementalId": "18_4", "bola": "ultra", "sucesso": 0, "date": "2026-07-26 02:53:42" },
-    { "username": "sheisdani", "elementalId": "12_4", "bola": "master", "sucesso": 1, "date": "2026-07-26 02:47:43" }
+    { "username": "r_moreira16", "elementalId": "18_4", "bola": "ultra", "sucesso": 0, "date": "2026-07-26 02:53:42" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -164,7 +164,7 @@
       "pontos": 470,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"10_3":1,"12_2":1,"12_3":1,"2_1":1,"6_1":1,"7_3":1}
+      "inventario": {"10_3":1,"12_2":1,"12_3":1,"2_1":1,"6_1":1,"7_3":2}
     },
     {
       "username": "igl_migaas",
