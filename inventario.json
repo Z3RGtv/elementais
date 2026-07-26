@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-26 22:33:44 UTC",
+  "updatedAt": "2026-07-26 22:33:46 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 155, "sucesso": 38, "rate": 24.5 },
     "super": { "total": 107, "sucesso": 40, "rate": 37.4 },
     "ultra": { "total": 136, "sucesso": 78, "rate": 57.4 },
-    "master": { "total": 750, "sucesso": 685, "rate": 91.3 }
+    "master": { "total": 751, "sucesso": 686, "rate": 91.3 }
   },
   "recentes_lancamentos": [
+    { "username": "san7izinn", "elementalId": "10_2", "bola": "master", "sucesso": 1, "date": "2026-07-26 23:33:45" },
     { "username": "manu12321_", "elementalId": "21_1", "bola": "master", "sucesso": 1, "date": "2026-07-26 23:20:08" },
     { "username": "k1ngpt14", "elementalId": "21_1", "bola": "master", "sucesso": 0, "date": "2026-07-26 23:19:59" },
     { "username": "sheisdani", "elementalId": "u_EIMEZ", "bola": "master", "sucesso": 1, "date": "2026-07-26 23:08:37" },
@@ -35,8 +36,7 @@
     { "username": "inumerus", "elementalId": "9_5", "bola": "master", "sucesso": 0, "date": "2026-07-26 20:01:10" },
     { "username": "inumerus", "elementalId": "19_3", "bola": "master", "sucesso": 1, "date": "2026-07-26 19:55:15" },
     { "username": "rstraveler", "elementalId": "19_2", "bola": "master", "sucesso": 1, "date": "2026-07-26 19:44:05" },
-    { "username": "r_moreira16", "elementalId": "5_1", "bola": "super", "sucesso": 1, "date": "2026-07-26 19:30:26" },
-    { "username": "garzia17", "elementalId": "u_soniagoncalves", "bola": "master", "sucesso": 1, "date": "2026-07-26 19:21:58" }
+    { "username": "r_moreira16", "elementalId": "5_1", "bola": "super", "sucesso": 1, "date": "2026-07-26 19:30:26" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -154,10 +154,10 @@
     },
     {
       "username": "san7izinn",
-      "pontos": 635,
+      "pontos": 755,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"12_2":1,"12_3":1,"16_2":1,"1_1":2,"2_1":1,"2_3":1,"3_1":1,"3_2":1,"3_5":1,"4_1":1,"8_1":1}
+      "inventario": {"10_2":1,"12_1":1,"12_2":1,"12_3":1,"16_2":1,"1_1":2,"2_1":1,"2_3":1,"3_1":1,"3_2":1,"3_5":1,"4_1":1,"8_1":1}
     },
     {
       "username": "1509_martim",
