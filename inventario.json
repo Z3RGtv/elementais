@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26 00:26:20 UTC",
+  "updatedAt": "2026-07-26 00:29:22 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 146, "sucesso": 36, "rate": 24.7 },
     "super": { "total": 104, "sucesso": 39, "rate": 37.5 },
@@ -58,7 +58,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-
+    { "proposerName": "minichef9", "targetName": "manodrico", "elemProposer": "8_4", "elemTarget": "1_2", "createdAt": "2026-07-26T00:29:22.5595883Z" }
   ],
   "ranking": [
     {
@@ -106,7 +106,7 @@
     {
       "username": "minichef9",
       "pontos": 2395,
-      "trocasDisponiveis": 3,
+      "trocasDisponiveis": 2,
       "proximaRecuperacao": null,
       "inventario": {"12_1":1,"12_2":1,"12_3":1,"12_4":1,"13_1":2,"13_2":2,"13_3":1,"14_1":1,"14_2":1,"15_1":2,"15_3":1,"16_1":1,"17_1":1,"1_1":1,"1_2":1,"1_3":1,"1_4":1,"2_1":1,"2_2":1,"2_4":1,"3_2":1,"3_4":1,"5_1":1,"5_2":1,"6_1":1,"6_3":1,"7_1":2,"7_2":1,"8_3":2,"8_4":1,"9_1":1,"9_2":1,"9_3":1,"u_Z3RGtv":1,"u_gui_z0":1}
     },
