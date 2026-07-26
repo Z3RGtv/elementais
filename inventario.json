@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26 22:37:11 UTC",
+  "updatedAt": "2026-07-26 22:48:21 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 155, "sucesso": 38, "rate": 24.5 },
     "super": { "total": 107, "sucesso": 40, "rate": 37.4 },
@@ -139,13 +139,6 @@
       "inventario": {"12_1":1,"12_4":1,"13_1":1,"13_2":1,"1_1":1,"1_3":1,"2_2":1,"2_4":1,"5_1":1,"8_3":1,"9_5":1}
     },
     {
-      "username": "inumerus",
-      "pontos": 820,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"13_1":1,"14_1":1,"14_4":1,"15_1":1,"17_4":1,"18_1":1,"19_3":1,"2_3":1,"3_2":1,"5_1":1,"7_1":2}
-    },
-    {
       "username": "rstraveler",
       "pontos": 820,
       "trocasDisponiveis": 3,
@@ -153,11 +146,18 @@
       "inventario": {"10_3":1,"12_2":1,"12_3":1,"14_4":1,"19_2":1,"1_2":1,"2_1":1,"6_1":1,"7_3":2}
     },
     {
+      "username": "inumerus",
+      "pontos": 760,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_1":1,"13_1":1,"14_1":1,"14_4":1,"15_1":1,"17_4":1,"18_1":1,"19_3":1,"3_2":1,"5_1":1,"7_1":2}
+    },
+    {
       "username": "san7izinn",
       "pontos": 725,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"10_2":1,"12_1":1,"12_2":1,"12_3":1,"16_2":1,"1_1":2,"2_1":1,"2_3":1,"3_1":1,"3_2":1,"3_5":1,"4_1":1}
+      "inventario": {"10_2":1,"12_1":1,"12_2":1,"12_3":1,"16_2":1,"1_1":2,"2_1":1,"2_3":2,"3_1":1,"3_2":1,"3_5":1,"4_1":1}
     },
     {
       "username": "1509_martim",
