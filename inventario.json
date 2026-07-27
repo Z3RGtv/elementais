@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-27 22:34:01 UTC",
+  "updatedAt": "2026-07-27 22:40:16 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 155, "sucesso": 38, "rate": 24.5 },
     "super": { "total": 110, "sucesso": 42, "rate": 38.2 },
     "ultra": { "total": 146, "sucesso": 85, "rate": 58.2 },
-    "master": { "total": 804, "sucesso": 731, "rate": 90.9 }
+    "master": { "total": 805, "sucesso": 732, "rate": 90.9 }
   },
   "recentes_lancamentos": [
+    { "username": "san7izinn", "elementalId": "15_1", "bola": "master", "sucesso": 1, "date": "2026-07-27 23:40:16" },
     { "username": "gui_z0", "elementalId": "1_4", "bola": "master", "sucesso": 1, "date": "2026-07-27 23:34:01" },
     { "username": "lourenco_2015_marques", "elementalId": "1_4", "bola": "super", "sucesso": 0, "date": "2026-07-27 23:33:52" },
     { "username": "lourenco_2015_marques", "elementalId": "14_3", "bola": "super", "sucesso": 1, "date": "2026-07-27 23:27:49" },
@@ -35,8 +36,7 @@
     { "username": "marquesrcarol", "elementalId": "13_3", "bola": "master", "sucesso": 0, "date": "2026-07-27 20:19:01" },
     { "username": "san7izinn", "elementalId": "13_3", "bola": "master", "sucesso": 0, "date": "2026-07-27 20:18:53" },
     { "username": "steve_osvaldo", "elementalId": "13_3", "bola": "master", "sucesso": 0, "date": "2026-07-27 20:18:44" },
-    { "username": "inumerus", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-07-27 20:06:50" },
-    { "username": "san7izinn", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-07-27 20:00:26" }
+    { "username": "inumerus", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-07-27 20:06:50" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -161,10 +161,10 @@
     },
     {
       "username": "san7izinn",
-      "pontos": 785,
+      "pontos": 815,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"10_2":1,"12_1":1,"12_2":1,"12_3":1,"16_1":1,"1_1":2,"2_1":1,"2_2":1,"2_3":2,"3_1":1,"3_2":1,"3_5":1,"4_1":1,"u_manu12321_":1}
+      "inventario": {"10_2":1,"12_1":1,"12_2":1,"12_3":1,"15_1":1,"16_1":1,"1_1":2,"2_1":1,"2_2":1,"2_3":2,"3_1":1,"3_2":1,"3_5":1,"4_1":1,"u_manu12321_":1}
     },
     {
       "username": "igl_migaas",
