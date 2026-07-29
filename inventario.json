@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-07-29 18:21:17 UTC",
+  "updatedAt": "2026-07-29 18:36:23 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 155, "sucesso": 38, "rate": 24.5 },
-    "super": { "total": 110, "sucesso": 42, "rate": 38.2 },
+    "super": { "total": 111, "sucesso": 42, "rate": 37.8 },
     "ultra": { "total": 147, "sucesso": 86, "rate": 58.5 },
-    "master": { "total": 817, "sucesso": 744, "rate": 91.1 }
+    "master": { "total": 818, "sucesso": 745, "rate": 91.1 }
   },
   "recentes_lancamentos": [
+    { "username": "soniagoncalves", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-07-29 19:36:22" },
+    { "username": "astroz1nvlr", "elementalId": "13_1", "bola": "super", "sucesso": 0, "date": "2026-07-29 19:36:14" },
     { "username": "mikito_2012", "elementalId": "2_3", "bola": "master", "sucesso": 1, "date": "2026-07-29 19:21:16" },
     { "username": "sheisdani", "elementalId": "16_1", "bola": "master", "sucesso": 1, "date": "2026-07-29 19:11:49" },
     { "username": "sheisdani", "elementalId": "u_1509_martim", "bola": "master", "sucesso": 1, "date": "2026-07-29 19:03:10" },
@@ -34,9 +36,7 @@
     { "username": "steve_osvaldo", "elementalId": "5_3", "bola": "master", "sucesso": 1, "date": "2026-07-27 22:46:12" },
     { "username": "milhafretuga", "elementalId": "15_4", "bola": "master", "sucesso": 1, "date": "2026-07-27 22:34:57" },
     { "username": "marquesrcarol", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-07-27 22:21:49" },
-    { "username": "hugoandre07", "elementalId": "5_2", "bola": "master", "sucesso": 1, "date": "2026-07-27 22:11:26" },
-    { "username": "soniagoncalves", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-07-27 22:00:44" },
-    { "username": "sheisdani", "elementalId": "17_1", "bola": "master", "sucesso": 1, "date": "2026-07-27 21:33:53" }
+    { "username": "hugoandre07", "elementalId": "5_2", "bola": "master", "sucesso": 1, "date": "2026-07-27 22:11:26" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -129,7 +129,7 @@
       "pontos": 1370,
       "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-07-29T20:47:08Z",
-      "inventario": {"10_1":1,"12_1":1,"12_2":1,"13_1":1,"14_2":1,"17_2":1,"1_1":2,"1_2":2,"1_5":1,"2_2":1,"4_1":1,"4_3":1,"4_4":1,"5_1":1,"5_2":2,"7_1":1,"8_4":1,"u_soniagoncalves":1,"u_steve_osvaldo":1}
+      "inventario": {"10_1":1,"12_1":1,"12_2":1,"13_1":2,"14_2":1,"17_2":1,"1_1":2,"1_2":2,"1_5":1,"2_2":1,"4_1":1,"4_3":1,"4_4":1,"5_1":1,"5_2":2,"7_1":1,"8_4":1,"u_soniagoncalves":1,"u_steve_osvaldo":1}
     },
     {
       "username": "san7izinn",
