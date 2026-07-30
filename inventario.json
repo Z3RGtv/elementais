@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-30 22:58:44 UTC",
+  "updatedAt": "2026-07-30 23:09:59 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 159, "sucesso": 40, "rate": 25.2 },
     "super": { "total": 117, "sucesso": 45, "rate": 38.5 },
     "ultra": { "total": 153, "sucesso": 90, "rate": 58.8 },
-    "master": { "total": 879, "sucesso": 801, "rate": 91.1 }
+    "master": { "total": 880, "sucesso": 802, "rate": 91.1 }
   },
   "recentes_lancamentos": [
+    { "username": "lucyfourpics", "elementalId": "u_san7izinn", "bola": "master", "sucesso": 1, "date": "2026-07-31 00:09:59" },
     { "username": "manu12321_", "elementalId": "1_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-30 23:58:43" },
     { "username": "r_moreira16", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-30 23:57:27" },
     { "username": "lucyfourpics", "elementalId": "5_3", "bola": "master", "sucesso": 1, "date": "2026-07-30 23:45:27" },
@@ -35,8 +36,7 @@
     { "username": "inumerus", "elementalId": "19_1", "bola": "master", "sucesso": 1, "date": "2026-07-30 21:38:19" },
     { "username": "lourenco_2015_marques", "elementalId": "18_3", "bola": "super", "sucesso": 1, "date": "2026-07-30 21:31:56" },
     { "username": "manu12321_", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-07-30 21:26:30" },
-    { "username": "sheisdani", "elementalId": "1_1", "bola": "master", "sucesso": 0, "date": "2026-07-30 21:26:21" },
-    { "username": "milhafretuga", "elementalId": "3_2", "bola": "master", "sucesso": 1, "date": "2026-07-30 21:02:28" }
+    { "username": "sheisdani", "elementalId": "1_1", "bola": "master", "sucesso": 0, "date": "2026-07-30 21:26:21" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -188,18 +188,18 @@
       "inventario": {"12_1":2,"12_2":1,"12_3":1,"13_1":1,"1_1":1,"2_1":2,"3_1":1,"3_3":1,"5_1":1,"6_1":2,"6_2":1,"7_1":1,"7_2":1,"8_2":1,"9_1":1,"9_2":1}
     },
     {
+      "username": "lucyfourpics",
+      "pontos": 380,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_2":1,"17_4":1,"3_1":1,"5_3":1,"u_san7izinn":1}
+    },
+    {
       "username": "lourenco_2015_marques",
       "pontos": 330,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"13_1":1,"14_3":1,"18_3":1,"1_2":1,"8_1":1,"9_1":1}
-    },
-    {
-      "username": "lucyfourpics",
-      "pontos": 280,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"12_2":1,"17_4":1,"3_1":1,"5_3":1}
     },
     {
       "username": "coki5731",
