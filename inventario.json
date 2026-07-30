@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-30 23:46:04 UTC",
+  "updatedAt": "2026-07-30 23:52:19 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 159, "sucesso": 40, "rate": 25.2 },
     "super": { "total": 117, "sucesso": 45, "rate": 38.5 },
     "ultra": { "total": 153, "sucesso": 90, "rate": 58.8 },
-    "master": { "total": 883, "sucesso": 805, "rate": 91.2 }
+    "master": { "total": 884, "sucesso": 806, "rate": 91.2 }
   },
   "recentes_lancamentos": [
+    { "username": "dapyf", "elementalId": "17_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 00:52:19" },
     { "username": "dapyf", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 00:46:03" },
     { "username": "astroz1nvlr", "elementalId": "14_3", "bola": "master", "sucesso": 1, "date": "2026-07-31 00:36:43" },
     { "username": "astroz1nvlr", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-07-31 00:25:17" },
@@ -35,8 +36,7 @@
     { "username": "sheisdani", "elementalId": "16_1", "bola": "master", "sucesso": 1, "date": "2026-07-30 22:01:58" },
     { "username": "manu12321_", "elementalId": "3_2", "bola": "master", "sucesso": 1, "date": "2026-07-30 21:56:21" },
     { "username": "sheisdani", "elementalId": "16_4", "bola": "master", "sucesso": 1, "date": "2026-07-30 21:49:55" },
-    { "username": "inumerus", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-07-30 21:44:20" },
-    { "username": "inumerus", "elementalId": "19_1", "bola": "master", "sucesso": 1, "date": "2026-07-30 21:38:19" }
+    { "username": "inumerus", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-07-30 21:44:20" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -293,18 +293,18 @@
       "inventario": {"13_1":1,"7_1":1}
     },
     {
+      "username": "dapyf",
+      "pontos": 25,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"14_1":1,"17_1":1}
+    },
+    {
       "username": "themarysimmer",
       "pontos": 20,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"1_1":1,"3_1":2}
-    },
-    {
-      "username": "dapyf",
-      "pontos": 15,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"14_1":1}
     },
     {
       "username": "jptim_",
