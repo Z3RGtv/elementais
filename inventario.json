@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30 22:25:37 UTC",
+  "updatedAt": "2026-07-30 22:28:32 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 157, "sucesso": 39, "rate": 24.8 },
     "super": { "total": 117, "sucesso": 45, "rate": 38.5 },
@@ -58,7 +58,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-
+    { "proposerName": "inumerus", "targetName": "milhafretuga", "elemProposer": "18_1", "elemTarget": "1_2", "createdAt": "2026-07-30T22:28:32.3476792Z" }
   ],
   "ranking": [
     {
@@ -148,7 +148,7 @@
     {
       "username": "inumerus",
       "pontos": 1155,
-      "trocasDisponiveis": 1,
+      "trocasDisponiveis": 0,
       "proximaRecuperacao": "2026-08-03T22:24:31Z",
       "inventario": {"12_1":1,"12_2":2,"12_4":1,"13_1":2,"14_1":1,"14_4":1,"15_1":1,"17_1":1,"17_3":1,"17_4":1,"18_1":2,"19_1":1,"19_3":1,"1_1":1,"3_1":1,"3_2":1,"4_1":1,"5_1":1,"6_1":1,"7_1":1,"8_1":1}
     },
