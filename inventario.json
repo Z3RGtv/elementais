@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30 18:46:07 UTC",
+  "updatedAt": "2026-07-30 18:48:23 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 155, "sucesso": 38, "rate": 24.5 },
     "super": { "total": 115, "sucesso": 44, "rate": 38.3 },
@@ -154,10 +154,10 @@
     },
     {
       "username": "steve_osvaldo",
-      "pontos": 1005,
+      "pontos": 965,
       "trocasDisponiveis": 0,
       "proximaRecuperacao": "2026-08-02T23:06:11Z",
-      "inventario": {"12_1":1,"12_3":1,"13_3":1,"18_2":1,"19_3":1,"1_2":1,"3_2":1,"5_3":1,"6_1":1,"7_2":1,"7_4":1,"u_ManoDrico":1}
+      "inventario": {"12_1":1,"12_3":1,"13_3":1,"18_2":1,"19_3":1,"1_2":1,"3_2":1,"5_3":1,"6_1":1,"7_4":1,"u_ManoDrico":1}
     },
     {
       "username": "rstraveler",
