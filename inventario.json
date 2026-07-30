@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-30 21:43:06 UTC",
+  "updatedAt": "2026-07-30 21:49:08 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 156, "sucesso": 38, "rate": 24.4 },
     "super": { "total": 116, "sucesso": 45, "rate": 38.8 },
     "ultra": { "total": 151, "sucesso": 89, "rate": 58.9 },
-    "master": { "total": 872, "sucesso": 794, "rate": 91.1 }
+    "master": { "total": 873, "sucesso": 795, "rate": 91.1 }
   },
   "recentes_lancamentos": [
+    { "username": "rstraveler", "elementalId": "u_ruialmeida_", "bola": "master", "sucesso": 1, "date": "2026-07-30 22:49:08" },
     { "username": "milhafretuga", "elementalId": "u_gui_z0", "bola": "master", "sucesso": 1, "date": "2026-07-30 22:43:06" },
     { "username": "inumerus", "elementalId": "18_1", "bola": "master", "sucesso": 1, "date": "2026-07-30 22:37:27" },
     { "username": "themarysimmer", "elementalId": "18_1", "bola": "master", "sucesso": 0, "date": "2026-07-30 22:37:18" },
@@ -35,8 +36,7 @@
     { "username": "rstraveler", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-07-30 19:05:03" },
     { "username": "steve_osvaldo", "elementalId": "1_2", "bola": "master", "sucesso": 1, "date": "2026-07-30 18:52:48" },
     { "username": "mikito_2012", "elementalId": "u_soniagoncalves", "bola": "master", "sucesso": 1, "date": "2026-07-30 00:42:12" },
-    { "username": "mikito_2012", "elementalId": "19_2", "bola": "master", "sucesso": 1, "date": "2026-07-30 00:36:16" },
-    { "username": "mikito_2012", "elementalId": "16_1", "bola": "master", "sucesso": 1, "date": "2026-07-30 00:30:34" }
+    { "username": "mikito_2012", "elementalId": "19_2", "bola": "master", "sucesso": 1, "date": "2026-07-30 00:36:16" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -168,10 +168,10 @@
     },
     {
       "username": "rstraveler",
-      "pontos": 865,
+      "pontos": 965,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"10_3":1,"12_2":1,"12_3":1,"13_1":1,"14_4":1,"19_2":1,"1_2":1,"2_1":1,"2_2":1,"6_1":1,"7_3":2}
+      "inventario": {"10_3":1,"12_2":1,"12_3":1,"13_1":1,"14_4":1,"19_2":1,"1_2":1,"2_1":1,"2_2":1,"6_1":1,"7_3":2,"u_ruialmeida_":1}
     },
     {
       "username": "mikito_2012",
