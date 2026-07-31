@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31 01:07:00 UTC",
+  "updatedAt": "2026-07-31 01:10:24 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 159, "sucesso": 40, "rate": 25.2 },
     "super": { "total": 120, "sucesso": 47, "rate": 39.2 },
@@ -146,13 +146,6 @@
       "inventario": {"12_1":1,"12_2":2,"12_4":1,"13_1":2,"14_1":1,"14_4":1,"15_1":1,"17_1":1,"17_3":1,"17_4":1,"18_1":1,"19_1":1,"19_3":1,"1_1":1,"1_2":1,"3_1":1,"3_2":1,"4_1":1,"5_1":1,"6_1":1,"7_1":1,"8_1":1}
     },
     {
-      "username": "igl_migaas",
-      "pontos": 1160,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"12_2":1,"12_3":1,"13_2":1,"17_4":2,"2_2":1,"2_3":1,"2_4":1,"4_4":1,"7_2":1,"7_3":1,"8_4":1}
-    },
-    {
       "username": "steve_osvaldo",
       "pontos": 1055,
       "trocasDisponiveis": 0,
@@ -179,6 +172,13 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":1,"12_3":1,"14_1":1,"14_3":1,"16_4":1,"1_1":1,"3_3":1,"7_1":1,"7_2":1,"7_3":1}
+    },
+    {
+      "username": "igl_migaas",
+      "pontos": 860,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_1":1,"12_2":1,"12_3":1,"13_2":1,"17_4":2,"2_2":1,"2_3":1,"2_4":1,"4_4":1,"7_2":1,"7_3":1}
     },
     {
       "username": "mikito_2012",
