@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-31 16:27:35 UTC",
+  "updatedAt": "2026-07-31 16:37:55 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 160, "sucesso": 40, "rate": 25.0 },
     "super": { "total": 121, "sucesso": 47, "rate": 38.8 },
     "ultra": { "total": 158, "sucesso": 95, "rate": 60.1 },
-    "master": { "total": 904, "sucesso": 825, "rate": 91.3 }
+    "master": { "total": 905, "sucesso": 826, "rate": 91.3 }
   },
   "recentes_lancamentos": [
+    { "username": "lucyfourpics", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 17:37:54" },
     { "username": "milhafretuga", "elementalId": "u_MilhafreTuga", "bola": "master", "sucesso": 1, "date": "2026-07-31 17:27:35" },
     { "username": "minichef9", "elementalId": "u_MilhafreTuga", "bola": "master", "sucesso": 0, "date": "2026-07-31 17:27:26" },
     { "username": "milhafretuga", "elementalId": "u_ruialmeida_", "bola": "master", "sucesso": 1, "date": "2026-07-31 17:17:55" },
@@ -35,8 +36,7 @@
     { "username": "astroz1nvlr", "elementalId": "7_1", "bola": "super", "sucesso": 1, "date": "2026-07-31 01:22:20" },
     { "username": "astroz1nvlr", "elementalId": "14_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-31 01:16:21" },
     { "username": "dapyf", "elementalId": "15_3", "bola": "master", "sucesso": 1, "date": "2026-07-31 01:10:20" },
-    { "username": "milhafretuga", "elementalId": "4_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 01:04:20" },
-    { "username": "dapyf", "elementalId": "5_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 00:58:19" }
+    { "username": "milhafretuga", "elementalId": "4_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 01:04:20" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -196,10 +196,10 @@
     },
     {
       "username": "lucyfourpics",
-      "pontos": 455,
+      "pontos": 465,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_2":1,"17_4":1,"3_1":1,"5_3":1,"8_2":1,"u_san7izinn":1}
+      "inventario": {"12_2":1,"17_4":1,"2_1":1,"3_1":1,"5_3":1,"8_2":1,"u_san7izinn":1}
     },
     {
       "username": "lourenco_2015_marques",
