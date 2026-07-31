@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-31 21:32:48 UTC",
+  "updatedAt": "2026-07-31 21:38:28 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 165, "sucesso": 40, "rate": 24.2 },
     "super": { "total": 124, "sucesso": 48, "rate": 38.7 },
-    "ultra": { "total": 159, "sucesso": 96, "rate": 60.4 },
+    "ultra": { "total": 160, "sucesso": 97, "rate": 60.6 },
     "master": { "total": 938, "sucesso": 857, "rate": 91.4 }
   },
   "recentes_lancamentos": [
+    { "username": "oreidopimba", "elementalId": "u_Minichef9", "bola": "ultra", "sucesso": 1, "date": "2026-07-31 22:38:28" },
     { "username": "ipowerlz", "elementalId": "10_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 22:21:45" },
     { "username": "hugoandre07", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-07-31 22:10:13" },
     { "username": "oreidopimba", "elementalId": "12_2", "bola": "normal", "sucesso": 0, "date": "2026-07-31 22:08:57" },
@@ -35,8 +36,7 @@
     { "username": "marquesrcarol", "elementalId": "19_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 19:34:40" },
     { "username": "sheisdani", "elementalId": "19_3", "bola": "master", "sucesso": 1, "date": "2026-07-31 19:28:34" },
     { "username": "manu12321_", "elementalId": "19_3", "bola": "master", "sucesso": 1, "date": "2026-07-31 19:22:17" },
-    { "username": "diguiferreira97", "elementalId": "13_1", "bola": "super", "sucesso": 1, "date": "2026-07-31 19:16:59" },
-    { "username": "manu12321_", "elementalId": "6_6", "bola": "master", "sucesso": 1, "date": "2026-07-31 19:10:24" }
+    { "username": "diguiferreira97", "elementalId": "13_1", "bola": "super", "sucesso": 1, "date": "2026-07-31 19:16:59" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -256,6 +256,13 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_2":1,"1_1":1,"2_1":1,"3_3":1}
+    },
+    {
+      "username": "oreidopimba",
+      "pontos": 100,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"u_Minichef9":1}
     },
     {
       "username": "k1ngpt14",
