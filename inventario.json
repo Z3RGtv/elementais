@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-31 03:04:13 UTC",
+  "updatedAt": "2026-07-31 15:15:23 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 160, "sucesso": 40, "rate": 25.0 },
     "super": { "total": 121, "sucesso": 47, "rate": 38.8 },
     "ultra": { "total": 157, "sucesso": 94, "rate": 59.9 },
-    "master": { "total": 897, "sucesso": 819, "rate": 91.3 }
+    "master": { "total": 898, "sucesso": 820, "rate": 91.3 }
   },
   "recentes_lancamentos": [
+    { "username": "themarysimmer", "elementalId": "17_3", "bola": "master", "sucesso": 1, "date": "2026-07-31 16:15:21" },
     { "username": "manu12321_", "elementalId": "16_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 04:04:13" },
     { "username": "milhafretuga", "elementalId": "16_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 03:52:40" },
     { "username": "manu12321_", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 03:42:35" },
@@ -35,8 +36,7 @@
     { "username": "astroz1nvlr", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-07-31 00:25:17" },
     { "username": "lucyfourpics", "elementalId": "u_san7izinn", "bola": "master", "sucesso": 1, "date": "2026-07-31 00:09:59" },
     { "username": "manu12321_", "elementalId": "1_1", "bola": "ultra", "sucesso": 1, "date": "2026-07-30 23:58:43" },
-    { "username": "r_moreira16", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-30 23:57:27" },
-    { "username": "lucyfourpics", "elementalId": "5_3", "bola": "master", "sucesso": 1, "date": "2026-07-30 23:45:27" }
+    { "username": "r_moreira16", "elementalId": "1_1", "bola": "normal", "sucesso": 0, "date": "2026-07-30 23:57:27" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -265,6 +265,13 @@
       "inventario": {"u_Z3RGtv":1}
     },
     {
+      "username": "themarysimmer",
+      "pontos": 80,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"17_3":1,"1_1":1,"3_1":2}
+    },
+    {
       "username": "eimezdumipima_",
       "pontos": 80,
       "trocasDisponiveis": 3,
@@ -298,13 +305,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"13_1":1,"7_1":1}
-    },
-    {
-      "username": "themarysimmer",
-      "pontos": 20,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_1":1,"3_1":2}
     },
     {
       "username": "jptim_",
