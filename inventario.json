@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-07-31 17:58:14 UTC",
+  "updatedAt": "2026-07-31 18:04:46 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 162, "sucesso": 40, "rate": 24.7 },
     "super": { "total": 121, "sucesso": 47, "rate": 38.8 },
     "ultra": { "total": 159, "sucesso": 96, "rate": 60.4 },
-    "master": { "total": 912, "sucesso": 832, "rate": 91.2 }
+    "master": { "total": 913, "sucesso": 833, "rate": 91.2 }
   },
   "recentes_lancamentos": [
+    { "username": "igl_migaas", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-07-31 19:04:46" },
     { "username": "sheisdani", "elementalId": "18_2", "bola": "master", "sucesso": 1, "date": "2026-07-31 18:58:14" },
     { "username": "inumerus", "elementalId": "17_2", "bola": "master", "sucesso": 1, "date": "2026-07-31 18:52:37" },
     { "username": "sheisdani", "elementalId": "17_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 18:46:37" },
@@ -35,8 +36,7 @@
     { "username": "r_moreira16", "elementalId": "18_3", "bola": "normal", "sucesso": 0, "date": "2026-07-31 03:06:40" },
     { "username": "igl_migaas", "elementalId": "7_2", "bola": "master", "sucesso": 1, "date": "2026-07-31 02:51:45" },
     { "username": "r_moreira16", "elementalId": "7_2", "bola": "super", "sucesso": 0, "date": "2026-07-31 02:51:36" },
-    { "username": "r_moreira16", "elementalId": "18_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 02:41:52" },
-    { "username": "manodrico", "elementalId": "3_3", "bola": "ultra", "sucesso": 1, "date": "2026-07-31 02:31:23" }
+    { "username": "r_moreira16", "elementalId": "18_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 02:41:52" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -178,7 +178,7 @@
       "pontos": 860,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"12_2":1,"12_3":1,"13_2":1,"17_4":2,"2_2":1,"2_3":1,"2_4":1,"4_4":1,"7_2":1,"7_3":1}
+      "inventario": {"12_1":1,"12_2":1,"12_3":1,"13_2":1,"17_4":2,"2_2":2,"2_3":1,"2_4":1,"4_4":1,"7_2":1,"7_3":1}
     },
     {
       "username": "mikito_2012",
