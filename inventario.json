@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-01 23:38:44 UTC",
+  "updatedAt": "2026-08-01 23:44:23 UTC",
   "estatisticas_bolas": {
-    "normal": { "total": 173, "sucesso": 42, "rate": 24.3 },
+    "normal": { "total": 174, "sucesso": 43, "rate": 24.7 },
     "super": { "total": 129, "sucesso": 51, "rate": 39.5 },
     "ultra": { "total": 169, "sucesso": 105, "rate": 62.1 },
     "master": { "total": 992, "sucesso": 909, "rate": 91.6 }
   },
   "recentes_lancamentos": [
+    { "username": "garzia17", "elementalId": "9_1", "bola": "normal", "sucesso": 1, "date": "2026-08-02 00:44:23" },
     { "username": "hugoandre07", "elementalId": "17_2", "bola": "master", "sucesso": 1, "date": "2026-08-02 00:38:44" },
     { "username": "sheisdani", "elementalId": "13_3", "bola": "master", "sucesso": 1, "date": "2026-08-02 00:32:34" },
     { "username": "milhafretuga", "elementalId": "18_3", "bola": "master", "sucesso": 1, "date": "2026-08-02 00:26:31" },
@@ -35,8 +36,7 @@
     { "username": "milhafretuga", "elementalId": "10_4", "bola": "master", "sucesso": 1, "date": "2026-08-01 22:21:29" },
     { "username": "astroz1nvlr", "elementalId": "18_1", "bola": "ultra", "sucesso": 1, "date": "2026-08-01 22:15:28" },
     { "username": "astroz1nvlr", "elementalId": "13_1", "bola": "super", "sucesso": 1, "date": "2026-08-01 22:09:29" },
-    { "username": "astroz1nvlr", "elementalId": "4_2", "bola": "ultra", "sucesso": 1, "date": "2026-08-01 22:03:02" },
-    { "username": "milhafretuga", "elementalId": "17_1", "bola": "master", "sucesso": 1, "date": "2026-08-01 21:57:26" }
+    { "username": "astroz1nvlr", "elementalId": "4_2", "bola": "ultra", "sucesso": 1, "date": "2026-08-01 22:03:02" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -224,10 +224,10 @@
     },
     {
       "username": "garzia17",
-      "pontos": 240,
+      "pontos": 255,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"13_1":1,"15_1":1,"16_1":1,"17_2":1,"7_1":1,"u_soniagoncalves":1}
+      "inventario": {"13_1":1,"15_1":1,"16_1":1,"17_2":1,"7_1":1,"9_1":1,"u_soniagoncalves":1}
     },
     {
       "username": "themarysimmer",
