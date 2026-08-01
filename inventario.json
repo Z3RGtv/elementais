@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-08-01 21:45:08 UTC",
+  "updatedAt": "2026-08-01 21:52:14 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 171, "sucesso": 42, "rate": 24.6 },
-    "super": { "total": 128, "sucesso": 51, "rate": 39.8 },
+    "super": { "total": 129, "sucesso": 51, "rate": 39.5 },
     "ultra": { "total": 167, "sucesso": 103, "rate": 61.7 },
-    "master": { "total": 975, "sucesso": 894, "rate": 91.7 }
+    "master": { "total": 976, "sucesso": 895, "rate": 91.7 }
   },
   "recentes_lancamentos": [
+    { "username": "dapyf", "elementalId": "3_2", "bola": "master", "sucesso": 1, "date": "2026-08-01 22:52:14" },
+    { "username": "garzia17", "elementalId": "3_2", "bola": "super", "sucesso": 0, "date": "2026-08-01 22:52:05" },
     { "username": "astroz1nvlr", "elementalId": "5_1", "bola": "super", "sucesso": 1, "date": "2026-08-01 22:42:18" },
     { "username": "garzia17", "elementalId": "17_2", "bola": "master", "sucesso": 1, "date": "2026-08-01 22:33:30" },
     { "username": "garzia17", "elementalId": "16_1", "bola": "master", "sucesso": 1, "date": "2026-08-01 22:27:07" },
@@ -34,9 +36,7 @@
     { "username": "manu12321_", "elementalId": "1_1", "bola": "ultra", "sucesso": 1, "date": "2026-08-01 20:24:19" },
     { "username": "igl_migaas", "elementalId": "17_2", "bola": "master", "sucesso": 1, "date": "2026-08-01 20:15:23" },
     { "username": "igl_migaas", "elementalId": "15_1", "bola": "master", "sucesso": 1, "date": "2026-08-01 02:15:28" },
-    { "username": "manu12321_", "elementalId": "2_2", "bola": "ultra", "sucesso": 1, "date": "2026-08-01 02:05:31" },
-    { "username": "themarysimmer", "elementalId": "5_2", "bola": "master", "sucesso": 1, "date": "2026-08-01 01:59:29" },
-    { "username": "themarysimmer", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-08-01 01:53:30" }
+    { "username": "manu12321_", "elementalId": "2_2", "bola": "ultra", "sucesso": 1, "date": "2026-08-01 02:05:31" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -203,10 +203,10 @@
     },
     {
       "username": "dapyf",
-      "pontos": 390,
+      "pontos": 420,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"14_1":1,"15_3":1,"17_1":1,"5_1":1,"7_4":1}
+      "inventario": {"14_1":1,"15_3":1,"17_1":1,"3_2":1,"5_1":1,"7_4":1}
     },
     {
       "username": "lourenco_2015_marques",
