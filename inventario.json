@@ -1,12 +1,15 @@
 {
-  "updatedAt": "2026-08-01 19:40:23 UTC",
+  "updatedAt": "2026-08-01 19:47:01 UTC",
   "estatisticas_bolas": {
-    "normal": { "total": 169, "sucesso": 42, "rate": 24.9 },
+    "normal": { "total": 171, "sucesso": 42, "rate": 24.6 },
     "super": { "total": 125, "sucesso": 48, "rate": 38.4 },
     "ultra": { "total": 163, "sucesso": 100, "rate": 61.3 },
-    "master": { "total": 962, "sucesso": 881, "rate": 91.6 }
+    "master": { "total": 963, "sucesso": 882, "rate": 91.6 }
   },
   "recentes_lancamentos": [
+    { "username": "igl_migaas", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-08-01 20:47:01" },
+    { "username": "salvadormdm", "elementalId": "13_1", "bola": "normal", "sucesso": 0, "date": "2026-08-01 20:46:41" },
+    { "username": "salvadormdm", "elementalId": "13_1", "bola": "normal", "sucesso": 0, "date": "2026-08-01 20:46:31" },
     { "username": "sheisdani", "elementalId": "3_1", "bola": "master", "sucesso": 1, "date": "2026-08-01 20:40:23" },
     { "username": "salvadormdm", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-08-01 20:34:23" },
     { "username": "manu12321_", "elementalId": "1_1", "bola": "ultra", "sucesso": 1, "date": "2026-08-01 20:24:19" },
@@ -33,10 +36,7 @@
     { "username": "marquesrcarol", "elementalId": "10_4", "bola": "master", "sucesso": 1, "date": "2026-07-31 23:26:33" },
     { "username": "manu12321_", "elementalId": "7_1", "bola": "master", "sucesso": 1, "date": "2026-07-31 23:20:54" },
     { "username": "manodrico", "elementalId": "5_3", "bola": "master", "sucesso": 1, "date": "2026-07-31 23:14:54" },
-    { "username": "oreidopimba", "elementalId": "17_1", "bola": "normal", "sucesso": 1, "date": "2026-07-31 23:08:53" },
-    { "username": "oreidopimba", "elementalId": "13_1", "bola": "normal", "sucesso": 0, "date": "2026-07-31 23:02:53" },
-    { "username": "milhafretuga", "elementalId": "17_3", "bola": "master", "sucesso": 1, "date": "2026-07-31 22:56:29" },
-    { "username": "sheisdani", "elementalId": "15_2", "bola": "master", "sucesso": 1, "date": "2026-07-31 22:50:47" }
+    { "username": "oreidopimba", "elementalId": "17_1", "bola": "normal", "sucesso": 1, "date": "2026-07-31 23:08:53" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -168,10 +168,10 @@
     },
     {
       "username": "igl_migaas",
-      "pontos": 990,
+      "pontos": 1005,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"12_2":1,"12_3":1,"13_2":1,"15_1":1,"17_2":1,"17_4":2,"1_2":1,"2_1":1,"2_2":2,"2_3":1,"2_4":1,"4_4":1,"6_1":1,"7_2":1,"7_3":1}
+      "inventario": {"12_1":1,"12_2":1,"12_3":1,"13_1":1,"13_2":1,"15_1":1,"17_2":1,"17_4":2,"1_2":1,"2_1":1,"2_2":2,"2_3":1,"2_4":1,"4_4":1,"6_1":1,"7_2":1,"7_3":1}
     },
     {
       "username": "astroz1nvlr",
