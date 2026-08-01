@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-01 19:27:24 UTC",
+  "updatedAt": "2026-08-01 19:34:23 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 169, "sucesso": 42, "rate": 24.9 },
     "super": { "total": 125, "sucesso": 48, "rate": 38.4 },
     "ultra": { "total": 163, "sucesso": 100, "rate": 61.3 },
-    "master": { "total": 960, "sucesso": 879, "rate": 91.6 }
+    "master": { "total": 961, "sucesso": 880, "rate": 91.6 }
   },
   "recentes_lancamentos": [
+    { "username": "salvadormdm", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-08-01 20:34:23" },
     { "username": "manu12321_", "elementalId": "1_1", "bola": "ultra", "sucesso": 1, "date": "2026-08-01 20:24:19" },
     { "username": "igl_migaas", "elementalId": "17_2", "bola": "master", "sucesso": 1, "date": "2026-08-01 20:15:23" },
     { "username": "igl_migaas", "elementalId": "15_1", "bola": "master", "sucesso": 1, "date": "2026-08-01 02:15:28" },
@@ -35,8 +36,7 @@
     { "username": "oreidopimba", "elementalId": "13_1", "bola": "normal", "sucesso": 0, "date": "2026-07-31 23:02:53" },
     { "username": "milhafretuga", "elementalId": "17_3", "bola": "master", "sucesso": 1, "date": "2026-07-31 22:56:29" },
     { "username": "sheisdani", "elementalId": "15_2", "bola": "master", "sucesso": 1, "date": "2026-07-31 22:50:47" },
-    { "username": "manodrico", "elementalId": "1_3", "bola": "ultra", "sucesso": 1, "date": "2026-07-31 22:45:00" },
-    { "username": "oreidopimba", "elementalId": "1_3", "bola": "super", "sucesso": 0, "date": "2026-07-31 22:44:51" }
+    { "username": "manodrico", "elementalId": "1_3", "bola": "ultra", "sucesso": 1, "date": "2026-07-31 22:45:00" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -300,6 +300,13 @@
       "inventario": {"12_3":1}
     },
     {
+      "username": "salvadormdm",
+      "pontos": 40,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_2":1,"3_1":1}
+    },
+    {
       "username": "grandesleitadores",
       "pontos": 40,
       "trocasDisponiveis": 3,
@@ -347,13 +354,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"1_1":1}
-    },
-    {
-      "username": "salvadormdm",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"3_1":1}
     },
     {
       "username": "manuel2019rodrigues",
