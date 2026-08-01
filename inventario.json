@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-01 21:52:14 UTC",
+  "updatedAt": "2026-08-01 21:58:06 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 171, "sucesso": 42, "rate": 24.6 },
     "super": { "total": 129, "sucesso": 51, "rate": 39.5 },
-    "ultra": { "total": 167, "sucesso": 103, "rate": 61.7 },
+    "ultra": { "total": 168, "sucesso": 104, "rate": 61.9 },
     "master": { "total": 976, "sucesso": 895, "rate": 91.7 }
   },
   "recentes_lancamentos": [
+    { "username": "manu12321_", "elementalId": "7_1", "bola": "ultra", "sucesso": 1, "date": "2026-08-01 22:58:06" },
     { "username": "dapyf", "elementalId": "3_2", "bola": "master", "sucesso": 1, "date": "2026-08-01 22:52:14" },
     { "username": "garzia17", "elementalId": "3_2", "bola": "super", "sucesso": 0, "date": "2026-08-01 22:52:05" },
     { "username": "astroz1nvlr", "elementalId": "5_1", "bola": "super", "sucesso": 1, "date": "2026-08-01 22:42:18" },
@@ -35,8 +36,7 @@
     { "username": "salvadormdm", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-08-01 20:34:23" },
     { "username": "manu12321_", "elementalId": "1_1", "bola": "ultra", "sucesso": 1, "date": "2026-08-01 20:24:19" },
     { "username": "igl_migaas", "elementalId": "17_2", "bola": "master", "sucesso": 1, "date": "2026-08-01 20:15:23" },
-    { "username": "igl_migaas", "elementalId": "15_1", "bola": "master", "sucesso": 1, "date": "2026-08-01 02:15:28" },
-    { "username": "manu12321_", "elementalId": "2_2", "bola": "ultra", "sucesso": 1, "date": "2026-08-01 02:05:31" }
+    { "username": "igl_migaas", "elementalId": "15_1", "bola": "master", "sucesso": 1, "date": "2026-08-01 02:15:28" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -73,7 +73,7 @@
       "pontos": 7170,
       "trocasDisponiveis": 1,
       "proximaRecuperacao": "2026-08-02T02:02:30Z",
-      "inventario": {"10_3":1,"12_1":2,"12_2":2,"12_3":2,"13_1":2,"13_3":1,"14_2":1,"14_3":1,"15_1":1,"15_2":2,"15_6":1,"16_1":2,"16_2":1,"16_4":1,"17_1":2,"17_2":2,"17_4":2,"18_1":2,"18_3":1,"18_4":1,"19_1":2,"19_2":1,"19_3":1,"19_5":1,"1_1":2,"1_2":1,"1_3":1,"1_5":1,"21_1":1,"2_1":1,"2_2":2,"2_4":2,"3_1":1,"3_2":2,"3_6":1,"4_1":2,"4_4":2,"5_1":2,"5_2":2,"5_3":2,"5_4":1,"6_1":2,"6_2":1,"6_3":2,"6_6":1,"7_1":1,"7_2":1,"8_1":2,"8_2":1,"8_3":1,"9_1":1,"9_4":1,"9_5":1,"u_EIMEZ":1,"u_san7izinn":1,"u_steve_osvaldo":1}
+      "inventario": {"10_3":1,"12_1":2,"12_2":2,"12_3":2,"13_1":2,"13_3":1,"14_2":1,"14_3":1,"15_1":1,"15_2":2,"15_6":1,"16_1":2,"16_2":1,"16_4":1,"17_1":2,"17_2":2,"17_4":2,"18_1":2,"18_3":1,"18_4":1,"19_1":2,"19_2":1,"19_3":1,"19_5":1,"1_1":2,"1_2":1,"1_3":1,"1_5":1,"21_1":1,"2_1":1,"2_2":2,"2_4":2,"3_1":1,"3_2":2,"3_6":1,"4_1":2,"4_4":2,"5_1":2,"5_2":2,"5_3":2,"5_4":1,"6_1":2,"6_2":1,"6_3":2,"6_6":1,"7_1":2,"7_2":1,"8_1":2,"8_2":1,"8_3":1,"9_1":1,"9_4":1,"9_5":1,"u_EIMEZ":1,"u_san7izinn":1,"u_steve_osvaldo":1}
     },
     {
       "username": "marquesrcarol",
