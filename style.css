@@ -2011,12 +2011,11 @@ body, html {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, rgba(25, 20, 5, 0.8), rgba(45, 38, 10, 0.8));
+    background: #14121a;
     border: 3px solid #ffd700;
     border-radius: 20px;
     padding: 24px 36px;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.5), inset 0 0 15px rgba(255, 235, 59, 0.3);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.6), inset 0 0 15px rgba(255, 235, 59, 0.2);
     animation: quackPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
