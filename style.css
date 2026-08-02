@@ -1457,7 +1457,7 @@ body, html {
 }
 
 /* =========================================================================
-   ESTILOS DO GRIM REAPER (ROLETA E CEIFEIRO)
+   ESTILOS DO GRIM REAPER (ROLETA E CEIFEIRO - TRANSPARENTE E SEM MOLDURA)
    ========================================================================= */
 #grim-panel {
     position: fixed;
@@ -1474,57 +1474,60 @@ body, html {
     transition: opacity 0.5s ease-in-out;
 }
 
+#grim-dark-overlay {
+    display: none !important;
+}
+
 #grim-container {
     position: relative;
-    width: 800px;
-    height: 600px;
-    background: rgba(20, 15, 25, 0.7);
-    border: 2px solid rgba(161, 84, 242, 0.4);
-    box-shadow: 0 0 40px rgba(161, 84, 242, 0.25), inset 0 0 30px rgba(0, 0, 0, 0.8);
-    border-radius: 24px;
+    width: 480px;
+    height: 380px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    padding: 30px;
+    overflow: visible;
+    padding: 10px;
 }
 
 #grim-title {
     font-family: 'Outfit', sans-serif;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     font-weight: 800;
     color: #a154f2;
-    text-shadow: 0 0 20px rgba(161, 84, 242, 0.8), 0 0 40px rgba(161, 84, 242, 0.4);
-    margin-bottom: 40px;
-    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(161, 84, 242, 0.9), 0 0 30px rgba(161, 84, 242, 0.5);
+    margin-bottom: 15px;
+    letter-spacing: 2px;
     animation: pulseTitle 2s infinite ease-in-out;
 }
 
 @keyframes pulseTitle {
-    0%, 100% { text-shadow: 0 0 20px rgba(161, 84, 242, 0.8); transform: scale(1); }
-    50% { text-shadow: 0 0 30px rgba(161, 84, 242, 1), 0 0 50px rgba(161, 84, 242, 0.6); transform: scale(1.03); }
+    0%, 100% { text-shadow: 0 0 15px rgba(161, 84, 242, 0.9); transform: scale(1); }
+    50% { text-shadow: 0 0 25px rgba(161, 84, 242, 1), 0 0 40px rgba(161, 84, 242, 0.7); transform: scale(1.03); }
 }
 
 /* Slot Machine / Roleta */
 #grim-slot-machine {
     position: relative;
-    width: 480px;
-    height: 110px;
-    background: rgba(0, 0, 0, 0.9);
-    border: 3px solid #a154f2;
-    box-shadow: 0 0 25px rgba(161, 84, 242, 0.6), inset 0 0 20px rgba(0,0,0,1);
-    border-radius: 16px;
+    width: 320px;
+    height: 75px;
+    background: rgba(10, 8, 15, 0.9);
+    border: 2px solid #a154f2;
+    box-shadow: 0 0 20px rgba(161, 84, 242, 0.5);
+    border-radius: 12px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #grim-slot-window {
     width: 100%;
-    height: 70px;
+    height: 55px;
     overflow: hidden;
     position: relative;
 }
@@ -1539,24 +1542,24 @@ body, html {
 }
 
 .grim-slot-item {
-    height: 70px;
+    height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Outfit', sans-serif;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: #fff;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
 #grim-slot-indicator {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 6px;
+    height: 4px;
     background: linear-gradient(90deg, transparent, #a154f2, transparent);
-    box-shadow: 0 0 10px #a154f2;
+    box-shadow: 0 0 8px #a154f2;
     pointer-events: none;
     z-index: 10;
 }
@@ -1566,24 +1569,24 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
     z-index: 5;
     transition: opacity 0.5s ease-out;
 }
 
 #grim-victim-name {
     font-family: 'Outfit', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
     color: #f1c40f;
-    text-shadow: 0 0 15px rgba(241, 196, 15, 0.8);
-    margin-bottom: 25px;
+    text-shadow: 0 0 12px rgba(241, 196, 15, 0.9);
+    margin-bottom: 10px;
 }
 
 #grim-card-container {
     position: relative;
-    width: 200px;
-    height: 250px;
+    width: 150px;
+    height: 190px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1591,33 +1594,31 @@ body, html {
 
 #grim-target-card {
     position: relative;
-    width: 180px;
-    height: 240px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-    border-radius: 16px;
+    width: 130px;
+    height: 175px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    backdrop-filter: blur(5px);
     transition: transform 0.3s ease;
 }
 
 #grim-target-img {
-    max-width: 140px;
-    max-height: 140px;
-    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));
+    max-width: 120px;
+    max-height: 120px;
+    filter: drop-shadow(0 8px 12px rgba(0,0,0,0.6));
 }
 
 /* Efeito de Corte (Slash) */
 #grim-card-slash {
     position: absolute;
     width: 300%;
-    height: 15px;
+    height: 12px;
     background: linear-gradient(90deg, transparent, #fff, #a154f2, #fff, transparent);
-    box-shadow: 0 0 30px #a154f2, 0 0 10px #fff;
+    box-shadow: 0 0 25px #a154f2, 0 0 10px #fff;
     transform: rotate(-35deg) translate(-100%, -100%);
     z-index: 120;
     pointer-events: none;
@@ -1647,20 +1648,20 @@ body, html {
 /* Ceifeiro Grim */
 #grim-reaper-img {
     position: absolute;
-    right: -250px;
-    bottom: -50px;
-    width: 480px;
-    height: 480px;
-    filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 20px rgba(161, 84, 242, 0.4));
+    right: -180px;
+    bottom: -40px;
+    width: 360px;
+    height: 360px;
+    filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 15px rgba(161, 84, 242, 0.4));
     z-index: 100;
     pointer-events: none;
-    transform: scaleX(-1); /* Inverter horizontalmente para olhar para a esquerda */
+    transform: scaleX(-1);
     transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .grim-enter {
-    right: -60px !important;
-    bottom: -20px !important;
+    right: -40px !important;
+    bottom: -10px !important;
     animation: reaperFloat 4s ease-in-out infinite 0.6s;
 }
 
@@ -1690,7 +1691,7 @@ body, html {
 }
 
 /* =========================================================================
-   ESTILOS DE PESCA EXTRA (PEIXOTO)
+   ESTILOS DE PESCA EXTRA (PEIXOTO - TRANSPARENTE E SEM MOLDURA)
    ========================================================================= */
 #fishing-panel {
     position: fixed;
@@ -1702,25 +1703,28 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 5, 20, 0.85);
-    backdrop-filter: blur(10px);
+    background: transparent;
+    backdrop-filter: none;
     transition: opacity 0.5s ease-in-out;
+}
+
+#fishing-dark-overlay {
+    display: none !important;
 }
 
 #fishing-container {
     position: relative;
-    width: 600px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(15, 32, 67, 0.8) 0%, rgba(5, 10, 26, 0.95) 100%);
-    border: 2px solid rgba(0, 170, 255, 0.4);
-    box-shadow: 0 0 40px rgba(0, 170, 255, 0.25), inset 0 0 30px rgba(0, 0, 0, 0.8);
-    border-radius: 24px;
+    width: 420px;
+    height: 340px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 40px;
-    overflow: hidden;
+    padding-top: 20px;
+    overflow: visible;
 }
 
 #fishing-title {
