@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02 21:59:27 UTC",
+  "updatedAt": "2026-08-02 21:59:39 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 180, "sucesso": 43, "rate": 23.9 },
     "super": { "total": 130, "sucesso": 52, "rate": 40.0 },
@@ -150,7 +150,7 @@
       "pontos": 1190,
       "trocasDisponiveis": 0,
       "proximaRecuperacao": "2026-08-02T23:06:11Z",
-      "inventario": {"12_2":1,"12_3":1,"13_1":1,"13_3":2,"18_2":1,"19_3":1,"1_2":1,"3_2":1,"4_3":1,"5_3":1,"6_1":1,"7_4":1,"u_ManoDrico":1,"u_san7izinn":1}
+      "inventario": {"12_2":1,"12_3":1,"13_1":1,"13_3":1,"18_2":1,"19_3":1,"1_2":1,"3_2":1,"4_3":1,"5_3":1,"6_1":1,"7_4":1,"u_ManoDrico":1,"u_san7izinn":1}
     },
     {
       "username": "r_moreira16",
