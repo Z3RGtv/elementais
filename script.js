@@ -182,7 +182,13 @@ const allElementais = [
     { id: "23_5", file: "T_Icon_BR_Creature_Sprite_Peely_Holofoil_ui_L.webp", name: "Peely Holofoil" },
 
     // John Wick
-    { id: "24_1", file: "T_Icon_Reload_FillerGrunt_icon_L.webp", name: "John Wick Normal" }
+    { id: "24_1", file: "T_Icon_Reload_FillerGrunt_icon_L.webp", name: "John Wick Normal" },
+
+    // Quack
+    { id: "1_8", file: "T_Icon_BR_Creature_Sprite_Water_Quack_ui_L.webp", name: "Água Quack" },
+    { id: "2_8", file: "T_Icon_BR_Creature_Sprite_Earth_Quack_ui_L.webp", name: "Terra Quack" },
+    { id: "3_8", file: "T_Icon_BR_Creature_Sprite_Fire_Quack_ui_L.webp", name: "Fogo Quack" },
+    { id: "10_8", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Quack_ui_L.webp", name: "Ponto Zero Quack" }
 ];
 
 if (typeof userElementais !== 'undefined') {
@@ -960,6 +966,13 @@ function processarComando(comandoCru) {
             const pescaUser = partes[1];
             const pescaElemId = partes[2];
             mostrarPescaExtra(pescaUser, pescaElemId);
+            break;
+
+        case 'QUACK':
+            const quackUser = partes[1];
+            const quackElemId = partes[2];
+            const quackReq = partes[3];
+            mostrarAnimacaoQuack(quackUser, quackElemId, quackReq);
             break;
 
         case 'LIMPAR':
@@ -2838,6 +2851,37 @@ function tocarSomSismoBoss() {
         lfo.start();
         osc.start();
         lfo.stop(ctx.currentTime + 2.2);
-        osc.stop(ctx.currentTime + 2.2);
     } catch (e) {}
+}
+
+function mostrarAnimacaoQuack(userName, elemId, req) {
+    const item = elementaisMap[elemId];
+    if (!item) return;
+
+    setTimeout(() => {
+        const quackPanel = document.getElementById('quack-panel');
+        const quackCardImg = document.getElementById('quack-card-img');
+        const quackReqNum = document.getElementById('quack-req-num');
+        const quackUserMsg = document.getElementById('quack-user-msg');
+
+        if (quackReqNum) quackReqNum.textContent = req;
+        if (quackCardImg) quackCardImg.src = `Sprites/${item.file}`;
+        if (quackUserMsg) quackUserMsg.textContent = `@${userName} ganhou +1 ${item.name}!`;
+
+        if (quackPanel) {
+            quackPanel.classList.remove('hidden');
+            quackPanel.style.opacity = '1';
+        }
+        tocarSomRevelaCard();
+
+        setTimeout(() => {
+            if (quackPanel) {
+                quackPanel.style.transition = 'opacity 0.5s ease';
+                quackPanel.style.opacity = '0';
+                setTimeout(() => {
+                    quackPanel.classList.add('hidden');
+                }, 500);
+            }
+        }, 5500);
+    }, 4500);
 }
