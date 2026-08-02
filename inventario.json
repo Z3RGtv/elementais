@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-02 20:19:38 UTC",
+  "updatedAt": "2026-08-02 20:31:00 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 178, "sucesso": 43, "rate": 24.2 },
     "super": { "total": 129, "sucesso": 51, "rate": 39.5 },
     "ultra": { "total": 171, "sucesso": 106, "rate": 62.0 },
-    "master": { "total": 998, "sucesso": 915, "rate": 91.7 }
+    "master": { "total": 999, "sucesso": 916, "rate": 91.7 }
   },
   "recentes_lancamentos": [
+    { "username": "lourenco_2015_marques", "elementalId": "16_1", "bola": "master", "sucesso": 1, "date": "2026-08-02 21:30:59" },
     { "username": "ipowerlz", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-08-02 21:19:37" },
     { "username": "ipowerlz", "elementalId": "17_1", "bola": "master", "sucesso": 1, "date": "2026-08-02 21:08:04" },
     { "username": "z3rgtv", "elementalId": "19_1", "bola": "master", "sucesso": 1, "date": "2026-08-02 21:01:12" },
@@ -35,8 +36,7 @@
     { "username": "manu12321_", "elementalId": "20_1", "bola": "master", "sucesso": 0, "date": "2026-08-01 23:33:46" },
     { "username": "marquesrcarol", "elementalId": "u_soniagoncalves", "bola": "master", "sucesso": 1, "date": "2026-08-01 23:27:49" },
     { "username": "steve_osvaldo", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-08-01 23:22:18" },
-    { "username": "lourenco_2015_marques", "elementalId": "13_1", "bola": "normal", "sucesso": 0, "date": "2026-08-01 23:22:09" },
-    { "username": "maxlou2013", "elementalId": "1_4", "bola": "ultra", "sucesso": 1, "date": "2026-08-01 23:16:09" }
+    { "username": "lourenco_2015_marques", "elementalId": "13_1", "bola": "normal", "sucesso": 0, "date": "2026-08-01 23:22:09" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -210,10 +210,10 @@
     },
     {
       "username": "lourenco_2015_marques",
-      "pontos": 330,
+      "pontos": 380,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"13_1":1,"14_3":1,"18_3":1,"1_2":1,"8_1":1,"9_1":1}
+      "inventario": {"13_1":1,"14_3":1,"16_1":1,"18_3":1,"1_2":1,"8_1":1,"9_1":1}
     },
     {
       "username": "coki5731",
