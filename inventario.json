@@ -1,12 +1,15 @@
 {
-  "updatedAt": "2026-08-02 22:48:34 UTC",
+  "updatedAt": "2026-08-02 22:50:53 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 180, "sucesso": 43, "rate": 23.9 },
     "super": { "total": 130, "sucesso": 52, "rate": 40.0 },
     "ultra": { "total": 173, "sucesso": 107, "rate": 61.8 },
-    "master": { "total": 1019, "sucesso": 935, "rate": 91.8 }
+    "master": { "total": 1022, "sucesso": 936, "rate": 91.6 }
   },
   "recentes_lancamentos": [
+    { "username": "milhafretuga", "elementalId": "10_1", "bola": "master", "sucesso": 1, "date": "2026-08-02 23:50:53" },
+    { "username": "ipowerlz", "elementalId": "10_1", "bola": "master", "sucesso": 0, "date": "2026-08-02 23:50:44" },
+    { "username": "sheisdani", "elementalId": "10_1", "bola": "master", "sucesso": 0, "date": "2026-08-02 23:50:35" },
     { "username": "marquesrcarol", "elementalId": "18_1", "bola": "master", "sucesso": 1, "date": "2026-08-02 23:45:45" },
     { "username": "ipowerlz", "elementalId": "16_2", "bola": "master", "sucesso": 1, "date": "2026-08-02 23:40:35" },
     { "username": "ipowerlz", "elementalId": "3_2", "bola": "master", "sucesso": 1, "date": "2026-08-02 23:35:35" },
@@ -33,10 +36,7 @@
     { "username": "gunblade_sis_", "elementalId": "16_2", "bola": "master", "sucesso": 0, "date": "2026-08-02 21:51:10" },
     { "username": "marquesrcarol", "elementalId": "14_1", "bola": "master", "sucesso": 1, "date": "2026-08-02 21:46:35" },
     { "username": "lourenco_2015_marques", "elementalId": "16_1", "bola": "master", "sucesso": 1, "date": "2026-08-02 21:30:59" },
-    { "username": "ipowerlz", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-08-02 21:19:37" },
-    { "username": "ipowerlz", "elementalId": "17_1", "bola": "master", "sucesso": 1, "date": "2026-08-02 21:08:04" },
-    { "username": "z3rgtv", "elementalId": "19_1", "bola": "master", "sucesso": 1, "date": "2026-08-02 21:01:12" },
-    { "username": "milhafretuga", "elementalId": "u_iPowerlz", "bola": "master", "sucesso": 1, "date": "2026-08-02 01:20:51" }
+    { "username": "ipowerlz", "elementalId": "12_2", "bola": "master", "sucesso": 1, "date": "2026-08-02 21:19:37" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -94,7 +94,7 @@
       "pontos": 7030,
       "trocasDisponiveis": 0,
       "proximaRecuperacao": "2026-08-06T21:36:38Z",
-      "inventario": {"10_1":1,"10_3":1,"10_4":1,"11_1":1,"12_1":1,"12_2":3,"12_3":2,"12_4":1,"13_1":2,"14_1":1,"14_2":1,"14_3":1,"15_1":2,"15_4":2,"17_1":1,"17_3":1,"17_4":1,"18_1":1,"18_2":1,"18_3":1,"19_3":1,"1_2":1,"1_3":1,"1_4":1,"1_8":1,"20_1":1,"2_1":1,"2_2":1,"2_3":1,"2_4":1,"2_8":1,"3_1":1,"3_2":1,"3_3":1,"3_4":1,"4_1":1,"4_2":1,"4_3":1,"4_4":1,"5_1":1,"5_2":2,"5_3":1,"5_4":2,"6_1":1,"6_4":1,"7_1":2,"7_2":1,"7_3":1,"8_1":1,"8_2":1,"8_3":1,"8_4":1,"9_1":1,"9_2":1,"u_1509_martim":1,"u_EIMEZ":1,"u_ManoDrico":1,"u_MarquesrCarol":2,"u_MilhafreTuga":2,"u_Minichef9":1,"u_TheMarySimmer":1,"u_gui_z0":2,"u_iPowerlz":2,"u_manu12321_":1,"u_ruialmeida_":2,"u_san7izinn":1,"u_soniagoncalves":1}
+      "inventario": {"10_1":2,"10_3":1,"10_4":1,"11_1":1,"12_1":1,"12_2":3,"12_3":2,"12_4":1,"13_1":2,"14_1":1,"14_2":1,"14_3":1,"15_1":2,"15_4":2,"17_1":1,"17_3":1,"17_4":1,"18_1":1,"18_2":1,"18_3":1,"19_3":1,"1_2":1,"1_3":1,"1_4":1,"1_8":1,"20_1":1,"2_1":1,"2_2":1,"2_3":1,"2_4":1,"2_8":1,"3_1":1,"3_2":1,"3_3":1,"3_4":1,"4_1":1,"4_2":1,"4_3":1,"4_4":1,"5_1":1,"5_2":2,"5_3":1,"5_4":2,"6_1":1,"6_4":1,"7_1":2,"7_2":1,"7_3":1,"8_1":1,"8_2":1,"8_3":1,"8_4":1,"9_1":1,"9_2":1,"u_1509_martim":1,"u_EIMEZ":1,"u_ManoDrico":1,"u_MarquesrCarol":2,"u_MilhafreTuga":2,"u_Minichef9":1,"u_TheMarySimmer":1,"u_gui_z0":2,"u_iPowerlz":2,"u_manu12321_":1,"u_ruialmeida_":2,"u_san7izinn":1,"u_soniagoncalves":1}
     },
     {
       "username": "manodrico",
