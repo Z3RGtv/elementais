@@ -83,6 +83,9 @@ const elementaisMap = [
     { id: "18_3", file: "T_Icon_BR_Creature_Sprite_Seven_Candy_ui_L.webp" },
     { id: "18_4", file: "T_Icon_BR_Creature_Sprite_Seven_Galaxy_ui_L.webp" },
     { id: "18_5", file: "T_Icon_BR_Creature_Sprite_Seven_Holofoil_ui_L.webp" },
+    { id: "10_5", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Holofoil_ui_L.webp" },
+    { id: "10_6", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Cube_ui_L.webp" },
+    { id: "16_5", file: "T_Icon_BR_GrimReaper_Holofoil_L.webp" },
     { id: "19_1", file: "T_Icon_BR_FossilMeal_Default_L.webp" },
     { id: "19_2", file: "T_Icon_BR_FossilMeal_Gold_L.webp" },
     { id: "19_3", file: "T_Icon_BR_FossilMeal_Candy_L.webp" },
@@ -90,7 +93,18 @@ const elementaisMap = [
     { id: "19_5", file: "T_Icon_BR_FossilMeal_Holofoil_L.webp" },
     { id: "19_6", file: "T_Icon_BR_FossilMeal_Cube_L.webp" },
     { id: "20_1", file: "T_Icon_BR_CokeParmesan_Default_L.webp" },
-    { id: "21_1", file: "T_Icon_BR_CompanyStargazer_Default_L.webp" }
+    { id: "21_1", file: "T_Icon_BR_CompanyStargazer_Default_L.webp" },
+    { id: "22_1", file: "T_Icon_BR_Creature_Sprite_Llama_ui_L.webp" },
+    { id: "22_2", file: "T_Icon_BR_Creature_Sprite_Llama_Gold_ui_L.webp" },
+    { id: "22_3", file: "T_Icon_BR_Creature_Sprite_Llama_Candy_ui_L.webp" },
+    { id: "22_4", file: "T_Icon_BR_Creature_Sprite_Llama_Galaxy_ui_L.webp" },
+    { id: "22_7", file: "T_Icon_BR_Creature_Sprite_Llama_Gem_ui_L.webp" },
+    { id: "23_1", file: "T_Icon_BR_Creature_Sprite_Peely_ui_L.webp" },
+    { id: "23_2", file: "T_Icon_BR_Creature_Sprite_Peely_Gold_ui_L.webp" },
+    { id: "23_3", file: "T_Icon_BR_Creature_Sprite_Peely_Candy_ui_L.webp" },
+    { id: "23_4", file: "T_Icon_BR_Creature_Sprite_Peely_Galaxy_ui_L.webp" },
+    { id: "23_5", file: "T_Icon_BR_Creature_Sprite_Peely_Holofoil_ui_L.webp" },
+    { id: "24_1", file: "T_Icon_Reload_FillerGrunt_icon_L.webp" }
 ];
 
 const baseLength = elementaisMap.length; // Calcula dinamicamente o número total de cromos estáticos (83)
@@ -394,7 +408,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         1: "💧 Água", 2: "🪨 Terra", 3: "🔥 Fogo", 4: "🦆 Pato", 5: "👻 Fantasma", 
         6: "💤 Dos Sonhos", 7: "😈 Demónio", 8: "🎸 Punk", 9: "👑 Rei", 10: "🌌 Ponto Zero",
         12: "🐟 Peixoto", 13: "⚽ Atacante", 14: "✨ Aura", 15: "👑 Boss", 16: "💀 Grim",
-        17: "🌪️ Ar", 18: "⚡ Seven", 19: "🦇 Batman"
+        17: "🌪️ Ar", 18: "⚡ Seven", 19: "🦇 Batman", 22: "🦙 Llama", 23: "🍌 Peely", 24: "🕶️ John Wick"
     };
 
     const groups = {};
@@ -404,7 +418,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         let groupKey;
         let groupName;
         
-        if (elem.isUser || elem.id === "11_1" || elem.id === "20_1" || elem.id === "21_1") {
+        if (elem.isUser || elem.id === "11_1" || elem.id === "20_1" || elem.id === "21_1" || elem.id === "24_1") {
             groupKey = "specials";
             groupName = "👥 Especiais & Comunidade";
         } else {
@@ -1346,15 +1360,15 @@ function obterNomeSimplesBicho(id) {
         6: "Dos Sonhos", 7: "Demónio", 8: "Punk", 9: "Rei", 10: "Ponto Zero",
         11: "BurntPeanut", 12: "Peixoto", 13: "Atacante", 14: "Aura", 
         15: "Boss", 16: "Grim", 17: "Ar", 18: "Seven", 19: "Batman",
-        20: "Vini JR", 21: "Pollo"
+        20: "Vini JR", 21: "Pollo", 22: "Llama", 23: "Peely", 24: "John Wick"
     };
 
     const nomesVariantes = {
-        1: "Normal", 2: "Gold", 3: "Gummy", 4: "Galaxy", 5: "Holofoil", 6: "Cube"
+        1: "Normal", 2: "Gold", 3: "Gummy", 4: "Galaxy", 5: "Holofoil", 6: "Cube", 7: "Gem"
     };
 
     const nomeBase = nomesEspecies[especie] || id;
-    if (especie === 11 || especie === 20 || especie === 21) return nomesEspecies[especie] || id;
+    if (especie === 11 || especie === 20 || especie === 21 || especie === 24) return nomesEspecies[especie] || id;
     const nomeVar = nomesVariantes[variante] || "";
     return `${nomeBase} (${nomeVar})`;
 }
@@ -1362,7 +1376,7 @@ function obterNomeSimplesBicho(id) {
 function obterPontosBicho(id) {
     if (!id) return 0;
     if (id.startsWith("u_")) return 100;
-    if (id === "11_1" || id === "20_1" || id === "21_1") return 100; // BurntPeanut, Vini JR, Pollo
+    if (id === "11_1" || id === "20_1" || id === "21_1" || id === "24_1") return 100; // BurntPeanut, Vini JR, Pollo, John Wick
 
     try {
         const partes = id.split('_');
@@ -1371,8 +1385,8 @@ function obterPontosBicho(id) {
 
         const ehRaro = (especie === 1 || especie === 2 || especie === 3 || especie === 12 || especie === 17);
         const ehEpico = (especie === 4 || especie === 5 || especie === 7 || especie === 9 || especie === 13 || especie === 14);
-        const ehLendario = (especie === 6 || especie === 8 || especie === 15 || especie === 18);
-        const ehMitico = (especie === 10 || especie === 16 || especie === 19);
+        const ehLendario = (especie === 6 || especie === 8 || especie === 15 || especie === 18 || especie === 22 || especie === 23);
+        const ehMitico = (especie === 10 || especie === 16 || especie === 19 || especie === 24);
 
         if (ehMitico) {
             if (variante === 1) return 50;
@@ -1380,12 +1394,14 @@ function obterPontosBicho(id) {
             if (variante === 3) return 250;
             if (variante === 4) return 500;
             if (variante === 5 || variante === 6) return 800;
+            if (variante === 7) return 1000;
         } else if (ehLendario) {
             if (variante === 1) return 30;
             if (variante === 2) return 75;
             if (variante === 3) return 150;
             if (variante === 4) return 300;
             if (variante === 5 || variante === 6) return 500;
+            if (variante === 7) return 650;
         } else if (ehEpico) {
             if (variante === 1) return 15;
             if (variante === 2) return 40;
