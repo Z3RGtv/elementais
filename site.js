@@ -104,7 +104,11 @@ const elementaisMap = [
     { id: "23_3", file: "T_Icon_BR_Creature_Sprite_Peely_Candy_ui_L.webp" },
     { id: "23_4", file: "T_Icon_BR_Creature_Sprite_Peely_Galaxy_ui_L.webp" },
     { id: "23_5", file: "T_Icon_BR_Creature_Sprite_Peely_Holofoil_ui_L.webp" },
-    { id: "24_1", file: "T_Icon_Reload_FillerGrunt_icon_L.webp" }
+    { id: "24_1", file: "T_Icon_Reload_FillerGrunt_icon_L.webp" },
+    { id: "1_8", file: "T_Icon_BR_Creature_Sprite_Water_Quack_ui_L.webp" },
+    { id: "2_8", file: "T_Icon_BR_Creature_Sprite_Earth_Quack_ui_L.webp" },
+    { id: "3_8", file: "T_Icon_BR_Creature_Sprite_Fire_Quack_ui_L.webp" },
+    { id: "10_8", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Quack_ui_L.webp" }
 ];
 
 const baseLength = elementaisMap.length; // Calcula dinamicamente o número total de cromos estáticos (83)
@@ -1364,7 +1368,7 @@ function obterNomeSimplesBicho(id) {
     };
 
     const nomesVariantes = {
-        1: "Normal", 2: "Gold", 3: "Gummy", 4: "Galaxy", 5: "Holofoil", 6: "Cube", 7: "Gem"
+        1: "Normal", 2: "Gold", 3: "Gummy", 4: "Galaxy", 5: "Holofoil", 6: "Cube", 7: "Gem", 8: "Quack"
     };
 
     const nomeBase = nomesEspecies[especie] || id;
@@ -1387,6 +1391,10 @@ function obterPontosBicho(id) {
         const ehEpico = (especie === 4 || especie === 5 || especie === 7 || especie === 9 || especie === 13 || especie === 14);
         const ehLendario = (especie === 6 || especie === 8 || especie === 15 || especie === 18 || especie === 22 || especie === 23);
         const ehMitico = (especie === 10 || especie === 16 || especie === 19 || especie === 24);
+
+        if (variante === 8) {
+            return especie === 10 ? 900 : 300;
+        }
 
         if (ehMitico) {
             if (variante === 1) return 50;
