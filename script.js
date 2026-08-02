@@ -972,7 +972,8 @@ function processarComando(comandoCru) {
             const quackUser = partes[1];
             const quackElemId = partes[2];
             const quackReq = partes[3];
-            mostrarAnimacaoQuack(quackUser, quackElemId, quackReq);
+            const delayQuack = isThrowing ? 4500 : 200;
+            mostrarAnimacaoQuack(quackUser, quackElemId, quackReq, delayQuack);
             break;
 
         case 'LIMPAR':
@@ -2854,7 +2855,7 @@ function tocarSomSismoBoss() {
     } catch (e) {}
 }
 
-function mostrarAnimacaoQuack(userName, elemId, req) {
+function mostrarAnimacaoQuack(userName, elemId, req, delayMs = 4500) {
     const item = elementaisMap[elemId];
     if (!item) return;
 
@@ -2883,5 +2884,5 @@ function mostrarAnimacaoQuack(userName, elemId, req) {
                 }, 500);
             }
         }, 5500);
-    }, 4500);
+    }, delayMs);
 }
