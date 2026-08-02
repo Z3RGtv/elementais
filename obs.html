@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementais na Twitch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Área principal do Jogo -->
+    <div id="game-container">
+        
+        <!-- Alerta flutuante para mostrar quem está a jogar ou resultados -->
+        <div id="alert-box" class="hidden">
+            <span id="alert-text"></span>
+        </div>
+        
+        <!-- Painel de Efeitos Ativos (Novo) -->
+        <div id="active-effects-container" class="hidden"></div>
+
+        <!-- Área onde o elemental aparece -->
+        <div id="elemental-area">
+            <img id="elemental-img" src="" alt="Elemental" class="hidden">
+        </div>
+
+        <!-- Animação da bola a ser atirada -->
+        <div id="ball-area">
+            <img id="ball-img" src="" alt="Bola" class="hidden">
+        </div>
+
+        <!-- Boneco Atacante para Chuto (Rebound) -->
+        <img id="striker-overlay-kick" class="hidden" src="Sprites/T_Icon_BR_Creature_Sprite_Soccer_ui_L.webp" alt="Atacante Kick">
+
+        <!-- Área de Troca Visual -->
+        <div id="trade-area" class="hidden">
+            <div class="trade-user" id="trade-user1">Viewer1</div>
+            <div class="trade-card-container">
+                <div class="trade-card" id="trade-card1">
+                    <img id="trade-img1" src="" alt="Bicho 1">
+                </div>
+                <div class="trade-arrow">🔄</div>
+                <div class="trade-card" id="trade-card2">
+                    <img id="trade-img2" src="" alt="Bicho 2">
+                </div>
+            </div>
+            <div class="trade-user" id="trade-user2">Viewer2</div>
+        </div>
+
+        <!-- Área de Sprits -->
+        <div id="sprit-area" class="hidden">
+            <div id="sprit-notification"></div>
+            <div id="sprit-animation-container">
+                <div id="sprit-particles"></div>
+                <img id="sprit-ball" class="hidden" src="" alt="Sprit Ball">
+                <img id="sprit-creature" class="hidden" src="" alt="Sprit Creature">
+            </div>
+        </div>
+    </div>
+
+    <!-- Painel do Grim Reaper (Slot Machine/Roleta e Ceifeiro) -->
+    <div id="grim-panel" class="hidden">
+        <div id="grim-dark-overlay"></div>
+        <div id="grim-container">
+            <h2 id="grim-title">💀 CEIFEIRO LIBERTADO 💀</h2>
+            
+            <!-- Roleta (Slot Machine) -->
+            <div id="grim-slot-machine">
+                <div id="grim-slot-window">
+                    <div id="grim-slot-strip">
+                        <!-- Nomes do Top 3 gerados dinamicamente -->
+                    </div>
+                </div>
+                <div id="grim-slot-indicator"></div>
+            </div>
+
+            <!-- Vítima e Cromo Destruído -->
+            <div id="grim-reveal-area" class="hidden">
+                <div id="grim-victim-name"></div>
+                <div id="grim-card-container">
+                    <div id="grim-target-card">
+                        <img id="grim-target-img" src="" alt="Target Card">
+                        <div id="grim-card-slash" class="hidden"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ceifeiro Grim -->
+            <img id="grim-reaper-img" class="hidden" src="Sprites/T_Icon_BR_GrimReaper_Default_L.webp" alt="Grim Reaper">
+        </div>
+    </div>
+
+    <!-- Painel de Pesca Extra (Peixoto) -->
+    <div id="fishing-panel" class="hidden">
+        <div id="fishing-dark-overlay"></div>
+        <div id="fishing-container">
+            <h2 id="fishing-title">🎣 PESCA EXTRA 🎣</h2>
+            <div id="fishing-user-msg"></div>
+            
+            <div id="fishing-line-container">
+                <!-- A linha e o anzol que descem -->
+                <div id="fishing-line"></div>
+                <div id="fishing-hook">🪝</div>
+            </div>
+
+            <!-- Carta pescada presa ao anzol -->
+            <div id="fishing-card-holder" class="hidden">
+                <div id="fishing-card">
+                    <img id="fishing-card-img" src="" alt="Fish Card">
+                </div>
+            </div>
+            
+            <!-- Partículas de água/bolhas -->
+            <div id="fishing-particles"></div>
+        </div>
+    </div>
+
+    <!-- Painel de Milestone Quack (Recompensa de Capturas - Fundo 100% Transparente) -->
+    <div id="quack-panel" class="hidden">
+        <div id="quack-container">
+            <h2 id="quack-title">🦆 RECOMPENSA QUACK 🦆</h2>
+            <div id="quack-badge">MILESTONE <span id="quack-req-num">100</span> CAPTURAS!</div>
+            <div id="quack-card-holder">
+                <div id="quack-card">
+                    <img id="quack-card-img" src="" alt="Quack Card">
+                </div>
+            </div>
+            <div id="quack-user-msg"></div>
+            <div id="quack-particles"></div>
+        </div>
+    </div>
+
+    <!-- Painel de Coleção (!coleção) -->
+    <div id="collection-panel" class="hidden">
+        <h2 id="collection-title">Coleção de Utilizador</h2>
+        <div id="collection-grid">
+            <!-- As imagens dos elementais capturados vão aparecer aqui -->
+        </div>
+        <div id="collection-dots"></div>
+    </div>
+
+    <!-- Painel de Testes (Debug) -->
+    <div id="debug-panel">
+        <h3>Painel de Testes</h3>
+        <div class="debug-buttons">
+            <button onclick="testarComando('GRIM;Z3RG;Pedro;1_1;Pedro,Z3RG,Manu')">💀 Testar Grim Reaper</button>
+            <button onclick="testarComando('PESCA;Z3RG;12_1')">🎣 Testar Pesca Extra</button>
+            <button onclick="testarComando('QUACK;Z3RG;10_8;100')">🦆 Testar Quack 100 Capturas</button>
+            <button onclick="testarComando('QUACK;Z3RG;1_8;20')">🦆 Testar Quack 20 Capturas</button>
+            <button onclick="testarComando('TROCA;Z3RG;Pedro;T_Icon_BR_Creature_Sprite_BurntPeanut_ui_L.webp;T_Icon_BR_Creature_Sprite_Water_Gold_ui_L.webp')">🔄 Testar Troca</button>
+            
+            <button onclick="testarComando('SPRIT;1;Z3RG')">💧 Sprit Água</button>
+            <button onclick="testarComando('SPRIT;2;Z3RG')">🪨 Sprit Terra</button>
+            <button onclick="testarComando('SPRIT;3;Z3RG')">🔥 Sprit Fogo</button>
+            <button onclick="testarComando('SPRIT;15;Z3RG')">👑 Sprit Boss</button>
+            
+            <button onclick="testarComando('SPAWN;T_Icon_BR_Creature_Sprite_BurntPeanut_ui_L.webp;BurntPeanut')">Spawn BurntPeanut</button>
+            <button onclick="testarComando('ATIRAR;Z3RG;master')">Atirar Master</button>
+            <button onclick="testarComando('SUCESSO;Z3RG')">Sucesso</button>
+            <button onclick="testarComando('FALHA;Z3RG')">Falha</button>
+            <button onclick="testarComando('FUGIU;BurntPeanut')">Fugir</button>
+            <button onclick="testarComando('COLECAO;Z3RG;1_1:1,1_3:2,2_1:1,2_2:2,10_3:1,11_1:1')">Coleção</button>
+            <button onclick="testarComando('LIMPAR')">Limpar Tudo</button>
+            <button onclick="toggleDebug()">Ocultar Painel</button>
+        </div>
+    </div>
+
+    <script src="users_list.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
