@@ -223,8 +223,9 @@ function selecionarUtilizador(player, elementoDOM) {
     // Calcular o progresso de elementais obtidos em relação ao catálogo total dinâmico
     const totalCatalog = elementaisMap.length;
     const totalObtidos = Object.keys(player.inventario).filter(key => player.inventario[key] > 0).length;
+    const totalGeral = Object.values(player.inventario).reduce((acc, val) => acc + (val > 0 ? val : 0), 0);
     
-    document.getElementById('user-progress-val').textContent = `${totalObtidos} / ${totalCatalog}`;
+    document.getElementById('user-progress-val').innerHTML = `${totalObtidos} / ${totalCatalog} <span style="font-size: 12px; color: var(--text-muted); font-weight: normal; margin-left: 8px;">(Total: ${totalGeral})</span>`;
     
     const pct = totalCatalog > 0 ? (totalObtidos / totalCatalog * 100) : 0;
     const progressBar = document.getElementById('user-progress-bar');
@@ -1515,7 +1516,8 @@ function selecionarInventarioGlobal() {
     document.getElementById('view-title').textContent = "Álbum Global (Treinadores Acumulados)";
     document.getElementById('user-points-panel').classList.remove('hidden');
     document.getElementById('user-points-label-container').style.display = 'none';
-    document.getElementById('user-progress-val').textContent = `${uniqueOwned} / ${totalCatalog}`;
+    const totalGeral = Object.values(globalInv).reduce((acc, val) => acc + (val > 0 ? val : 0), 0);
+    document.getElementById('user-progress-val').innerHTML = `${uniqueOwned} / ${totalCatalog} <span style="font-size: 12px; color: var(--text-muted); font-weight: normal; margin-left: 8px;">(Total: ${totalGeral})</span>`;
 
     const pct = totalCatalog > 0 ? (uniqueOwned / totalCatalog) * 100 : 0;
     document.getElementById('user-progress-bar').style.width = `${pct}%`;
