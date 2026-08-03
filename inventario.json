@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-08-03 01:26:39 UTC",
+  "updatedAt": "2026-08-03 01:31:38 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 183, "sucesso": 44, "rate": 24.0 },
-    "super": { "total": 132, "sucesso": 53, "rate": 40.2 },
+    "super": { "total": 133, "sucesso": 53, "rate": 39.8 },
     "ultra": { "total": 183, "sucesso": 111, "rate": 60.7 },
-    "master": { "total": 1045, "sucesso": 954, "rate": 91.3 }
+    "master": { "total": 1046, "sucesso": 955, "rate": 91.3 }
   },
   "recentes_lancamentos": [
+    { "username": "gui_z0", "elementalId": "22_3", "bola": "master", "sucesso": 1, "date": "2026-08-03 02:31:37" },
+    { "username": "k1ngpt14", "elementalId": "22_3", "bola": "super", "sucesso": 0, "date": "2026-08-03 02:31:28" },
     { "username": "k1ngpt14", "elementalId": "8_4", "bola": "master", "sucesso": 1, "date": "2026-08-03 02:26:38" },
     { "username": "gui_z0", "elementalId": "17_1", "bola": "master", "sucesso": 1, "date": "2026-08-03 02:22:10" },
     { "username": "manu12321_", "elementalId": "17_1", "bola": "ultra", "sucesso": 0, "date": "2026-08-03 02:22:01" },
@@ -34,9 +36,7 @@
     { "username": "steve_osvaldo", "elementalId": "22_2", "bola": "master", "sucesso": 0, "date": "2026-08-03 01:01:39" },
     { "username": "milhafretuga", "elementalId": "22_2", "bola": "ultra", "sucesso": 0, "date": "2026-08-03 01:01:31" },
     { "username": "steve_osvaldo", "elementalId": "15_2", "bola": "master", "sucesso": 1, "date": "2026-08-03 00:56:34" },
-    { "username": "k1ngpt14", "elementalId": "15_2", "bola": "ultra", "sucesso": 0, "date": "2026-08-03 00:56:25" },
-    { "username": "steve_osvaldo", "elementalId": "19_1", "bola": "master", "sucesso": 1, "date": "2026-08-03 00:51:50" },
-    { "username": "milhafretuga", "elementalId": "19_1", "bola": "master", "sucesso": 1, "date": "2026-08-03 00:46:51" }
+    { "username": "k1ngpt14", "elementalId": "15_2", "bola": "ultra", "sucesso": 0, "date": "2026-08-03 00:56:25" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -112,10 +112,10 @@
     },
     {
       "username": "gui_z0",
-      "pontos": 2335,
+      "pontos": 2485,
       "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-08-09T23:26:04Z",
-      "inventario": {"10_1":1,"11_1":1,"12_1":2,"12_2":2,"12_4":1,"13_1":2,"14_1":1,"17_1":1,"17_3":1,"17_4":2,"18_1":1,"18_4":1,"19_1":1,"1_1":1,"1_2":1,"1_3":1,"1_4":1,"1_8":1,"2_3":1,"2_4":1,"3_1":1,"3_2":1,"4_3":1,"5_1":1,"5_2":2,"6_2":1,"7_1":2,"7_2":1,"9_3":1,"u_MilhafreTuga":1,"u_steve_osvaldo":1}
+      "inventario": {"10_1":1,"11_1":1,"12_1":2,"12_2":2,"12_4":1,"13_1":2,"14_1":1,"17_1":1,"17_3":1,"17_4":2,"18_1":1,"18_4":1,"19_1":1,"1_1":1,"1_2":1,"1_3":1,"1_4":1,"1_8":1,"22_3":1,"2_3":1,"2_4":1,"3_1":1,"3_2":1,"4_3":1,"5_1":1,"5_2":2,"6_2":1,"7_1":2,"7_2":1,"9_3":1,"u_MilhafreTuga":1,"u_steve_osvaldo":1}
     },
     {
       "username": "minichef9",
