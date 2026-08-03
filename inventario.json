@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03 23:26:06 UTC",
+  "updatedAt": "2026-08-03 23:26:36 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 185, "sucesso": 45, "rate": 24.3 },
     "super": { "total": 137, "sucesso": 55, "rate": 40.1 },
@@ -58,7 +58,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-    { "proposerName": "k1ngpt14", "targetName": "sheisdani", "elemProposer": "22_4", "elemTarget": "8_4", "createdAt": "2026-08-03T23:26:06.4919574Z" }
+
   ],
   "ranking": [
     {
@@ -155,7 +155,7 @@
     {
       "username": "k1ngpt14",
       "pontos": 1325,
-      "trocasDisponiveis": 2,
+      "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"10_3":1,"18_3":1,"1_2":1,"1_3":1,"22_4":1,"2_1":1,"2_3":1,"3_3":1,"7_1":1,"8_4":1,"9_3":1}
     },
