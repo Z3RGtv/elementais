@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-03 21:50:27 UTC",
+  "updatedAt": "2026-08-03 21:55:18 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 184, "sucesso": 45, "rate": 24.5 },
     "super": { "total": 137, "sucesso": 55, "rate": 40.1 },
     "ultra": { "total": 185, "sucesso": 113, "rate": 61.1 },
-    "master": { "total": 1105, "sucesso": 1004, "rate": 90.9 }
+    "master": { "total": 1106, "sucesso": 1005, "rate": 90.9 }
   },
   "recentes_lancamentos": [
+    { "username": "garzia17", "elementalId": "16_1", "bola": "master", "sucesso": 1, "date": "2026-08-03 22:55:17" },
     { "username": "manu12321_", "elementalId": "18_1", "bola": "master", "sucesso": 1, "date": "2026-08-03 22:50:27" },
     { "username": "carloslopes87", "elementalId": "3_3", "bola": "master", "sucesso": 1, "date": "2026-08-03 22:45:04" },
     { "username": "milhafretuga", "elementalId": "4_3", "bola": "master", "sucesso": 1, "date": "2026-08-03 22:40:03" },
@@ -35,8 +36,7 @@
     { "username": "ipowerlz", "elementalId": "9_5", "bola": "master", "sucesso": 1, "date": "2026-08-03 20:48:21" },
     { "username": "ipowerlz", "elementalId": "19_4", "bola": "master", "sucesso": 1, "date": "2026-08-03 20:43:44" },
     { "username": "carloslopes87", "elementalId": "19_4", "bola": "master", "sucesso": 0, "date": "2026-08-03 20:43:35" },
-    { "username": "sheisdani", "elementalId": "1_3", "bola": "master", "sucesso": 1, "date": "2026-08-03 20:38:44" },
-    { "username": "sheisdani", "elementalId": "1_3", "bola": "master", "sucesso": 0, "date": "2026-08-03 20:38:30" }
+    { "username": "sheisdani", "elementalId": "1_3", "bola": "master", "sucesso": 1, "date": "2026-08-03 20:38:44" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -227,7 +227,7 @@
       "pontos": 295,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_2":1,"13_1":1,"15_1":1,"16_1":1,"17_2":1,"1_1":1,"7_1":1,"9_1":1,"u_soniagoncalves":1}
+      "inventario": {"12_2":1,"13_1":1,"15_1":1,"16_1":2,"17_2":1,"1_1":1,"7_1":1,"9_1":1,"u_soniagoncalves":1}
     },
     {
       "username": "coki5731",
