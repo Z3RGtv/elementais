@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03 23:21:53 UTC",
+  "updatedAt": "2026-08-03 23:22:16 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 184, "sucesso": 45, "rate": 24.5 },
     "super": { "total": 137, "sucesso": 55, "rate": 40.1 },
@@ -58,7 +58,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-    { "proposerName": "steve_osvaldo", "targetName": "sheisdani", "elemProposer": "23_1", "elemTarget": "9_2", "createdAt": "2026-08-03T23:21:53.6586298Z" }
+
   ],
   "ranking": [
     {
@@ -169,7 +169,7 @@
     {
       "username": "steve_osvaldo",
       "pontos": 1090,
-      "trocasDisponiveis": 2,
+      "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":1,"12_2":1,"13_1":1,"13_3":1,"15_1":2,"15_2":1,"18_2":1,"19_1":1,"19_3":1,"23_1":1,"4_1":1,"4_3":1,"5_2":1,"5_3":1,"u_ManoDrico":1,"u_san7izinn":1}
     },
