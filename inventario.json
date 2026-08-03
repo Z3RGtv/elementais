@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-08-03 22:13:24 UTC",
+  "updatedAt": "2026-08-03 22:15:19 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 184, "sucesso": 45, "rate": 24.5 },
     "super": { "total": 137, "sucesso": 55, "rate": 40.1 },
-    "ultra": { "total": 185, "sucesso": 113, "rate": 61.1 },
-    "master": { "total": 1109, "sucesso": 1008, "rate": 90.9 }
+    "ultra": { "total": 186, "sucesso": 113, "rate": 60.8 },
+    "master": { "total": 1110, "sucesso": 1009, "rate": 90.9 }
   },
   "recentes_lancamentos": [
+    { "username": "marquesrcarol", "elementalId": "u_ruialmeida_", "bola": "master", "sucesso": 1, "date": "2026-08-03 23:15:18" },
+    { "username": "k1ngpt14", "elementalId": "u_ruialmeida_", "bola": "ultra", "sucesso": 0, "date": "2026-08-03 23:15:09" },
     { "username": "sheisdani", "elementalId": "5_3", "bola": "master", "sucesso": 1, "date": "2026-08-03 23:10:27" },
     { "username": "ipowerlz", "elementalId": "18_2", "bola": "master", "sucesso": 1, "date": "2026-08-03 23:05:28" },
     { "username": "ipowerlz", "elementalId": "15_1", "bola": "master", "sucesso": 1, "date": "2026-08-03 23:00:27" },
@@ -34,9 +36,7 @@
     { "username": "sheisdani", "elementalId": "22_1", "bola": "master", "sucesso": 1, "date": "2026-08-03 21:13:27" },
     { "username": "sheisdani", "elementalId": "5_1", "bola": "master", "sucesso": 1, "date": "2026-08-03 21:08:47" },
     { "username": "gui_z0", "elementalId": "15_2", "bola": "master", "sucesso": 1, "date": "2026-08-03 21:03:47" },
-    { "username": "ipowerlz", "elementalId": "2_4", "bola": "master", "sucesso": 1, "date": "2026-08-03 20:58:45" },
-    { "username": "manu12321_", "elementalId": "18_3", "bola": "master", "sucesso": 1, "date": "2026-08-03 20:53:20" },
-    { "username": "ipowerlz", "elementalId": "9_5", "bola": "master", "sucesso": 1, "date": "2026-08-03 20:48:21" }
+    { "username": "ipowerlz", "elementalId": "2_4", "bola": "master", "sucesso": 1, "date": "2026-08-03 20:58:45" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -84,10 +84,10 @@
     },
     {
       "username": "marquesrcarol",
-      "pontos": 8515,
+      "pontos": 8615,
       "trocasDisponiveis": 0,
       "proximaRecuperacao": "2026-08-03T22:24:31Z",
-      "inventario": {"10_1":1,"10_2":1,"10_3":1,"10_4":1,"11_1":2,"12_1":2,"12_2":2,"12_3":2,"12_4":1,"13_1":2,"13_2":2,"13_3":1,"14_1":2,"14_2":1,"14_3":1,"14_4":1,"15_1":2,"15_2":1,"15_3":1,"17_1":2,"18_1":2,"18_2":1,"18_4":1,"19_1":2,"19_3":1,"19_4":1,"1_2":1,"1_3":1,"1_4":1,"1_5":1,"1_8":1,"20_1":1,"22_1":1,"2_1":2,"2_2":1,"2_3":1,"2_8":1,"3_1":1,"3_2":1,"3_3":1,"3_4":1,"4_1":1,"4_2":1,"4_3":1,"4_4":1,"5_1":1,"5_2":1,"5_3":1,"5_4":1,"5_5":1,"6_1":1,"6_2":1,"6_3":1,"6_4":1,"6_6":1,"7_1":2,"7_3":1,"7_4":1,"8_3":1,"8_4":1,"9_1":1,"u_1509_martim":1,"u_ManoDrico":1,"u_MarquesrCarol":2,"u_TheMarySimmer":1,"u_Z3RGtv":1,"u_iPowerlz":1,"u_soniagoncalves":1}
+      "inventario": {"10_1":1,"10_2":1,"10_3":1,"10_4":1,"11_1":2,"12_1":2,"12_2":2,"12_3":2,"12_4":1,"13_1":2,"13_2":2,"13_3":1,"14_1":2,"14_2":1,"14_3":1,"14_4":1,"15_1":2,"15_2":1,"15_3":1,"17_1":2,"18_1":2,"18_2":1,"18_4":1,"19_1":2,"19_3":1,"19_4":1,"1_2":1,"1_3":1,"1_4":1,"1_5":1,"1_8":1,"20_1":1,"22_1":1,"2_1":2,"2_2":1,"2_3":1,"2_8":1,"3_1":1,"3_2":1,"3_3":1,"3_4":1,"4_1":1,"4_2":1,"4_3":1,"4_4":1,"5_1":1,"5_2":1,"5_3":1,"5_4":1,"5_5":1,"6_1":1,"6_2":1,"6_3":1,"6_4":1,"6_6":1,"7_1":2,"7_3":1,"7_4":1,"8_3":1,"8_4":1,"9_1":1,"u_1509_martim":1,"u_ManoDrico":1,"u_MarquesrCarol":2,"u_TheMarySimmer":1,"u_Z3RGtv":1,"u_iPowerlz":1,"u_ruialmeida_":1,"u_soniagoncalves":1}
     },
     {
       "username": "milhafretuga",
@@ -154,10 +154,10 @@
     },
     {
       "username": "k1ngpt14",
-      "pontos": 1235,
+      "pontos": 1325,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"10_3":1,"18_3":1,"1_2":1,"1_3":1,"22_4":1,"2_1":1,"2_3":1,"3_3":1,"7_1":1,"8_4":1}
+      "inventario": {"10_3":1,"18_3":1,"1_2":1,"1_3":1,"22_4":1,"2_1":1,"2_3":1,"3_3":1,"7_1":1,"8_4":1,"9_3":1}
     },
     {
       "username": "san7izinn",
