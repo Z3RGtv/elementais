@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-03 01:14:20 UTC",
+  "updatedAt": "2026-08-03 01:16:52 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 182, "sucesso": 44, "rate": 24.2 },
-    "super": { "total": 131, "sucesso": 52, "rate": 39.7 },
+    "super": { "total": 132, "sucesso": 53, "rate": 40.2 },
     "ultra": { "total": 182, "sucesso": 111, "rate": 61.0 },
     "master": { "total": 1043, "sucesso": 952, "rate": 91.3 }
   },
   "recentes_lancamentos": [
+    { "username": "k1ngpt14", "elementalId": "1_2", "bola": "super", "sucesso": 1, "date": "2026-08-03 02:16:52" },
     { "username": "k1ngpt14", "elementalId": "9_2", "bola": "ultra", "sucesso": 1, "date": "2026-08-03 02:11:26" },
     { "username": "k1ngpt14", "elementalId": "7_1", "bola": "normal", "sucesso": 1, "date": "2026-08-03 02:06:50" },
     { "username": "k1ngpt14", "elementalId": "2_3", "bola": "ultra", "sucesso": 1, "date": "2026-08-03 02:01:26" },
@@ -35,8 +36,7 @@
     { "username": "ipowerlz", "elementalId": "18_1", "bola": "master", "sucesso": 1, "date": "2026-08-03 00:41:50" },
     { "username": "ipowerlz", "elementalId": "6_4", "bola": "master", "sucesso": 1, "date": "2026-08-03 00:36:45" },
     { "username": "sheisdani", "elementalId": "6_4", "bola": "master", "sucesso": 0, "date": "2026-08-03 00:36:36" },
-    { "username": "steve_osvaldo", "elementalId": "6_4", "bola": "master", "sucesso": 0, "date": "2026-08-03 00:36:27" },
-    { "username": "milhafretuga", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-08-03 00:31:49" }
+    { "username": "steve_osvaldo", "elementalId": "6_4", "bola": "master", "sucesso": 0, "date": "2026-08-03 00:36:27" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -231,10 +231,10 @@
     },
     {
       "username": "k1ngpt14",
-      "pontos": 190,
+      "pontos": 220,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"2_3":1,"7_1":1,"8_2":1,"9_2":1}
+      "inventario": {"1_2":1,"2_3":1,"7_1":1,"8_2":1,"9_2":1}
     },
     {
       "username": "themarysimmer",
