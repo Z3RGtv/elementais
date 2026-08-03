@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03 20:13:28 UTC",
+  "updatedAt": "2026-08-03 20:16:03 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 183, "sucesso": 44, "rate": 24.0 },
     "super": { "total": 135, "sucesso": 54, "rate": 40.0 },
@@ -189,10 +189,10 @@
     },
     {
       "username": "k1ngpt14",
-      "pontos": 880,
+      "pontos": 805,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"1_2":1,"22_4":1,"2_3":1,"3_3":1,"7_1":1,"8_2":1,"8_4":1,"9_2":2}
+      "inventario": {"1_2":1,"22_4":1,"2_3":1,"3_3":1,"7_1":1,"8_4":1,"9_2":2}
     },
     {
       "username": "1509_martim",
