@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-03 18:45:00 UTC",
+  "updatedAt": "2026-08-03 18:45:04 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 183, "sucesso": 44, "rate": 24.0 },
-    "super": { "total": 134, "sucesso": 53, "rate": 39.6 },
+    "super": { "total": 135, "sucesso": 54, "rate": 40.0 },
     "ultra": { "total": 184, "sucesso": 112, "rate": 60.9 },
     "master": { "total": 1065, "sucesso": 973, "rate": 91.4 }
   },
   "recentes_lancamentos": [
+    { "username": "k1ngpt14", "elementalId": "9_2", "bola": "super", "sucesso": 1, "date": "2026-08-03 19:45:03" },
     { "username": "manodrico", "elementalId": "17_2", "bola": "master", "sucesso": 1, "date": "2026-08-03 19:39:36" },
     { "username": "manodrico", "elementalId": "23_1", "bola": "master", "sucesso": 1, "date": "2026-08-03 19:35:00" },
     { "username": "sheisdani", "elementalId": "10_5", "bola": "master", "sucesso": 1, "date": "2026-08-03 19:29:39" },
@@ -35,8 +36,7 @@
     { "username": "manu12321_", "elementalId": "17_1", "bola": "ultra", "sucesso": 0, "date": "2026-08-03 02:22:01" },
     { "username": "k1ngpt14", "elementalId": "17_1", "bola": "normal", "sucesso": 0, "date": "2026-08-03 02:21:52" },
     { "username": "k1ngpt14", "elementalId": "1_2", "bola": "super", "sucesso": 1, "date": "2026-08-03 02:16:52" },
-    { "username": "k1ngpt14", "elementalId": "9_2", "bola": "ultra", "sucesso": 1, "date": "2026-08-03 02:11:26" },
-    { "username": "k1ngpt14", "elementalId": "7_1", "bola": "normal", "sucesso": 1, "date": "2026-08-03 02:06:50" }
+    { "username": "k1ngpt14", "elementalId": "9_2", "bola": "ultra", "sucesso": 1, "date": "2026-08-03 02:11:26" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -192,7 +192,7 @@
       "pontos": 880,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"1_2":1,"22_4":1,"2_3":1,"3_3":1,"7_1":1,"8_2":1,"8_4":1,"9_2":1}
+      "inventario": {"1_2":1,"22_4":1,"2_3":1,"3_3":1,"7_1":1,"8_2":1,"8_4":1,"9_2":2}
     },
     {
       "username": "1509_martim",
