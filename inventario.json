@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03 20:25:58 UTC",
+  "updatedAt": "2026-08-03 20:26:56 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 184, "sucesso": 45, "rate": 24.5 },
     "super": { "total": 135, "sucesso": 54, "rate": 40.0 },
@@ -175,10 +175,10 @@
     },
     {
       "username": "k1ngpt14",
-      "pontos": 1065,
+      "pontos": 1025,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"10_3":1,"1_2":1,"22_4":1,"2_1":1,"2_3":1,"3_3":1,"7_1":1,"8_4":1,"9_2":1}
+      "inventario": {"10_3":1,"1_2":1,"22_4":1,"2_1":1,"2_3":1,"3_3":1,"7_1":1,"8_4":1}
     },
     {
       "username": "steve_osvaldo",
