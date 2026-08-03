@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-03 01:05:25 UTC",
+  "updatedAt": "2026-08-03 01:06:51 UTC",
   "estatisticas_bolas": {
-    "normal": { "total": 181, "sucesso": 43, "rate": 23.8 },
+    "normal": { "total": 182, "sucesso": 44, "rate": 24.2 },
     "super": { "total": 131, "sucesso": 52, "rate": 39.7 },
     "ultra": { "total": 181, "sucesso": 110, "rate": 60.8 },
     "master": { "total": 1043, "sucesso": 952, "rate": 91.3 }
   },
   "recentes_lancamentos": [
+    { "username": "k1ngpt14", "elementalId": "7_1", "bola": "normal", "sucesso": 1, "date": "2026-08-03 02:06:50" },
     { "username": "k1ngpt14", "elementalId": "2_3", "bola": "ultra", "sucesso": 1, "date": "2026-08-03 02:01:26" },
     { "username": "k1ngpt14", "elementalId": "17_2", "bola": "ultra", "sucesso": 0, "date": "2026-08-03 01:57:24" },
     { "username": "manu12321_", "elementalId": "10_2", "bola": "master", "sucesso": 1, "date": "2026-08-03 01:51:40" },
@@ -35,8 +36,7 @@
     { "username": "sheisdani", "elementalId": "6_4", "bola": "master", "sucesso": 0, "date": "2026-08-03 00:36:36" },
     { "username": "steve_osvaldo", "elementalId": "6_4", "bola": "master", "sucesso": 0, "date": "2026-08-03 00:36:27" },
     { "username": "milhafretuga", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-08-03 00:31:49" },
-    { "username": "milhafretuga", "elementalId": "3_3", "bola": "master", "sucesso": 1, "date": "2026-08-03 00:26:52" },
-    { "username": "milhafretuga", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-08-03 00:14:36" }
+    { "username": "milhafretuga", "elementalId": "3_3", "bola": "master", "sucesso": 1, "date": "2026-08-03 00:26:52" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -293,6 +293,13 @@
       "inventario": {"1_1":1,"1_2":1,"2_1":1,"8_1":1}
     },
     {
+      "username": "k1ngpt14",
+      "pontos": 75,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"2_3":1,"7_1":1}
+    },
+    {
       "username": "citrusbow123",
       "pontos": 70,
       "trocasDisponiveis": 3,
@@ -312,13 +319,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"19_1":1,"2_1":1}
-    },
-    {
-      "username": "k1ngpt14",
-      "pontos": 60,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"2_3":1}
     },
     {
       "username": "grandesleitadores",
