@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04 00:05:19 UTC",
+  "updatedAt": "2026-08-04 00:05:34 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 185, "sucesso": 45, "rate": 24.3 },
     "super": { "total": 138, "sucesso": 55, "rate": 39.9 },
@@ -153,13 +153,6 @@
       "inventario": {"16_2":1,"16_3":1,"18_1":1,"18_5":1,"19_2":1,"1_2":1,"2_1":1,"2_3":1,"4_3":1,"9_2":1,"u_soniagoncalves":1}
     },
     {
-      "username": "k1ngpt14",
-      "pontos": 1325,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"10_3":1,"18_3":1,"1_2":1,"1_3":1,"22_4":1,"2_1":1,"2_3":1,"3_3":1,"7_1":1,"8_4":1,"9_3":1}
-    },
-    {
       "username": "steve_osvaldo",
       "pontos": 1240,
       "trocasDisponiveis": 2,
@@ -186,6 +179,13 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":1,"12_2":1,"12_4":1,"13_1":1,"13_2":1,"17_1":1,"17_2":1,"18_1":1,"1_1":1,"1_3":1,"2_2":1,"2_4":1,"5_1":1,"8_3":1,"9_5":1}
+    },
+    {
+      "username": "k1ngpt14",
+      "pontos": 1025,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"10_3":1,"18_3":1,"1_2":1,"1_3":1,"22_4":1,"2_1":1,"2_3":1,"3_3":1,"7_1":1,"9_3":1}
     },
     {
       "username": "rstraveler",
