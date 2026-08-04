@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04 00:57:40 UTC",
+  "updatedAt": "2026-08-04 00:58:15 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 186, "sucesso": 45, "rate": 24.2 },
     "super": { "total": 140, "sucesso": 55, "rate": 39.3 },
@@ -146,18 +146,18 @@
       "inventario": {"12_1":1,"12_2":1,"12_3":1,"13_1":1,"13_2":1,"15_1":1,"17_2":1,"17_4":2,"18_1":1,"1_2":1,"1_8":1,"23_2":1,"2_1":1,"2_2":2,"2_3":1,"2_4":2,"4_4":1,"6_1":1,"7_1":1,"7_2":1,"7_3":1}
     },
     {
-      "username": "k1ngpt14",
-      "pontos": 1365,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"18_3":1,"1_2":1,"1_4":1,"22_4":1,"2_1":1,"2_3":1,"3_3":1,"6_6":1,"7_1":1,"9_3":1}
-    },
-    {
       "username": "mikito_2012",
       "pontos": 1350,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"16_2":1,"16_3":1,"18_1":1,"18_5":1,"19_2":1,"1_2":1,"2_1":1,"2_3":1,"4_3":1,"9_2":1,"u_soniagoncalves":1}
+    },
+    {
+      "username": "k1ngpt14",
+      "pontos": 1275,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"18_3":1,"1_2":1,"1_4":1,"22_4":1,"2_1":1,"2_3":1,"3_3":1,"6_6":1,"7_1":1}
     },
     {
       "username": "steve_osvaldo",
