@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04 19:08:01 UTC",
+  "updatedAt": "2026-08-04 19:08:19 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 188, "sucesso": 45, "rate": 23.9 },
     "super": { "total": 141, "sucesso": 55, "rate": 39.0 },
@@ -314,18 +314,18 @@
       "inventario": {"12_3":1}
     },
     {
-      "username": "z3rgtv",
-      "pontos": 60,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"19_1":1,"3_1":1}
-    },
-    {
       "username": "carloslopes87",
       "pontos": 60,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"3_3":1}
+    },
+    {
+      "username": "z3rgtv",
+      "pontos": 50,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"19_1":1}
     },
     {
       "username": "grandesleitadores",
