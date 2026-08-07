@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-07 17:34:19 UTC",
+  "updatedAt": "2026-08-07 17:35:21 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 192, "sucesso": 46, "rate": 24.0 },
     "super": { "total": 145, "sucesso": 57, "rate": 39.3 },
     "ultra": { "total": 191, "sucesso": 116, "rate": 60.7 },
-    "master": { "total": 1218, "sucesso": 1100, "rate": 90.3 }
+    "master": { "total": 1219, "sucesso": 1101, "rate": 90.3 }
   },
   "recentes_lancamentos": [
+    { "username": "hst_playz_pt", "elementalId": "13_1", "bola": "master", "sucesso": 1, "date": "2026-08-07 18:35:20" },
     { "username": "sheisdani", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-08-07 18:30:17" },
     { "username": "sheisdani", "elementalId": "17_1", "bola": "master", "sucesso": 1, "date": "2026-08-07 18:25:15" },
     { "username": "sheisdani", "elementalId": "u_1509_martim", "bola": "master", "sucesso": 1, "date": "2026-08-07 18:19:54" },
@@ -35,8 +36,7 @@
     { "username": "steve_osvaldo", "elementalId": "15_4", "bola": "master", "sucesso": 1, "date": "2026-08-05 00:04:05" },
     { "username": "manu12321_", "elementalId": "19_3", "bola": "master", "sucesso": 1, "date": "2026-08-04 23:59:22" },
     { "username": "steve_osvaldo", "elementalId": "6_2", "bola": "master", "sucesso": 1, "date": "2026-08-04 23:53:58" },
-    { "username": "hugoandre07", "elementalId": "15_1", "bola": "master", "sucesso": 1, "date": "2026-08-04 23:49:21" },
-    { "username": "sheisdani", "elementalId": "10_1", "bola": "master", "sucesso": 1, "date": "2026-08-04 23:44:21" }
+    { "username": "hugoandre07", "elementalId": "15_1", "bola": "master", "sucesso": 1, "date": "2026-08-04 23:49:21" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -377,6 +377,13 @@
       "inventario": {"13_1":1,"9_1":1}
     },
     {
+      "username": "hst_playz_pt",
+      "pontos": 25,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"13_1":1,"1_1":1}
+    },
+    {
       "username": "diguiferreira97",
       "pontos": 15,
       "trocasDisponiveis": 3,
@@ -389,13 +396,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"13_1":1}
-    },
-    {
-      "username": "hst_playz_pt",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_1":1}
     },
     {
       "username": "sant1gomes",
