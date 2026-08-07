@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-08-07 21:26:46 UTC",
+  "updatedAt": "2026-08-07 21:32:16 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 197, "sucesso": 47, "rate": 23.9 },
-    "super": { "total": 148, "sucesso": 59, "rate": 39.9 },
-    "ultra": { "total": 196, "sucesso": 121, "rate": 61.7 },
+    "super": { "total": 149, "sucesso": 59, "rate": 39.6 },
+    "ultra": { "total": 197, "sucesso": 122, "rate": 61.9 },
     "master": { "total": 1249, "sucesso": 1129, "rate": 90.4 }
   },
   "recentes_lancamentos": [
+    { "username": "inumerus", "elementalId": "1_1", "bola": "ultra", "sucesso": 1, "date": "2026-08-07 22:32:16" },
+    { "username": "inumerus", "elementalId": "1_1", "bola": "super", "sucesso": 0, "date": "2026-08-07 22:31:59" },
     { "username": "gui_z0", "elementalId": "17_1", "bola": "master", "sucesso": 1, "date": "2026-08-07 22:26:45" },
     { "username": "mrnapzor", "elementalId": "12_1", "bola": "normal", "sucesso": 0, "date": "2026-08-07 22:21:50" },
     { "username": "manodrico", "elementalId": "17_3", "bola": "master", "sucesso": 1, "date": "2026-08-07 22:16:37" },
@@ -34,9 +36,7 @@
     { "username": "marquesrcarol", "elementalId": "18_2", "bola": "master", "sucesso": 1, "date": "2026-08-07 20:13:51" },
     { "username": "marquesrcarol", "elementalId": "17_2", "bola": "master", "sucesso": 1, "date": "2026-08-07 20:08:51" },
     { "username": "manu12321_", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-08-07 20:03:50" },
-    { "username": "igl_migaas", "elementalId": "5_3", "bola": "master", "sucesso": 1, "date": "2026-08-07 19:58:50" },
-    { "username": "garzia17", "elementalId": "23_2", "bola": "ultra", "sucesso": 1, "date": "2026-08-07 19:48:49" },
-    { "username": "hugoandre07", "elementalId": "19_1", "bola": "master", "sucesso": 1, "date": "2026-08-07 19:44:02" }
+    { "username": "igl_migaas", "elementalId": "5_3", "bola": "master", "sucesso": 1, "date": "2026-08-07 19:58:50" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -157,7 +157,7 @@
       "pontos": 1505,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"12_2":2,"12_4":1,"13_1":2,"14_1":1,"14_4":1,"15_1":1,"17_1":1,"17_2":1,"17_3":1,"17_4":1,"18_1":1,"19_1":1,"19_3":1,"1_1":1,"1_2":1,"1_8":1,"3_2":1,"4_1":1,"5_1":1,"6_1":1,"7_1":1,"8_1":1}
+      "inventario": {"12_1":1,"12_2":2,"12_4":1,"13_1":2,"14_1":1,"14_4":1,"15_1":1,"17_1":1,"17_2":1,"17_3":1,"17_4":1,"18_1":1,"19_1":1,"19_3":1,"1_1":2,"1_2":1,"1_8":1,"3_2":1,"4_1":1,"5_1":1,"6_1":1,"7_1":1,"8_1":1}
     },
     {
       "username": "mikito_2012",
