@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07 17:47:29 UTC",
+  "updatedAt": "2026-08-07 17:47:40 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 192, "sucesso": 46, "rate": 24.0 },
     "super": { "total": 145, "sucesso": 57, "rate": 39.3 },
@@ -230,13 +230,6 @@
       "inventario": {"13_1":1,"14_3":1,"16_1":1,"18_3":1,"1_2":1,"8_1":1,"9_1":1}
     },
     {
-      "username": "paconaza",
-      "pontos": 330,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"2_2":1,"8_4":1}
-    },
-    {
       "username": "coki5731",
       "pontos": 265,
       "trocasDisponiveis": 3,
@@ -335,13 +328,6 @@
       "inventario": {"19_1":1}
     },
     {
-      "username": "grandesleitadores",
-      "pontos": 40,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"12_2":1}
-    },
-    {
       "username": "salvadormdm",
       "pontos": 40,
       "trocasDisponiveis": 3,
@@ -349,7 +335,14 @@
       "inventario": {"12_2":1,"3_1":1}
     },
     {
-      "username": "gabizeira2012",
+      "username": "grandesleitadores",
+      "pontos": 40,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_1":1,"12_2":1}
+    },
+    {
+      "username": "paconaza",
       "pontos": 30,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
@@ -361,6 +354,13 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"18_1":1}
+    },
+    {
+      "username": "gabizeira2012",
+      "pontos": 30,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"2_2":1}
     },
     {
       "username": "midnight_8k",
@@ -398,18 +398,18 @@
       "inventario": {"13_1":1}
     },
     {
-      "username": "manuel2019rodrigues",
-      "pontos": 10,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"2_1":1}
-    },
-    {
       "username": "sant1gomes",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_1":1}
+    },
+    {
+      "username": "manuel2019rodrigues",
+      "pontos": 10,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"2_1":1}
     }
   ]
 }
