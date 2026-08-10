@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10 23:36:31 UTC",
+  "updatedAt": "2026-08-10 23:39:08 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 206, "sucesso": 48, "rate": 23.3 },
     "super": { "total": 160, "sucesso": 65, "rate": 40.6 },
@@ -58,7 +58,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-
+    { "proposerName": "mikito_2012", "targetName": "z3rgtv", "elemProposer": "u_soniagoncalves", "elemTarget": "19_1", "createdAt": "2026-08-10T23:39:08.3307252Z" }
   ],
   "ranking": [
     {
@@ -162,7 +162,7 @@
     {
       "username": "mikito_2012",
       "pontos": 1660,
-      "trocasDisponiveis": 3,
+      "trocasDisponiveis": 2,
       "proximaRecuperacao": null,
       "inventario": {"10_3":1,"12_2":1,"13_1":1,"16_2":1,"16_3":1,"18_1":1,"18_5":1,"19_2":1,"1_2":1,"2_1":2,"2_3":1,"4_3":1,"9_1":1,"9_2":1,"u_soniagoncalves":1}
     },
