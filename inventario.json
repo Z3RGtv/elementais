@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-10 19:41:43 UTC",
+  "updatedAt": "2026-08-10 19:43:56 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 205, "sucesso": 48, "rate": 23.4 },
     "super": { "total": 156, "sucesso": 63, "rate": 40.4 },
     "ultra": { "total": 204, "sucesso": 127, "rate": 62.3 },
-    "master": { "total": 1278, "sucesso": 1154, "rate": 90.3 }
+    "master": { "total": 1279, "sucesso": 1155, "rate": 90.3 }
   },
   "recentes_lancamentos": [
+    { "username": "hugoandre07", "elementalId": "4_4", "bola": "master", "sucesso": 1, "date": "2026-08-10 20:43:56" },
     { "username": "hugoandre07", "elementalId": "14_2", "bola": "master", "sucesso": 1, "date": "2026-08-10 20:38:45" },
     { "username": "manodrico", "elementalId": "6_1", "bola": "ultra", "sucesso": 1, "date": "2026-08-10 20:33:55" },
     { "username": "sheisdani", "elementalId": "5_1", "bola": "ultra", "sucesso": 1, "date": "2026-08-10 20:25:44" },
@@ -35,8 +36,7 @@
     { "username": "manu12321_", "elementalId": "7_2", "bola": "master", "sucesso": 1, "date": "2026-08-08 00:29:39" },
     { "username": "hugoandre07", "elementalId": "16_1", "bola": "master", "sucesso": 1, "date": "2026-08-08 00:24:38" },
     { "username": "manodrico", "elementalId": "22_4", "bola": "master", "sucesso": 1, "date": "2026-08-08 00:07:31" },
-    { "username": "manodrico", "elementalId": "22_4", "bola": "master", "sucesso": 0, "date": "2026-08-08 00:07:20" },
-    { "username": "manodrico", "elementalId": "15_1", "bola": "master", "sucesso": 1, "date": "2026-08-07 23:59:13" }
+    { "username": "manodrico", "elementalId": "22_4", "bola": "master", "sucesso": 0, "date": "2026-08-08 00:07:20" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -92,22 +92,22 @@
     {
       "username": "manodrico",
       "pontos": 7025,
-      "trocasDisponiveis": 1,
-      "proximaRecuperacao": "2026-08-10T19:41:50Z",
+      "trocasDisponiveis": 2,
+      "proximaRecuperacao": "2026-08-10T23:12:40Z",
       "inventario": {"12_1":1,"12_2":1,"12_3":1,"12_4":1,"13_1":1,"13_3":1,"13_5":1,"15_2":1,"15_3":1,"15_4":1,"17_2":1,"17_3":1,"18_3":2,"19_3":1,"19_4":1,"1_2":1,"1_3":1,"1_5":1,"1_8":1,"22_4":1,"22_7":1,"23_1":1,"2_3":1,"2_4":1,"2_8":1,"3_3":1,"3_4":1,"4_2":1,"4_3":1,"4_4":1,"5_1":1,"5_2":1,"5_3":1,"6_1":2,"6_3":1,"7_1":1,"7_2":1,"7_3":1,"7_4":1,"8_2":1,"8_3":1,"8_4":1,"9_3":1,"u_EIMEZ":1,"u_ManoDrico":1,"u_MarquesrCarol":1,"u_MilhafreTuga":1,"u_gui_z0":1,"u_manu12321_":1,"u_soniagoncalves":1}
     },
     {
       "username": "hugoandre07",
-      "pontos": 5055,
+      "pontos": 5295,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"10_3":1,"12_1":2,"12_2":2,"13_1":1,"13_2":2,"14_3":1,"15_1":1,"15_3":1,"16_1":1,"16_2":1,"16_3":1,"17_1":1,"17_2":1,"17_3":1,"17_4":1,"18_1":1,"18_2":2,"18_5":1,"19_1":1,"19_6":1,"1_1":2,"1_2":2,"1_8":1,"22_1":1,"23_1":1,"2_1":1,"2_2":1,"2_3":1,"2_4":1,"2_8":1,"3_1":1,"3_2":2,"4_1":2,"4_3":1,"5_1":2,"5_2":2,"6_1":1,"6_2":1,"6_3":1,"7_1":1,"7_2":1,"7_3":1,"8_4":1,"9_1":1,"u_ManoDrico":1,"u_Z3RGtv":1,"u_san7izinn":1}
+      "inventario": {"10_3":1,"12_1":2,"12_2":2,"13_1":1,"13_2":2,"14_2":1,"14_3":1,"15_1":1,"15_3":1,"16_1":1,"16_2":1,"16_3":1,"17_1":1,"17_2":1,"17_3":1,"17_4":1,"18_1":1,"18_2":2,"18_5":1,"19_1":1,"19_6":1,"1_1":2,"1_2":2,"1_8":1,"22_1":1,"23_1":1,"2_1":1,"2_2":1,"2_3":1,"2_4":1,"2_8":1,"3_1":1,"3_2":2,"4_1":2,"4_3":1,"4_4":1,"5_1":2,"5_2":2,"6_1":1,"6_2":1,"6_3":1,"7_1":1,"7_2":1,"7_3":1,"8_4":1,"9_1":1,"u_ManoDrico":1,"u_Z3RGtv":1,"u_san7izinn":1}
     },
     {
       "username": "milhafretuga",
       "pontos": 3940,
-      "trocasDisponiveis": 2,
-      "proximaRecuperacao": "2026-08-10T19:41:50Z",
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
       "inventario": {"10_1":2,"10_3":1,"11_1":1,"1_8":1,"3_4":1,"4_1":1,"4_2":1,"4_3":2,"4_4":1,"5_5":1,"7_1":1,"7_2":1,"7_3":1,"7_4":1,"9_5":1,"u_1509_martim":1,"u_EIMEZ":1,"u_ManoDrico":1,"u_MarquesrCarol":2,"u_MilhafreTuga":2,"u_Minichef9":1,"u_TheMarySimmer":1,"u_Z3RGtv":1,"u_Z3RGtv_og":1,"u_gui_z0":1,"u_iPowerlz":2,"u_manu12321_":1,"u_ruialmeida_":2,"u_san7izinn":1,"u_sheisdani":1,"u_soniagoncalves":1,"u_steve_osvaldo":1}
     },
     {
