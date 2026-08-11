@@ -99,12 +99,20 @@ const elementaisMap = [
     { id: "22_3", file: "T_Icon_BR_Creature_Sprite_Llama_Candy_ui_L.webp" },
     { id: "22_4", file: "T_Icon_BR_Creature_Sprite_Llama_Galaxy_ui_L.webp" },
     { id: "22_7", file: "T_Icon_BR_Creature_Sprite_Llama_Gem_ui_L.webp" },
+    { id: "1_7", file: "T_Icon_BR_Creature_Sprite_Water_Gem_ui_L.webp" },
+    { id: "2_7", file: "T_Icon_BR_Creature_Sprite_Earth_Gem_ui_L.webp" },
+    { id: "4_7", file: "T_Icon_BR_Duck_Gem_L.webp" },
+    { id: "7_7", file: "T_Icon_BR_RedDemon_Gem_L.webp" },
+    { id: "10_7", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Gem_ui_L.webp" },
+    { id: "14_7", file: "T_Icon_BR_Creature_Sprite_Drifter_Gem_ui_L.webp" },
+    { id: "16_7", file: "T_Icon_BR_GrimReaper_Gem_L.webp" },
     { id: "23_1", file: "T_Icon_BR_Creature_Sprite_Peely_ui_L.webp" },
     { id: "23_2", file: "T_Icon_BR_Creature_Sprite_Peely_Gold_ui_L.webp" },
     { id: "23_3", file: "T_Icon_BR_Creature_Sprite_Peely_Candy_ui_L.webp" },
     { id: "23_4", file: "T_Icon_BR_Creature_Sprite_Peely_Galaxy_ui_L.webp" },
     { id: "23_5", file: "T_Icon_BR_Creature_Sprite_Peely_Holofoil_ui_L.webp" },
     { id: "24_1", file: "T_Icon_Reload_FillerGrunt_icon_L.webp" },
+    { id: "25_1", file: "T_Icon_BR_PedicureAntacid_L.webp" },
     { id: "1_8", file: "T_Icon_BR_Creature_Sprite_Water_Quack_ui_L.webp" },
     { id: "2_8", file: "T_Icon_BR_Creature_Sprite_Earth_Quack_ui_L.webp" },
     { id: "3_8", file: "T_Icon_BR_Creature_Sprite_Fire_Quack_ui_L.webp" },
@@ -413,7 +421,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         1: "💧 Água", 2: "🪨 Terra", 3: "🔥 Fogo", 4: "🦆 Pato", 5: "👻 Fantasma", 
         6: "💤 Dos Sonhos", 7: "😈 Demónio", 8: "🎸 Punk", 9: "👑 Rei", 10: "🌌 Ponto Zero",
         12: "🐟 Peixoto", 13: "⚽ Atacante", 14: "✨ Aura", 15: "👑 Boss", 16: "💀 Grim",
-        17: "🌪️ Ar", 18: "⚡ Seven", 19: "🦇 Batman", 22: "🦙 Llama", 23: "🍌 Peely", 24: "🕶️ John Wick"
+        17: "🌪️ Ar", 18: "⚡ Seven", 19: "🦇 Batman", 22: "🦙 Llama", 23: "🍌 Peely", 24: "🕶️ John Wick", 25: "🐭 Ironmouse"
     };
 
     const groups = {};
@@ -423,7 +431,7 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
         let groupKey;
         let groupName;
         
-        if (elem.isUser || elem.id === "11_1" || elem.id === "20_1" || elem.id === "21_1" || elem.id === "24_1") {
+        if (elem.isUser || elem.id === "11_1" || elem.id === "20_1" || elem.id === "21_1" || elem.id === "24_1" || elem.id === "25_1") {
             groupKey = "specials";
             groupName = "👥 Especiais & Comunidade";
         } else {
@@ -1365,7 +1373,7 @@ function obterNomeSimplesBicho(id) {
         6: "Dos Sonhos", 7: "Demónio", 8: "Punk", 9: "Rei", 10: "Ponto Zero",
         11: "BurntPeanut", 12: "Peixoto", 13: "Atacante", 14: "Aura", 
         15: "Boss", 16: "Grim", 17: "Ar", 18: "Seven", 19: "Batman",
-        20: "Vini JR", 21: "Pollo", 22: "Llama", 23: "Peely", 24: "John Wick"
+        20: "Vini JR", 21: "Pollo", 22: "Llama", 23: "Peely", 24: "John Wick", 25: "Ironmouse"
     };
 
     const nomesVariantes = {
@@ -1373,7 +1381,7 @@ function obterNomeSimplesBicho(id) {
     };
 
     const nomeBase = nomesEspecies[especie] || id;
-    if (especie === 11 || especie === 20 || especie === 21 || especie === 24) return nomesEspecies[especie] || id;
+    if (especie === 11 || especie === 20 || especie === 21 || especie === 24 || especie === 25) return nomesEspecies[especie] || id;
     const nomeVar = nomesVariantes[variante] || "";
     return `${nomeBase} (${nomeVar})`;
 }
@@ -1381,7 +1389,7 @@ function obterNomeSimplesBicho(id) {
 function obterPontosBicho(id) {
     if (!id) return 0;
     if (id.startsWith("u_")) return 100;
-    if (id === "11_1" || id === "20_1" || id === "21_1" || id === "24_1") return 100; // BurntPeanut, Vini JR, Pollo, John Wick
+    if (id === "11_1" || id === "20_1" || id === "21_1" || id === "24_1" || id === "25_1") return 100; // BurntPeanut, Vini JR, Pollo, John Wick, Ironmouse
 
     try {
         const partes = id.split('_');
