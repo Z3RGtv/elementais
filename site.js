@@ -644,6 +644,24 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
             if (labelVento) labelVento.style.color = "";
         }
     }
+
+    // Bónus de Coleção Completa de Seven: se tiver todas as variantes, duplo upgrade de variante (tier +2)
+    const hasAllSeven = hasCompleteCollection(18);
+    const spanSeven = document.getElementById("seven-effect-text");
+    const labelSeven = document.getElementById("seven-effect-label");
+    if (spanSeven) {
+        if (hasAllSeven) {
+            spanSeven.textContent = "duplo upgrade de variante (tier +2)";
+            spanSeven.style.color = "#ffd700";
+            spanSeven.style.fontWeight = "bold";
+            if (labelSeven) labelSeven.style.color = "#ffd700";
+        } else {
+            spanSeven.textContent = "upgrade de variante (tier +1)";
+            spanSeven.style.color = "";
+            spanSeven.style.fontWeight = "";
+            if (labelSeven) labelSeven.style.color = "";
+        }
+    }
     // Bónus de Coleção Completa de Atacante: se tiver todas as variantes, ganha +20% no rebound
     const hasAllAtacante = hasCompleteCollection(13);
     const spanAtacante = document.getElementById("atacante-effect-text");
@@ -659,6 +677,42 @@ function renderizarGridColecao(player, targetGridId, isSelectionMode, selectCall
             spanAtacante.style.color = "";
             spanAtacante.style.fontWeight = "";
             if (labelAtacante) labelAtacante.style.color = "";
+        }
+    }
+
+    // Bónus de Coleção Completa de Llama: se tiver todas as variantes, sorteia apenas Lendários/Míticos
+    const hasAllLlama = hasCompleteCollection(22);
+    const spanLlama = document.getElementById("llama-effect-text");
+    const labelLlama = document.getElementById("llama-effect-label");
+    if (spanLlama) {
+        if (hasAllLlama) {
+            spanLlama.textContent = "poder aleatório de elemental LENDÁRIO ou MÍTICO";
+            spanLlama.style.color = "#ffd700";
+            spanLlama.style.fontWeight = "bold";
+            if (labelLlama) labelLlama.style.color = "#ffd700";
+        } else {
+            spanLlama.textContent = "poder aleatório de qualquer elemental";
+            spanLlama.style.color = "";
+            spanLlama.style.fontWeight = "";
+            if (labelLlama) labelLlama.style.color = "";
+        }
+    }
+
+    // Bónus de Coleção Completa de Peely: se tiver todas as variantes, faz escorregar 2 pessoas
+    const hasAllPeely = hasCompleteCollection(23);
+    const spanPeely = document.getElementById("peely-effect-text");
+    const labelPeely = document.getElementById("peely-effect-label");
+    if (spanPeely) {
+        if (hasAllPeely) {
+            spanPeely.textContent = "primeiras 2 pessoas da fila";
+            spanPeely.style.color = "#ffd700";
+            spanPeely.style.fontWeight = "bold";
+            if (labelPeely) labelPeely.style.color = "#ffd700";
+        } else {
+            spanPeely.textContent = "primeira pessoa da fila";
+            spanPeely.style.color = "";
+            spanPeely.style.fontWeight = "";
+            if (labelPeely) labelPeely.style.color = "";
         }
     }
 
