@@ -174,6 +174,15 @@ const allElementais = [
     { id: "22_4", file: "T_Icon_BR_Creature_Sprite_Llama_Galaxy_ui_L.webp", name: "Llama Galaxy" },
     { id: "22_7", file: "T_Icon_BR_Creature_Sprite_Llama_Gem_ui_L.webp", name: "Llama Gem" },
 
+    // Novas Gems
+    { id: "1_7", file: "T_Icon_BR_Creature_Sprite_Water_Gem_ui_L.webp", name: "Água Gem" },
+    { id: "2_7", file: "T_Icon_BR_Creature_Sprite_Earth_Gem_ui_L.webp", name: "Terra Gem" },
+    { id: "4_7", file: "T_Icon_BR_Duck_Gem_L.webp", name: "Pato Gem" },
+    { id: "7_7", file: "T_Icon_BR_RedDemon_Gem_L.webp", name: "Demónio Gem" },
+    { id: "10_7", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Gem_ui_L.webp", name: "Ponto Zero Gem" },
+    { id: "14_7", file: "T_Icon_BR_Creature_Sprite_Drifter_Gem_ui_L.webp", name: "Aura Gem" },
+    { id: "16_7", file: "T_Icon_BR_GrimReaper_Gem_L.webp", name: "Grim Gem" },
+
     // Peely
     { id: "23_1", file: "T_Icon_BR_Creature_Sprite_Peely_ui_L.webp", name: "Peely Normal" },
     { id: "23_2", file: "T_Icon_BR_Creature_Sprite_Peely_Gold_ui_L.webp", name: "Peely Gold" },
@@ -183,6 +192,9 @@ const allElementais = [
 
     // John Wick
     { id: "24_1", file: "T_Icon_Reload_FillerGrunt_icon_L.webp", name: "John Wick Normal" },
+
+    // Ironmouse
+    { id: "25_1", file: "T_Icon_BR_PedicureAntacid_L.webp", name: "Ironmouse" },
 
     // Quack
     { id: "1_8", file: "T_Icon_BR_Creature_Sprite_Water_Quack_ui_L.webp", name: "Água Quack" },
@@ -631,7 +643,7 @@ function processarComando(comandoCru) {
     
     if (partesPrincipais.length > 1) {
         const raw = partesPrincipais[1];
-        let agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante;
+        let agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante, vento;
         if (raw.includes('=')) {
             const map = {};
             raw.split(';').forEach(pair => {
@@ -667,9 +679,10 @@ function processarComando(comandoCru) {
             boss = efeitosPartes[10];
             peixe = efeitosPartes[11];
             atacante = efeitosPartes[12] === 'True' || efeitosPartes[12] === 'true';
+            vento = efeitosPartes[13];
         }
         
-        atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante);
+        atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante, vento);
     }
 
     const partes = comandoReal.split(';');
@@ -2270,7 +2283,7 @@ function spawnKingClimax(container) {
 }
 
 /* Funções do Painel de Efeitos Ativos (Novos) */
-function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante) {
+function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante, vento) {
     const container = document.getElementById('active-effects-container');
     if (!container) return;
 
@@ -2398,6 +2411,16 @@ function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, p
         circle.className = 'effect-circle atacante';
         circle.title = 'Atacante Ativo (Ressalto extra se falhar)';
         circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Soccer_ui_L.webp" alt="Atacante">';
+        container.appendChild(circle);
+        temEfeito = true;
+    }
+
+    if (vento && (vento === 'True' || vento === 'true' || vento === 'Super' || vento === 'super' || vento === true)) {
+        const isSuper = (vento === 'Super' || vento === 'super');
+        const circle = document.createElement('div');
+        circle.className = 'effect-circle wind';
+        circle.title = isSuper ? 'Vento Ativo [SUPER] (Garante Ar/Vento com chances lendárias/míticas)' : 'Vento Ativo (Garante Ar/Vento no Spawn)';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Air_Default_L.webp" alt="Vento">';
         container.appendChild(circle);
         temEfeito = true;
     }
