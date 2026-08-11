@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11 00:21:01 UTC",
+  "updatedAt": "2026-08-11 00:21:04 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 209, "sucesso": 49, "rate": 23.4 },
     "super": { "total": 160, "sucesso": 65, "rate": 40.6 },
@@ -161,10 +161,10 @@
     },
     {
       "username": "mikito_2012",
-      "pontos": 1670,
+      "pontos": 1640,
       "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-08-14T00:15:32Z",
-      "inventario": {"10_3":1,"12_2":1,"13_1":1,"16_2":1,"16_3":1,"17_1":1,"18_1":1,"18_5":1,"19_2":1,"1_2":1,"2_1":1,"2_3":1,"4_3":1,"9_1":1,"9_2":1,"u_soniagoncalves":1}
+      "inventario": {"10_3":1,"12_2":1,"13_1":1,"16_2":1,"16_3":1,"17_1":1,"18_1":1,"18_5":1,"19_2":1,"2_1":1,"2_3":1,"4_3":1,"9_1":1,"9_2":1,"u_soniagoncalves":1}
     },
     {
       "username": "san7izinn",
