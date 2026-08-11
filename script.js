@@ -643,7 +643,7 @@ function processarComando(comandoCru) {
     
     if (partesPrincipais.length > 1) {
         const raw = partesPrincipais[1];
-        let agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante, vento;
+        let agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante, vento, peely;
         if (raw.includes('=')) {
             const map = {};
             raw.split(';').forEach(pair => {
@@ -664,6 +664,8 @@ function processarComando(comandoCru) {
             peixe = map["peixe"];
             atacante = map["atacante"] === 'true' || map["atacante"] === 'True';
             vento = map["vento"];
+            peely = map["peely"];
+            seven = map["seven"];
         } else {
             const efeitosPartes = raw.split(';');
             agua = efeitosPartes[0];
@@ -680,9 +682,11 @@ function processarComando(comandoCru) {
             peixe = efeitosPartes[11];
             atacante = efeitosPartes[12] === 'True' || efeitosPartes[12] === 'true';
             vento = efeitosPartes[13];
+            peely = efeitosPartes[14];
+            seven = efeitosPartes[15];
         }
         
-        atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante, vento);
+        atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante, vento, peely, seven);
     }
 
     const partes = comandoReal.split(';');
@@ -1260,19 +1264,26 @@ function mostrarEfeitoGrim(conjurador, vitima, elemId, candidatos = []) {
     strip.style.transition = 'none';
     strip.style.transform = 'translateY(0px)';
 
-    // 2. Preencher a roleta de nomes (nomes dos candidatos misturados com a vítima no final)
-    const nomesFicticios = (candidatos && candidatos.length > 0) ? candidatos : ['Z3RGtv', 'SheisDani', 'MarquesrCarol', 'gui_z0', 'manu12321_', 'Dario', 'Kika', 'Z3RGTv_VOD'];
-    const poolNomes = [...nomesFicticios];
+    // 2. Preencher a roleta de nomes (nomes dos candidatos do Top 3)
+    const topCandidates = (candidatos && candidatos.length > 0) ? candidatos.filter(c => c && c.trim() !== '') : [];
+    const fallbackNomes = ['Z3RGtv', 'SheisDani', 'MarquesrCarol', 'gui_z0', 'manu12321_'];
+    
+    // Garantir que a pool de nomes tem pelo menos 3 nomes
+    let poolNomes = [...topCandidates];
+    fallbackNomes.forEach(f => {
+        if (poolNomes.length < 3 && !poolNomes.includes(f)) poolNomes.push(f);
+    });
     poolNomes.sort(() => Math.random() - 0.5);
     
     const itemsCount = 25;
+    const itemHeight = 55; // Altura exata definida em CSS para .grim-slot-item
     let html = '';
     for (let i = 0; i < itemsCount; i++) {
         let nome = poolNomes[i % poolNomes.length];
         if (i === itemsCount - 3) {
             nome = vitima;
         }
-        html += `<div class="grim-slot-item">${nome}</div>`;
+        html += `<div class="grim-slot-item ${i === itemsCount - 3 ? 'winner-item' : ''}">@${nome}</div>`;
     }
     strip.innerHTML = html;
 
@@ -1281,7 +1292,7 @@ function mostrarEfeitoGrim(conjurador, vitima, elemId, candidatos = []) {
     // 3. Iniciar o spin (Slot Machine)
     setTimeout(() => {
         strip.style.transition = 'transform 3.5s cubic-bezier(0.1, 0.8, 0.25, 1)';
-        const targetOffset = -(itemsCount - 3) * 70;
+        const targetOffset = -(itemsCount - 3) * itemHeight;
         strip.style.transform = `translateY(${targetOffset}px)`;
         
         let tickInterval = setInterval(() => {
@@ -1297,16 +1308,19 @@ function mostrarEfeitoGrim(conjurador, vitima, elemId, candidatos = []) {
     // 4. Parar na Vítima e revelar
     setTimeout(() => {
         tocarSomImpacto();
-        document.getElementById('grim-slot-machine').style.borderColor = '#f1c40f';
-        document.getElementById('grim-slot-machine').style.boxShadow = '0 0 35px #f1c40f';
-        
-        setTimeout(() => {
-            document.getElementById('grim-slot-machine').style.borderColor = '#a154f2';
-            document.getElementById('grim-slot-machine').style.boxShadow = '0 0 25px rgba(161, 84, 242, 0.6)';
-        }, 800);
+        const slotMachine = document.getElementById('grim-slot-machine');
+        if (slotMachine) {
+            slotMachine.style.borderColor = '#f1c40f';
+            slotMachine.style.boxShadow = '0 0 35px #f1c40f';
+            
+            setTimeout(() => {
+                slotMachine.style.borderColor = '#a154f2';
+                slotMachine.style.boxShadow = '0 0 25px rgba(161, 84, 242, 0.6)';
+            }, 800);
+        }
 
         revealArea.classList.remove('hidden');
-        victimNameDiv.textContent = `Vítima Escolhida: @${vitima}`;
+        victimNameDiv.textContent = `💀 Vítima Escolhida: @${vitima}`;
         
         const bichoInfo = elementaisMap[elemId] || { file: 'T_Icon_BR_Creature_Sprite_ZeroPoint_ui_L.webp' };
         targetImg.src = `Sprites/${bichoInfo.file}`;
@@ -1755,6 +1769,36 @@ function mostrarEfeitoSprit(numeroSprit, jogadorNome) {
             themeGlow = '#e74c3c';
             ambientParticleFunc = spawnFireParticles;
             climaxParticleFunc = spawnFireClimax;
+            soundClimaxFunc = tocarSomSpritGenerico;
+            break;
+        case 18: // Seven
+            titulo = `⚡ @${jogadorNome} invocou o Elemental Seven! ⚡`;
+            themeClass = 'theme-generic';
+            ballIndex = 4;
+            creatureFile = 'T_Icon_BR_Creature_Sprite_Seven_ui_L.webp';
+            themeGlow = '#00d2d3';
+            ambientParticleFunc = spawnAuroraParticles;
+            climaxParticleFunc = spawnAuroraClimax;
+            soundClimaxFunc = tocarSomChimeAura;
+            break;
+        case 22: // Llama
+            titulo = `🦙 @${jogadorNome} invocou o Elemental Llama! 🦙`;
+            themeClass = 'theme-generic';
+            ballIndex = 4;
+            creatureFile = 'T_Icon_BR_Creature_Sprite_Llama_ui_L.webp';
+            themeGlow = '#f39c12';
+            ambientParticleFunc = spawnAuroraParticles;
+            climaxParticleFunc = spawnAuroraClimax;
+            soundClimaxFunc = tocarSomChimeAura;
+            break;
+        case 23: // Peely
+            titulo = `🍌 @${jogadorNome} invocou o Elemental Peely! 🍌`;
+            themeClass = 'theme-generic';
+            ballIndex = 4;
+            creatureFile = 'T_Icon_BR_Creature_Sprite_Peely_ui_L.webp';
+            themeGlow = '#f1c40f';
+            ambientParticleFunc = spawnGenericParticles;
+            climaxParticleFunc = spawnGenericClimax;
             soundClimaxFunc = tocarSomSpritGenerico;
             break;
         default:
@@ -2282,20 +2326,62 @@ function spawnKingClimax(container) {
     }
 }
 
-/* Funções do Painel de Efeitos Ativos (Novos) */
-function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante, vento) {
-    const container = document.getElementById('active-effects-container');
-    if (!container) return;
+function spawnPeelyClimax(container) {
+    for (let i = 0; i < 60; i++) {
+        const p = document.createElement('div');
+        p.className = 'particle-peely';
+        p.style.left = '50%';
+        p.style.top = '50%';
+        const angle = Math.random() * 2 * Math.PI;
+        const speed = 40 + Math.random() * 120;
+        p.style.setProperty('--tx', `${Math.cos(angle) * speed}px`);
+        p.style.setProperty('--ty', `${Math.sin(angle) * speed}px`);
+        p.style.setProperty('--rot', `${-180 + Math.random() * 360}deg`);
+        container.appendChild(p);
+        setTimeout(() => p.remove(), 1800);
+    }
+}
 
+function spawnGenericClimaxExtra(container) {
+    for (let i = 0; i < 50; i++) {
+        const p = document.createElement('div');
+        p.className = 'particle-generic sprit-particle-explode';
+        const size = 5 + Math.random() * 9;
+        p.style.width = `${size}px`;
+        p.style.height = `${size}px`;
+        p.style.left = '50%';
+        p.style.top = '50%';
+        const angle = Math.random() * 2 * Math.PI;
+        const speed = 30 + Math.random() * 100;
+        p.style.setProperty('--tx', `${Math.cos(angle) * speed}px`);
+        p.style.setProperty('--ty', `${Math.sin(angle) * speed}px`);
+        container.appendChild(p);
+        setTimeout(() => p.remove(), 1500);
+    }
+}
+
+function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante, vento, peely, seven) {
+    const container = document.getElementById('active-effects-bar');
+    if (!container) return;
+    
     container.innerHTML = '';
     let temEfeito = false;
+
+    if (fogo) {
+        const circle = document.createElement('div');
+        circle.className = 'effect-circle fire';
+        circle.title = 'Fogo Ativo (Spawns rápidos)';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Fire_ui_L.webp" alt="Fogo">';
+        container.appendChild(circle);
+        temEfeito = true;
+    }
 
     if (agua && (agua === 'True' || agua === 'true' || agua === 'Super' || agua === 'super' || agua === true)) {
         const isSuper = (agua === 'Super' || agua === 'super');
         const circle = document.createElement('div');
         circle.className = 'effect-circle water';
-        circle.title = isSuper ? 'Água Ativa [SUPER] (-60% Captura)' : 'Água Ativa (-40% Captura)';
-        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Water_Unvault_Ch7S3_ui_L.webp" alt="Água">';
+        circle.title = isSuper ? 'Água Ativa [SUPER] (-60% Taxa de Captura para todos exceto conjurador)' : 'Água Ativa (-40% Taxa de Captura para todos exceto conjurador)';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Water_ui_L.webp" alt="Água">';
         container.appendChild(circle);
         temEfeito = true;
     }
@@ -2304,17 +2390,8 @@ function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, p
         const isSuper = (terra === 'Super' || terra === 'super');
         const circle = document.createElement('div');
         circle.className = 'effect-circle earth';
-        circle.title = isSuper ? 'Terra Ativa [SUPER] (Lendário ou Mítico)' : 'Terra Ativa (Sem Comuns)';
-        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Earth_Ch7S3_UI_L.webp" alt="Terra">';
-        container.appendChild(circle);
-        temEfeito = true;
-    }
-
-    if (fogo) {
-        const circle = document.createElement('div');
-        circle.className = 'effect-circle fire';
-        circle.title = 'Fogo Ativo (Spawns rápidos)';
-        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Fire_Unvault_Ch7S3_ui_L.webp" alt="Fogo">';
+        circle.title = isSuper ? 'Terra Ativa [SUPER] (Garante elemental Mítico)' : 'Terra Ativa (Garante Épico, Lendário ou Mítico)';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Earth_ui_L.webp" alt="Terra">';
         container.appendChild(circle);
         temEfeito = true;
     }
@@ -2323,7 +2400,7 @@ function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, p
         const isSuper = (pato === 'Super' || pato === 'super');
         const circle = document.createElement('div');
         circle.className = 'effect-circle duck';
-        circle.title = isSuper ? 'Pato Ativo [SUPER] (Gummy+ no Spawn)' : 'Pato Ativo (Ouro+ no Spawn)';
+        circle.title = isSuper ? 'Pato Ativo [SUPER] (Garante variante Gummy ou superior)' : 'Pato Ativo (Garante variante Gold ou superior)';
         circle.innerHTML = '<img src="Sprites/T_Icon_BR_Duck_Default_L.webp" alt="Pato">';
         container.appendChild(circle);
         temEfeito = true;
@@ -2332,8 +2409,8 @@ function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, p
     if (ghost) {
         const circle = document.createElement('div');
         circle.className = 'effect-circle ghost';
-        circle.title = 'Ghost Ativo (Elemental Mistério)';
-        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Ghost_Unvault_L.webp" alt="Ghost">';
+        circle.title = 'Fantasma Ativo (Spawn oculto)';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Ghost_Default_L.webp" alt="Fantasma">';
         container.appendChild(circle);
         temEfeito = true;
     }
@@ -2342,8 +2419,8 @@ function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, p
         const isSuper = (sleepy === 'Super' || sleepy === 'super');
         const circle = document.createElement('div');
         circle.className = 'effect-circle sleepy';
-        circle.title = isSuper ? 'Dos Sonhos Ativo [SUPER] (Adormece 2 pessoas)' : 'Dos Sonhos Ativo (Alguém vai adormecer)';
-        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Sleepy_ui_L.webp" alt="Sleepy">';
+        circle.title = isSuper ? 'Sonhos Ativo [SUPER] (Adormece 2 pessoas no sorteio)' : 'Sonhos Ativo (Adormece 1 pessoa no sorteio)';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Sleepy_Default_L.webp" alt="Sonhos">';
         container.appendChild(circle);
         temEfeito = true;
     }
@@ -2352,7 +2429,7 @@ function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, p
         const isSuper = (demon === 'Super' || demon === 'super');
         const circle = document.createElement('div');
         circle.className = 'effect-circle demon';
-        circle.title = isSuper ? 'Demónio Ativo [SUPER] (Master e Ultra Exclusivas)' : 'Demónio Ativo (Master Ball Exclusiva)';
+        circle.title = isSuper ? 'Demónio Ativo [SUPER] (Apenas conjurador pode usar Master/Ultra Ball)' : 'Demónio Ativo (Apenas conjurador pode usar Master Ball)';
         circle.innerHTML = '<img src="Sprites/T_Icon_BR_RedDemon_Default_L.webp" alt="Demónio">';
         container.appendChild(circle);
         temEfeito = true;
@@ -2362,7 +2439,7 @@ function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, p
         const isSuper = (punk === 'Super' || punk === 'super');
         const circle = document.createElement('div');
         circle.className = 'effect-circle punk';
-        circle.title = isSuper ? 'Punk Ativo [SUPER] (Rouba de até 2 pessoas)' : 'Punk Ativo (Roubo de Elementais)';
+        circle.title = isSuper ? 'Punk Ativo [SUPER] (Rouba elementais de até 2 participantes)' : 'Punk Ativo (Rouba 1 elemental de participante)';
         circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Punk_ui_L.webp" alt="Punk">';
         container.appendChild(circle);
         temEfeito = true;
@@ -2371,46 +2448,28 @@ function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, p
     if (king) {
         const circle = document.createElement('div');
         circle.className = 'effect-circle king';
-        circle.title = 'Rei Ativo (Captura Exclusiva)';
+        circle.title = 'Rei Ativo (Apenas conjurador pode arremessar)';
         circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_King_ui_L.webp" alt="Rei">';
         container.appendChild(circle);
         temEfeito = true;
     }
 
-    if (aura) {
+    if (peely && (peely === 'True' || peely === 'true' || peely === 'Super' || peely === 'super' || peely === true)) {
+        const isSuper = (peely === 'Super' || peely === 'super');
         const circle = document.createElement('div');
-        circle.className = 'effect-circle aura';
-        circle.title = 'Aura Ativa (Prioridade na fila)';
-        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Drifter_ui_L.webp" alt="Aura">';
+        circle.className = 'effect-circle peely';
+        circle.title = isSuper ? 'Peely Ativo [SUPER] (Primeiros 2 lugares da fila escorregam)' : 'Peely Ativo (1º lugar da fila escorrega)';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Peely_ui_L.webp" alt="Peely">';
         container.appendChild(circle);
         temEfeito = true;
     }
 
-    if (boss && (boss === 'True' || boss === 'true' || boss === 'Super' || boss === 'super' || boss === true)) {
-        const isSuper = (boss === 'Super' || boss === 'super');
+    if (seven && (seven === 'True' || seven === 'true' || seven === 'Super' || seven === 'super' || seven === true)) {
+        const isSuper = (seven === 'Super' || seven === 'super');
         const circle = document.createElement('div');
-        circle.className = 'effect-circle boss';
-        circle.title = isSuper ? 'Boss Ativo [SUPER] (Garante Galaxy ou superior, -60% Captura)' : 'Boss Ativo (Garante Gummy ou superior, -60% Captura)';
-        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Boss_ui_L.webp" alt="Boss">';
-        container.appendChild(circle);
-        temEfeito = true;
-    }
-
-    if (peixe && (peixe === 'True' || peixe === 'true' || peixe === 'Super' || peixe === 'super' || peixe === true)) {
-        const isSuper = (peixe === 'Super' || peixe === 'super');
-        const circle = document.createElement('div');
-        circle.className = 'effect-circle peixe';
-        circle.title = isSuper ? 'Peixe Ativo [SUPER] (Pesca 2 elementais extras se capturar)' : 'Peixe Ativo (Extra Elemental se capturar)';
-        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Fishy_ui_L.webp" alt="Peixe">';
-        container.appendChild(circle);
-        temEfeito = true;
-    }
-
-    if (atacante) {
-        const circle = document.createElement('div');
-        circle.className = 'effect-circle atacante';
-        circle.title = 'Atacante Ativo (Ressalto extra se falhar)';
-        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Soccer_ui_L.webp" alt="Atacante">';
+        circle.className = 'effect-circle seven';
+        circle.title = isSuper ? 'Seven Ativo [SUPER] (Traz elemental dos últimos 7 com Upgrade Duplo)' : 'Seven Ativo (Traz elemental dos últimos 7 com Upgrade de Variante)';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Seven_ui_L.webp" alt="Seven">';
         container.appendChild(circle);
         temEfeito = true;
     }
