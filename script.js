@@ -2362,7 +2362,7 @@ function spawnGenericClimaxExtra(container) {
 }
 
 function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante, vento, peely, seven) {
-    const container = document.getElementById('active-effects-bar');
+    const container = document.getElementById('active-effects-container') || document.getElementById('active-effects-bar');
     if (!container) return;
     
     container.innerHTML = '';
