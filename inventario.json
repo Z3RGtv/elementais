@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13 23:19:07 UTC",
+  "updatedAt": "2026-08-13 23:21:00 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 216, "sucesso": 50, "rate": 23.1 },
     "super": { "total": 164, "sucesso": 66, "rate": 40.2 },
@@ -58,7 +58,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-    { "proposerName": "sheisdani", "targetName": "manu12321_", "elemProposer": "u_MarquesrCarol", "elemTarget": "24_1", "createdAt": "2026-08-13T22:48:18.2033496Z" }
+    { "proposerName": "sheisdani", "targetName": "marquesrcarol", "elemProposer": "17_5", "elemTarget": "5_5", "createdAt": "2026-08-13T23:21:00.0830921Z" }
   ],
   "ranking": [
     {
