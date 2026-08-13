@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13 21:15:35 UTC",
+  "updatedAt": "2026-08-13 21:17:33 UTC",
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
     { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
@@ -201,14 +201,14 @@
       "inventario": {"10_1":1,"21_1":1,"23_1":1,"2_2":1,"3_5":1}
     },
     {
+      "username": "carloslopes87",
+      "pontos": 60,
+      "inventario": {"3_3":1}
+    },
+    {
       "username": "omiranha9654",
       "pontos": 60,
       "inventario": {"5_3":1}
-    },
-    {
-      "username": "dj_moletas",
-      "pontos": 60,
-      "inventario": {"12_3":1}
     },
     {
       "username": "citrusbow123",
@@ -216,9 +216,9 @@
       "inventario": {"13_1":1,"3_1":2,"5_1":1,"8_1":1}
     },
     {
-      "username": "carloslopes87",
+      "username": "dj_moletas",
       "pontos": 60,
-      "inventario": {"3_3":1}
+      "inventario": {"12_3":1}
     },
     {
       "username": "emanuelpaulo017",
@@ -226,14 +226,14 @@
       "inventario": {"13_1":1,"9_1":1}
     },
     {
-      "username": "salvadormdm",
-      "pontos": 35,
-      "inventario": {"12_2":1,"3_1":1}
-    },
-    {
       "username": "mrnapzor",
       "pontos": 35,
       "inventario": {"13_1":1,"4_2":1}
+    },
+    {
+      "username": "salvadormdm",
+      "pontos": 35,
+      "inventario": {"12_2":1,"3_1":1}
     },
     {
       "username": "grandesleitadores",
@@ -241,14 +241,19 @@
       "inventario": {"12_1":1,"12_2":1}
     },
     {
-      "username": "hst_playz_pt",
-      "pontos": 20,
-      "inventario": {"13_1":1,"1_1":1}
+      "username": "z3rgtv",
+      "pontos": 30,
+      "inventario": {"19_1":1,"2_1":2,"4_1":2}
     },
     {
       "username": "midnight_8k",
       "pontos": 20,
       "inventario": {"13_1":1,"7_1":1}
+    },
+    {
+      "username": "hst_playz_pt",
+      "pontos": 20,
+      "inventario": {"13_1":1,"1_1":1}
     },
     {
       "username": "manuel2019rodrigues",
@@ -261,19 +266,14 @@
       "inventario": {"13_1":1}
     },
     {
-      "username": "z3rgtv",
+      "username": "sant1gomes",
       "pontos": 10,
-      "inventario": {"19_1":1}
+      "inventario": {"12_1":1}
     },
     {
       "username": "jptim_",
       "pontos": 10,
       "inventario": {"13_1":1}
-    },
-    {
-      "username": "sant1gomes",
-      "pontos": 10,
-      "inventario": {"12_1":1}
     }
   ]
 }
