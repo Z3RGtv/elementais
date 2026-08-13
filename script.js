@@ -2372,7 +2372,7 @@ function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, p
         const circle = document.createElement('div');
         circle.className = 'effect-circle fire';
         circle.title = 'Fogo Ativo (Spawns rápidos)';
-        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Fire_ui_L.webp" alt="Fogo">';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Fire_Unvault_Ch7S3_ui_L.webp" alt="Fogo">';
         container.appendChild(circle);
         temEfeito = true;
     }
@@ -2382,7 +2382,7 @@ function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, p
         const circle = document.createElement('div');
         circle.className = 'effect-circle water';
         circle.title = isSuper ? 'Água Ativa [SUPER] (-60% Taxa de Captura para todos exceto conjurador)' : 'Água Ativa (-40% Taxa de Captura para todos exceto conjurador)';
-        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Water_ui_L.webp" alt="Água">';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Water_Unvault_Ch7S3_ui_L.webp" alt="Água">';
         container.appendChild(circle);
         temEfeito = true;
     }
@@ -2392,7 +2392,7 @@ function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, p
         const circle = document.createElement('div');
         circle.className = 'effect-circle earth';
         circle.title = isSuper ? 'Terra Ativa [SUPER] (Garante elemental Mítico)' : 'Terra Ativa (Garante Épico, Lendário ou Mítico)';
-        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Earth_ui_L.webp" alt="Terra">';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Earth_Ch7S3_UI_L.webp" alt="Terra">';
         container.appendChild(circle);
         temEfeito = true;
     }
@@ -2411,7 +2411,7 @@ function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, p
         const circle = document.createElement('div');
         circle.className = 'effect-circle ghost';
         circle.title = 'Fantasma Ativo (Spawn oculto)';
-        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Ghost_Default_L.webp" alt="Fantasma">';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Ghost_Unvault_L.webp" alt="Fantasma">';
         container.appendChild(circle);
         temEfeito = true;
     }
@@ -2421,7 +2421,7 @@ function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, p
         const circle = document.createElement('div');
         circle.className = 'effect-circle sleepy';
         circle.title = isSuper ? 'Sonhos Ativo [SUPER] (Adormece 2 pessoas no sorteio)' : 'Sonhos Ativo (Adormece 1 pessoa no sorteio)';
-        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Sleepy_Default_L.webp" alt="Sonhos">';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Sleepy_ui_L.webp" alt="Sonhos">';
         container.appendChild(circle);
         temEfeito = true;
     }
