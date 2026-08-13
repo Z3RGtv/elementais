@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-13 20:23:46 UTC",
+  "updatedAt": "2026-08-13 20:28:47 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 213, "sucesso": 49, "rate": 23.0 },
     "super": { "total": 163, "sucesso": 66, "rate": 40.5 },
     "ultra": { "total": 216, "sucesso": 136, "rate": 63.0 },
-    "master": { "total": 1333, "sucesso": 1205, "rate": 90.4 }
+    "master": { "total": 1334, "sucesso": 1206, "rate": 90.4 }
   },
   "recentes_lancamentos": [
+    { "username": "maxlou2013", "elementalId": "17_5", "bola": "master", "sucesso": 1, "date": "2026-08-13 21:28:47" },
     { "username": "gabizeira2012", "elementalId": "18_2", "bola": "master", "sucesso": 1, "date": "2026-08-13 21:23:46" },
     { "username": "gabizeira2012", "elementalId": "2_3", "bola": "master", "sucesso": 1, "date": "2026-08-13 21:18:42" },
     { "username": "lourenco_2015_marques", "elementalId": "2_3", "bola": "super", "sucesso": 0, "date": "2026-08-13 21:18:34" },
@@ -35,8 +36,7 @@
     { "username": "gui_z0", "elementalId": "u_EIMEZ", "bola": "master", "sucesso": 0, "date": "2026-08-11 01:23:04" },
     { "username": "manu12321_", "elementalId": "u_EIMEZ", "bola": "master", "sucesso": 0, "date": "2026-08-11 01:22:56" },
     { "username": "sheisdani", "elementalId": "17_3", "bola": "master", "sucesso": 1, "date": "2026-08-11 01:18:22" },
-    { "username": "sheisdani", "elementalId": "2_2", "bola": "ultra", "sucesso": 1, "date": "2026-08-11 01:12:55" },
-    { "username": "sheisdani", "elementalId": "15_2", "bola": "master", "sucesso": 1, "date": "2026-08-11 01:08:18" }
+    { "username": "sheisdani", "elementalId": "2_2", "bola": "ultra", "sucesso": 1, "date": "2026-08-11 01:12:55" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -244,6 +244,13 @@
       "inventario": {"12_3":1,"17_3":1,"18_1":1,"18_2":1,"2_2":1,"2_3":1,"u_san7izinn":1}
     },
     {
+      "username": "maxlou2013",
+      "pontos": 400,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"17_5":1,"1_4":1}
+    },
+    {
       "username": "franciscovcota",
       "pontos": 295,
       "trocasDisponiveis": 3,
@@ -263,13 +270,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"12_4":1}
-    },
-    {
-      "username": "maxlou2013",
-      "pontos": 150,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"1_4":1}
     },
     {
       "username": "700link007",
