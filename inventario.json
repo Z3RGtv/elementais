@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13 23:01:04 UTC",
+  "updatedAt": "2026-08-13 23:02:09 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 214, "sucesso": 49, "rate": 22.9 },
     "super": { "total": 164, "sucesso": 66, "rate": 40.2 },
@@ -58,7 +58,8 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-    { "proposerName": "sheisdani", "targetName": "manu12321_", "elemProposer": "u_MarquesrCarol", "elemTarget": "24_1", "createdAt": "2026-08-13T22:48:18.2033496Z" }
+    { "proposerName": "sheisdani", "targetName": "manu12321_", "elemProposer": "u_MarquesrCarol", "elemTarget": "24_1", "createdAt": "2026-08-13T22:48:18.2033496Z" },
+    { "proposerName": "igl_migaas", "targetName": "manu12321_", "elemProposer": "1_5", "elemTarget": "1_8", "createdAt": "2026-08-13T23:02:08.7529501Z" }
   ],
   "ranking": [
     {
@@ -141,7 +142,7 @@
     {
       "username": "igl_migaas",
       "pontos": 2165,
-      "trocasDisponiveis": 2,
+      "trocasDisponiveis": 1,
       "proximaRecuperacao": "2026-08-16T18:39:25Z",
       "inventario": {"10_1":1,"12_1":1,"12_2":1,"12_3":1,"13_1":1,"13_2":1,"15_1":1,"17_2":1,"17_4":1,"18_1":1,"19_4":1,"1_2":1,"1_5":1,"23_2":1,"2_1":1,"2_2":2,"2_3":1,"2_4":2,"3_4":1,"4_4":1,"5_3":1,"6_1":1,"7_1":1,"7_2":1,"7_3":1}
     },
