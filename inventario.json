@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13 21:11:01 UTC",
+  "updatedAt": "2026-08-13 21:12:40 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 214, "sucesso": 49, "rate": 22.9 },
     "super": { "total": 163, "sucesso": 66, "rate": 40.5 },
@@ -58,7 +58,8 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-    { "proposerName": "gabizeira2012", "targetName": "manu12321_", "elemProposer": "17_3", "elemTarget": "19_3", "createdAt": "2026-08-13T21:04:52.7304453Z" }
+    { "proposerName": "gabizeira2012", "targetName": "manu12321_", "elemProposer": "17_3", "elemTarget": "19_3", "createdAt": "2026-08-13T21:04:52.7304453Z" },
+    { "proposerName": "gabizeira2012", "targetName": "marquesrcarol", "elemProposer": "17_3", "elemTarget": "19_3", "createdAt": "2026-08-13T21:12:39.8641876Z" }
   ],
   "ranking": [
     {
@@ -218,7 +219,7 @@
     {
       "username": "gabizeira2012",
       "pontos": 580,
-      "trocasDisponiveis": 2,
+      "trocasDisponiveis": 1,
       "proximaRecuperacao": null,
       "inventario": {"12_3":1,"17_3":2,"18_1":1,"18_2":1,"2_2":1,"2_3":1,"4_3":1,"8_2":1,"u_san7izinn":1}
     },
