@@ -643,7 +643,7 @@ function processarComando(comandoCru) {
     
     if (partesPrincipais.length > 1) {
         const raw = partesPrincipais[1];
-        let agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante, vento, peely;
+        let agua, terra, fogo, pato, ghost, sleepy, demon, punk, king, aura, boss, peixe, atacante, vento, peely, seven;
         if (raw.includes('=')) {
             const map = {};
             raw.split(';').forEach(pair => {
@@ -1210,7 +1210,8 @@ function mostrarPainelColecao(username, idsStr) {
 // Loop de leitura do ficheiro
 async function lerFicheiro() {
     try {
-        const resposta = await fetch(`${ESTADO_FILE}?t=${new Date().getTime()}`);
+        const url = window.location.protocol === 'file:' ? ESTADO_FILE : `${ESTADO_FILE}?t=${new Date().getTime()}`;
+        const resposta = await fetch(url, { cache: 'no-store' });
         if (!resposta.ok) throw new Error('Network response was not ok');
         
         const texto = await resposta.text();
@@ -1221,7 +1222,7 @@ async function lerFicheiro() {
             processarComando(linhaCrua);
         }
     } catch (e) {
-        // Ignorar erros
+        console.error("Erro ao ler jogo_estado.txt:", e);
     }
 }
 
