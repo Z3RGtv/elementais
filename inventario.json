@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-13 20:03:22 UTC",
+  "updatedAt": "2026-08-13 20:08:24 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 213, "sucesso": 49, "rate": 23.0 },
     "super": { "total": 162, "sucesso": 66, "rate": 40.7 },
     "ultra": { "total": 216, "sucesso": 136, "rate": 63.0 },
-    "master": { "total": 1329, "sucesso": 1201, "rate": 90.4 }
+    "master": { "total": 1330, "sucesso": 1202, "rate": 90.4 }
   },
   "recentes_lancamentos": [
+    { "username": "gabizeira2012", "elementalId": "12_3", "bola": "master", "sucesso": 1, "date": "2026-08-13 21:08:23" },
     { "username": "gabizeira2012", "elementalId": "u_san7izinn", "bola": "master", "sucesso": 1, "date": "2026-08-13 21:03:21" },
     { "username": "gui_z0", "elementalId": "9_3", "bola": "master", "sucesso": 1, "date": "2026-08-13 20:58:21" },
     { "username": "marquesrcarol", "elementalId": "2_2", "bola": "master", "sucesso": 1, "date": "2026-08-13 20:53:53" },
@@ -35,8 +36,7 @@
     { "username": "sheisdani", "elementalId": "2_1", "bola": "master", "sucesso": 1, "date": "2026-08-11 01:03:16" },
     { "username": "r_moreira16", "elementalId": "17_1", "bola": "normal", "sucesso": 1, "date": "2026-08-11 00:58:32" },
     { "username": "hugoandre07", "elementalId": "17_1", "bola": "normal", "sucesso": 0, "date": "2026-08-11 00:58:23" },
-    { "username": "franciscovcota", "elementalId": "17_1", "bola": "normal", "sucesso": 0, "date": "2026-08-11 00:58:15" },
-    { "username": "hugoandre07", "elementalId": "3_1", "bola": "master", "sucesso": 1, "date": "2026-08-11 00:53:34" }
+    { "username": "franciscovcota", "elementalId": "17_1", "bola": "normal", "sucesso": 0, "date": "2026-08-11 00:58:15" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -244,6 +244,13 @@
       "inventario": {"1_2":1,"2_1":1,"7_1":1,"7_2":1,"9_4":1}
     },
     {
+      "username": "gabizeira2012",
+      "pontos": 250,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": null,
+      "inventario": {"12_3":1,"17_3":1,"2_2":1,"u_san7izinn":1}
+    },
+    {
       "username": "themarysimmer",
       "pontos": 165,
       "trocasDisponiveis": 3,
@@ -270,13 +277,6 @@
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
       "inventario": {"17_4":1}
-    },
-    {
-      "username": "gabizeira2012",
-      "pontos": 130,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": null,
-      "inventario": {"2_2":1,"u_san7izinn":1}
     },
     {
       "username": "ruialmeida_",
