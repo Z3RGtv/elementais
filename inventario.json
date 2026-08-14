@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13 23:58:33 UTC",
+  "updatedAt": "2026-08-14 00:01:40 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 218, "sucesso": 51, "rate": 23.4 },
     "super": { "total": 164, "sucesso": 66, "rate": 40.2 },
@@ -58,7 +58,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-
+    { "proposerName": "r_moreira16", "targetName": "hugoandre07", "elemProposer": "8_3", "elemTarget": "4_3", "createdAt": "2026-08-14T00:01:39.9807355Z" }
   ],
   "ranking": [
     {
@@ -176,7 +176,7 @@
     {
       "username": "r_moreira16",
       "pontos": 1165,
-      "trocasDisponiveis": 1,
+      "trocasDisponiveis": 0,
       "proximaRecuperacao": "2026-08-14T00:15:32Z",
       "inventario": {"12_1":1,"12_2":1,"12_4":1,"13_1":1,"13_2":1,"17_1":1,"17_2":1,"18_1":1,"1_1":1,"1_3":1,"2_1":1,"2_2":1,"2_3":1,"3_4":1,"5_1":1,"7_1":1,"8_3":2,"9_5":1}
     },
