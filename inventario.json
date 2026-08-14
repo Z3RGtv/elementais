@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14 01:53:26 UTC",
+  "updatedAt": "2026-08-14 01:53:54 UTC",
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
     { "id": "u_EIMEZ", "file": "Users/EIMEZ.png", "name": "EIMEZ" },
@@ -221,14 +221,14 @@
       "inventario": {"12_3":1}
     },
     {
+      "username": "z3rgtv",
+      "pontos": 40,
+      "inventario": {"19_1":1,"2_1":1,"3_1":1,"4_1":2}
+    },
+    {
       "username": "emanuelpaulo017",
       "pontos": 40,
       "inventario": {"13_1":1,"9_1":1}
-    },
-    {
-      "username": "mrnapzor",
-      "pontos": 35,
-      "inventario": {"13_1":1,"4_2":1}
     },
     {
       "username": "salvadormdm",
@@ -236,14 +236,14 @@
       "inventario": {"12_2":1,"3_1":1}
     },
     {
+      "username": "mrnapzor",
+      "pontos": 35,
+      "inventario": {"13_1":1,"4_2":1}
+    },
+    {
       "username": "grandesleitadores",
       "pontos": 35,
       "inventario": {"12_1":1,"12_2":1}
-    },
-    {
-      "username": "z3rgtv",
-      "pontos": 30,
-      "inventario": {"19_1":1,"2_1":1,"4_1":2}
     },
     {
       "username": "midnight_8k",
