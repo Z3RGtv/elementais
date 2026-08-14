@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-14 22:12:27 UTC",
+  "updatedAt": "2026-08-14 22:21:21 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 222, "sucesso": 51, "rate": 23.0 },
     "super": { "total": 173, "sucesso": 71, "rate": 41.0 },
     "ultra": { "total": 226, "sucesso": 143, "rate": 63.3 },
-    "master": { "total": 1438, "sucesso": 1303, "rate": 90.6 }
+    "master": { "total": 1439, "sucesso": 1304, "rate": 90.6 }
   },
   "recentes_lancamentos": [
+    { "username": "1509_martim", "elementalId": "4_4", "bola": "master", "sucesso": 1, "date": "2026-08-14 23:21:21" },
     { "username": "1509_martim", "elementalId": "23_4", "bola": "master", "sucesso": 1, "date": "2026-08-14 23:12:26" },
     { "username": "sheisdani", "elementalId": "6_4", "bola": "master", "sucesso": 1, "date": "2026-08-14 23:04:54" },
     { "username": "sheisdani", "elementalId": "24_1", "bola": "master", "sucesso": 1, "date": "2026-08-14 22:56:35" },
@@ -35,8 +36,7 @@
     { "username": "gabizeira2012", "elementalId": "2_6", "bola": "master", "sucesso": 1, "date": "2026-08-14 20:49:03" },
     { "username": "marquesrcarol", "elementalId": "9_3", "bola": "master", "sucesso": 1, "date": "2026-08-14 20:40:47" },
     { "username": "igl_migaas", "elementalId": "8_3", "bola": "master", "sucesso": 1, "date": "2026-08-14 20:29:55" },
-    { "username": "sheisdani", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-08-14 20:22:44" },
-    { "username": "hugoandre07", "elementalId": "2_6", "bola": "super", "sucesso": 1, "date": "2026-08-14 20:14:25" }
+    { "username": "sheisdani", "elementalId": "12_1", "bola": "master", "sucesso": 1, "date": "2026-08-14 20:22:44" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -175,10 +175,10 @@
     },
     {
       "username": "1509_martim",
-      "pontos": 1525,
+      "pontos": 1815,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "inventario": {"12_1":2,"12_2":1,"12_3":1,"13_1":2,"13_5":1,"14_1":1,"16_1":1,"1_1":1,"1_8":1,"23_4":1,"2_1":2,"3_1":1,"3_3":1,"5_1":1,"6_1":2,"6_2":1,"7_1":1,"7_2":1,"8_2":1,"9_1":1,"9_2":1}
+      "inventario": {"12_1":2,"12_2":1,"12_3":1,"13_1":2,"13_5":1,"14_1":1,"16_1":1,"1_1":1,"1_8":1,"23_4":1,"2_1":2,"3_1":1,"3_3":1,"4_4":1,"5_1":1,"6_1":2,"6_2":1,"7_1":1,"7_2":1,"7_3":1,"8_2":1,"9_1":1,"9_2":1}
     },
     {
       "username": "gabizeira2012",
