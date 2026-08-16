@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16 06:33:14 UTC",
+  "updatedAt": "2026-08-16 06:33:43 UTC",
   "estatisticas_bolas": {
     "normal": {
       "total": 231,
@@ -321,18 +321,13 @@
       "name": "Z3RGtv_og"
     }
   ],
-  "propostas_troca": [],
-  "utilizadores": [
+  "propostas": [],
+  "ranking": [
     {
-      "posicao": 1,
-      "userId": "645555689",
       "username": "sheisdani",
       "pontos": 22940,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_1": 1,
         "10_3": 2,
@@ -457,15 +452,10 @@
       }
     },
     {
-      "posicao": 2,
-      "userId": "972248156",
       "username": "marquesrcarol",
       "pontos": 15700,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_1": 1,
         "10_2": 1,
@@ -567,15 +557,10 @@
       }
     },
     {
-      "posicao": 3,
-      "userId": "1069376937",
       "username": "manu12321_",
       "pontos": 15080,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_1": 1,
         "10_2": 1,
@@ -663,15 +648,10 @@
       }
     },
     {
-      "posicao": 4,
-      "userId": "428320452",
       "username": "ipowerlz",
       "pontos": 10880,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_2": 1,
         "10_3": 1,
@@ -752,15 +732,10 @@
       }
     },
     {
-      "posicao": 5,
-      "userId": "636817789",
       "username": "hugoandre07",
       "pontos": 10095,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_3": 1,
         "10_7": 1,
@@ -828,15 +803,10 @@
       }
     },
     {
-      "posicao": 6,
-      "userId": "491270065",
       "username": "manodrico",
       "pontos": 8925,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "12_1": 1,
         "12_2": 1,
@@ -902,15 +872,10 @@
       }
     },
     {
-      "posicao": 7,
-      "userId": "134395626",
       "username": "minichef9",
       "pontos": 5960,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_6": 1,
         "12_1": 1,
@@ -961,15 +926,10 @@
       }
     },
     {
-      "posicao": 8,
-      "userId": "436081031",
       "username": "r_moreira16",
       "pontos": 4650,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "12_1": 1,
         "12_2": 2,
@@ -1010,15 +970,10 @@
       }
     },
     {
-      "posicao": 9,
-      "userId": "141158975",
       "username": "milhafretuga",
       "pontos": 3940,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_1": 2,
         "10_3": 1,
@@ -1055,15 +1010,10 @@
       }
     },
     {
-      "posicao": 10,
-      "userId": "423908473",
       "username": "garzia17",
       "pontos": 3485,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_2": 1,
         "10_4": 1,
@@ -1096,15 +1046,10 @@
       }
     },
     {
-      "posicao": 11,
-      "userId": "932779495",
       "username": "gui_z0",
       "pontos": 3400,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "11_1": 1,
         "12_1": 2,
@@ -1148,15 +1093,10 @@
       }
     },
     {
-      "posicao": 12,
-      "userId": "726440635",
       "username": "steve_osvaldo",
       "pontos": 2980,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "13_1": 1,
         "13_3": 1,
@@ -1185,15 +1125,10 @@
       }
     },
     {
-      "posicao": 13,
-      "userId": "1352711259",
       "username": "igl_migaas",
       "pontos": 2880,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_1": 1,
         "12_1": 2,
@@ -1227,15 +1162,10 @@
       }
     },
     {
-      "posicao": 14,
-      "userId": "577905142",
       "username": "k1ngpt14",
       "pontos": 2575,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_4": 1,
         "18_3": 1,
@@ -1251,15 +1181,10 @@
       }
     },
     {
-      "posicao": 15,
-      "userId": "164609804",
       "username": "soniagoncalves",
       "pontos": 2355,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_1": 1,
         "12_1": 2,
@@ -1295,15 +1220,10 @@
       }
     },
     {
-      "posicao": 16,
-      "userId": "906862244",
       "username": "mikito_2012",
       "pontos": 2120,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_3": 1,
         "12_2": 1,
@@ -1327,15 +1247,10 @@
       }
     },
     {
-      "posicao": 17,
-      "userId": "798577209",
       "username": "inumerus",
       "pontos": 1855,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_3": 1,
         "12_1": 1,
@@ -1366,15 +1281,10 @@
       }
     },
     {
-      "posicao": 18,
-      "userId": "1308205773",
       "username": "1509_martim",
       "pontos": 1815,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "12_1": 2,
         "12_2": 1,
@@ -1402,15 +1312,10 @@
       }
     },
     {
-      "posicao": 19,
-      "userId": "1069031926",
       "username": "gabizeira2012",
       "pontos": 1420,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "12_3": 1,
         "17_2": 1,
@@ -1431,15 +1336,10 @@
       }
     },
     {
-      "posicao": 20,
-      "userId": "956810322",
       "username": "san7izinn",
       "pontos": 1220,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_2": 1,
         "12_1": 1,
@@ -1459,15 +1359,10 @@
       }
     },
     {
-      "posicao": 21,
-      "userId": "547461266",
       "username": "lucyfourpics",
       "pontos": 1125,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "12_1": 1,
         "12_2": 1,
@@ -1482,15 +1377,10 @@
       }
     },
     {
-      "posicao": 22,
-      "userId": "1056766421",
       "username": "astroz1nvlr",
       "pontos": 1080,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "12_1": 1,
         "12_3": 1,
@@ -1510,15 +1400,10 @@
       }
     },
     {
-      "posicao": 23,
-      "userId": "614531871",
       "username": "rstraveler",
       "pontos": 815,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "12_2": 1,
         "12_3": 2,
@@ -1535,15 +1420,10 @@
       }
     },
     {
-      "posicao": 24,
-      "userId": "271522790",
       "username": "oreidopimba",
       "pontos": 615,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_3": 1,
         "17_1": 1,
@@ -1554,15 +1434,10 @@
       }
     },
     {
-      "posicao": 25,
-      "userId": "835552645",
       "username": "themarysimmer",
       "pontos": 605,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "17_3": 1,
         "1_1": 1,
@@ -1577,15 +1452,10 @@
       }
     },
     {
-      "posicao": 26,
-      "userId": "1138920699",
       "username": "maxlou2013",
       "pontos": 490,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "17_5": 1,
         "1_4": 1,
@@ -1593,15 +1463,10 @@
       }
     },
     {
-      "posicao": 27,
-      "userId": "1266339494",
       "username": "paconaza",
       "pontos": 460,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "10_1": 1,
         "21_1": 1,
@@ -1611,15 +1476,10 @@
       }
     },
     {
-      "posicao": 28,
-      "userId": "1211211111",
       "username": "lourenco_2015_marques",
       "pontos": 450,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "13_1": 1,
         "14_3": 1,
@@ -1634,15 +1494,10 @@
       }
     },
     {
-      "posicao": 29,
-      "userId": "147522648",
       "username": "dapyf",
       "pontos": 420,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "14_1": 1,
         "15_3": 1,
@@ -1653,15 +1508,10 @@
       }
     },
     {
-      "posicao": 30,
-      "userId": "1252815507",
       "username": "franciscovcota",
       "pontos": 295,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "1_2": 1,
         "2_1": 1,
@@ -1671,57 +1521,37 @@
       }
     },
     {
-      "posicao": 31,
-      "userId": "1517227252",
       "username": "l0l_elite",
       "pontos": 150,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "12_4": 1
       }
     },
     {
-      "posicao": 32,
-      "userId": "1528740510",
       "username": "maedomanuelcasaleiro",
       "pontos": 150,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "6_3": 1
       }
     },
     {
-      "posicao": 33,
-      "userId": "790310648",
       "username": "700link007",
       "pontos": 150,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "17_4": 1
       }
     },
     {
-      "posicao": 34,
-      "userId": "128662438",
       "username": "ruialmeida_",
       "pontos": 130,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "12_1": 2,
         "13_1": 2,
@@ -1735,15 +1565,10 @@
       }
     },
     {
-      "posicao": 35,
-      "userId": "775783696",
       "username": "nsfp37",
       "pontos": 130,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "1_2": 1,
         "3_2": 2,
@@ -1752,15 +1577,10 @@
       }
     },
     {
-      "posicao": 36,
-      "userId": "1036506713",
       "username": "gunblade_sis_",
       "pontos": 110,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "12_2": 1,
         "1_1": 1,
@@ -1769,29 +1589,19 @@
       }
     },
     {
-      "posicao": 37,
-      "userId": "816166342",
       "username": "omiranha9654",
       "pontos": 90,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "5_3": 1
       }
     },
     {
-      "posicao": 38,
-      "userId": "1231792525",
       "username": "eimezdumipima_",
       "pontos": 80,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "1_1": 1,
         "1_2": 1,
@@ -1800,15 +1610,10 @@
       }
     },
     {
-      "posicao": 39,
-      "userId": "895327657",
       "username": "z3rgtv",
       "pontos": 75,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "19_1": 1,
         "2_1": 1,
@@ -1816,15 +1621,10 @@
       }
     },
     {
-      "posicao": 40,
-      "userId": "1313592398",
       "username": "citrusbow123",
       "pontos": 70,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "13_1": 1,
         "3_1": 2,
@@ -1833,175 +1633,115 @@
       }
     },
     {
-      "posicao": 41,
-      "userId": "1345825667",
       "username": "dj_moletas",
       "pontos": 60,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "12_3": 1
       }
     },
     {
-      "posicao": 42,
-      "userId": "615321232",
       "username": "carloslopes87",
       "pontos": 60,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "3_3": 1
       }
     },
     {
-      "posicao": 43,
-      "userId": "1438361727",
       "username": "mrnapzor",
       "pontos": 55,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "13_1": 1,
         "4_2": 1
       }
     },
     {
-      "posicao": 44,
-      "userId": "1119954079",
       "username": "salvadormdm",
       "pontos": 40,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "12_2": 1,
         "3_1": 1
       }
     },
     {
-      "posicao": 45,
-      "userId": "929939121",
       "username": "grandesleitadores",
       "pontos": 40,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "12_1": 1,
         "12_2": 1
       }
     },
     {
-      "posicao": 46,
-      "userId": "1154065048",
       "username": "emanuelpaulo017",
       "pontos": 30,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "13_1": 1,
         "9_1": 1
       }
     },
     {
-      "posicao": 47,
-      "userId": "144765151",
       "username": "midnight_8k",
       "pontos": 30,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "13_1": 1,
         "7_1": 1
       }
     },
     {
-      "posicao": 48,
-      "userId": "505385285",
       "username": "hst_playz_pt",
       "pontos": 25,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "13_1": 1,
         "1_1": 1
       }
     },
     {
-      "posicao": 49,
-      "userId": "703197362",
       "username": "diguiferreira97",
       "pontos": 15,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "13_1": 1
       }
     },
     {
-      "posicao": 50,
-      "userId": "889363201",
       "username": "jptim_",
       "pontos": 15,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "13_1": 1
       }
     },
     {
-      "posicao": 51,
-      "userId": "1206393838",
       "username": "sant1gomes",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "12_1": 1
       }
     },
     {
-      "posicao": 52,
-      "userId": "905030592",
       "username": "manuel2019rodrigues",
       "pontos": 10,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": null,
-      "completedTrades": 0,
-      "oldestTradeDate": "",
-      "pendingProposals": 0,
       "inventario": {
         "2_1": 1
       }
