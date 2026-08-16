@@ -1,122 +1,171 @@
 // Dicionário de mapeamento idêntico ao do teu jogo para detetar os ficheiros na pasta Sprites
 const elementaisMap = [
+    // 1. Água
     { id: "1_1", file: "T_Icon_BR_Creature_Sprite_Water_Unvault_Ch7S3_ui_L.webp" },
     { id: "1_2", file: "T_Icon_BR_Creature_Sprite_Water_Gold_ui_L.webp" },
     { id: "1_3", file: "T_Icon_BR_Creature_Sprite_Water_Candy_ui_L.webp" },
     { id: "1_4", file: "T_Icon_BR_Creature_Sprite_Water_Galaxy_ui_L.webp" },
     { id: "1_5", file: "T_Icon_BR_Creature_Sprite_Water_Holofoil_ui_L.webp" },
+    { id: "1_7", file: "T_Icon_BR_Creature_Sprite_Water_Gem_ui_L.webp" },
+    { id: "1_8", file: "T_Icon_BR_Creature_Sprite_Water_Quack_ui_L.webp" },
+
+    // 2. Terra
     { id: "2_1", file: "T_Icon_BR_Creature_Sprite_Earth_Ch7S3_UI_L.webp" },
     { id: "2_2", file: "T_Icon_BR_Creature_Sprite_Earth_Gold_ui_L.webp" },
     { id: "2_3", file: "T_Icon_BR_Creature_Sprite_Earth_Candy_ui_L.webp" },
     { id: "2_4", file: "T_Icon_BR_Creature_Sprite_Earth_Galaxy_ui_L.webp" },
     { id: "2_6", file: "T_Icon_BR_Creature_Sprite_Earth_Cube_ui_L.webp" },
+    { id: "2_7", file: "T_Icon_BR_Creature_Sprite_Earth_Gem_ui_L.webp" },
+    { id: "2_8", file: "T_Icon_BR_Creature_Sprite_Earth_Quack_ui_L.webp" },
+
+    // 3. Fogo
     { id: "3_1", file: "T_Icon_BR_Creature_Sprite_Fire_Unvault_Ch7S3_ui_L.webp" },
     { id: "3_2", file: "T_Icon_BR_Creature_Sprite_Fire_Gold_ui_L.webp" },
     { id: "3_3", file: "T_Icon_BR_Creature_Sprite_Fire_Candy_ui_L.webp" },
     { id: "3_4", file: "T_Icon_BR_Creature_Sprite_Fire_Galaxy_ui_L.webp" },
     { id: "3_5", file: "T_Icon_BR_Creature_Sprite_Fire_Holofoil_ui_L.webp" },
     { id: "3_6", file: "T_Icon_BR_Creature_Sprite_Fire_Cube_ui_L.webp" },
+    { id: "3_8", file: "T_Icon_BR_Creature_Sprite_Fire_Quack_ui_L.webp" },
+
+    // 4. Pato
     { id: "4_1", file: "T_Icon_BR_Duck_Default_L.webp" },
     { id: "4_2", file: "T_Icon_BR_Duck_Gold_L.webp" },
     { id: "4_3", file: "T_Icon_BR_Duck_Candy_L.webp" },
     { id: "4_4", file: "T_Icon_BR_Duck_Galaxy_L.webp" },
+    { id: "4_7", file: "T_Icon_BR_Duck_Gem_L.webp" },
+
+    // 5. Fantasma
     { id: "5_1", file: "T_Icon_BR_Creature_Sprite_Ghost_Unvault_L.webp" },
     { id: "5_2", file: "T_Icon_BR_Creature_Sprite_Ghost_Gold_L.webp" },
     { id: "5_3", file: "T_Icon_BR_Creature_Sprite_Ghost_Candy_L.webp" },
     { id: "5_4", file: "T_Icon_BR_Creature_Sprite_Ghost_Galaxy_L.webp" },
     { id: "5_5", file: "T_Icon_BR_Creature_Sprite_Ghost_Holo_L.webp" },
+
+    // 6. Dos Sonhos
     { id: "6_1", file: "T_Icon_BR_Creature_Sprite_Sleepy_ui_L.webp" },
     { id: "6_2", file: "T_Icon_BR_Creature_Sprite_Sleepy_Gold_ui_L.webp" },
     { id: "6_3", file: "T_Icon_BR_Creature_Sprite_Sleepy_Candy_ui_L.webp" },
     { id: "6_4", file: "T_Icon_BR_Creature_Sprite_Sleepy_Galaxy_ui_L.webp" },
     { id: "6_6", file: "T_Icon_BR_Creature_Sprite_Sleepy_Cube_ui_L.webp" },
+
+    // 7. Demónio
     { id: "7_1", file: "T_Icon_BR_RedDemon_Default_L.webp" },
     { id: "7_2", file: "T_Icon_BR_RedDemon_Gold_L.webp" },
     { id: "7_3", file: "T_Icon_BR_RedDemon_Candy_L.webp" },
     { id: "7_4", file: "T_Icon_BR_RedDemon_Galaxy_L.webp" },
+    { id: "7_7", file: "T_Icon_BR_RedDemon_Gem_L.webp" },
+
+    // 8. Punk
     { id: "8_1", file: "T_Icon_BR_Creature_Sprite_Punk_ui_L.webp" },
     { id: "8_2", file: "T_Icon_BR_Creature_Sprite_Punk_Gold_ui_L.webp" },
     { id: "8_3", file: "T_Icon_BR_Creature_Sprite_Punk_Candy_ui_L.webp" },
     { id: "8_4", file: "T_Icon_BR_Creature_Sprite_Punk_Galaxy_ui_L.webp" },
     { id: "8_6", file: "T_Icon_BR_Creature_Sprite_Punk_Cube_ui_L.webp" },
+
+    // 9. Rei
     { id: "9_1", file: "T_Icon_BR_Creature_Sprite_King_ui_L.webp" },
     { id: "9_2", file: "T_Icon_BR_Creature_Sprite_King_Gold_ui_L.webp" },
     { id: "9_3", file: "T_Icon_BR_Creature_Sprite_King_Candy_ui_L.webp" },
     { id: "9_4", file: "T_Icon_BR_Creature_Sprite_King_Galaxy_ui_L.webp" },
     { id: "9_5", file: "T_Icon_BR_Creature_Sprite_King_Holofoil_ui_L.webp" },
+
+    // 10. Ponto Zero
     { id: "10_1", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_ui_L.webp" },
     { id: "10_2", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Gold_ui_L.webp" },
     { id: "10_3", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Candy_ui_L.webp" },
     { id: "10_4", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Galaxy_ui_L.webp" },
+    { id: "10_5", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Holofoil_ui_L.webp" },
+    { id: "10_6", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Cube_ui_L.webp" },
+    { id: "10_7", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Gem_ui_L.webp" },
+    { id: "10_8", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Quack_ui_L.webp" },
+
+    // 11. BurntPeanut
     { id: "11_1", file: "T_Icon_BR_Creature_Sprite_BurntPeanut_ui_L.webp" },
+
+    // 12. Peixoto
     { id: "12_1", file: "T_Icon_BR_Creature_Sprite_Fishy_ui_L.webp" },
     { id: "12_2", file: "T_Icon_BR_Creature_Sprite_Fishy_Gold_ui_L.webp" },
     { id: "12_3", file: "T_Icon_BR_Creature_Sprite_Fishy_Candy_ui_L.webp" },
     { id: "12_4", file: "T_Icon_BR_Creature_Sprite_Fishy_Galaxy_ui_L.webp" },
     { id: "12_6", file: "T_Icon_BR_Creature_Sprite_Fishy_Cube_L.webp" },
+
+    // 13. Atacante
     { id: "13_1", file: "T_Icon_BR_Creature_Sprite_Soccer_ui_L.webp" },
     { id: "13_2", file: "T_Icon_BR_Creature_Sprite_Soccer_Gold_L.webp" },
     { id: "13_3", file: "T_Icon_BR_Creature_Sprite_Soccer_Candy_L.webp" },
     { id: "13_4", file: "T_Icon_BR_Creature_Sprite_Soccer_Galaxy_L.webp" },
     { id: "13_5", file: "T_Icon_BR_Creature_Sprite_Soccer_Holofoil_L.webp" },
+
+    // 14. Aura
     { id: "14_1", file: "T_Icon_BR_Creature_Sprite_Drifter_ui_L.webp" },
     { id: "14_2", file: "T_Icon_BR_Creature_Sprite_Drifter_Gold_ui_L.webp" },
     { id: "14_3", file: "T_Icon_BR_Creature_Sprite_Drifter_Candy_ui_L.webp" },
     { id: "14_4", file: "T_Icon_BR_Creature_Sprite_Drifter_Galaxy_ui_L.webp" },
+    { id: "14_7", file: "T_Icon_BR_Creature_Sprite_Drifter_Gem_ui_L.webp" },
+
+    // 15. Boss
     { id: "15_1", file: "T_Icon_BR_Creature_Sprite_Boss_ui_L.webp" },
     { id: "15_2", file: "T_Icon_BR_Creature_Sprite_Boss_Gold_ui_L.webp" },
     { id: "15_3", file: "T_Icon_BR_Creature_Sprite_Boss_Candy_ui_L.webp" },
     { id: "15_4", file: "T_Icon_BR_Creature_Sprite_Boss_Galaxy_ui_L.webp" },
     { id: "15_6", file: "T_Icon_BR_Creature_Sprite_Boss_Cube_ui_L.webp" },
+
+    // 16. Grim
     { id: "16_1", file: "T_Icon_BR_GrimReaper_Default_L.webp" },
     { id: "16_2", file: "T_Icon_BR_GrimReaper_Gold_L.webp" },
     { id: "16_3", file: "T_Icon_BR_GrimReaper_Candy_L.webp" },
     { id: "16_4", file: "T_Icon_BR_GrimReaper_Galaxy_L.webp" },
+    { id: "16_5", file: "T_Icon_BR_GrimReaper_Holofoil_L.webp" },
     { id: "16_6", file: "T_Icon_BR_GrimReaper_Cube_L.webp" },
+    { id: "16_7", file: "T_Icon_BR_GrimReaper_Gem_L.webp" },
+
+    // 17. Ar
     { id: "17_1", file: "T_Icon_BR_Air_Default_L.webp" },
     { id: "17_2", file: "T_Icon_BR_Air_Gold_L.webp" },
     { id: "17_3", file: "T_Icon_BR_Air_Candy_L.webp" },
     { id: "17_4", file: "T_Icon_BR_Air_Galaxy_L.webp" },
     { id: "17_5", file: "T_Icon_BR_Air_Holo_L.webp" },
+
+    // 18. Seven
     { id: "18_1", file: "T_Icon_BR_Creature_Sprite_Seven_ui_L.webp" },
     { id: "18_2", file: "T_Icon_BR_Creature_Sprite_Seven_Gold_ui_L.webp" },
     { id: "18_3", file: "T_Icon_BR_Creature_Sprite_Seven_Candy_ui_L.webp" },
     { id: "18_4", file: "T_Icon_BR_Creature_Sprite_Seven_Galaxy_ui_L.webp" },
     { id: "18_5", file: "T_Icon_BR_Creature_Sprite_Seven_Holofoil_ui_L.webp" },
-    { id: "10_5", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Holofoil_ui_L.webp" },
-    { id: "10_6", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Cube_ui_L.webp" },
-    { id: "16_5", file: "T_Icon_BR_GrimReaper_Holofoil_L.webp" },
+
+    // 19. Batman
     { id: "19_1", file: "T_Icon_BR_FossilMeal_Default_L.webp" },
     { id: "19_2", file: "T_Icon_BR_FossilMeal_Gold_L.webp" },
     { id: "19_3", file: "T_Icon_BR_FossilMeal_Candy_L.webp" },
     { id: "19_4", file: "T_Icon_BR_FossilMeal_Galaxy_L.webp" },
     { id: "19_5", file: "T_Icon_BR_FossilMeal_Holofoil_L.webp" },
     { id: "19_6", file: "T_Icon_BR_FossilMeal_Cube_L.webp" },
+
+    // 20. Vini JR
     { id: "20_1", file: "T_Icon_BR_CokeParmesan_Default_L.webp" },
+
+    // 21. Pollo
     { id: "21_1", file: "T_Icon_BR_CompanyStargazer_Default_L.webp" },
+
+    // 22. Llama
     { id: "22_1", file: "T_Icon_BR_Creature_Sprite_Llama_ui_L.webp" },
     { id: "22_2", file: "T_Icon_BR_Creature_Sprite_Llama_Gold_ui_L.webp" },
     { id: "22_3", file: "T_Icon_BR_Creature_Sprite_Llama_Candy_ui_L.webp" },
     { id: "22_4", file: "T_Icon_BR_Creature_Sprite_Llama_Galaxy_ui_L.webp" },
     { id: "22_7", file: "T_Icon_BR_Creature_Sprite_Llama_Gem_ui_L.webp" },
-    { id: "1_7", file: "T_Icon_BR_Creature_Sprite_Water_Gem_ui_L.webp" },
-    { id: "2_7", file: "T_Icon_BR_Creature_Sprite_Earth_Gem_ui_L.webp" },
-    { id: "4_7", file: "T_Icon_BR_Duck_Gem_L.webp" },
-    { id: "7_7", file: "T_Icon_BR_RedDemon_Gem_L.webp" },
-    { id: "10_7", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Gem_ui_L.webp" },
-    { id: "14_7", file: "T_Icon_BR_Creature_Sprite_Drifter_Gem_ui_L.webp" },
-    { id: "16_7", file: "T_Icon_BR_GrimReaper_Gem_L.webp" },
+
+    // 23. Peely
     { id: "23_1", file: "T_Icon_BR_Creature_Sprite_Peely_ui_L.webp" },
     { id: "23_2", file: "T_Icon_BR_Creature_Sprite_Peely_Gold_ui_L.webp" },
     { id: "23_3", file: "T_Icon_BR_Creature_Sprite_Peely_Candy_ui_L.webp" },
     { id: "23_4", file: "T_Icon_BR_Creature_Sprite_Peely_Galaxy_ui_L.webp" },
     { id: "23_5", file: "T_Icon_BR_Creature_Sprite_Peely_Holofoil_ui_L.webp" },
+
+    // 24. John Wick
     { id: "24_1", file: "T_Icon_Reload_FillerGrunt_icon_L.webp" },
-    { id: "25_1", file: "T_Icon_BR_PedicureAntacid_L.webp" },
-    { id: "1_8", file: "T_Icon_BR_Creature_Sprite_Water_Quack_ui_L.webp" },
-    { id: "2_8", file: "T_Icon_BR_Creature_Sprite_Earth_Quack_ui_L.webp" },
-    { id: "3_8", file: "T_Icon_BR_Creature_Sprite_Fire_Quack_ui_L.webp" },
-    { id: "10_8", file: "T_Icon_BR_Creature_Sprite_ZeroPoint_Quack_ui_L.webp" }
+
+    // 25. Ironmouse
+    { id: "25_1", file: "T_Icon_BR_PedicureAntacid_L.webp" }
 ];
 
 const baseLength = elementaisMap.length; // Calcula dinamicamente o número total de cromos estáticos (83)
@@ -1453,7 +1502,7 @@ function obterPontosBicho(id) {
         const ehRaro = (especie === 1 || especie === 2 || especie === 3 || especie === 12 || especie === 17);
         const ehEpico = (especie === 4 || especie === 5 || especie === 7 || especie === 9 || especie === 13 || especie === 14);
         const ehLendario = (especie === 6 || especie === 8 || especie === 15 || especie === 18 || especie === 22 || especie === 23);
-        const ehMitico = (especie === 10 || especie === 16 || especie === 19 || especie === 24);
+        const ehMitico = (especie === 10 || especie === 16 || especie === 19);
 
         if (variante === 8) {
             return especie === 10 ? 900 : 300;
@@ -1465,7 +1514,7 @@ function obterPontosBicho(id) {
             if (variante === 3) return 250;
             if (variante === 4) return 500;
             if (variante === 5 || variante === 6) return 800;
-            if (variante === 7) return 1000;
+            if (variante === 7) return 850;
         } else if (ehLendario) {
             if (variante === 1) return 30;
             if (variante === 2) return 75;
@@ -1479,12 +1528,14 @@ function obterPontosBicho(id) {
             if (variante === 3) return 90;
             if (variante === 4) return 200;
             if (variante === 5 || variante === 6) return 350;
+            if (variante === 7) return 450;
         } else if (ehRaro) {
             if (variante === 1) return 10;
             if (variante === 2) return 30;
             if (variante === 3) return 60;
             if (variante === 4) return 150;
             if (variante === 5 || variante === 6) return 250;
+            if (variante === 7) return 350;
         }
     } catch(e) {}
     return 0;
