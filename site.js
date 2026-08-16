@@ -405,7 +405,7 @@ function criarSlotCard(player, elem, qty, targetGridId, isSelectionMode, selectC
                     const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
                     const meuDisp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 3;
                     if (meuDisp < 1) {
-                        alert(`Não tens trocas disponíveis de momento (máximo 3, cada troca recupera em 24h)!`);
+                        alert(`Não tens trocas disponíveis de momento (máximo 3, cada troca recupera em 35h)!`);
                         return;
                     }
                     const targetDisp = player.trocasDisponiveis !== undefined ? player.trocasDisponiveis : 3;
