@@ -186,8 +186,8 @@ async function carregarDados() {
     try {
         const res = await fetch(`inventario.json?t=${new Date().getTime()}`);
         const data = await res.json();
-        dadosGlobais = data.ranking || [];
-        propostasAtivas = data.propostas || [];
+        dadosGlobais = data.ranking || data.utilizadores || [];
+        propostasAtivas = data.propostas || data.propostas_troca || [];
         
         document.getElementById('update-timer').textContent = `Última sincronização com a Stream: ${data.updatedAt || 'Pendente'}`;
         
