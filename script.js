@@ -1216,19 +1216,34 @@ function mostrarPainelColecao(username, idsStr) {
 // Loop de leitura do ficheiro
 async function lerFicheiro() {
     try {
-        const url = window.location.protocol === 'file:' ? ESTADO_FILE : `${ESTADO_FILE}?t=${new Date().getTime()}`;
+        const isFile = window.location.protocol === 'file:';
+        const url = isFile ? `${ESTADO_FILE}?_=${Date.now()}` : `${ESTADO_FILE}?t=${Date.now()}`;
         const resposta = await fetch(url, { cache: 'no-store' });
-        if (!resposta.ok) throw new Error('Network response was not ok');
+        if (!resposta.ok && resposta.status !== 0 && resposta.status !== 200) {
+            throw new Error(`HTTP ${resposta.status}`);
+        }
         
         const texto = await resposta.text();
-        const linhaCrua = texto.trim();
+        const linhaCrua = (texto || "").trim();
         
         if (linhaCrua !== "" && linhaCrua !== ultimoComando) {
             ultimoComando = linhaCrua;
             processarComando(linhaCrua);
         }
     } catch (e) {
-        console.error("Erro ao ler jogo_estado.txt:", e);
+        // Fallback com XMLHttpRequest para máxima compatibilidade no OBS Studio Local File
+        try {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', `${ESTADO_FILE}?_=${Date.now()}`, false);
+            xhr.send(null);
+            if (xhr.status === 200 || xhr.status === 0) {
+                const linhaCrua = (xhr.responseText || "").trim();
+                if (linhaCrua !== "" && linhaCrua !== ultimoComando) {
+                    ultimoComando = linhaCrua;
+                    processarComando(linhaCrua);
+                }
+            }
+        } catch (xhrErr) {}
     }
 }
 
