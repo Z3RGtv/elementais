@@ -1125,6 +1125,19 @@ public class CPHInline
                 msg = string.Format("🎣 @{0} usou [{1}]! Se conseguires capturar o próximo elemental, recebes um elemental normal aleatório. (Restantes: {2})", userName, nomeLegivelGasto, restante);
             }
         }
+        else if (numeroSprit == 13)
+        {
+            string superIds = CPH.GetGlobalVar<string>("spritAtacanteSuper") ?? "";
+            bool isSuper = superIds.Contains(userId);
+            if (isSuper)
+            {
+                msg = string.Format("⚽ @{0} usou [{1}] [SUPER]! Terá direito a até 2 ressaltos extras gratuitos se os remates falharem! (Restantes: {2})", userName, nomeLegivelGasto, restante);
+            }
+            else
+            {
+                msg = string.Format("⚽ @{0} usou [{1}]! Terá direito a um ressalto extra gratuito se o seu remate falhar! (Restantes: {2})", userName, nomeLegivelGasto, restante);
+            }
+        }
         else if (numeroSprit == 14)
         {
             msg = string.Format("✨ @{0} usou [{1}]! Próximo spawn: passará à frente na fila do sorteio. (Restantes: {2})", userName, nomeLegivelGasto, restante);
