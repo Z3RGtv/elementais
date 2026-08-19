@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-08-19 22:28:18 UTC",
+  "updatedAt": "2026-08-19 22:30:29 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 241, "sucesso": 54, "rate": 22.4 },
     "super": { "total": 198, "sucesso": 81, "rate": 40.9 },
     "ultra": { "total": 266, "sucesso": 169, "rate": 63.5 },
-    "master": { "total": 1740, "sucesso": 1572, "rate": 90.3 }
+    "master": { "total": 1742, "sucesso": 1573, "rate": 90.3 }
   },
   "recentes_lancamentos": [
+    { "username": "astroz1nvlr", "elementalId": "11_1", "bola": "master", "sucesso": 1, "date": "2026-08-19 23:30:28" },
+    { "username": "garzia17", "elementalId": "11_1", "bola": "master", "sucesso": 0, "date": "2026-08-19 23:30:19" },
     { "username": "garzia17", "elementalId": "u_iPowerlz", "bola": "master", "sucesso": 1, "date": "2026-08-19 23:23:59" },
     { "username": "steve_osvaldo", "elementalId": "22_4", "bola": "master", "sucesso": 1, "date": "2026-08-19 23:17:42" },
     { "username": "dj_manuel_12", "elementalId": "22_4", "bola": "super", "sucesso": 0, "date": "2026-08-19 23:17:32" },
@@ -34,9 +36,7 @@
     { "username": "marquesrcarol", "elementalId": "u_sheisdani", "bola": "master", "sucesso": 1, "date": "2026-08-19 21:38:02" },
     { "username": "marquesrcarol", "elementalId": "20_1", "bola": "master", "sucesso": 1, "date": "2026-08-19 21:34:26" },
     { "username": "legendmigaas", "elementalId": "10_6", "bola": "master", "sucesso": 1, "date": "2026-08-19 21:30:00" },
-    { "username": "legendmigaas", "elementalId": "23_4", "bola": "master", "sucesso": 1, "date": "2026-08-19 21:26:01" },
-    { "username": "soniagoncalves", "elementalId": "23_3", "bola": "master", "sucesso": 1, "date": "2026-08-19 21:21:59" },
-    { "username": "gui_z0", "elementalId": "20_1", "bola": "master", "sucesso": 1, "date": "2026-08-19 21:18:11" }
+    { "username": "legendmigaas", "elementalId": "23_4", "bola": "master", "sucesso": 1, "date": "2026-08-19 21:26:01" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -289,12 +289,12 @@
     },
     {
       "username": "astroz1nvlr",
-      "pontos": 680,
+      "pontos": 780,
       "posicaoVitoria": 0,
       "dataVitoria": null,
       "trocasDisponiveis": 4,
       "proximaRecuperacao": "2026-08-20T00:28:17Z",
-      "inventario": {"12_1":1,"12_3":1,"13_1":1,"14_1":1,"14_3":1,"18_1":1,"1_1":1,"3_3":1,"4_2":1,"5_1":1,"5_3":1,"7_1":1,"7_2":1,"7_3":1,"u_MarquesrCarol":1}
+      "inventario": {"11_1":1,"12_1":1,"12_3":1,"13_1":1,"14_1":1,"14_3":1,"18_1":1,"1_1":1,"3_3":1,"4_2":1,"5_1":1,"5_3":1,"7_1":1,"7_2":1,"7_3":1,"u_MarquesrCarol":1}
     },
     {
       "username": "oreidopimba",
