@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19 15:39:16 UTC",
+  "updatedAt": "2026-08-19 16:20:23 UTC",
   "estatisticas_bolas": {
     "normal": {
       "total": 234,
@@ -12,17 +12,94 @@
       "rate": 41.1
     },
     "ultra": {
-      "total": 260,
-      "sucesso": 164,
-      "rate": 63.1
+      "total": 261,
+      "sucesso": 165,
+      "rate": 63.2
     },
     "master": {
-      "total": 1650,
-      "sucesso": 1498,
+      "total": 1660,
+      "sucesso": 1507,
       "rate": 90.8
     }
   },
   "recentes_lancamentos": [
+    {
+      "username": "hugoandre07",
+      "elementalId": "3_6",
+      "bola": "master",
+      "sucesso": 1,
+      "date": "2026-08-19 17:16:15"
+    },
+    {
+      "username": "ipowerlz",
+      "elementalId": "23_5",
+      "bola": "master",
+      "sucesso": 1,
+      "date": "2026-08-19 17:11:47"
+    },
+    {
+      "username": "ipowerlz",
+      "elementalId": "16_6",
+      "bola": "master",
+      "sucesso": 1,
+      "date": "2026-08-19 17:07:49"
+    },
+    {
+      "username": "ipowerlz",
+      "elementalId": "u_Z3RGtv_og",
+      "bola": "master",
+      "sucesso": 1,
+      "date": "2026-08-19 17:03:50"
+    },
+    {
+      "username": "ipowerlz",
+      "elementalId": "10_5",
+      "bola": "master",
+      "sucesso": 1,
+      "date": "2026-08-19 17:00:12"
+    },
+    {
+      "username": "marquesrcarol",
+      "elementalId": "u_san7izinn",
+      "bola": "master",
+      "sucesso": 1,
+      "date": "2026-08-19 16:55:56"
+    },
+    {
+      "username": "ipowerlz",
+      "elementalId": "u_san7izinn",
+      "bola": "master",
+      "sucesso": 0,
+      "date": "2026-08-19 16:55:47"
+    },
+    {
+      "username": "sheisdani",
+      "elementalId": "10_2",
+      "bola": "master",
+      "sucesso": 1,
+      "date": "2026-08-19 16:51:56"
+    },
+    {
+      "username": "garzia17",
+      "elementalId": "19_6",
+      "bola": "master",
+      "sucesso": 1,
+      "date": "2026-08-19 16:47:52"
+    },
+    {
+      "username": "manodrico",
+      "elementalId": "19_1",
+      "bola": "ultra",
+      "sucesso": 1,
+      "date": "2026-08-19 16:44:11"
+    },
+    {
+      "username": "sheisdani",
+      "elementalId": "16_5",
+      "bola": "master",
+      "sucesso": 1,
+      "date": "2026-08-19 16:40:11"
+    },
     {
       "username": "marquesrcarol",
       "elementalId": "21_1",
@@ -155,83 +232,6 @@
       "bola": "master",
       "sucesso": 1,
       "date": "2026-08-17 02:38:47"
-    },
-    {
-      "username": "hugoandre07",
-      "elementalId": "12_4",
-      "bola": "master",
-      "sucesso": 1,
-      "date": "2026-08-17 02:29:53"
-    },
-    {
-      "username": "minichef9",
-      "elementalId": "12_4",
-      "bola": "ultra",
-      "sucesso": 0,
-      "date": "2026-08-17 02:29:44"
-    },
-    {
-      "username": "garzia17",
-      "elementalId": "12_4",
-      "bola": "ultra",
-      "sucesso": 0,
-      "date": "2026-08-17 02:29:41"
-    },
-    {
-      "username": "minichef9",
-      "elementalId": "12_4",
-      "bola": "ultra",
-      "sucesso": 0,
-      "date": "2026-08-17 02:29:33"
-    },
-    {
-      "username": "hugoandre07",
-      "elementalId": "12_4",
-      "bola": "master",
-      "sucesso": 0,
-      "date": "2026-08-17 02:29:24"
-    },
-    {
-      "username": "minichef9",
-      "elementalId": "1_2",
-      "bola": "master",
-      "sucesso": 1,
-      "date": "2026-08-17 02:20:30"
-    },
-    {
-      "username": "minichef9",
-      "elementalId": "u_Z3RGtv_og",
-      "bola": "master",
-      "sucesso": 1,
-      "date": "2026-08-17 02:12:24"
-    },
-    {
-      "username": "manu12321_",
-      "elementalId": "10_3",
-      "bola": "master",
-      "sucesso": 1,
-      "date": "2026-08-17 02:02:28"
-    },
-    {
-      "username": "minichef9",
-      "elementalId": "3_5",
-      "bola": "master",
-      "sucesso": 1,
-      "date": "2026-08-17 01:54:06"
-    },
-    {
-      "username": "garzia17",
-      "elementalId": "3_6",
-      "bola": "master",
-      "sucesso": 1,
-      "date": "2026-08-17 01:46:32"
-    },
-    {
-      "username": "hugoandre07",
-      "elementalId": "u_Z3RGtv",
-      "bola": "master",
-      "sucesso": 1,
-      "date": "2026-08-17 01:39:15"
     }
   ],
   "availableUsers": [
@@ -321,17 +321,26 @@
       "name": "Z3RGtv_og"
     }
   ],
-  "propostas": [],
+  "propostas": [
+    {
+      "proposerName": "milhafretuga",
+      "targetName": "ipowerlz",
+      "elemProposer": "5_5",
+      "elemTarget": "18_2",
+      "createdAt": "2026-08-19T16:15:12.7015444Z"
+    }
+  ],
   "ranking": [
     {
       "username": "sheisdani",
-      "pontos": 23340,
+      "pontos": 24260,
       "posicaoVitoria": 0,
       "dataVitoria": null,
       "trocasDisponiveis": 5,
       "proximaRecuperacao": null,
       "inventario": {
         "10_1": 1,
+        "10_2": 1,
         "10_3": 2,
         "10_4": 3,
         "10_5": 1,
@@ -361,6 +370,7 @@
         "16_2": 2,
         "16_3": 1,
         "16_4": 2,
+        "16_5": 1,
         "16_6": 1,
         "16_7": 1,
         "17_1": 1,
@@ -458,7 +468,7 @@
     },
     {
       "username": "marquesrcarol",
-      "pontos": 18925,
+      "pontos": 19025,
       "posicaoVitoria": 0,
       "dataVitoria": null,
       "trocasDisponiveis": 4,
@@ -570,6 +580,7 @@
         "u_iPowerlz": 1,
         "u_manu12321_": 1,
         "u_ruialmeida_": 1,
+        "u_san7izinn": 1,
         "u_soniagoncalves": 1,
         "u_steve_osvaldo": 1
       }
@@ -674,7 +685,7 @@
     },
     {
       "username": "ipowerlz",
-      "pontos": 12460,
+      "pontos": 13910,
       "posicaoVitoria": 0,
       "dataVitoria": null,
       "trocasDisponiveis": 5,
@@ -683,7 +694,7 @@
         "10_2": 1,
         "10_3": 1,
         "10_4": 1,
-        "10_5": 1,
+        "10_5": 2,
         "11_1": 1,
         "12_2": 1,
         "12_3": 1,
@@ -693,7 +704,6 @@
         "13_2": 1,
         "13_3": 1,
         "13_5": 1,
-        "14_2": 1,
         "14_3": 1,
         "14_4": 1,
         "15_1": 1,
@@ -701,9 +711,11 @@
         "15_4": 1,
         "16_2": 1,
         "16_3": 1,
-        "17_4": 1,
+        "16_6": 1,
+        "17_4": 2,
+        "17_5": 1,
         "18_1": 1,
-        "18_2": 2,
+        "18_2": 1,
         "18_3": 1,
         "18_4": 1,
         "19_1": 1,
@@ -719,7 +731,7 @@
         "20_1": 1,
         "22_3": 1,
         "23_2": 1,
-        "2_2": 1,
+        "23_5": 1,
         "2_3": 1,
         "2_4": 1,
         "2_6": 1,
@@ -729,7 +741,6 @@
         "3_4": 1,
         "3_5": 1,
         "3_8": 1,
-        "4_2": 1,
         "4_3": 1,
         "4_4": 1,
         "4_7": 1,
@@ -747,7 +758,6 @@
         "8_2": 1,
         "8_3": 1,
         "8_4": 1,
-        "9_3": 1,
         "9_4": 1,
         "9_5": 1,
         "u_1509_martim": 1,
@@ -755,6 +765,7 @@
         "u_MarquesrCarol": 1,
         "u_Minichef9": 1,
         "u_Z3RGtv": 1,
+        "u_Z3RGtv_og": 1,
         "u_gui_z0": 1,
         "u_iPowerlz": 1,
         "u_manu12321_": 1,
@@ -765,7 +776,7 @@
     },
     {
       "username": "hugoandre07",
-      "pontos": 12025,
+      "pontos": 12275,
       "posicaoVitoria": 0,
       "dataVitoria": null,
       "trocasDisponiveis": 5,
@@ -779,7 +790,7 @@
         "12_3": 1,
         "12_4": 2,
         "13_1": 1,
-        "13_2": 2,
+        "13_2": 1,
         "13_3": 1,
         "14_4": 1,
         "15_4": 1,
@@ -817,9 +828,10 @@
         "2_8": 1,
         "3_1": 1,
         "3_2": 1,
+        "3_6": 1,
         "4_1": 1,
         "4_3": 1,
-        "4_4": 2,
+        "4_4": 1,
         "5_1": 1,
         "5_2": 2,
         "5_3": 1,
@@ -868,7 +880,7 @@
         "17_4": 1,
         "18_3": 1,
         "18_5": 1,
-        "19_1": 1,
+        "19_1": 2,
         "19_3": 1,
         "19_4": 1,
         "1_1": 1,
@@ -1034,7 +1046,7 @@
     },
     {
       "username": "garzia17",
-      "pontos": 4190,
+      "pontos": 4990,
       "posicaoVitoria": 0,
       "dataVitoria": null,
       "trocasDisponiveis": 5,
@@ -1053,6 +1065,7 @@
         "17_4": 1,
         "18_3": 1,
         "19_1": 1,
+        "19_6": 1,
         "1_1": 1,
         "1_5": 2,
         "1_8": 1,
@@ -1082,7 +1095,7 @@
       "pontos": 3940,
       "posicaoVitoria": 0,
       "dataVitoria": null,
-      "trocasDisponiveis": 5,
+      "trocasDisponiveis": 4,
       "proximaRecuperacao": null,
       "inventario": {
         "10_1": 2,
