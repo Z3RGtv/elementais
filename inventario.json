@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19 20:48:48 UTC",
+  "updatedAt": "2026-08-19 20:49:03 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 236, "sucesso": 54, "rate": 22.9 },
     "super": { "total": 196, "sucesso": 80, "rate": 40.8 },
@@ -58,7 +58,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-    { "proposerName": "igl_migaas", "targetName": "legendmigaas", "elemProposer": "7_3", "elemTarget": "23_4", "createdAt": "2026-08-19T20:48:48.5938628Z" }
+
   ],
   "ranking": [
     {
@@ -153,12 +153,12 @@
     },
     {
       "username": "igl_migaas",
-      "pontos": 4050,
+      "pontos": 4350,
       "posicaoVitoria": 0,
       "dataVitoria": null,
       "trocasDisponiveis": 3,
       "proximaRecuperacao": "2026-08-19T22:45:34Z",
-      "inventario": {"10_1":1,"10_6":1,"12_1":2,"12_2":2,"12_3":1,"13_1":1,"13_2":1,"13_4":1,"14_2":1,"14_4":1,"17_2":1,"17_4":1,"18_1":1,"1_2":1,"1_8":1,"22_4":1,"23_5":1,"2_1":1,"2_2":1,"2_3":1,"2_4":2,"3_4":1,"4_1":1,"4_4":1,"5_3":2,"6_1":1,"7_2":1,"7_3":2,"u_ManoDrico":1,"u_MilhafreTuga":1,"u_manu12321_":1,"u_soniagoncalves":1}
+      "inventario": {"10_1":1,"10_6":1,"12_1":2,"12_2":2,"12_3":1,"13_1":1,"13_2":1,"13_4":1,"14_2":1,"14_4":1,"17_2":1,"17_4":1,"18_1":1,"1_2":1,"1_8":1,"22_4":1,"23_4":1,"23_5":1,"2_1":1,"2_2":1,"2_3":1,"2_4":2,"3_4":1,"4_1":1,"4_4":1,"5_3":2,"6_1":1,"7_2":1,"7_3":1,"u_ManoDrico":1,"u_MilhafreTuga":1,"u_manu12321_":1,"u_soniagoncalves":1}
     },
     {
       "username": "milhafretuga",
@@ -341,15 +341,6 @@
       "inventario": {"13_1":1,"14_3":1,"16_1":1,"18_3":1,"1_2":1,"2_2":1,"5_1":1,"7_1":1,"9_1":1,"9_2":1}
     },
     {
-      "username": "legendmigaas",
-      "pontos": 420,
-      "posicaoVitoria": 0,
-      "dataVitoria": null,
-      "trocasDisponiveis": 4,
-      "proximaRecuperacao": "2026-08-19T22:45:34Z",
-      "inventario": {"23_4":1,"2_2":1,"5_3":1}
-    },
-    {
       "username": "dapyf",
       "pontos": 420,
       "posicaoVitoria": 0,
@@ -375,6 +366,15 @@
       "trocasDisponiveis": 5,
       "proximaRecuperacao": null,
       "inventario": {"1_2":1,"2_1":1,"7_1":1,"7_2":1,"9_4":1}
+    },
+    {
+      "username": "legendmigaas",
+      "pontos": 210,
+      "posicaoVitoria": 0,
+      "dataVitoria": null,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": "2026-08-19T22:45:34Z",
+      "inventario": {"2_2":1,"5_3":1,"7_3":1}
     },
     {
       "username": "maedomanuelcasaleiro",
