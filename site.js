@@ -447,12 +447,12 @@ function criarSlotCard(player, elem, qty, targetGridId, isSelectionMode, selectC
                 
                 if (meuUsername && meuUsername.toLowerCase() !== player.username.toLowerCase()) {
                     const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
-                    const meuDisp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 3;
+                    const meuDisp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 5;
                     if (meuDisp < 1) {
-                        alert(`Não tens trocas disponíveis de momento (máximo 3, cada troca recupera em 35h)!`);
+                        alert(`Não tens trocas disponíveis de momento (máximo 5, cada troca recupera em 2h)!`);
                         return;
                     }
-                    const targetDisp = player.trocasDisponiveis !== undefined ? player.trocasDisponiveis : 3;
+                    const targetDisp = player.trocasDisponiveis !== undefined ? player.trocasDisponiveis : 5;
                     if (targetDisp < 1) {
                         alert(`O jogador @${player.username} não tem trocas disponíveis no momento!`);
                         return;
@@ -845,17 +845,17 @@ function atualizarUIConta() {
         if (dadosGlobais) {
             const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase());
             if (meuPerfil) {
-                const disp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 3;
+                const disp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 5;
                 const prox = meuPerfil.proximaRecuperacao || null;
                 
                 let timerHtml = '';
-                if (disp < 3 && prox) {
+                if (disp < 5 && prox) {
                     timerHtml = `<span class="trade-timer-badge" data-endtime="${prox}">...</span>`;
                 }
                 
                 tradeWidgetHtml = `
                     <div class="user-trade-status">
-                        <span class="trade-charges-label">🔄 Trocas: <strong>${disp}/3</strong></span>
+                        <span class="trade-charges-label">🔄 Trocas: <strong>${disp}/5</strong></span>
                         ${timerHtml}
                     </div>
                 `;
@@ -1219,16 +1219,16 @@ document.getElementById('btn-propor-troca').onclick = () => {
     const meuPerfil = dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) || { inventario: {} };
 
     // Validar se o proponente tem trocas disponíveis
-    const meuDisp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 3;
+    const meuDisp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 5;
     if (meuDisp < 1) {
-        alert(`Não tens trocas disponíveis de momento (máximo 3 por semana)!`);
+        alert(`Não tens trocas disponíveis de momento (máximo 5, recupera a cada 2h)!`);
         return;
     }
 
     // Validar se o alvo tem trocas disponíveis
-    const targetDisp = jogadorSelecionado.trocasDisponiveis !== undefined ? jogadorSelecionado.trocasDisponiveis : 3;
+    const targetDisp = jogadorSelecionado.trocasDisponiveis !== undefined ? jogadorSelecionado.trocasDisponiveis : 5;
     if (targetDisp < 1) {
-        alert(`O jogador @${jogadorSelecionado.username} não tem trocas disponíveis esta semana!`);
+        alert(`O jogador @${jogadorSelecionado.username} não tem trocas disponíveis no momento!`);
         return;
     }
 
@@ -1286,8 +1286,8 @@ function atualizarResumoTroca(elemOferecido, elemPedido) {
         const qtyEu = meuPerfil.inventario[pedidoId] || 0;
         const jaTemLimiteEu = qtyEu >= 2;
 
-        const myDisp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 3;
-        const targetDisp = targetPlayer.trocasDisponiveis !== undefined ? targetPlayer.trocasDisponiveis : 3;
+        const myDisp = meuPerfil.trocasDisponiveis !== undefined ? meuPerfil.trocasDisponiveis : 5;
+        const targetDisp = targetPlayer.trocasDisponiveis !== undefined ? targetPlayer.trocasDisponiveis : 5;
 
         const commandInput = document.getElementById('twitch-command-input');
         const btnCopiar = document.getElementById('btn-copiar-comando');
