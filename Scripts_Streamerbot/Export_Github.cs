@@ -62,6 +62,8 @@ public class CPHInline
             Dictionary<string, int> completedMap = new Dictionary<string, int>();
             Dictionary<string, string> oldestTradeMap = new Dictionary<string, string>();
             Dictionary<string, int> pendingMap = new Dictionary<string, int>();
+            Dictionary<string, int> vitoriaPosMap = new Dictionary<string, int>();
+            Dictionary<string, string> vitoriaDataMap = new Dictionary<string, string>();
 
             using (var con = new SQLiteConnection("Data Source=" + caminhoBD + ";Version=3;"))
             {
@@ -185,8 +187,6 @@ public class CPHInline
                 }
 
                 // 3. Obter dados de vitória (Hall da Fama dos 100%)
-                Dictionary<string, int> vitoriaPosMap = new Dictionary<string, int>();
-                Dictionary<string, string> vitoriaDataMap = new Dictionary<string, string>();
                 using (var cmd = new SQLiteCommand("SELECT user_id, posicao_vitoria, data_vitoria FROM utilizadores WHERE posicao_vitoria IS NOT NULL AND posicao_vitoria > 0", con))
                 {
                     using (var reader = cmd.ExecuteReader())
@@ -381,7 +381,7 @@ public class CPHInline
         using (var client = new WebClient())
         {
             client.Headers.Add("User-Agent", "StreamerBot-Exporter");
-            client.Headers.Add("Authorization", "token " + githubToken);
+            client.Headers.Add("Authorization", "token " + ObterGithubToken());
             client.Headers.Add("Content-Type", "application/json");
             client.Encoding = Encoding.UTF8;
 
