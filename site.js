@@ -250,6 +250,9 @@ function renderizarRanking(jogadores) {
         }
 
         const isChampion = player.posicaoVitoria && player.posicaoVitoria > 0;
+        const crownIcons = { 1: "👑", 2: "🥈", 3: "🥉", 4: "💎", 5: "🌟" };
+        const cIcon = isChampion ? (crownIcons[player.posicaoVitoria] || "⭐") : "";
+
         if (isChampion) {
             item.classList.add('champion-rank-item');
         }
@@ -260,7 +263,7 @@ function renderizarRanking(jogadores) {
 
         let rankPrefix = `<strong>${index + 1}º</strong>`;
         if (isChampion) {
-            rankPrefix = `<span class="champion-crown" title="Álbum 100% Completo (#${player.posicaoVitoria}º Campeão)">👑</span><strong>#${player.posicaoVitoria}</strong>`;
+            rankPrefix = `<span class="champion-crown" title="Álbum 100% Completo (#${player.posicaoVitoria}º)">${cIcon}</span><strong>#${player.posicaoVitoria}</strong>`;
         } else if (index >= 0 && index <= 4) {
             rankPrefix = `<img src="badges/${index + 1}.png" class="rank-badge-img" title="${index + 1}º Classificado" alt="${index + 1}º">`;
         }
@@ -270,7 +273,7 @@ function renderizarRanking(jogadores) {
             userHtml = `
                 <span class="champion-name-frame">
                     <span class="champion-name-text">@${player.username}</span>
-                    <span class="champion-tag-badge">100% 👑 #${player.posicaoVitoria}</span>
+                    <span class="champion-tag-badge">100% ${cIcon} #${player.posicaoVitoria}</span>
                 </span>
             `;
         }
@@ -292,16 +295,18 @@ function selecionarUtilizador(player, elementoDOM) {
 
     const isChampion = player.posicaoVitoria && player.posicaoVitoria > 0;
     if (isChampion) {
+        const crownIcons = { 1: "👑", 2: "🥈", 3: "🥉", 4: "💎", 5: "🌟" };
+        const cIcon = crownIcons[player.posicaoVitoria] || "⭐";
         const ordinal = player.posicaoVitoria == 1 ? "1º" : player.posicaoVitoria == 2 ? "2º" : player.posicaoVitoria == 3 ? "3º" : `#${player.posicaoVitoria}`;
         const dateStr = player.dataVitoria ? ` • 🏆 Concluiu em ${player.dataVitoria}` : '';
         document.getElementById('view-title').innerHTML = `
             <div class="champion-hero-card">
                 <div class="champion-hero-top">
-                    <span class="champion-crown" style="font-size: 26px;">👑</span>
+                    <span class="champion-crown" style="font-size: 26px;">${cIcon}</span>
                     <span class="champion-hero-title">Coleção de <span class="champion-name-frame"><span class="champion-name-text">@${player.username}</span></span></span>
                 </div>
                 <div class="champion-hero-subtitle">
-                    <span>👑 ${ordinal} Mestre dos Elementais (ÁLBUM 100% COMPLETO)${dateStr}</span>
+                    <span>${cIcon} ${ordinal} Mestre dos Elementais (ÁLBUM 100% COMPLETO)${dateStr}</span>
                 </div>
             </div>
         `;
