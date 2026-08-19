@@ -3,187 +3,544 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elementais na Twitch</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portal de Elementais - Z3RGtv</title>
+    <link rel="stylesheet" href="site_style.css?v=5.1">
 </head>
 <body>
 
-    <!-- Área principal do Jogo -->
-    <div id="game-container">
-        
-        <!-- Alerta flutuante para mostrar quem está a jogar ou resultados -->
-        <div id="alert-box" class="hidden">
-            <span id="alert-text"></span>
+    <header>
+        <h1>🏆 PORTAL DE ELEMENTAIS</h1>
+        <div id="my-profile-container" class="my-profile-container">
+            <!-- Injetado pelo JS -->
         </div>
-        
-        <!-- Painel de Efeitos Ativos (Novo) -->
-        <div id="active-effects-container" class="hidden"></div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Pesquisar utilizador no chat...">
+        </div>
+    </header>
 
-        <!-- Área onde o elemental aparece -->
-        <div id="elemental-area">
-            <img id="elemental-img" src="" alt="Elemental" class="hidden">
-
-            <!-- Animação de Vitória de Álbum Completo (Exatamente onde nasce o elemental) -->
-            <div id="victory-area" class="hidden">
-                <div class="victory-sunburst"></div>
-                <div class="victory-halo"></div>
-                <div class="victory-trophy-box">
-                    <div class="victory-crown">👑</div>
-                    <div class="victory-trophy">🏆</div>
-                    <div class="victory-stars">✨</div>
-                </div>
-                <div class="victory-banner">
-                    <div class="victory-tag">👑 CAMPEÃO SUPREMO 👑</div>
-                    <div class="victory-name" id="victory-user">@Username</div>
-                    <div class="victory-sub" id="victory-sub-text">ÁLBUM 100% COMPLETO!</div>
-                </div>
-                <div id="victory-confetti"></div>
+    <main class="main-container">
+        <!-- Coluna Esquerda: Ranking -->
+        <section class="ranking-section">
+            <h2>Classificação Geral</h2>
+            <div id="ranking-list" class="ranking-list">
+                <!-- Injetado dinamicamente pelo JS -->
             </div>
-        </div>
+        </section>
 
-        <!-- Animação da bola a ser atirada -->
-        <div id="ball-area">
-            <img id="ball-img" src="" alt="Bola" class="hidden">
-        </div>
-
-        <!-- Boneco Atacante para Chuto (Rebound) -->
-        <img id="striker-overlay-kick" class="hidden" src="Sprites/T_Icon_BR_Creature_Sprite_Soccer_ui_L.webp" alt="Atacante Kick">
-
-        <!-- Área de Troca Visual -->
-        <div id="trade-area" class="hidden">
-            <div class="trade-user" id="trade-user1">Viewer1</div>
-            <div class="trade-card-container">
-                <div class="trade-card" id="trade-card1">
-                    <img id="trade-img1" src="" alt="Bicho 1">
-                </div>
-                <div class="trade-arrow">🔄</div>
-                <div class="trade-card" id="trade-card2">
-                    <img id="trade-img2" src="" alt="Bicho 2">
+        <!-- Coluna Direita: Álbum de Cartas -->
+        <section class="collection-section">
+            <div class="collection-header-row">
+                <h2 id="view-title">Seleciona um utilizador para ver a coleção</h2>
+                <div class="collection-actions">
+                    <button id="btn-ver-globais" class="btn-global">🌍 Inventário Global</button>
+                    <button id="btn-propor-troca" class="btn hidden">Propor Troca 🔄</button>
+                    <button id="btn-definir-conta" class="btn btn-secondary hidden">Esta é a minha Conta 👤</button>
                 </div>
             </div>
-            <div class="trade-user" id="trade-user2">Viewer2</div>
-        </div>
-
-        <!-- Área de Sprits -->
-        <div id="sprit-area" class="hidden">
-            <div id="sprit-notification"></div>
-            <div id="sprit-animation-container">
-                <div id="sprit-particles"></div>
-                <img id="sprit-ball" class="hidden" src="" alt="Sprit Ball">
-                <img id="sprit-creature" class="hidden" src="" alt="Sprit Creature">
-            </div>
-        </div>
-    </div>
-
-    <!-- Painel do Grim Reaper (Slot Machine/Roleta e Ceifeiro) -->
-    <div id="grim-panel" class="hidden">
-        <div id="grim-dark-overlay"></div>
-        <div id="grim-container">
-            <h2 id="grim-title">💀 CEIFEIRO LIBERTADO 💀</h2>
+            <p id="user-points-panel" class="hidden">
+                <span id="user-points-label-container">Pontuação Total: <span id="user-points-val">0</span> pts <span class="divider">|</span></span> 
+                Coleção: <strong id="user-progress-val" style="color: #00bcff;">0 / 0</strong>
+                <span class="progress-bar-container">
+                    <span id="user-progress-bar" class="progress-bar-fill"></span>
+                </span>
+            </p>
             
-            <!-- Roleta (Slot Machine) -->
-            <div id="grim-slot-machine">
-                <div id="grim-slot-window">
-                    <div id="grim-slot-strip">
-                        <!-- Nomes do Top 3 gerados dinamicamente -->
+            <!-- Propostas pendentes para o utilizador atual -->
+            <div id="propostas-pendentes-container" class="propostas-container hidden">
+                <!-- Injetado pelo JS -->
+            </div>
+
+            <div id="site-grid" class="site-grid">
+                <!-- Injetado dinamicamente pelo JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Estatísticas & Histórico de Lançamentos -->
+    <section class="stats-section">
+        <h2>📊 Estatísticas e Histórico de Pokébolas</h2>
+        <div class="stats-container">
+            <!-- Painel de Cartões de Bolas -->
+            <div class="stats-card">
+                <h3>Taxa de Sucesso por Bola</h3>
+                <div id="stats-balls-container" class="stats-balls-grid">
+                    <!-- Gerado dinamicamente pelo JS -->
+                </div>
+            </div>
+
+            <!-- Painel de Lançamentos Recentes -->
+            <div class="stats-card">
+                <h3>Últimos 30 Lançamentos na Stream</h3>
+                <div class="stats-feed-wrapper">
+                    <table class="tabela-recentes">
+                        <thead>
+                            <tr>
+                                <th>Data/Hora</th>
+                                <th>Utilizador</th>
+                                <th>Elemental</th>
+                                <th>Bola</th>
+                                <th>Resultado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="stats-recent-feed">
+                            <!-- Gerado dinamicamente pelo JS -->
+                            <tr>
+                                <td colspan="5" style="text-align: center; color: var(--text-muted); padding: 20px;">Nenhum lançamento registado ainda.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guia de Como Jogar & Habilidades -->
+    <section class="instructions-section">
+        <h2>ℹ️ Guia do Jogo (Como Jogar & Comandos)</h2>
+        <div class="instructions-grid">
+            <div class="instruction-card">
+                <h3>🎮 Regras de Captura (Lobby de 30s)</h3>
+                <p>Para tornar o jogo mais justo e evitar que quem tem menos latência capture sempre, implementámos o seguinte sistema:</p>
+                <ul>
+                    <li>Quando um Elemental aparece na stream, os resgates de Pokébola ficam abertos.</li>
+                    <li>Tens <strong>30 segundos</strong> para resgatar a tua bola (Normal, Super, Ultra ou Master).</li>
+                    <li>O bot junta as primeiras <strong>5 tentativas de 5 utilizadores diferentes</strong> do chat e <strong>baralha-as aleatoriamente</strong> (cada pessoa só pode entrar 1 vez na fila do sorteio).</li>
+                    <li>Os arremessos ocorrem um a um. Se alguém capturar, os resgates pendentes são <strong>reembolsados automaticamente (recebes os pontos de volta)</strong>!</li>
+                    <li>Se o lobby falhar ou passarem os 30s sem encher, as tentativas restantes do elemental (limite de 5 globais) passam a funcionar por ordem de resgate imediata.</li>
+                    <li><em>Nota:</em> Cada jogador pode usar no máximo 2 bolas por spawn (se o teu arremesso no sorteio falhar, podes atirar uma segunda vez no modo livre pós-sorteio).</li>
+                </ul>
+            </div>
+            <div class="instruction-card">
+                <h3>✨ Usar Habilidades de Elementais</h3>
+                <p>Podes resgatar a recompensa "<strong>Usar Elemental</strong>" e digitar o número do Elemental para invocar os seguintes efeitos no <strong>próximo spawn</strong>:</p>
+                <ul>
+                    <li class="super-item"><strong id="water-effect-label">[1] Elemental de Água:</strong> Reduz a probabilidade de captura em <span id="water-effect-percentage">40%</span> para todos, exceto quem usou o item.</li>
+                    <li class="super-item"><strong id="earth-effect-label">[2] Elemental de Terra:</strong> Aumenta a raridade no próximo spawn (<span id="earth-effect-text">épico, lendário ou mítico</span>).</li>
+                    <li><strong>[3] Elemental de Fogo:</strong> Ativa spawns rápidos a cada 5 minutos durante 1 hora.</li>
+                    <li class="super-item"><strong id="duck-effect-label">[4] Elemental de Pato:</strong> Garante variante <span id="duck-effect-text">Ouro ou superior</span> no próximo spawn.</li>
+                    <li><strong>[5] Elemental de Fantasma:</strong> O próximo elemental surge oculto.</li>
+                    <li class="super-item"><strong id="sleepy-effect-label">[6] Elemental dos Sonhos:</strong> Adormece <span id="sleepy-effect-text">uma pessoa</span> no sorteio (arremesso cancelado e reembolsado).</li>
+                    <li class="super-item"><strong id="demon-effect-label">[7] Elemental de Demónio:</strong> Apenas quem usou o item pode arremessar a <span id="demon-effect-text">Master Ball</span> no próximo spawn.</li>
+                    <li class="super-item"><strong id="punk-effect-label">[8] Elemental de Punk:</strong> Rouba um elemental aleatório de <span id="punk-effect-text">outro participante</span> no próximo spawn.</li>
+                    <li><strong>[9] Elemental de Rei:</strong> Apenas quem usou o item pode arremessar Pokébolas no próximo spawn (máx. 5 tentativas).</li>
+                    <li><strong>[10] Elemental de Ponto Zero:</strong> Promove a raridade (tier +1) do último elemental capturado que ainda possuas no inventário.</li>
+                    <li class="super-item"><strong id="peixe-effect-label">[12] Elemental de Peixoto (Peixe):</strong> Se capturares o próximo bicho com sucesso, recebes <span id="peixe-effect-text">um elemental normal extra</span> aleatório.</li>
+                    <li class="super-item"><strong id="atacante-effect-label">[13] Elemental Atacante:</strong> Garante um arremesso extra gratuito imediato (<span id="atacante-effect-text">rebound</span>) se o teu primeiro remate falhar (sem gastar o limite do spawn).</li>
+                    <li><strong>[14] Elemental de Aura:</strong> +10000 de Aura! Como tens a aura no máximo, passas à frente na fila do sorteio.</li>
+                    <li class="super-item"><strong id="boss-effect-label">[15] Elemental de Boss:</strong> Garante variante <span id="boss-effect-text">Gummy ou superior</span>, mas reduz a taxa de captura em 60%.</li>
+                    <li class="super-item"><strong id="grim-effect-label">[16] Elemental Grim (Ceifeiro):</strong> Escolhe <span id="grim-effect-text">um jogador do Top 3</span> (incluindo o conjurador) e ceifa (elimina) um dos seus elementais capturados.</li>
+                    <li class="super-item"><strong id="vento-effect-label">[17] Elemental de Ar (Vento):</strong> Se não ficares em 1º lugar na fila do sorteio, o vento <span id="vento-effect-text">baralha-a novamente</span>.</li>
+                    <li class="super-item"><strong id="seven-effect-label">[18] Elemental Seven:</strong> Sorteia um dos últimos 7 elementais capturados na stream para o próximo spawn com <span id="seven-effect-text">upgrade de variante (tier +1)</span>.</li>
+                    <li class="super-item"><strong id="llama-effect-label">[22] Elemental Llama:</strong> Concede o <span id="llama-effect-text">poder aleatório de qualquer elemental</span>.</li>
+                    <li class="super-item"><strong id="peely-effect-label">[23] Elemental Peely:</strong> Faz a <span id="peely-effect-text">primeira pessoa da fila</span> escorregar para o último lugar.</li>
+                    <li><em>Nota:</em> Máximo de 2 elementais ativos em simultâneo.</li>
+                    <li class="super-item"><em>Possui Modo SUPER (efeito melhorado ao ter a coleção completa).</em></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer id="update-timer">
+        A carregar dados da stream...
+        <!-- v1.2 - Seven (18), Llama (22), Peely (23) -->
+    </footer>
+
+    <!-- Modal do Assistente de Proposta de Troca -->
+    <div id="modal-troca" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" id="btn-fechar-modal">&times;</span>
+            <h2>Assistente de Troca 🔄</h2>
+            <p class="modal-desc">Estás a propor uma troca a <strong id="modal-target-username">@jogador</strong>. Seleciona as cartas correspondentes:</p>
+            
+            <div class="troca-wizard-row">
+                <!-- Lado Esquerdo: Eu ofereço -->
+                <div class="wizard-side">
+                    <h3>Eu Ofereço:</h3>
+                    <div id="my-offer-card-selection" class="wizard-grid">
+                        <!-- Minhas cartas disponíveis -->
                     </div>
                 </div>
-                <div id="grim-slot-indicator"></div>
-            </div>
 
-            <!-- Vítima e Cromo Destruído -->
-            <div id="grim-reveal-area" class="hidden">
-                <div id="grim-victim-name"></div>
-                <div id="grim-card-container">
-                    <div id="grim-target-card">
-                        <img id="grim-target-img" src="" alt="Target Card">
-                        <div id="grim-card-slash" class="hidden"></div>
+                <!-- Seta indicadora -->
+                <div class="wizard-divider">➡️</div>
+
+                <!-- Lado Direito: Ele dá / Seleção de Jogador -->
+                <div class="wizard-side">
+                    <h3 id="wizard-right-title">Eu Quero Receber:</h3>
+                    
+                    <!-- Bloco 1: Seleção de Jogador -->
+                    <div id="modal-player-select-block" style="display: flex; flex-direction: column; flex: 1; min-height: 0;">
+                        <div class="modal-search-box">
+                            <input type="text" id="modal-search-player" placeholder="Pesquisar jogador...">
+                        </div>
+                        <div id="modal-player-list" class="modal-player-list">
+                            <!-- Injetado pelo JS -->
+                        </div>
+                    </div>
+
+                    <!-- Bloco 2: Grelha de Elementais do Jogador Alvo -->
+                    <div id="modal-target-cards-block" class="hidden" style="display: flex; flex-direction: column; flex: 1; min-height: 0;">
+                        <div class="modal-target-header">
+                            <span id="modal-active-target-label">Cartas de @jogador</span>
+                            <button id="btn-modal-mudar-jogador" class="btn btn-secondary btn-sm" style="padding: 3px 8px; font-size: 11px;">Mudar 🔄</button>
+                        </div>
+                        <div id="target-request-card-selection" class="wizard-grid">
+                            <!-- Cartas dele disponíveis -->
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Ceifeiro Grim -->
-            <img id="grim-reaper-img" class="hidden" src="Sprites/T_Icon_BR_GrimReaper_Default_L.webp" alt="Grim Reaper">
-        </div>
-    </div>
-
-    <!-- Painel de Pesca Extra (Peixoto) -->
-    <div id="fishing-panel" class="hidden">
-        <div id="fishing-dark-overlay"></div>
-        <div id="fishing-container">
-            <h2 id="fishing-title">🎣 PESCA EXTRA 🎣</h2>
-            <div id="fishing-user-msg"></div>
-            
-            <div id="fishing-line-container">
-                <!-- A linha e o anzol que descem -->
-                <div id="fishing-line"></div>
-                <div id="fishing-hook">🪝</div>
-            </div>
-
-            <!-- Carta pescada presa ao anzol -->
-            <div id="fishing-card-holder" class="hidden">
-                <div id="fishing-card">
-                    <img id="fishing-card-img" src="" alt="Fish Card">
+            <!-- Resumo e Comando Twitch -->
+            <div id="troca-resumo-container" class="troca-resumo hidden">
+                <div class="resumo-visual">
+                    <div class="resumo-item">
+                        <span class="resumo-label">Tu dás:</span>
+                        <div id="resumo-oferecido-img" class="resumo-card-preview"></div>
+                        <span id="resumo-oferecido-nome">Elemental A</span>
+                    </div>
+                    <div class="resumo-vs">🔄</div>
+                    <div class="resumo-item">
+                        <span class="resumo-label">Tu recebes:</span>
+                        <div id="resumo-pedido-img" class="resumo-card-preview"></div>
+                        <span id="resumo-pedido-nome">Elemental B</span>
+                    </div>
+                </div>
+                
+                <div class="twitch-command-box">
+                    <p class="twitch-desc">Copia o comando abaixo, vai ao chat da Twitch e resgata o prémio <strong>"Trocar Elemental"</strong> colando o seguinte texto:</p>
+                    <div class="command-input-row">
+                        <input type="text" id="twitch-command-input" readonly value="">
+                        <button id="btn-copiar-comando" class="btn btn-primary">Copiar 📋</button>
+                    </div>
                 </div>
             </div>
-            
-            <!-- Partículas de água/bolhas -->
-            <div id="fishing-particles"></div>
         </div>
     </div>
 
-    <!-- Painel de Milestone Quack (Recompensa de Capturas - Fundo 100% Transparente) -->
-    <div id="quack-panel" class="hidden">
-        <div id="quack-container">
-            <h2 id="quack-title">🦆 RECOMPENSA QUACK 🦆</h2>
-            <div id="quack-badge">MILESTONE <span id="quack-req-num">100</span> CAPTURAS!</div>
-            <div id="quack-card-holder">
-                <div id="quack-card">
-                    <img id="quack-card-img" src="" alt="Quack Card">
-                </div>
+    <!-- Botão flutuante para a tabela de pontos -->
+    <button id="btn-abrir-sidebar" class="btn-sidebar-toggle">Pontos & Raridades 📊</button>
+
+    <!-- Painel Lateral (Sidebar) Retrátil -->
+    <div id="sidebar-pontos" class="sidebar-panel">
+        <div class="sidebar-header">
+            <h3>Pontos & Raridades 📊</h3>
+            <button id="btn-fechar-sidebar" class="close-sidebar">&times;</button>
+        </div>
+        <div class="sidebar-body">
+            <p class="sidebar-info">Lista oficial de pontos atribuídos por captura de cada espécie e variante (Variantes <b>Quack - Qk.</b> são desbloqueadas por marcos de 20, 40, 75 e 100 capturas):</p>
+            <table class="tabela-pontos-calc">
+                <thead>
+                    <tr>
+                        <th>Espécie</th>
+                        <th>Raridade</th>
+                        <th>N.</th>
+                        <th>Go.</th>
+                        <th>Gu.</th>
+                        <th>Ga.</th>
+                        <th>Ho.</th>
+                        <th>Cu.</th>
+                        <th>Ge.</th>
+                        <th>Qk.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- RAROS -->
+                    <tr class="rarity-raro">
+                        <td>💧 Água</td>
+                        <td class="badge-raro">Raro</td>
+                        <td class="col-normal">10</td>
+                        <td class="col-gold">30</td>
+                        <td class="col-gummy">60</td>
+                        <td class="col-galaxy">150</td>
+                        <td class="col-holo">250</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td class="col-gem" style="color: #00e5ff; font-weight: bold;">350</td>
+                        <td class="col-quack" style="color: #ffe600; font-weight: bold;">300</td>
+                    </tr>
+                    <tr class="rarity-raro">
+                        <td>🪨 Terra</td>
+                        <td class="badge-raro">Raro</td>
+                        <td class="col-normal">10</td>
+                        <td class="col-gold">30</td>
+                        <td class="col-gummy">60</td>
+                        <td class="col-galaxy">150</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td class="col-cube">250</td>
+                        <td class="col-gem" style="color: #00e5ff; font-weight: bold;">350</td>
+                        <td class="col-quack" style="color: #ffe600; font-weight: bold;">300</td>
+                    </tr>
+                    <tr class="rarity-raro">
+                        <td>🔥 Fogo</td>
+                        <td class="badge-raro">Raro</td>
+                        <td class="col-normal">10</td>
+                        <td class="col-gold">30</td>
+                        <td class="col-gummy">60</td>
+                        <td class="col-galaxy">150</td>
+                        <td class="col-holo">250</td>
+                        <td class="col-cube">250</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td class="col-quack" style="color: #ffe600; font-weight: bold;">300</td>
+                    </tr>
+                    <tr class="rarity-raro">
+                        <td>🐟 Peixoto</td>
+                        <td class="badge-raro">Raro</td>
+                        <td class="col-normal">10</td>
+                        <td class="col-gold">30</td>
+                        <td class="col-gummy">60</td>
+                        <td class="col-galaxy">150</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td class="col-cube">250</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+                    <tr class="rarity-raro">
+                        <td>🌪️ Ar</td>
+                        <td class="badge-raro">Raro</td>
+                        <td class="col-normal">10</td>
+                        <td class="col-gold">30</td>
+                        <td class="col-gummy">60</td>
+                        <td class="col-galaxy">150</td>
+                        <td class="col-holo">250</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+
+                    <!-- ÉPICOS -->
+                    <tr class="rarity-epico">
+                        <td>🦆 Pato</td>
+                        <td class="badge-epico">Épico</td>
+                        <td class="col-normal">15</td>
+                        <td class="col-gold">40</td>
+                        <td class="col-gummy">90</td>
+                        <td class="col-galaxy">200</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td class="col-gem" style="color: #00e5ff; font-weight: bold;">450</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+                    <tr class="rarity-epico">
+                        <td>👻 Fantasma</td>
+                        <td class="badge-epico">Épico</td>
+                        <td class="col-normal">15</td>
+                        <td class="col-gold">40</td>
+                        <td class="col-gummy">90</td>
+                        <td class="col-galaxy">200</td>
+                        <td class="col-holo">350</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+                    <tr class="rarity-epico">
+                        <td>😈 Demónio</td>
+                        <td class="badge-epico">Épico</td>
+                        <td class="col-normal">15</td>
+                        <td class="col-gold">40</td>
+                        <td class="col-gummy">90</td>
+                        <td class="col-galaxy">200</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td class="col-gem" style="color: #00e5ff; font-weight: bold;">450</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+                    <tr class="rarity-epico">
+                        <td>👑 Rei</td>
+                        <td class="badge-epico">Épico</td>
+                        <td class="col-normal">15</td>
+                        <td class="col-gold">40</td>
+                        <td class="col-gummy">90</td>
+                        <td class="col-galaxy">200</td>
+                        <td class="col-holo">350</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+                    <tr class="rarity-epico">
+                        <td>⚽ Atacante</td>
+                        <td class="badge-epico">Épico</td>
+                        <td class="col-normal">15</td>
+                        <td class="col-gold">40</td>
+                        <td class="col-gummy">90</td>
+                        <td class="col-galaxy">200</td>
+                        <td class="col-holo">350</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+                    <tr class="rarity-epico">
+                        <td>✨ Aura</td>
+                        <td class="badge-epico">Épico</td>
+                        <td class="col-normal">15</td>
+                        <td class="col-gold">40</td>
+                        <td class="col-gummy">90</td>
+                        <td class="col-galaxy">200</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td class="col-gem" style="color: #00e5ff; font-weight: bold;">450</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+
+                    <!-- LENDÁRIOS -->
+                    <tr class="rarity-lendario">
+                        <td>💤 Dos Sonhos</td>
+                        <td class="badge-lendario">Lendário</td>
+                        <td class="col-normal">30</td>
+                        <td class="col-gold">75</td>
+                        <td class="col-gummy">150</td>
+                        <td class="col-galaxy">300</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td class="col-cube">500</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+                    <tr class="rarity-lendario">
+                        <td>🎸 Punk</td>
+                        <td class="badge-lendario">Lendário</td>
+                        <td class="col-normal">30</td>
+                        <td class="col-gold">75</td>
+                        <td class="col-gummy">150</td>
+                        <td class="col-galaxy">300</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td class="col-cube">500</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+                    <tr class="rarity-lendario">
+                        <td>👑 Boss</td>
+                        <td class="badge-lendario">Lendário</td>
+                        <td class="col-normal">30</td>
+                        <td class="col-gold">75</td>
+                        <td class="col-gummy">150</td>
+                        <td class="col-galaxy">300</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td class="col-cube">500</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+                    <tr class="rarity-lendario">
+                        <td>⚡ Seven</td>
+                        <td class="badge-lendario">Lendário</td>
+                        <td class="col-normal">30</td>
+                        <td class="col-gold">75</td>
+                        <td class="col-gummy">150</td>
+                        <td class="col-galaxy">300</td>
+                        <td class="col-holo">500</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+                    <tr class="rarity-lendario">
+                        <td>🦙 Llama</td>
+                        <td class="badge-lendario">Lendário</td>
+                        <td class="col-normal">30</td>
+                        <td class="col-gold">75</td>
+                        <td class="col-gummy">150</td>
+                        <td class="col-galaxy">300</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td class="col-gem" style="color: #00e5ff; font-weight: bold;">650</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+                    <tr class="rarity-lendario">
+                        <td>🍌 Peely</td>
+                        <td class="badge-lendario">Lendário</td>
+                        <td class="col-normal">30</td>
+                        <td class="col-gold">75</td>
+                        <td class="col-gummy">150</td>
+                        <td class="col-galaxy">300</td>
+                        <td class="col-holo">500</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+
+                    <!-- MÍTICOS -->
+                    <tr class="rarity-mitico">
+                        <td>🌌 Ponto Zero</td>
+                        <td class="badge-mitico">Mítico</td>
+                        <td class="col-normal">50</td>
+                        <td class="col-gold">120</td>
+                        <td class="col-gummy">250</td>
+                        <td class="col-galaxy">500</td>
+                        <td class="col-holo">800</td>
+                        <td class="col-cube">800</td>
+                        <td class="col-gem" style="color: #00e5ff; font-weight: bold;">850</td>
+                        <td class="col-quack" style="color: #ffe600; font-weight: bold;">900</td>
+                    </tr>
+                    <tr class="rarity-mitico">
+                        <td>💀 Grim</td>
+                        <td class="badge-mitico">Mítico</td>
+                        <td class="col-normal">50</td>
+                        <td class="col-gold">120</td>
+                        <td class="col-gummy">250</td>
+                        <td class="col-galaxy">500</td>
+                        <td class="col-holo">800</td>
+                        <td class="col-cube">800</td>
+                        <td class="col-gem" style="color: #00e5ff; font-weight: bold;">850</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+                    <tr class="rarity-mitico">
+                        <td>🦇 Batman</td>
+                        <td class="badge-mitico">Mítico</td>
+                        <td class="col-normal">50</td>
+                        <td class="col-gold">120</td>
+                        <td class="col-gummy">250</td>
+                        <td class="col-galaxy">500</td>
+                        <td class="col-holo">800</td>
+                        <td class="col-cube">800</td>
+                        <td style="opacity: 0.4;">-</td>
+                        <td style="opacity: 0.4;">-</td>
+                    </tr>
+
+                    <!-- ESPECIAIS (FIXO) -->
+                    <tr class="rarity-especial">
+                        <td>🥜 BurntPeanut</td>
+                        <td class="badge-mitico">Especial</td>
+                        <td colspan="8" style="text-align: center; font-weight: bold; color: #a154f2;">100 pts (Fixo)</td>
+                    </tr>
+                    <tr class="rarity-especial">
+                        <td>⚽ Vini JR</td>
+                        <td class="badge-mitico">Especial</td>
+                        <td colspan="8" style="text-align: center; font-weight: bold; color: #a154f2;">100 pts (Fixo)</td>
+                    </tr>
+                    <tr class="rarity-especial">
+                        <td>🍕 Pollo</td>
+                        <td class="badge-mitico">Especial</td>
+                        <td colspan="8" style="text-align: center; font-weight: bold; color: #a154f2;">100 pts (Fixo)</td>
+                    </tr>
+                    <tr class="rarity-especial">
+                        <td>🕶️ John Wick</td>
+                        <td class="badge-mitico">Especial</td>
+                        <td colspan="8" style="text-align: center; font-weight: bold; color: #a154f2;">100 pts (Fixo)</td>
+                    </tr>
+                    <tr class="rarity-especial">
+                        <td>🐭 Ironmouse</td>
+                        <td class="badge-mitico">Especial</td>
+                        <td colspan="8" style="text-align: center; font-weight: bold; color: #a154f2;">100 pts (Fixo)</td>
+                    </tr>
+                    <tr class="rarity-especial">
+                        <td>👥 Viewers (Users)</td>
+                        <td class="badge-mitico">Especial</td>
+                        <td colspan="8" style="text-align: center; font-weight: bold; color: #a154f2;">100 pts (Fixo)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal de Possuidores (Quem tem esta carta) -->
+    <div id="modal-owners" class="modal hidden">
+        <div class="modal-content" style="max-width: 400px;">
+            <span class="close-modal" id="btn-fechar-modal-owners">&times;</span>
+            <h3 id="modal-owners-title" style="color: #a154f2; margin-top: 0; font-size: 16px;">Treinadores que possuem</h3>
+            <p class="modal-desc" style="margin-bottom: 12px; font-size: 11.5px;">Lista de todos os jogadores com esta carta no inventário:</p>
+            <div id="modal-owners-list" style="max-height: 300px; overflow-y: auto; margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+                <!-- Preenchido via JS -->
             </div>
-            <div id="quack-user-msg"></div>
-            <div id="quack-particles"></div>
         </div>
     </div>
 
-    <!-- Painel de Coleção (!coleção) -->
-    <div id="collection-panel" class="hidden">
-        <h2 id="collection-title">Coleção de Utilizador</h2>
-        <div id="collection-grid">
-            <!-- As imagens dos elementais capturados vão aparecer aqui -->
-        </div>
-        <div id="collection-dots"></div>
-    </div>
-
-    <!-- Painel de Testes (Debug) -->
-    <div id="debug-panel">
-        <h3>Painel de Testes</h3>
-        <div class="debug-buttons">
-            <button onclick="testarComando('VITORIA;sheisdani;134;1')">👑 Testar Vitória 100%</button>
-            <button onclick="testarComando('GRIM;Z3RG;Pedro;1_1;Pedro,Z3RG,Manu')">💀 Testar Grim Reaper</button>
-            <button onclick="testarComando('PESCA;Z3RG;12_1')">🎣 Testar Pesca Extra</button>
-            <button onclick="testarComando('QUACK;Z3RG;10_8;100')">🦆 Testar Quack 100 Capturas</button>
-            <button onclick="testarComando('QUACK;Z3RG;1_8;20')">🦆 Testar Quack 20 Capturas</button>
-            <button onclick="testarComando('TROCA;Z3RG;Pedro;T_Icon_BR_Creature_Sprite_BurntPeanut_ui_L.webp;T_Icon_BR_Creature_Sprite_Water_Gold_ui_L.webp')">🔄 Testar Troca</button>
-            
-            <button onclick="testarComando('SPRIT;1;Z3RG')">💧 Sprit Água</button>
-            <button onclick="testarComando('SPRIT;2;Z3RG')">🪨 Sprit Terra</button>
-            <button onclick="testarComando('SPRIT;3;Z3RG')">🔥 Sprit Fogo</button>
-            <button onclick="testarComando('SPRIT;15;Z3RG')">👑 Sprit Boss</button>
-            
-            <button onclick="testarComando('SPAWN;T_Icon_BR_Creature_Sprite_BurntPeanut_ui_L.webp;BurntPeanut')">Spawn BurntPeanut</button>
-            <button onclick="testarComando('ATIRAR;Z3RG;master')">Atirar Master</button>
-            <button onclick="testarComando('SUCESSO;Z3RG')">Sucesso</button>
-            <button onclick="testarComando('FALHA;Z3RG')">Falha</button>
-            <button onclick="testarComando('FUGIU;BurntPeanut')">Fugir</button>
-            <button onclick="testarComando('COLECAO;Z3RG;1_1:1,1_3:2,2_1:1,2_2:2,10_3:1,11_1:1')">Coleção</button>
-            <button onclick="testarComando('LIMPAR')">Limpar Tudo</button>
-            <button onclick="toggleDebug()">Ocultar Painel</button>
-        </div>
-    </div>
-
-    <script src="users_list.js"></script>
-    <script src="script.js"></script>
+    <script src="site.js?v=6.5"></script>
 </body>
 </html>
