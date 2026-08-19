@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19 22:42:23 UTC",
+  "updatedAt": "2026-08-19 22:45:00 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 241, "sucesso": 54, "rate": 22.4 },
     "super": { "total": 198, "sucesso": 81, "rate": 40.9 },
@@ -58,7 +58,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-
+    { "proposerName": "san7izinn", "targetName": "manodrico", "elemProposer": "3_5", "elemTarget": "19_1", "createdAt": "2026-08-19T22:45:00.6062835Z" }
   ],
   "ranking": [
     {
@@ -174,7 +174,7 @@
       "pontos": 3170,
       "posicaoVitoria": 0,
       "dataVitoria": null,
-      "trocasDisponiveis": 3,
+      "trocasDisponiveis": 2,
       "proximaRecuperacao": "2026-08-20T00:22:10Z",
       "inventario": {"12_1":1,"12_2":1,"12_3":1,"15_6":1,"1_1":1,"1_5":1,"1_7":1,"1_8":1,"23_1":1,"2_1":1,"2_2":1,"2_3":2,"3_4":1,"3_5":1,"4_1":1,"4_4":1,"6_3":1,"6_4":1,"7_1":1,"9_5":1,"u_san7izinn":1}
     },
