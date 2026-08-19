@@ -3052,8 +3052,8 @@ function mostrarAnimacaoVitoria(userName, totalCards, pos = "1") {
     if (alertBox) alertBox.classList.add('hidden');
 
     victoryUser.textContent = `@${userName}`;
-    const ordinal = pos == "1" ? "1º" : pos == "2" ? "2º" : pos == "3" ? "3º" : `#${pos}`;
-    if (victorySub) victorySub.textContent = `👑 ${ordinal} LUGAR NO HALL DA FAMA! (${totalCards}/${totalCards})`;
+    const ordinal = pos == "1" ? "1º LUGAR" : pos == "2" ? "2º LUGAR" : pos == "3" ? "3º LUGAR" : `#${pos} LUGAR`;
+    if (victorySub) victorySub.textContent = `${ordinal} • HALL DA FAMA`;
 
     // Gerar confettis festivos
     if (victoryConfetti) {
