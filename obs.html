@@ -22,6 +22,23 @@
         <!-- Área onde o elemental aparece -->
         <div id="elemental-area">
             <img id="elemental-img" src="" alt="Elemental" class="hidden">
+
+            <!-- Animação de Vitória de Álbum Completo (Exatamente onde nasce o elemental) -->
+            <div id="victory-area" class="hidden">
+                <div class="victory-sunburst"></div>
+                <div class="victory-halo"></div>
+                <div class="victory-trophy-box">
+                    <div class="victory-crown">👑</div>
+                    <div class="victory-trophy">🏆</div>
+                    <div class="victory-stars">✨</div>
+                </div>
+                <div class="victory-banner">
+                    <div class="victory-tag">👑 CAMPEÃO SUPREMO 👑</div>
+                    <div class="victory-name" id="victory-user">@Username</div>
+                    <div class="victory-sub" id="victory-sub-text">ÁLBUM 100% COMPLETO!</div>
+                </div>
+                <div id="victory-confetti"></div>
+            </div>
         </div>
 
         <!-- Animação da bola a ser atirada -->
@@ -143,6 +160,7 @@
     <div id="debug-panel">
         <h3>Painel de Testes</h3>
         <div class="debug-buttons">
+            <button onclick="testarComando('VITORIA;sheisdani;134')">👑 Testar Vitória 100%</button>
             <button onclick="testarComando('GRIM;Z3RG;Pedro;1_1;Pedro,Z3RG,Manu')">💀 Testar Grim Reaper</button>
             <button onclick="testarComando('PESCA;Z3RG;12_1')">🎣 Testar Pesca Extra</button>
             <button onclick="testarComando('QUACK;Z3RG;10_8;100')">🦆 Testar Quack 100 Capturas</button>
