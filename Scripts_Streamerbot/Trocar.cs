@@ -473,9 +473,9 @@ public class CPHInline
             string fileTarget = ObterFicheiroWebp(elemTarget);
             try { File.WriteAllText(caminhoEstado, $"TROCA;{proposerNameReal};{targetName};{fileProposer};{fileTarget}"); } catch {}
 
-            int restProp = Math.Max(0, 3 - (completedProp + 1));
-            int restTarg = Math.Max(0, 3 - (completedTarg + 1));
-            CPH.SendMessage($"🤝 [TROCA CONCLUÍDA] @{proposerNameReal} trocou {GetNomeLegivelBicho(elemProposer)} com @{targetName} por um {GetNomeLegivelBicho(elemTarget)}! 🎉 (Trocas restantes: @{proposerNameReal}: {restProp}/3 | @{targetName}: {restTarg}/3)");
+            int restProp = Math.Max(0, 5 - (completedProp + 1));
+            int restTarg = Math.Max(0, 5 - (completedTarg + 1));
+            CPH.SendMessage($"🤝 [TROCA CONCLUÍDA] @{proposerNameReal} trocou {GetNomeLegivelBicho(elemProposer)} com @{targetName} por um {GetNomeLegivelBicho(elemTarget)}! 🎉 (Trocas restantes: @{proposerNameReal}: {restProp}/5 | @{targetName}: {restTarg}/5)");
 
             // Atualizar coleções e site
             CPH.RunAction("Elementais - Exportar Site", true);
