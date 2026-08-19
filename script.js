@@ -3064,7 +3064,7 @@ function mostrarAnimacaoVitoria(userName, totalCards, pos = "1") {
 
     victoryUser.textContent = `@${userName}`;
     const ordinal = posNum == 1 ? "1º LUGAR" : posNum == 2 ? "2º LUGAR" : posNum == 3 ? "3º LUGAR" : `#${posNum} LUGAR`;
-    if (victorySub) victorySub.textContent = `${ordinal} • HALL DA FAMA`;
+    if (victorySub) victorySub.textContent = ordinal;
 
     // Paleta de cores de confettis específica de cada posição
     const confettiThemes = {
