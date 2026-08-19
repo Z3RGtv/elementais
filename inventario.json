@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-19 20:14:23 UTC",
+  "updatedAt": "2026-08-19 20:18:12 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 236, "sucesso": 54, "rate": 22.9 },
     "super": { "total": 196, "sucesso": 80, "rate": 40.8 },
     "ultra": { "total": 263, "sucesso": 166, "rate": 63.1 },
-    "master": { "total": 1720, "sucesso": 1552, "rate": 90.2 }
+    "master": { "total": 1721, "sucesso": 1553, "rate": 90.2 }
   },
   "recentes_lancamentos": [
+    { "username": "gui_z0", "elementalId": "20_1", "bola": "master", "sucesso": 1, "date": "2026-08-19 21:18:11" },
     { "username": "hugoandre07", "elementalId": "15_1", "bola": "master", "sucesso": 1, "date": "2026-08-19 21:14:22" },
     { "username": "manodrico", "elementalId": "14_3", "bola": "master", "sucesso": 1, "date": "2026-08-19 21:10:00" },
     { "username": "manu12321_", "elementalId": "15_4", "bola": "master", "sucesso": 1, "date": "2026-08-19 21:05:59" },
@@ -35,8 +36,7 @@
     { "username": "manodrico", "elementalId": "6_3", "bola": "normal", "sucesso": 0, "date": "2026-08-19 19:48:42" },
     { "username": "sheisdani", "elementalId": "6_3", "bola": "super", "sucesso": 0, "date": "2026-08-19 19:48:34" },
     { "username": "manodrico", "elementalId": "1_7", "bola": "master", "sucesso": 1, "date": "2026-08-19 19:39:49" },
-    { "username": "marquesrcarol", "elementalId": "u_Z3RGtv_og", "bola": "master", "sucesso": 1, "date": "2026-08-19 19:35:57" },
-    { "username": "gui_z0", "elementalId": "u_Z3RGtv_og", "bola": "master", "sucesso": 0, "date": "2026-08-19 19:35:48" }
+    { "username": "marquesrcarol", "elementalId": "u_Z3RGtv_og", "bola": "master", "sucesso": 1, "date": "2026-08-19 19:35:57" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -125,6 +125,15 @@
       "inventario": {"10_5":1,"10_6":1,"12_1":1,"12_2":1,"12_3":1,"12_4":1,"13_1":1,"13_2":2,"13_3":2,"14_3":1,"14_4":1,"15_1":1,"15_2":1,"15_3":1,"16_3":1,"16_4":1,"17_1":1,"17_2":1,"17_3":1,"17_4":1,"17_5":1,"18_1":1,"18_2":1,"19_1":1,"1_1":1,"1_2":2,"1_3":1,"1_4":1,"1_8":1,"22_4":1,"23_5":1,"24_1":1,"2_1":1,"2_2":2,"2_3":1,"2_4":1,"2_8":1,"3_1":1,"3_5":2,"4_1":1,"4_4":1,"5_2":1,"5_5":1,"6_1":1,"6_3":2,"7_1":1,"7_2":1,"8_1":1,"8_2":1,"8_4":1,"9_1":3,"9_2":1,"9_3":1,"u_MilhafreTuga":1,"u_Minichef9":1,"u_Z3RGtv":1,"u_Z3RGtv_og":2,"u_gui_z0":1}
     },
     {
+      "username": "gui_z0",
+      "pontos": 5170,
+      "posicaoVitoria": 0,
+      "dataVitoria": null,
+      "trocasDisponiveis": 3,
+      "proximaRecuperacao": "2026-08-19T21:15:24Z",
+      "inventario": {"11_1":1,"12_1":2,"12_2":2,"12_4":1,"13_1":2,"13_2":1,"14_1":1,"15_1":1,"15_2":2,"15_6":1,"17_1":2,"17_3":1,"17_5":1,"18_1":1,"18_4":1,"19_1":1,"19_3":2,"1_3":1,"1_8":1,"20_1":1,"22_3":1,"23_4":1,"2_1":1,"2_2":1,"2_3":2,"2_4":1,"2_8":1,"3_2":1,"3_3":1,"3_4":1,"4_3":1,"4_4":1,"5_1":1,"5_2":1,"6_2":1,"7_1":1,"7_2":1,"8_6":1,"9_2":2,"9_3":2,"u_EIMEZ":1,"u_gui_z0":1,"u_san7izinn":1}
+    },
+    {
       "username": "r_moreira16",
       "pontos": 5100,
       "posicaoVitoria": 0,
@@ -141,15 +150,6 @@
       "trocasDisponiveis": 5,
       "proximaRecuperacao": null,
       "inventario": {"10_2":1,"12_2":1,"13_1":1,"13_2":1,"14_1":1,"14_2":1,"15_1":1,"15_2":1,"16_1":1,"16_3":1,"17_4":1,"18_3":1,"19_1":1,"19_6":1,"1_1":1,"1_5":2,"1_8":1,"21_1":2,"22_3":1,"23_1":1,"23_2":1,"2_4":1,"3_3":1,"3_5":1,"3_6":1,"4_3":1,"4_4":1,"5_3":1,"6_2":2,"6_3":1,"6_6":1,"7_4":1,"8_1":1,"8_2":1,"9_2":1,"u_soniagoncalves":1}
-    },
-    {
-      "username": "gui_z0",
-      "pontos": 4620,
-      "posicaoVitoria": 0,
-      "dataVitoria": null,
-      "trocasDisponiveis": 3,
-      "proximaRecuperacao": "2026-08-19T21:15:24Z",
-      "inventario": {"11_1":1,"12_1":2,"12_2":2,"12_4":1,"13_1":2,"13_2":1,"14_1":1,"15_1":1,"15_2":2,"15_6":1,"17_1":2,"17_3":1,"17_5":1,"18_1":1,"18_4":1,"19_1":1,"19_3":2,"1_3":1,"1_8":1,"22_3":1,"23_4":1,"2_1":1,"2_2":1,"2_3":2,"2_4":1,"3_2":1,"3_3":1,"3_4":1,"4_3":1,"4_4":1,"5_1":1,"5_2":1,"6_2":1,"7_1":1,"7_2":1,"8_6":1,"9_2":2,"9_3":2,"u_EIMEZ":1,"u_gui_z0":1,"u_san7izinn":1}
     },
     {
       "username": "milhafretuga",
