@@ -265,10 +265,18 @@ function renderizarRanking(jogadores) {
             rankPrefix = `<img src="badges/${index + 1}.png" class="rank-badge-img" title="${index + 1}º Classificado" alt="${index + 1}º">`;
         }
 
-        const champTag = isChampion ? `<span class="champion-tag-badge">100% 👑 #${player.posicaoVitoria}</span>` : '';
+        let userHtml = `@${player.username}`;
+        if (isChampion) {
+            userHtml = `
+                <span class="champion-name-frame">
+                    <span class="champion-name-text">@${player.username}</span>
+                    <span class="champion-tag-badge">100% 👑 #${player.posicaoVitoria}</span>
+                </span>
+            `;
+        }
 
         item.innerHTML = `
-            <span>${rankPrefix} @${player.username} ${champTag} ${isMe ? '<span class="my-account-badge">Tu</span>' : ''}</span>
+            <span>${rankPrefix} ${userHtml} ${isMe ? '<span class="my-account-badge">Tu</span>' : ''}</span>
             <span>${player.pontos} pts</span>
         `;
         item.onclick = () => selecionarUtilizador(player, item);
@@ -282,8 +290,21 @@ function selecionarUtilizador(player, elementoDOM) {
 
     jogadorSelecionado = player;
 
-    if (player.posicaoVitoria && player.posicaoVitoria > 0) {
-        document.getElementById('view-title').innerHTML = `Coleção de @${player.username} <span class="champion-profile-badge">👑 Campeão #${player.posicaoVitoria} (100% Completo)</span>`;
+    const isChampion = player.posicaoVitoria && player.posicaoVitoria > 0;
+    if (isChampion) {
+        const ordinal = player.posicaoVitoria == 1 ? "1º" : player.posicaoVitoria == 2 ? "2º" : player.posicaoVitoria == 3 ? "3º" : `#${player.posicaoVitoria}`;
+        const dateStr = player.dataVitoria ? ` • 🏆 Concluiu em ${player.dataVitoria}` : '';
+        document.getElementById('view-title').innerHTML = `
+            <div class="champion-hero-card">
+                <div class="champion-hero-top">
+                    <span class="champion-crown" style="font-size: 26px;">👑</span>
+                    <span class="champion-hero-title">Coleção de <span class="champion-name-frame"><span class="champion-name-text">@${player.username}</span></span></span>
+                </div>
+                <div class="champion-hero-subtitle">
+                    <span>👑 ${ordinal} Mestre dos Elementais (ÁLBUM 100% COMPLETO)${dateStr}</span>
+                </div>
+            </div>
+        `;
     } else {
         document.getElementById('view-title').textContent = `Coleção de @${player.username}`;
     }
@@ -302,6 +323,11 @@ function selecionarUtilizador(player, elementoDOM) {
     if (progressBar) {
         progressBar.style.width = `${pct}%`;
         progressBar.title = `${totalObtidos} de ${totalCatalog} elementais (${Math.round(pct)}%)`;
+        if (isChampion || pct >= 100) {
+            progressBar.classList.add('champion-progress-fill');
+        } else {
+            progressBar.classList.remove('champion-progress-fill');
+        }
     }
 
     document.getElementById('user-points-panel').classList.remove('hidden');
@@ -831,12 +857,18 @@ function atualizarUIConta() {
             }
         }
 
+        const meuPerfilObj = dadosGlobais ? dadosGlobais.find(p => p.username.toLowerCase() === meuUsername.toLowerCase()) : null;
+        const souCampeao = meuPerfilObj && meuPerfilObj.posicaoVitoria > 0;
+        const myNameDisplay = souCampeao 
+            ? `<span class="champion-name-frame"><span class="champion-name-text">@${meuUsername}</span><span class="champion-tag-badge">100% 👑 #${meuPerfilObj.posicaoVitoria}</span></span>`
+            : `<strong>@${meuUsername}</strong>`;
+
         if (isTwitchLoggedIn) {
             // Utilizador Logado via Twitch
             container.innerHTML = `
                 <div class="profile-info">
-                    ${avatar ? `<img src="${avatar}" class="twitch-avatar" alt="Avatar">` : ''}
-                    <span>Olá, <strong>@${meuUsername}</strong>!</span>
+                    ${avatar ? `<img src="${avatar}" class="twitch-avatar ${souCampeao ? 'champion-avatar-glow' : ''}" alt="Avatar">` : ''}
+                    <span>Olá, ${myNameDisplay}!</span>
                     ${tradeWidgetHtml}
                 </div>
                 <button class="logout-btn" onclick="limparConta()">Sair ✖</button>
@@ -851,7 +883,7 @@ function atualizarUIConta() {
 
             container.innerHTML = `
                 <div class="profile-info">
-                    <span>Conta manual: <strong>@${meuUsername}</strong></span>
+                    <span>Conta: ${myNameDisplay}</span>
                     ${tradeWidgetHtml}
                     <button class="logout-btn" onclick="limparConta()" style="margin-left: 5px; margin-right: 15px;">Alterar ✖</button>
                 </div>
@@ -1113,6 +1145,9 @@ function renderizarListaJogadoresModal() {
         const item = document.createElement('div');
         item.className = 'modal-player-item';
 
+        const isChamp = player.posicaoVitoria && player.posicaoVitoria > 0;
+        const champBadge = isChamp ? `<span class="champion-mini-tag" title="Campeão #${player.posicaoVitoria}">👑</span>` : '';
+
         // Verificar se o jogador alvo já possui 2 ou mais cópias do elemental oferecido
         const qtyTarget = player.inventario[oferecidoId] || 0;
         const jaTemLimite = oferecidoId && (qtyTarget >= 2);
@@ -1122,7 +1157,7 @@ function renderizarListaJogadoresModal() {
             item.classList.add('disabled-trade');
             let labelExtra = jaTemLimite ? "(Já tem 2)" : "(Sem trocas)";
             item.innerHTML = `
-                <span><strong style="color: #ff5555;">@${player.username}</strong> <small style="color: #ff5555; font-size: 10px; margin-left: 5px;">${labelExtra}</small></span>
+                <span>${champBadge}<strong style="color: #ff5555;">@${player.username}</strong> <small style="color: #ff5555; font-size: 10px; margin-left: 5px;">${labelExtra}</small></span>
                 <span style="font-size: 11px; color: var(--text-muted);">${Object.keys(player.inventario).length} espécies</span>
             `;
             item.onclick = (e) => {
@@ -1130,7 +1165,7 @@ function renderizarListaJogadoresModal() {
             };
         } else {
             item.innerHTML = `
-                <span><strong>@${player.username}</strong></span>
+                <span>${champBadge}<strong>@${player.username}</strong></span>
                 <span style="font-size: 11px; color: var(--text-muted);">${Object.keys(player.inventario).length} espécies</span>
             `;
             item.onclick = () => selecionarJogadorTrocaNoModal(player);
@@ -1457,10 +1492,15 @@ function renderizarEstatisticas(estatisticas, recentes) {
             const info = ballLabels[row.bola] || { name: row.bola, img: "balls/close_1.png" };
             const dataFormatada = row.date ? row.date.substring(5, 16) : 'Pendente'; // Mostrar "MM-DD HH:MM"
 
+            const isChamp = dadosGlobais && dadosGlobais.find(p => p.username.toLowerCase() === row.username.toLowerCase() && p.posicaoVitoria > 0);
+            const userCell = isChamp
+                ? `<td><span class="champion-mini-tag" title="Campeão #${isChamp.posicaoVitoria}">👑</span><strong class="champion-name-text">@${row.username}</strong></td>`
+                : `<td><strong>@${row.username}</strong></td>`;
+
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td class="recent-time">${dataFormatada}</td>
-                <td><strong>@${row.username}</strong></td>
+                ${userCell}
                 <td>${elemName}</td>
                 <td>
                     <div class="recent-ball-wrapper">
