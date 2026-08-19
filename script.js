@@ -3039,6 +3039,7 @@ function mostrarAnimacaoVitoria(userName, totalCards, pos = "1") {
     const victoryUser = document.getElementById('victory-user');
     const victorySub = document.getElementById('victory-sub-text');
     const victoryConfetti = document.getElementById('victory-confetti');
+    const victoryCrown = document.getElementById('victory-crown-icon');
     if (!victoryArea || !victoryUser) return;
 
     if (victoryTimeout) {
@@ -3051,15 +3052,33 @@ function mostrarAnimacaoVitoria(userName, totalCards, pos = "1") {
     if (ballImg) ballImg.className = 'hidden';
     if (alertBox) alertBox.classList.add('hidden');
 
+    const posNum = parseInt(pos) || 1;
+    const themeNum = posNum <= 5 ? posNum : 1;
+    victoryArea.className = `theme-pos-${themeNum}`;
+
+    // Ícone da Coroa / Medalha conforme o Lugar
+    const crownIcons = { 1: "👑", 2: "🥈", 3: "🥉", 4: "💎", 5: "🌟" };
+    if (victoryCrown) {
+        victoryCrown.textContent = crownIcons[posNum] || "⭐";
+    }
+
     victoryUser.textContent = `@${userName}`;
-    const ordinal = pos == "1" ? "1º LUGAR" : pos == "2" ? "2º LUGAR" : pos == "3" ? "3º LUGAR" : `#${pos} LUGAR`;
+    const ordinal = posNum == 1 ? "1º LUGAR" : posNum == 2 ? "2º LUGAR" : posNum == 3 ? "3º LUGAR" : `#${posNum} LUGAR`;
     if (victorySub) victorySub.textContent = `${ordinal} • HALL DA FAMA`;
 
-    // Gerar confettis festivos
+    // Paleta de cores de confettis específica de cada posição
+    const confettiThemes = {
+        1: ['#ffd700', '#ffb300', '#ffffff', '#ff9100', '#00e5ff'],
+        2: ['#e0f7fa', '#80d8ff', '#00e5ff', '#ffffff', '#b0bec5'],
+        3: ['#ffb74d', '#ff9100', '#ff6d00', '#ffe082', '#ffffff'],
+        4: ['#ea80fc', '#d500f9', '#aa00ff', '#f8bbd0', '#00e5ff'],
+        5: ['#69f0ae', '#00e676', '#00c853', '#b9f6ca', '#ffd700']
+    };
+    const cores = confettiThemes[posNum] || confettiThemes[1];
+
     if (victoryConfetti) {
         victoryConfetti.innerHTML = '';
-        const cores = ['#ffd700', '#ff007f', '#00e5ff', '#76ff03', '#ff9100', '#d500f9', '#ffffff'];
-        for (let i = 0; i < 45; i++) {
+        for (let i = 0; i < 48; i++) {
             const p = document.createElement('div');
             p.className = 'victory-confetti-piece';
             const cor = cores[Math.floor(Math.random() * cores.length)];
