@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19 17:05:03 UTC",
+  "updatedAt": "2026-08-19 17:08:11 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 234, "sucesso": 54, "rate": 23.1 },
     "super": { "total": 192, "sucesso": 79, "rate": 41.1 },
@@ -58,7 +58,7 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-
+    { "proposerName": "gui_z0", "targetName": "sheisdani", "elemProposer": "22_7", "elemTarget": "15_6", "createdAt": "2026-08-19T17:08:11.3064134Z" }
   ],
   "ranking": [
     {
@@ -147,7 +147,7 @@
       "pontos": 4870,
       "posicaoVitoria": 0,
       "dataVitoria": null,
-      "trocasDisponiveis": 5,
+      "trocasDisponiveis": 4,
       "proximaRecuperacao": null,
       "inventario": {"11_1":1,"12_1":2,"12_2":2,"12_4":1,"13_1":2,"13_2":1,"14_1":1,"15_1":1,"15_2":2,"15_6":1,"17_1":2,"17_3":1,"17_5":1,"18_1":1,"18_4":1,"19_1":1,"19_3":2,"1_1":1,"1_2":1,"1_3":1,"1_8":1,"22_3":1,"22_7":1,"2_1":1,"2_2":1,"2_3":2,"2_4":1,"2_8":1,"3_2":1,"3_3":1,"3_4":1,"4_4":1,"5_1":1,"5_2":2,"6_2":1,"7_1":1,"7_2":1,"9_2":2,"9_3":2,"u_EIMEZ":1,"u_gui_z0":1,"u_san7izinn":1}
     },
