@@ -2238,21 +2238,21 @@ body, html {
 }
 
 .victory-tag {
-    font-size: 16px;
-    font-weight: 900;
-    color: #ffcc00;
-    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #ffd700;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
 }
 
 .victory-name {
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 900;
     color: #ffffff;
-    margin: 4px 0;
+    margin: 3px 0;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     background: linear-gradient(90deg, #fff, #ffd700, #ff9800, #fff);
     background-size: 300% 100%;
     -webkit-background-clip: text;
@@ -2268,10 +2268,11 @@ body, html {
 }
 
 .victory-sub {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 800;
     color: #00ffcc;
     letter-spacing: 2px;
+    text-transform: uppercase;
     text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
 }
 
