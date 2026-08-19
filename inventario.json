@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-08-19 21:02:28 UTC",
+  "updatedAt": "2026-08-19 21:08:53 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 237, "sucesso": 54, "rate": 22.8 },
-    "super": { "total": 196, "sucesso": 80, "rate": 40.8 },
+    "super": { "total": 197, "sucesso": 81, "rate": 41.1 },
     "ultra": { "total": 264, "sucesso": 167, "rate": 63.3 },
     "master": { "total": 1730, "sucesso": 1562, "rate": 90.3 }
   },
   "recentes_lancamentos": [
+    { "username": "gr434", "elementalId": "4_2", "bola": "super", "sucesso": 1, "date": "2026-08-19 22:08:52" },
     { "username": "garzia17", "elementalId": "16_4", "bola": "master", "sucesso": 1, "date": "2026-08-19 22:02:27" },
     { "username": "gr434", "elementalId": "16_4", "bola": "normal", "sucesso": 0, "date": "2026-08-19 22:02:18" },
     { "username": "marquesrcarol", "elementalId": "16_6", "bola": "master", "sucesso": 1, "date": "2026-08-19 21:56:11" },
@@ -35,8 +36,7 @@
     { "username": "manodrico", "elementalId": "10_6", "bola": "master", "sucesso": 1, "date": "2026-08-19 20:24:15" },
     { "username": "san7izinn", "elementalId": "1_7", "bola": "master", "sucesso": 1, "date": "2026-08-19 20:20:28" },
     { "username": "san7izinn", "elementalId": "9_5", "bola": "master", "sucesso": 1, "date": "2026-08-19 20:16:18" },
-    { "username": "marquesrcarol", "elementalId": "10_6", "bola": "master", "sucesso": 1, "date": "2026-08-19 20:12:12" },
-    { "username": "sheisdani", "elementalId": "6_6", "bola": "master", "sucesso": 1, "date": "2026-08-19 20:08:11" }
+    { "username": "marquesrcarol", "elementalId": "10_6", "bola": "master", "sucesso": 1, "date": "2026-08-19 20:12:12" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -395,15 +395,6 @@
       "inventario": {"12_4":1}
     },
     {
-      "username": "nsfp37",
-      "pontos": 130,
-      "posicaoVitoria": 0,
-      "dataVitoria": null,
-      "trocasDisponiveis": 5,
-      "proximaRecuperacao": null,
-      "inventario": {"1_2":1,"3_2":2,"6_1":1,"7_2":1}
-    },
-    {
       "username": "ruialmeida_",
       "pontos": 130,
       "posicaoVitoria": 0,
@@ -411,6 +402,15 @@
       "trocasDisponiveis": 5,
       "proximaRecuperacao": null,
       "inventario": {"12_1":2,"13_1":2,"1_1":2,"2_1":2,"3_1":1,"3_2":1,"4_1":1,"7_1":1,"9_1":1}
+    },
+    {
+      "username": "nsfp37",
+      "pontos": 130,
+      "posicaoVitoria": 0,
+      "dataVitoria": null,
+      "trocasDisponiveis": 5,
+      "proximaRecuperacao": null,
+      "inventario": {"1_2":1,"3_2":2,"6_1":1,"7_2":1}
     },
     {
       "username": "gunblade_sis_",
@@ -512,6 +512,15 @@
       "inventario": {"13_1":1,"4_2":1}
     },
     {
+      "username": "grandesleitadores",
+      "pontos": 40,
+      "posicaoVitoria": 0,
+      "dataVitoria": null,
+      "trocasDisponiveis": 5,
+      "proximaRecuperacao": null,
+      "inventario": {"12_1":1,"12_2":1}
+    },
+    {
       "username": "salvadormdm",
       "pontos": 40,
       "posicaoVitoria": 0,
@@ -521,13 +530,13 @@
       "inventario": {"12_2":1,"3_1":1}
     },
     {
-      "username": "grandesleitadores",
+      "username": "gr434",
       "pontos": 40,
       "posicaoVitoria": 0,
       "dataVitoria": null,
       "trocasDisponiveis": 5,
       "proximaRecuperacao": null,
-      "inventario": {"12_1":1,"12_2":1}
+      "inventario": {"4_2":1}
     },
     {
       "username": "emanuelpaulo017",
@@ -557,15 +566,6 @@
       "inventario": {"13_1":1,"1_1":1}
     },
     {
-      "username": "diguiferreira97",
-      "pontos": 15,
-      "posicaoVitoria": 0,
-      "dataVitoria": null,
-      "trocasDisponiveis": 5,
-      "proximaRecuperacao": null,
-      "inventario": {"13_1":1}
-    },
-    {
       "username": "jptim_",
       "pontos": 15,
       "posicaoVitoria": 0,
@@ -575,13 +575,13 @@
       "inventario": {"13_1":1}
     },
     {
-      "username": "manuel2019rodrigues",
-      "pontos": 10,
+      "username": "diguiferreira97",
+      "pontos": 15,
       "posicaoVitoria": 0,
       "dataVitoria": null,
       "trocasDisponiveis": 5,
       "proximaRecuperacao": null,
-      "inventario": {"2_1":1}
+      "inventario": {"13_1":1}
     },
     {
       "username": "sant1gomes",
@@ -591,6 +591,15 @@
       "trocasDisponiveis": 5,
       "proximaRecuperacao": null,
       "inventario": {"12_1":1}
+    },
+    {
+      "username": "manuel2019rodrigues",
+      "pontos": 10,
+      "posicaoVitoria": 0,
+      "dataVitoria": null,
+      "trocasDisponiveis": 5,
+      "proximaRecuperacao": null,
+      "inventario": {"2_1":1}
     }
   ]
 }
