@@ -989,6 +989,16 @@ function processarComando(comandoCru) {
             mostrarAnimacaoQuack(quackUser, quackElemId, quackReq, delayQuack);
             break;
 
+        case 'VITORIA':
+            const vitoriaUser = partes[1];
+            const vitoriaTotal = partes[2] || "134";
+            const vitoriaPos = partes[3] || "1";
+            const delayVitoria = isThrowing ? 4500 : 300;
+            setTimeout(() => {
+                mostrarAnimacaoVitoria(vitoriaUser, vitoriaTotal, vitoriaPos);
+            }, delayVitoria);
+            break;
+
         case 'LIMPAR':
             elementalImg.className = 'hidden';
             elementalImg.src = '';
@@ -2964,4 +2974,123 @@ function mostrarAnimacaoQuack(userName, elemId, req, delayMs = 4500) {
             }
         }, 5500);
     }, delayMs);
+}
+
+// Sintetizar fanfarra épica e triunfante de vitória com Web Audio API
+function tocarSomVitoria() {
+    try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        
+        // Função para tocar notas de metais/fanfarra triunfante
+        const playBrass = (freq, delay, duration, gainVal = 0.25) => {
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(freq, ctx.currentTime + delay);
+            
+            const filter = ctx.createBiquadFilter();
+            filter.type = 'lowpass';
+            filter.frequency.setValueAtTime(1800, ctx.currentTime + delay);
+            filter.frequency.exponentialRampToValueAtTime(3200, ctx.currentTime + delay + 0.1);
+            filter.frequency.exponentialRampToValueAtTime(800, ctx.currentTime + delay + duration);
+            
+            gain.gain.setValueAtTime(0, ctx.currentTime + delay);
+            gain.gain.linearRampToValueAtTime(gainVal, ctx.currentTime + delay + 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + delay + duration);
+            
+            osc.connect(filter);
+            filter.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start(ctx.currentTime + delay);
+            osc.stop(ctx.currentTime + delay + duration);
+        };
+
+        // Fanfarra triunfante real: C4, G4, C5, E5, G5, C6 (acorde maior majestoso)
+        playBrass(261.63, 0.0, 0.35, 0.2);
+        playBrass(392.00, 0.15, 0.35, 0.22);
+        playBrass(523.25, 0.3, 0.45, 0.25);
+        playBrass(659.25, 0.5, 0.35, 0.25);
+        playBrass(783.99, 0.7, 0.35, 0.28);
+        playBrass(1046.50, 0.9, 1.4, 0.32);
+        playBrass(1318.51, 1.1, 1.2, 0.25);
+
+        // Chimes de estrelas douradas
+        for (let i = 0; i < 8; i++) {
+            const chimeOsc = ctx.createOscillator();
+            const chimeGain = ctx.createGain();
+            chimeOsc.type = 'sine';
+            chimeOsc.frequency.setValueAtTime(1200 + i * 220, ctx.currentTime + 1.2 + i * 0.12);
+            chimeGain.gain.setValueAtTime(0, ctx.currentTime + 1.2 + i * 0.12);
+            chimeGain.gain.linearRampToValueAtTime(0.12, ctx.currentTime + 1.2 + i * 0.12 + 0.02);
+            chimeGain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 1.2 + i * 0.12 + 0.6);
+            chimeOsc.connect(chimeGain);
+            chimeGain.connect(ctx.destination);
+            chimeOsc.start(ctx.currentTime + 1.2 + i * 0.12);
+            chimeOsc.stop(ctx.currentTime + 1.2 + i * 0.12 + 0.6);
+        }
+    } catch (e) {
+        console.error("Erro ao tocar som de vitória:", e);
+    }
+}
+
+let victoryTimeout = null;
+function mostrarAnimacaoVitoria(userName, totalCards, pos = "1") {
+    const victoryArea = document.getElementById('victory-area');
+    const victoryUser = document.getElementById('victory-user');
+    const victorySub = document.getElementById('victory-sub-text');
+    const victoryConfetti = document.getElementById('victory-confetti');
+    if (!victoryArea || !victoryUser) return;
+
+    if (victoryTimeout) {
+        clearTimeout(victoryTimeout);
+        victoryTimeout = null;
+    }
+
+    // Esconde qualquer elemental visível para dar lugar de honra à vitória no centro
+    if (elementalImg) elementalImg.className = 'hidden';
+    if (ballImg) ballImg.className = 'hidden';
+    if (alertBox) alertBox.classList.add('hidden');
+
+    victoryUser.textContent = `@${userName}`;
+    const ordinal = pos == "1" ? "1º" : pos == "2" ? "2º" : pos == "3" ? "3º" : `#${pos}`;
+    if (victorySub) victorySub.textContent = `👑 ${ordinal} LUGAR NO HALL DA FAMA! (${totalCards}/${totalCards})`;
+
+    // Gerar confettis festivos
+    if (victoryConfetti) {
+        victoryConfetti.innerHTML = '';
+        const cores = ['#ffd700', '#ff007f', '#00e5ff', '#76ff03', '#ff9100', '#d500f9', '#ffffff'];
+        for (let i = 0; i < 45; i++) {
+            const p = document.createElement('div');
+            p.className = 'victory-confetti-piece';
+            const cor = cores[Math.floor(Math.random() * cores.length)];
+            p.style.backgroundColor = cor;
+            p.style.boxShadow = `0 0 10px ${cor}`;
+            
+            const angulo = Math.random() * Math.PI * 2;
+            const dist = 120 + Math.random() * 220;
+            const vx = Math.cos(angulo) * dist + 'px';
+            const vy = (Math.sin(angulo) * dist + 50) + 'px';
+            const vr = (Math.random() * 720 - 360) + 'deg';
+            const dur = (1.8 + Math.random() * 2.2) + 's';
+            const delay = (Math.random() * 0.8) + 's';
+
+            p.style.setProperty('--vx', vx);
+            p.style.setProperty('--vy', vy);
+            p.style.setProperty('--vr', vr);
+            p.style.animationDuration = dur;
+            p.style.animationDelay = delay;
+
+            victoryConfetti.appendChild(p);
+        }
+    }
+
+    victoryArea.classList.remove('hidden');
+    tocarSomVitoria();
+
+    // Permanece durante 12 segundos com celebração total
+    victoryTimeout = setTimeout(() => {
+        victoryArea.classList.add('hidden');
+        if (victoryConfetti) victoryConfetti.innerHTML = '';
+        victoryTimeout = null;
+    }, 12000);
 }
