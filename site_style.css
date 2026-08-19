@@ -1657,9 +1657,9 @@ footer {
    ========================================================================== */
 
 .ranking-item.champion-rank-item {
-    background: linear-gradient(90deg, rgba(255, 215, 0, 0.15), rgba(40, 25, 60, 0.6)) !important;
-    border: 1.5px solid rgba(255, 215, 0, 0.8) !important;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.4), inset 0 0 10px rgba(255, 215, 0, 0.1);
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.15), rgba(40, 25, 60, 0.7)) !important;
+    border: 1.8px solid rgba(255, 215, 0, 0.85) !important;
+    box-shadow: 0 0 18px rgba(255, 215, 0, 0.45), inset 0 0 12px rgba(255, 215, 0, 0.15) !important;
     position: relative;
     overflow: hidden;
 }
@@ -1671,7 +1671,7 @@ footer {
     left: -100%;
     width: 50%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
     transform: skewX(-25deg);
     animation: championShimmer 4s infinite;
 }
@@ -1681,17 +1681,44 @@ footer {
     20%, 100% { left: 200%; }
 }
 
+/* Moldura Luminosa em volta do nome do Campeão no Ranking */
+.champion-name-frame {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 152, 0, 0.1));
+    border: 1px solid rgba(255, 215, 0, 0.8);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5), inset 0 0 6px rgba(255, 215, 0, 0.2);
+    font-weight: 800;
+    color: #fff;
+}
+
+.champion-name-text {
+    background: linear-gradient(90deg, #ffffff, #ffe066, #ffb300, #ffffff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: goldTextShine 3s linear infinite;
+    font-weight: 900;
+}
+
+@keyframes goldTextShine {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
 .champion-crown {
     font-size: 16px;
-    margin-right: 4px;
-    filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.8));
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 1));
     animation: crownFloat 2s ease-in-out infinite alternate;
     display: inline-block;
 }
 
 @keyframes crownFloat {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-2px); }
+    100% { transform: translateY(-2.5px); }
 }
 
 .champion-tag-badge {
@@ -1699,23 +1726,71 @@ footer {
     color: #000;
     font-size: 10px;
     font-weight: 900;
-    padding: 2px 6px;
+    padding: 2px 7px;
     border-radius: 10px;
-    margin-left: 6px;
     letter-spacing: 0.5px;
-    box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    text-transform: uppercase;
 }
 
-.champion-profile-badge {
-    background: linear-gradient(90deg, #ffd700, #ff9800);
-    color: #111;
+/* Painel de Honra no Cabeçalho da Coleção do Campeão */
+.champion-hero-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: linear-gradient(135deg, rgba(30, 20, 50, 0.9), rgba(50, 30, 70, 0.85));
+    border: 2px solid #ffd700;
+    border-radius: 16px;
+    padding: 14px 22px;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4), inset 0 0 15px rgba(255, 215, 0, 0.15);
+    margin-bottom: 12px;
+    animation: heroPulse 3s ease-in-out infinite alternate;
+}
+
+@keyframes heroPulse {
+    0% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.35); }
+    100% { box-shadow: 0 0 35px rgba(255, 215, 0, 0.65), 0 0 50px rgba(255, 152, 0, 0.3); }
+}
+
+.champion-hero-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.champion-hero-title {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.champion-hero-subtitle {
     font-size: 13px;
-    font-weight: 800;
-    padding: 4px 12px;
-    border-radius: 20px;
-    margin-left: 10px;
-    vertical-align: middle;
-    box-shadow: 0 0 12px rgba(255, 215, 0, 0.7);
+    color: #ffd700;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.champion-progress-fill {
+    background: linear-gradient(90deg, #ffd700, #ffb300, #ff8000, #ffd700) !important;
+    background-size: 200% 100% !important;
+    animation: goldBarShine 2.5s linear infinite !important;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8) !important;
+}
+
+@keyframes goldBarShine {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+.champion-mini-tag {
+    color: #ffd700;
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.8));
+    font-size: 14px;
+    margin-right: 4px;
     display: inline-block;
 }
 
