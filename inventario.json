@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19 22:10:23 UTC",
+  "updatedAt": "2026-08-19 22:10:49 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 240, "sucesso": 54, "rate": 22.5 },
     "super": { "total": 197, "sucesso": 81, "rate": 41.1 },
@@ -58,7 +58,8 @@
     { "id": "u_Z3RGtv_og", "file": "Users/Z3RGtv_og.png", "name": "Z3RGtv_og" }
   ],
   "propostas": [
-    { "proposerName": "steve_osvaldo", "targetName": "hugoandre07", "elemProposer": "15_3", "elemTarget": "2_4", "createdAt": "2026-08-19T22:10:23.0699362Z" }
+    { "proposerName": "steve_osvaldo", "targetName": "hugoandre07", "elemProposer": "15_3", "elemTarget": "2_4", "createdAt": "2026-08-19T22:10:23.0699362Z" },
+    { "proposerName": "lourenco_2015_marques", "targetName": "marquesrcarol", "elemProposer": "18_3", "elemTarget": "16_6", "createdAt": "2026-08-19T22:10:49.4140687Z" }
   ],
   "ranking": [
     {
@@ -327,7 +328,7 @@
       "pontos": 450,
       "posicaoVitoria": 0,
       "dataVitoria": null,
-      "trocasDisponiveis": 5,
+      "trocasDisponiveis": 4,
       "proximaRecuperacao": null,
       "inventario": {"13_1":1,"14_3":1,"16_1":1,"18_3":1,"1_2":1,"2_2":1,"5_1":1,"7_1":1,"9_1":1,"9_2":1}
     },
