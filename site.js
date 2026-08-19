@@ -248,18 +248,27 @@ function renderizarRanking(jogadores) {
         if (isMe) {
             item.classList.add('my-account');
         }
+
+        const isChampion = player.posicaoVitoria && player.posicaoVitoria > 0;
+        if (isChampion) {
+            item.classList.add('champion-rank-item');
+        }
         
         if (jogadorSelecionado && jogadorSelecionado.username.toLowerCase() === player.username.toLowerCase()) {
             item.classList.add('active');
         }
 
         let rankPrefix = `<strong>${index + 1}º</strong>`;
-        if (index >= 0 && index <= 4) {
+        if (isChampion) {
+            rankPrefix = `<span class="champion-crown" title="Álbum 100% Completo (#${player.posicaoVitoria}º Campeão)">👑</span><strong>#${player.posicaoVitoria}</strong>`;
+        } else if (index >= 0 && index <= 4) {
             rankPrefix = `<img src="badges/${index + 1}.png" class="rank-badge-img" title="${index + 1}º Classificado" alt="${index + 1}º">`;
         }
 
+        const champTag = isChampion ? `<span class="champion-tag-badge">100% 👑 #${player.posicaoVitoria}</span>` : '';
+
         item.innerHTML = `
-            <span>${rankPrefix} @${player.username} ${isMe ? '<span class="my-account-badge">Tu</span>' : ''}</span>
+            <span>${rankPrefix} @${player.username} ${champTag} ${isMe ? '<span class="my-account-badge">Tu</span>' : ''}</span>
             <span>${player.pontos} pts</span>
         `;
         item.onclick = () => selecionarUtilizador(player, item);
@@ -273,7 +282,11 @@ function selecionarUtilizador(player, elementoDOM) {
 
     jogadorSelecionado = player;
 
-    document.getElementById('view-title').textContent = `Coleção de @${player.username}`;
+    if (player.posicaoVitoria && player.posicaoVitoria > 0) {
+        document.getElementById('view-title').innerHTML = `Coleção de @${player.username} <span class="champion-profile-badge">👑 Campeão #${player.posicaoVitoria} (100% Completo)</span>`;
+    } else {
+        document.getElementById('view-title').textContent = `Coleção de @${player.username}`;
+    }
     document.getElementById('user-points-label-container').style.display = 'inline';
     document.getElementById('user-points-val').textContent = player.pontos;
 
