@@ -655,10 +655,10 @@ function processarComando(comandoCru) {
             demon = map["demon"];
             punk = map["punk"];
             king = map["king"] === 'true' || map["king"] === 'True';
-            aura = map["aura"] === 'true' || map["aura"] === 'True';
+            aura = map["aura"];
             boss = map["boss"];
             peixe = map["peixe"];
-            atacante = map["atacante"] === 'true' || map["atacante"] === 'True';
+            atacante = map["atacante"];
             vento = map["vento"];
             peely = map["peely"];
             seven = map["seven"];
@@ -673,10 +673,10 @@ function processarComando(comandoCru) {
             demon = efeitosPartes[6];
             punk = efeitosPartes[7];
             king = efeitosPartes[8] === 'True' || efeitosPartes[8] === 'true';
-            aura = efeitosPartes[9] === 'True' || efeitosPartes[9] === 'true';
+            aura = efeitosPartes[9];
             boss = efeitosPartes[10];
             peixe = efeitosPartes[11];
-            atacante = efeitosPartes[12] === 'True' || efeitosPartes[12] === 'true';
+            atacante = efeitosPartes[12];
             vento = efeitosPartes[13];
             peely = efeitosPartes[14];
             seven = efeitosPartes[15];
@@ -2472,6 +2472,45 @@ function atualizarEfeitosAtivos(agua, terra, fogo, pato, ghost, sleepy, demon, p
         circle.className = 'effect-circle king';
         circle.title = 'Rei Ativo (Apenas conjurador pode arremessar)';
         circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_King_ui_L.webp" alt="Rei">';
+        container.appendChild(circle);
+        temEfeito = true;
+    }
+
+    if (aura && (aura === 'True' || aura === 'true' || aura === true)) {
+        const circle = document.createElement('div');
+        circle.className = 'effect-circle aura';
+        circle.title = 'Aura Ativa (Garante 1º lugar no sorteio de resgates)';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Drifter_ui_L.webp" alt="Aura">';
+        container.appendChild(circle);
+        temEfeito = true;
+    }
+
+    if (boss && (boss === 'True' || boss === 'true' || boss === 'Super' || boss === 'super' || boss === true)) {
+        const isSuper = (boss === 'Super' || boss === 'super');
+        const circle = document.createElement('div');
+        circle.className = 'effect-circle boss';
+        circle.title = isSuper ? 'Boss Ativo [SUPER] (Garante Galaxy ou superior, -60% captura)' : 'Boss Ativo (Garante Gummy ou superior, -60% captura)';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Boss_ui_L.webp" alt="Boss">';
+        container.appendChild(circle);
+        temEfeito = true;
+    }
+
+    if (peixe && (peixe === 'True' || peixe === 'true' || peixe === 'Super' || peixe === 'super' || peixe === true)) {
+        const isSuper = (peixe === 'Super' || peixe === 'super');
+        const circle = document.createElement('div');
+        circle.className = 'effect-circle peixe';
+        circle.title = isSuper ? 'Peixoto Ativo [SUPER] (Pesca 2 elementais extra ao capturar)' : 'Peixoto Ativo (Pesca 1 elemental extra ao capturar)';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Fishy_ui_L.webp" alt="Peixoto">';
+        container.appendChild(circle);
+        temEfeito = true;
+    }
+
+    if (atacante && (atacante === 'True' || atacante === 'true' || atacante === 'Super' || atacante === 'super' || atacante === true)) {
+        const isSuper = (atacante === 'Super' || atacante === 'super');
+        const circle = document.createElement('div');
+        circle.className = 'effect-circle atacante';
+        circle.title = isSuper ? 'Atacante Ativo [SUPER] (Até 2 ressaltos gratuitos se falhar)' : 'Atacante Ativo (1 ressalto gratuito se o remate falhar)';
+        circle.innerHTML = '<img src="Sprites/T_Icon_BR_Creature_Sprite_Soccer_ui_L.webp" alt="Atacante">';
         container.appendChild(circle);
         temEfeito = true;
     }
