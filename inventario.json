@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19 17:38:45 UTC",
+  "updatedAt": "2026-08-19 17:39:08 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 234, "sucesso": 54, "rate": 23.1 },
     "super": { "total": 192, "sucesso": 79, "rate": 41.1 },
@@ -252,12 +252,12 @@
     },
     {
       "username": "san7izinn",
-      "pontos": 1220,
+      "pontos": 1210,
       "posicaoVitoria": 0,
       "dataVitoria": null,
       "trocasDisponiveis": 5,
       "proximaRecuperacao": null,
-      "inventario": {"10_2":1,"12_1":1,"12_2":1,"12_3":1,"1_1":1,"2_1":1,"2_2":1,"2_3":2,"3_1":1,"3_5":1,"4_1":1,"4_4":1,"6_4":1,"7_1":1,"u_san7izinn":1}
+      "inventario": {"10_2":1,"12_1":1,"12_2":1,"12_3":1,"1_1":1,"2_1":1,"2_2":1,"2_3":2,"3_5":1,"4_1":1,"4_4":1,"6_4":1,"7_1":1,"u_san7izinn":1}
     },
     {
       "username": "700link007",
