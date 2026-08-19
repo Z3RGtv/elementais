@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19 05:41:47 UTC",
+  "updatedAt": "2026-08-19 15:33:03 UTC",
   "estatisticas_bolas": {
     "normal": {
       "total": 234,
@@ -12,17 +12,45 @@
       "rate": 41.1
     },
     "ultra": {
-      "total": 259,
-      "sucesso": 163,
-      "rate": 62.9
+      "total": 260,
+      "sucesso": 164,
+      "rate": 63.1
     },
     "master": {
-      "total": 1646,
-      "sucesso": 1494,
+      "total": 1649,
+      "sucesso": 1497,
       "rate": 90.8
     }
   },
   "recentes_lancamentos": [
+    {
+      "username": "ipowerlz",
+      "elementalId": "u_steve_osvaldo",
+      "bola": "master",
+      "sucesso": 1,
+      "date": "2026-08-19 16:31:58"
+    },
+    {
+      "username": "700link007",
+      "elementalId": "19_5",
+      "bola": "master",
+      "sucesso": 1,
+      "date": "2026-08-19 16:28:09"
+    },
+    {
+      "username": "700link007",
+      "elementalId": "25_1",
+      "bola": "master",
+      "sucesso": 1,
+      "date": "2026-08-19 16:24:03"
+    },
+    {
+      "username": "sheisdani",
+      "elementalId": "2_1",
+      "bola": "ultra",
+      "sucesso": 1,
+      "date": "2026-08-19 16:14:28"
+    },
     {
       "username": "gui_z0",
       "elementalId": "2_1",
@@ -204,34 +232,6 @@
       "bola": "master",
       "sucesso": 1,
       "date": "2026-08-17 01:31:32"
-    },
-    {
-      "username": "garzia17",
-      "elementalId": "6_6",
-      "bola": "master",
-      "sucesso": 1,
-      "date": "2026-08-17 01:22:04"
-    },
-    {
-      "username": "minichef9",
-      "elementalId": "5_5",
-      "bola": "master",
-      "sucesso": 1,
-      "date": "2026-08-17 01:13:08"
-    },
-    {
-      "username": "sheisdani",
-      "elementalId": "1_4",
-      "bola": "ultra",
-      "sucesso": 1,
-      "date": "2026-08-17 01:05:23"
-    },
-    {
-      "username": "sheisdani",
-      "elementalId": "1_4",
-      "bola": "master",
-      "sucesso": 0,
-      "date": "2026-08-17 01:05:09"
     }
   ],
   "availableUsers": [
@@ -321,7 +321,15 @@
       "name": "Z3RGtv_og"
     }
   ],
-  "propostas": [],
+  "propostas": [
+    {
+      "proposerName": "marquesrcarol",
+      "targetName": "manodrico",
+      "elemProposer": "6_4",
+      "elemTarget": "18_5",
+      "createdAt": "2026-08-19T15:31:15.5597545Z"
+    }
+  ],
   "ranking": [
     {
       "username": "sheisdani",
@@ -396,7 +404,7 @@
         "23_5": 2,
         "24_1": 2,
         "25_1": 1,
-        "2_1": 1,
+        "2_1": 2,
         "2_2": 1,
         "2_3": 1,
         "2_4": 1,
@@ -461,7 +469,7 @@
       "pontos": 18425,
       "posicaoVitoria": 0,
       "dataVitoria": null,
-      "trocasDisponiveis": 5,
+      "trocasDisponiveis": 4,
       "proximaRecuperacao": null,
       "inventario": {
         "10_1": 1,
@@ -673,7 +681,7 @@
     },
     {
       "username": "ipowerlz",
-      "pontos": 12370,
+      "pontos": 12460,
       "posicaoVitoria": 0,
       "dataVitoria": null,
       "trocasDisponiveis": 5,
@@ -723,7 +731,6 @@
         "2_4": 1,
         "2_6": 1,
         "2_8": 1,
-        "3_1": 1,
         "3_2": 1,
         "3_3": 1,
         "3_4": 1,
@@ -759,7 +766,8 @@
         "u_iPowerlz": 1,
         "u_manu12321_": 1,
         "u_ruialmeida_": 1,
-        "u_soniagoncalves": 1
+        "u_soniagoncalves": 1,
+        "u_steve_osvaldo": 1
       }
     },
     {
@@ -1502,6 +1510,20 @@
       }
     },
     {
+      "username": "700link007",
+      "pontos": 1140,
+      "posicaoVitoria": 0,
+      "dataVitoria": null,
+      "trocasDisponiveis": 5,
+      "proximaRecuperacao": null,
+      "inventario": {
+        "13_3": 1,
+        "17_4": 1,
+        "19_5": 1,
+        "25_1": 1
+      }
+    },
+    {
       "username": "lucyfourpics",
       "pontos": 1125,
       "posicaoVitoria": 0,
@@ -1661,17 +1683,6 @@
       "proximaRecuperacao": null,
       "inventario": {
         "6_3": 1
-      }
-    },
-    {
-      "username": "700link007",
-      "pontos": 150,
-      "posicaoVitoria": 0,
-      "dataVitoria": null,
-      "trocasDisponiveis": 5,
-      "proximaRecuperacao": null,
-      "inventario": {
-        "17_4": 1
       }
     },
     {
