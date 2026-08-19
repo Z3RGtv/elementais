@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19 22:20:44 UTC",
+  "updatedAt": "2026-08-19 22:21:26 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 241, "sucesso": 54, "rate": 22.4 },
     "super": { "total": 198, "sucesso": 81, "rate": 40.9 },
@@ -59,7 +59,8 @@
   ],
   "propostas": [
     { "proposerName": "lourenco_2015_marques", "targetName": "marquesrcarol", "elemProposer": "18_3", "elemTarget": "16_6", "createdAt": "2026-08-19T22:10:49.4140687Z" },
-    { "proposerName": "steve_osvaldo", "targetName": "hugoandre07", "elemProposer": "15_2", "elemTarget": "5_2", "createdAt": "2026-08-19T22:20:44.6416714Z" }
+    { "proposerName": "steve_osvaldo", "targetName": "hugoandre07", "elemProposer": "15_2", "elemTarget": "5_2", "createdAt": "2026-08-19T22:20:44.6416714Z" },
+    { "proposerName": "san7izinn", "targetName": "marquesrcarol", "elemProposer": "10_2", "elemTarget": "u_san7izinn", "createdAt": "2026-08-19T22:21:26.1568571Z" }
   ],
   "ranking": [
     {
@@ -175,7 +176,7 @@
       "pontos": 3140,
       "posicaoVitoria": 0,
       "dataVitoria": null,
-      "trocasDisponiveis": 5,
+      "trocasDisponiveis": 4,
       "proximaRecuperacao": null,
       "inventario": {"10_2":1,"12_1":1,"12_2":1,"12_3":1,"15_6":1,"1_1":1,"1_5":1,"1_7":1,"1_8":1,"23_1":1,"2_1":1,"2_2":1,"2_3":2,"3_5":1,"4_1":1,"4_4":1,"6_3":1,"6_4":1,"7_1":1,"9_5":1,"u_sheisdani":1}
     },
