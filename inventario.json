@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-08-20 02:27:49 UTC",
+  "updatedAt": "2026-08-20 02:29:30 UTC",
   "estatisticas_bolas": {
     "normal": { "total": 244, "sucesso": 55, "rate": 22.5 },
-    "super": { "total": 201, "sucesso": 83, "rate": 41.3 },
-    "ultra": { "total": 271, "sucesso": 174, "rate": 64.2 },
+    "super": { "total": 202, "sucesso": 83, "rate": 41.1 },
+    "ultra": { "total": 272, "sucesso": 175, "rate": 64.3 },
     "master": { "total": 1785, "sucesso": 1614, "rate": 90.4 }
   },
   "recentes_lancamentos": [
+    { "username": "minichef9", "elementalId": "u_soniagoncalves", "bola": "ultra", "sucesso": 1, "date": "2026-08-20 03:29:29" },
+    { "username": "garzia17", "elementalId": "u_soniagoncalves", "bola": "super", "sucesso": 0, "date": "2026-08-20 03:29:20" },
     { "username": "manodrico", "elementalId": "19_6", "bola": "master", "sucesso": 1, "date": "2026-08-20 03:25:20" },
     { "username": "minichef9", "elementalId": "18_5", "bola": "master", "sucesso": 1, "date": "2026-08-20 03:21:03" },
     { "username": "minichef9", "elementalId": "21_1", "bola": "master", "sucesso": 1, "date": "2026-08-20 03:17:19" },
@@ -34,9 +36,7 @@
     { "username": "minichef9", "elementalId": "1_1", "bola": "master", "sucesso": 1, "date": "2026-08-20 01:50:38" },
     { "username": "manodrico", "elementalId": "u_manu12321_", "bola": "master", "sucesso": 1, "date": "2026-08-20 01:43:58" },
     { "username": "garzia17", "elementalId": "18_3", "bola": "super", "sucesso": 1, "date": "2026-08-20 01:40:27" },
-    { "username": "gui_z0", "elementalId": "18_3", "bola": "master", "sucesso": 0, "date": "2026-08-20 01:40:18" },
-    { "username": "hugoandre07", "elementalId": "20_1", "bola": "master", "sucesso": 1, "date": "2026-08-20 01:36:03" },
-    { "username": "garzia17", "elementalId": "4_7", "bola": "master", "sucesso": 1, "date": "2026-08-20 01:32:17" }
+    { "username": "gui_z0", "elementalId": "18_3", "bola": "master", "sucesso": 0, "date": "2026-08-20 01:40:18" }
   ],
   "availableUsers": [
     { "id": "u_1509_martim", "file": "Users/1509_martim.png", "name": "1509_martim" },
@@ -117,12 +117,12 @@
     },
     {
       "username": "minichef9",
-      "pontos": 12130,
+      "pontos": 12230,
       "posicaoVitoria": 0,
       "dataVitoria": null,
       "trocasDisponiveis": 0,
       "proximaRecuperacao": "2026-08-20T02:38:39Z",
-      "inventario": {"10_1":1,"10_4":1,"10_5":1,"10_6":1,"12_1":1,"12_2":1,"12_3":1,"12_4":1,"13_1":1,"13_2":1,"13_3":1,"14_3":1,"14_4":1,"15_1":1,"15_2":1,"15_3":2,"16_3":1,"16_4":1,"16_7":1,"17_1":1,"17_2":2,"17_3":1,"17_4":1,"17_5":1,"18_1":1,"18_2":1,"18_5":2,"19_1":1,"19_3":1,"19_4":1,"1_1":1,"1_2":1,"1_3":1,"1_4":1,"1_8":1,"21_1":1,"22_4":1,"23_4":1,"23_5":1,"24_1":1,"25_1":1,"2_1":1,"2_2":1,"2_3":2,"2_4":1,"2_8":1,"3_1":1,"3_5":2,"4_1":1,"4_4":1,"5_2":1,"5_5":1,"6_1":1,"6_3":1,"6_4":1,"7_1":1,"7_2":1,"7_7":1,"8_1":1,"8_2":1,"8_4":1,"9_2":1,"9_3":1,"u_MilhafreTuga":1,"u_Minichef9":1,"u_Z3RGtv":1,"u_Z3RGtv_og":1,"u_gui_z0":1}
+      "inventario": {"10_1":1,"10_4":1,"10_5":1,"10_6":1,"12_1":1,"12_2":1,"12_3":1,"12_4":1,"13_1":1,"13_2":1,"13_3":1,"14_3":1,"14_4":1,"15_1":1,"15_2":1,"15_3":2,"16_3":1,"16_4":1,"16_7":1,"17_1":1,"17_2":2,"17_3":1,"17_4":1,"17_5":1,"18_1":1,"18_2":1,"18_5":2,"19_1":1,"19_3":1,"19_4":1,"1_1":1,"1_2":1,"1_3":1,"1_4":1,"1_8":1,"21_1":1,"22_4":1,"23_4":1,"23_5":1,"24_1":1,"25_1":1,"2_1":1,"2_2":1,"2_3":2,"2_4":1,"2_8":1,"3_1":1,"3_5":2,"4_1":1,"4_4":1,"5_2":1,"5_5":1,"6_1":1,"6_3":1,"6_4":1,"7_1":1,"7_2":1,"7_7":1,"8_1":1,"8_2":1,"8_4":1,"9_2":1,"9_3":1,"u_MilhafreTuga":1,"u_Minichef9":1,"u_Z3RGtv":1,"u_Z3RGtv_og":1,"u_gui_z0":1,"u_soniagoncalves":1}
     },
     {
       "username": "garzia17",
